@@ -1,0 +1,17 @@
+owner = A91
+controller = A91
+add_core = A91
+
+culture = resenar
+religion = pentethikan
+
+base_tax = 5
+base_production = 7
+base_manpower = 6
+
+trade_goods = gold
+
+is_city = no
+
+discovered_by = golekian
+fort_15th = yes

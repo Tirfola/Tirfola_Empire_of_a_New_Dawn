@@ -1,0 +1,31 @@
+# Arkoud-Eferia March
+march = {
+  first = A86
+  second = A87
+  start_date = 589.1.1
+  end_date = 614.1.1
+}
+
+dependency = {
+  subject_type = "tributary_state"
+  first = A86
+  second = A84
+  start_date = 589.1.1
+	end_date = 614.1.1
+}
+
+dependency = {
+  subject_type = "tributary_state"
+  first = A86
+  second = A85
+  start_date = 589.1.1
+	end_date = 614.1.1
+}
+
+dependency = {
+  subject_type = "tributary_state"
+  first = A90
+  second = A88
+  start_date = 589.1.1
+	end_date = 614.1.1
+}

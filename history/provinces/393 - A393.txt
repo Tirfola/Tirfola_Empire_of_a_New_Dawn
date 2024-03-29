@@ -1,0 +1,16 @@
+owner = A09
+controller = A09
+add_core = A09
+
+culture = granostam
+religion = pentethikan
+
+base_tax = 5
+base_production = 4
+base_manpower = 3
+
+trade_goods = wine
+
+is_city = no
+
+discovered_by = golekian

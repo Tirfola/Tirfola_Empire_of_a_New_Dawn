@@ -1,0 +1,18 @@
+owner = A08
+controller = A08
+add_core = A08
+
+culture = granostam
+religion = pentethikan
+
+base_tax = 9
+base_production = 9
+base_manpower = 6
+
+trade_goods = gems
+
+is_city = no
+
+discovered_by = golekian
+center_of_trade = 2
+fort_15th = yes

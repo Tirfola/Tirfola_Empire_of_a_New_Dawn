@@ -1,0 +1,16 @@
+owner = A13
+controller = A13
+add_core = A13
+
+culture = koderin
+religion = pentethikan
+
+base_tax = 6
+base_production = 4
+base_manpower = 5
+
+trade_goods = iron
+
+is_city = no
+
+discovered_by = golekian

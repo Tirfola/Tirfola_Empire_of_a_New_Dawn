@@ -1,0 +1,35 @@
+merc_troop_empoken_battalion = {
+  regiments_per_development = 0.05
+  home_province = 161 # Mitra
+  cavalry_weight = 0.2
+	cavalry_cap = 4
+
+  trigger = {
+    is_allowed_to_recruit_mercenaries = yes
+    has_country_modifier = accepted_empoken_deal
+  }
+
+  cost_modifier = 0.50
+
+  modifier = {
+		manpower_recovery_speed = -0.20
+    discipline = 0.05
+    shock_damage_received = -0.10
+    land_maintenance_modifier = -0.25
+	}
+}
+
+merc_troop_sorokan_warband = {
+  regiments_per_development = 0.05
+  home_province = 578 # Novyipol
+  cavalry_weight = 0.2
+  cavalry_cap = 4
+
+  trigger = {
+    is_allowed_to_recruit_mercenaries = yes
+  }
+
+  modifier = {
+    shock_damage = 0.10
+  }
+}

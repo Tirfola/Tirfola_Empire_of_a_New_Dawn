@@ -1,0 +1,8 @@
+government = monarchy
+add_government_reform = feudalism_reform
+technology_group = golekian
+religion = boskylka
+capital = 480
+government_rank = 1
+primary_culture = kurucas
+add_accepted_culture = duzas

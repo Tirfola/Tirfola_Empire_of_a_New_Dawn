@@ -1,0 +1,17 @@
+owner = A68
+controller = A68
+add_core = A68
+
+culture = prosvity
+religion = pentethikan
+
+base_tax = 4
+base_production = 3
+base_manpower = 4
+
+trade_goods = grain
+
+is_city = no
+
+discovered_by = golekian
+center_of_trade = 2

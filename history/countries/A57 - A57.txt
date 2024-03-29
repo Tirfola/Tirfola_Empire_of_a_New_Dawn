@@ -1,0 +1,9 @@
+government = monarchy
+add_government_reform = feudalism_reform
+technology_group = golekian
+religion = pentethikan
+capital = 510
+government_rank = 1
+historical_friend = A60
+historical_rival = A58
+primary_culture = zilver

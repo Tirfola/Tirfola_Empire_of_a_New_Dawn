@@ -1,0 +1,17 @@
+name = "Lilypad Rebellion"
+
+war_goal = {
+  type = take_capital_lilypad_rebellion
+  casus_belli = cb_lilypad_rebellion
+  province = 15
+}
+
+586.3.21 = {
+  add_attacker = A14
+  add_defender = A15
+}
+
+593.9.4 = {
+  rem_attacker = A14
+  rem_defender = A15
+}

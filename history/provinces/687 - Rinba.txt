@@ -1,0 +1,16 @@
+owner = A89
+controller = A89
+add_core = A89
+
+culture = polerov
+religion = boskylka
+
+base_tax = 3
+base_production = 1
+base_manpower = 3
+
+trade_goods = fish
+
+is_city = no
+
+discovered_by = golekian

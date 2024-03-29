@@ -1,0 +1,7 @@
+government = theocracy
+technology_group = golekian
+religion = pentethikan
+capital = 18
+government_rank = 1
+primary_culture = krelfostam
+add_government_reform = monastic_order_reform

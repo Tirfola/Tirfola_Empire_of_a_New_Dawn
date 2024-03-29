@@ -1,0 +1,16 @@
+# Retisë Level 5 Infantry
+
+type = infantry
+unit_type = golekian
+
+maneuver = 1
+offensive_morale = 1
+defensive_morale = 1
+offensive_fire = 0
+defensive_fire = 0
+offensive_shock = 0
+defensive_shock = 0
+
+trigger = {
+  culture_group = mikran
+}

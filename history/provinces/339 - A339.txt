@@ -1,0 +1,17 @@
+owner = A01
+controller = A01
+add_core = A01
+
+culture = numen
+religion = pentethikan
+
+base_tax = 9
+base_production = 7
+base_manpower = 7
+
+trade_goods = paper
+
+is_city = no
+
+discovered_by = golekian
+fort_15th = yes

@@ -1,0 +1,11 @@
+owner = A67
+controller = A67
+religion = pentethikan
+base_tax = 3
+base_production = 2
+base_manpower = 1
+trade_goods = grain
+is_city = no
+add_core = A67
+discovered_by = golekian
+culture = proizonci

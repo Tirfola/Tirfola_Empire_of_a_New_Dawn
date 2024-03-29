@@ -1,0 +1,16 @@
+owner = A36
+controller = A36
+add_core = A36
+
+culture = dravedi
+religion = boskylka
+
+base_tax = 1
+base_production = 3
+base_manpower = 1
+
+trade_goods = gold
+
+is_city = no
+
+discovered_by = golekian

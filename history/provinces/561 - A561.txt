@@ -1,0 +1,11 @@
+owner = A62
+controller = A62
+religion = pentethikan
+base_tax = 4
+base_production = 5
+base_manpower = 3
+trade_goods = cocoa
+is_city = no
+add_core = A62
+discovered_by = golekian
+culture = proizonci

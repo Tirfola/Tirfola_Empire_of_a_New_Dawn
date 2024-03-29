@@ -1,0 +1,7 @@
+# Voreo Guarantee of Heikasuna
+guarantee = {
+  first = A07
+  second = A14
+  start_date = 589.1.1
+  end_date = 600.12.24
+}

@@ -1,0 +1,32 @@
+# Vassal
+Vassal = {
+  first = A68
+  second = A69
+  start_date = 568.5.7
+  end_date = 612.2.24
+}
+
+# Tributaries
+dependency = {
+  subject_type = "tributary_state"
+  first = A71
+  second = A72
+  start_date = 543.7.15
+  end_date = 599.2.1
+}
+
+dependency = {
+  subject_type = "tributary_state"
+  first = A71
+  second = A73
+  start_date = 539.3.19
+  end_date = 607.6.11
+}
+
+dependency = {
+  subject_type = "tributary_state"
+  first = A71
+  second = A74
+  start_date = 548.9.28
+  end_date = 593.5.9
+}

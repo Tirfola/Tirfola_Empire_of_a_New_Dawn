@@ -1,0 +1,126 @@
+#Norway
+graphical_culture = westerngfx
+color = {
+	60 72 126
+}
+revolutionary_colors = {
+	16 13 16
+}
+historical_score = 25
+preferred_religion = protestant
+historical_idea_groups = {
+	 aristocracy_ideas
+	trade_ideas
+	defensive_ideas
+	offensive_ideas
+	economic_ideas
+	diplomatic_ideas
+	innovativeness_ideas
+	maritime_ideas
+}
+historical_units = {
+	golekian_1_levyman
+	golekian_1_spear_cavalry
+	golekian_5_infantry
+	golekian_6_chariot_cavalry
+	7_militarized_mages
+	golekian_9_spear_wall
+	golekian_10_reformed_spear_cavalry
+	10_flamers
+	golekian_12_lightsplitters
+	13_fire_breathers
+	golekian_14_fire_flingers
+	golekian_15_shielded_lightsplitters
+	18_spell_slingers
+	golekian_18_lightning_riders
+	golekian_19_armored_frostwielders
+	20_mindbenders
+	22_psychic_screamers
+	golekian_23_silvercoated_frostwielders
+	25_abyss_conjurers
+	golekian_26_frostguard
+	golekian_28_blitztamers
+	29_void_eaters
+	golekian_30_ice_sentinels
+}
+monarch_names = {
+	"Ivan #2" = 15
+	"Dmitriy #0" = 0
+	"Yuriy #1" = 15
+	"Andrei #0" = 0
+	"Semen #0" = 0
+	"Boris #0" = 0
+	"Fyodor #1" = 0
+	"Oleg #0" = 0
+	"Afanasiy #0" = 0
+	"Akim #0" = 0
+	"Aleksandr #2" = 5
+	"Alexei #0" = 0
+	"Anatoliy #0" = 0
+	"Arkadiy #0" = 0
+	"Daniil #0" = 0
+	"Dorofey #0" = 0
+	"Feodosiy #0" = 0
+	"Feofilakt #0" = 0
+	"Gavriil #0" = 0
+	"Innokentiy #0" = 0
+	"Iosif #0" = 0
+	"Lavrentiy #0" = 0
+	"Makariy #0" = 0
+	"Matveiy #0" = 0
+	"Mikhail #1" = 5
+	"Nazariy #0" = 0
+	"Nikifor #0" = 0
+	"Onisim #0" = 0
+	"Pavel #0" = 0
+	"Prokopiy #0" = 0
+	"Pyotr #0" = 0
+	"Radomir #0" = 0
+	"Saveliy #0" = 0
+	"Sergei #0" = 0
+	"Terentiy #0" = 0
+	"Valeriy #0" = 0
+	"Yakim #0" = 0
+	"Yevgeniy #0" = 0
+	"Yaroslav #3" = 10
+	"Yaropolk #1" = 10
+	"Vyacheslav #2" = 10
+	"Vsevolod #3" = 15
+	"Igor #1" = 5
+	"Izyaslav #3" = 10
+	"Rostislav #3" = 10
+	"Vladimir #4" = 20
+	"Mstislav #2" = 5
+	"Gleb #1" = 0
+	"Roman #1" = 0
+	"Ryurik #1" = 0
+	"Svyatoslav #1" = 0
+	"Ingvar #1" = 0
+	"Stanislav #1" = 0
+
+	"Aleksandra #0" = -1
+	"Alla #0" = -1
+	"Bronislava #0" = -1
+	"Svetlana #0" = -1
+	"Yuliya #0" = -1
+	"Yaroslava #0" = -1
+	"Vladislava #0" = -1
+	"Lyudmila #0" = -1
+	"Nadejda #0" = -1
+	"Rostislava #0" = -1
+}
+leader_names = {
+	Arnesson  Amundsen
+	Bjelke  Bolt
+	Egilsson  Eriksson
+	Haraldsson
+	Larsson  Leifsson
+	Magnusson
+	Nansen  Norheim
+	Olavsson
+	Sverresson  Sigurdsson
+	Torgeirsson  Torsson
+}
+ship_names = {
+	 Zobler
+}

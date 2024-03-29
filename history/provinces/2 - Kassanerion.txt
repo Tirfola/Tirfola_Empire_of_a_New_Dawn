@@ -1,0 +1,17 @@
+owner = A02
+controller = A02
+add_core = A02
+
+culture = kassan
+religion = pentethikan
+
+base_tax = 7
+base_production = 8
+base_manpower = 8
+
+trade_goods = paper
+
+is_city = no
+
+discovered_by = golekian
+fort_15th = yes

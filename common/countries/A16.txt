@@ -1,0 +1,77 @@
+#Norway
+graphical_culture = westerngfx
+color = {	67 63 108 }
+revolutionary_colors = {
+	16 13 16
+}
+historical_score = 25
+preferred_religion = protestant
+historical_idea_groups = {
+	 aristocracy_ideas
+	trade_ideas
+	defensive_ideas
+	offensive_ideas
+	economic_ideas
+	diplomatic_ideas
+	innovativeness_ideas
+	maritime_ideas
+}
+historical_units = {
+	golekian_1_levyman
+	golekian_1_spear_cavalry
+	golekian_5_infantry
+	golekian_6_chariot_cavalry
+	7_militarized_mages
+	golekian_9_spear_wall
+	golekian_10_reformed_spear_cavalry
+	10_flamers
+	golekian_12_lightsplitters
+	13_fire_breathers
+	golekian_14_fire_flingers
+	golekian_15_shielded_lightsplitters
+	18_spell_slingers
+	golekian_18_lightning_riders
+	golekian_19_armored_frostwielders
+	20_mindbenders
+	22_psychic_screamers
+	golekian_23_silvercoated_frostwielders
+	25_abyss_conjurers
+	golekian_26_frostguard
+	golekian_28_blitztamers
+	29_void_eaters
+	golekian_30_ice_sentinels
+}
+monarch_names = {
+	"Kigeli #0" = 30
+	"Mutara #0" = 25
+	"Yuhi #2" = 30
+	"Mibambwe #0" = 25
+	"Cyilima #0" = 20
+	"Ruganzu #1" = 20
+	"Ndahiro #0" = 10
+	"Nsoro #0" = 10
+	"Rubanda #0" = 5
+	"Nyarume #0" = 5
+	"Rumeza #0" = 5
+	"Kanyarwanda #0" = 5
+
+
+	"Nyiramavugo #0" = -1
+	"Kanjogera #0" = -1
+	"Nyirarukangaga #0" = -1
+}
+leader_names = {
+	Arnesson  Amundsen
+	Bjelke  Bolt
+	Egilsson  Eriksson
+	Haraldsson
+	Larsson  Leifsson
+	Magnusson
+	Nansen  Norheim
+	Olavsson
+	Sverresson  Sigurdsson
+	Torgeirsson  Torsson
+}
+ship_names = {
+	 Farry
+}

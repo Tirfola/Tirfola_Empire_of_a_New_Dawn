@@ -1,0 +1,7 @@
+government = republic
+technology_group = golekian
+primary_culture = kotina
+religion = boskylka
+capital = 44
+government_rank = 1
+add_government_reform = civic_republicanism_government

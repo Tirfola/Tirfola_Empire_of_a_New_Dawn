@@ -1,0 +1,33 @@
+namespace = tir_culture
+
+country_event = {
+  id = tir_culture.1
+  title = tir_culture.1.t
+  desc = tir_culture.1.d
+  picture = east_slavic_ANGRY_MOB_eventPicture
+  hidden = yes
+  is_triggered_only = yes
+
+  option = {
+    name = tir_culture.1.a
+    every_province = {
+      add_province_triggered_modifier = karsten_culture_modifier
+      add_province_triggered_modifier = numeran_culture_modifier
+      add_province_triggered_modifier = batenn_culture_modifier
+      add_province_triggered_modifier = mikran_culture_modifier
+      add_province_triggered_modifier = telman_culture_modifier
+      add_province_triggered_modifier = grivan_culture_modifier
+      add_province_triggered_modifier = karsten_culture_modifier
+      add_province_triggered_modifier = soroka_culture_modifier
+      add_province_triggered_modifier = snoot_myt_culture_modifier
+      add_province_triggered_modifier = sinitrolvi_culture_modifier
+      add_province_triggered_modifier = apolt_culture_modifier
+      add_province_triggered_modifier = perbuzur_culture_modifier
+      add_province_triggered_modifier = tenky_culture_modifier
+      add_province_triggered_modifier = bockvas_culture_modifier
+      add_province_triggered_modifier = kozsa_culture_modifier
+      add_province_triggered_modifier = keros_culture_modifier
+      add_province_triggered_modifier = pikos_culture_modifier
+    }
+  }
+}

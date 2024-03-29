@@ -1,0 +1,16 @@
+owner = A26
+controller = A26
+add_core = A26
+
+culture = grunnistam
+religion = pentethikan
+
+base_tax = 3
+base_production = 6
+base_manpower = 3
+
+trade_goods = glass
+
+is_city = no
+
+discovered_by = golekian

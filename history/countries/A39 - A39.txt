@@ -1,0 +1,7 @@
+government = republic
+technology_group = golekian
+primary_culture = seravludi
+religion = pentethikan
+capital = 39
+government_rank = 1
+add_government_reform = merchants_reform

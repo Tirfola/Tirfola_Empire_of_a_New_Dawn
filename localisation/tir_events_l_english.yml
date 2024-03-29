@@ -1,0 +1,42 @@
+﻿l_english:
+ # Heikasuna War Event
+ tir_lilypad.1.t:0 "Voreo's Offer"
+ tir_lilypad.1.d:0 "This is a placeholder"
+ tir_lilypad.1.a:0 "Forgo the Claim"
+ tir_lilypad.1.b:0 "Break the Pact"
+
+ # Heibatua War Event
+ tir_lilypad.2.t:0 "Empoken Deal"
+ tir_lilypad.2.d:0 "This is a placeholder"
+ tir_lilypad.2.a:0 "Take the Deal"
+ tir_lilypad.2.b:0 "Refuse the Deal"
+
+ # The end of the Lilypad Rebellion
+ tir_lilypad.3.t:0 "The End of the Rebellion"
+ tir_lilypad.3.d:0 "This is a placeholder"
+ tir_lilypad.3.a:0 "Remove Modifiers"
+
+ tir_lilypad.4.t:0 "The End of the Rebellion"
+ tir_lilypad.4.d:0 "This is a placeholder"
+ tir_lilypad.4.a:0 "Remove Modifiers"
+
+ # Soroka Events
+ tir_soroka.1.t:0 "A Meeting Overdue"
+ tir_soroka.1.d:0 "Placeholder"
+ tir_soroka.1.a:0 "Placeholder"
+
+ tir_soroka.2.t:0 "Challenged for the Crown"
+ tir_soroka.2.d:0 "Your ruler has been challenged to a duel to the death to determine if you are worthy"
+ tir_soroka.2.a:0 "A Duel to the Death!"
+
+ # Boskylka Events
+ tir_boskylka.1.t:0 "A83"
+ tir_boskylka.1.d:0 "Placeholder"
+ tir_boskylka.1.a:0 "Placeholder"
+ tir_boskylka.1.b:0 "Release A83"
+
+ # Institution Events
+ tir_institution_events.2.t:0 "Regulated Coins!"
+ tir_institution_events.2.d:0 "The conception of §YRegulated Coins§! stands as a watershed moment in the evolution of commerce. Typically crafted from precious metals like gold and silver. This innovation revolutionized trade by providing a consistent and universally accepted standard of commerce. The idea quickly gained traction, spreading throughout neighboring regions and civilizations. §YRegulated Coins§! not only facilitated smoother transactions but also laid the groundwork for structured monetary systems, profoundly influencing the economic foundations of societies across the ages."
+ tir_institution_events.2.a:0 "This changes everything..."
+ tir_institution_events.201.d:0 "Travelers speak of a great rebirth of old ideals in faraway lands. It is hard to treat such rumors seriously, though according to the reporters great secrets have been uncovered by the thinkers of this 'Regulated Coin'.""

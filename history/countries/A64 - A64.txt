@@ -1,0 +1,7 @@
+government = republic
+technology_group = golekian
+religion = pentethikan
+primary_culture = zunankoci
+capital = 562
+government_rank = 1
+add_government_reform = civic_republicanism_government

@@ -1,0 +1,11 @@
+government = republic
+technology_group = golekian
+primary_culture = stepin
+add_accepted_culture = neduarin
+add_accepted_culture = kaforin
+religion = pentethikan
+capital = 459
+government_rank = 2
+historical_friend = A10
+historical_rival = A09
+add_government_reform = oligarchy_reform

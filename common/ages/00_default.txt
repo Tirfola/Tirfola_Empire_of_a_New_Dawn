@@ -1,0 +1,895 @@
+# Age of Commerce
+age_of_discovery = {
+	start = 532
+
+	can_start = {
+		always = yes
+	}
+
+	objectives = {
+		obj_mutual_benefits = {
+			calc_true_if = {
+				all_country = {
+					has_opinion = { who = root value = 100 }
+				}
+				amount = 3
+			}
+		}
+
+		obj_5_centers_of_trade = {
+			calc_true_if = {
+				all_owned_province = {
+					OR = {
+						province_has_center_of_trade_of_level = 2
+						province_has_center_of_trade_of_level = 3
+					}
+					controlled_by = owner
+					is_core = ROOT
+				}
+				amount = 5
+			}
+		}
+
+		obj_local_monopoly = {
+			any_trade_node = {
+				is_strongest_trade_power = ROOT
+			}
+		}
+
+		obj_maritime_legion = {
+			num_of_light_ship = 15
+		}
+
+		obj_commerce_districts = {
+			calc_true_if = {
+				all_owned_province = {
+					is_core = ROOT
+					has_owner_accepted_culture = yes
+					has_building = marketplace
+				}
+				amount = 5
+			}
+		}
+
+		obj_many_pockets = {
+			num_of_merchants = 3
+		}
+
+		obj_humiliate_rival = {
+			custom_trigger_tooltip = {
+				tooltip = obj_humiliate_rival_tooltip
+				has_country_flag = humiliated_rival
+			}
+		}
+	}
+
+	abilities = {
+		ab_galamoplia = {
+			modifier = {
+				light_ship_cost = -0.2
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_shrewd_tactics = {
+			modifier = {
+				embargo_efficiency = 0.3
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_silver_tongue = {
+			modifier = {
+				improve_relation_modifier = 0.1
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_powerful_guilds = {
+			modifier = {
+				burghers_loyalty_modifier = 0.1
+				burghers_influence_modifier = 0.05
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_greased_palms = {
+			modifier = {
+				placed_merchant_power = 3
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_improved_strategy = {
+			modifier = {
+				mercantilism_cost = -0.15
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_standardized_disputes = {
+			modifier = {
+				justify_trade_conflict_cost = -0.2
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_bizev_coller_maneuvers = {
+			allow = {
+				tag = B01
+			}
+			modifier = {
+				attack_bonus_in_capital_terrain = 2
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+
+		ab_batennian_advantage = {
+			allow = {
+				culture_group = batenn
+			}
+			modifier = {
+				#RIVER_CROSSING_PENALTY = 0 # Does not work
+				landing_penalty = -2
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+
+		ab_numeran_resilience = {
+			allow = {
+				culture_group = numeran
+			}
+			modifier = {
+				shock_damage_received = -0.15
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+
+		ab_denmark_reduced_lib_desire = {
+			allow = {
+				tag = DAN
+			}
+			modifier = {
+				reduced_liberty_desire = 30
+			}
+			ai_will_do = {
+				factor = 100
+				modifier = {
+					factor = 0
+					NOT = {
+						any_subject_country = {
+							liberty_desire = 20
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+# Age of Development
+age_of_reformation = {
+	start = 632
+
+	can_start = {
+		is_institution_enabled = new_world_i
+	}
+
+	objectives = {
+		obj_developed_nation = {
+			custom_trigger_tooltip = {
+				tooltip = developed_nation_tt
+				calc_true_if = {
+					any_owned_province = {
+						grown_by_development = 1
+					}
+					amount = 30
+				}
+			}
+		}
+
+		obj_prosperous_city = {
+			any_owned_province = {
+				AND = {
+					exclude_from_progress = {
+						is_core = ROOT
+						controlled_by = owner
+					}
+					development_discounting_tribal = 35
+				}
+			}
+		}
+
+		obj_fantastical_fabrications = {
+			any_owned_province = {
+				has_great_project = {
+					type = any
+					tier = 2
+				}
+			}
+		}
+
+		obj_widespread_infrastructure = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						has_owner_accepted_culture = yes
+						OR = {
+							has_building = marketplace
+							has_building = workshop
+							has_building = temple
+							has_building = barracks
+							has_building = shipyard
+							has_building = fort_15th
+							has_building = coastal_defence
+							has_building = courthouse
+							has_building = dock
+							has_building = regimental_camp
+							has_building = fort_16th
+							has_building = naval_battery
+							has_building = cathedral
+							has_building = university
+							has_building = trade_depot
+							has_building = grand_shipyard
+							has_building = training_fields
+							has_building = fort_17th
+							has_building = stock_exchange
+							has_building = counting_house
+							has_building = town_hall
+							has_building = drydock
+							has_building = conscription_center
+							has_building = fort_18th
+							has_building = wharf
+							has_building = weapons
+							has_building = textile
+							has_building = plantations
+							has_building = tradecompany
+							has_building = farm_estate
+							has_building = mills
+							has_building = furnace
+							has_building = ramparts
+							has_building = soldier_households
+							has_building = impressment_offices
+							has_building = state_house
+						}
+					}
+				}
+				amount = 20
+			}
+		}
+
+		obj_prosperous_economy = {
+			any_owned_province = {
+				province_has_center_of_trade_of_level = 3
+				controlled_by = owner
+				is_core = ROOT
+			}
+		}
+
+		obj_blossoming_goods = {
+			custom_trigger_tooltip = {
+				tooltip = blossoming_goods_tt
+				OR = {
+					production_leader = { trade_goods = cloth }
+					production_leader = { trade_goods = fish }
+					production_leader = { trade_goods = fur }
+					production_leader = { trade_goods = grain }
+					production_leader = { trade_goods = livestock }
+					production_leader = { trade_goods = naval_supplies }
+					production_leader = { trade_goods = salt }
+					production_leader = { trade_goods = wine }
+					production_leader = { trade_goods = wool }
+					production_leader = { trade_goods = copper }
+					production_leader = { trade_goods = iron }
+					production_leader = { trade_goods = ivory }
+					production_leader = { trade_goods = slaves }
+					production_leader = { trade_goods = chinaware }
+					production_leader = { trade_goods = spices }
+					production_leader = { trade_goods = tea }
+					production_leader = { trade_goods = cocoa }
+					production_leader = { trade_goods = coffee }
+					production_leader = { trade_goods = cotton }
+					production_leader = { trade_goods = sugar }
+					production_leader = { trade_goods = tobacco }
+					production_leader = { trade_goods = dyes }
+					production_leader = { trade_goods = silk }
+					production_leader = { trade_goods = tropical_wood }
+					production_leader = { trade_goods = incense }
+					production_leader = { trade_goods = glass }
+					production_leader = { trade_goods = paper }
+					production_leader = { trade_goods = gems }
+					production_leader = { trade_goods = coal }
+					production_leader = { trade_goods = cloves }
+				}
+			}
+		}
+
+		obj_spreading_the_wealth = {
+			calc_true_if = {
+				all_country = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = great_power_influence
+					}
+				}
+				amount = 2
+			}
+		}
+	}
+
+	abilities = {
+		ab_bountiful_harvests = {
+			modifier = {
+				global_prosperity_growth = 0.05
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_impressive_monuments = {
+			modifier = {
+				great_project_upgrade_cost = -0.25
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_well_fed_populace = {
+			modifier = {
+				global_unrest = -1
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_satisfied_estates = {
+			modifier = {
+				all_estate_loyalty_equilibrium = 0.05
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_standardized_building = {
+			modifier = {
+				local_build_time = -0.2
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_repopulation = {
+			modifier = {
+				manpower_recovery_speed = 0.10
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_educated_peasants = {
+			modifier = {
+				global_institution_spread = 0.15
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_kralzem_influence = {
+			allow = {
+				tag = A59
+			}
+			modifier = {
+				vassal_forcelimit_bonus = 1.5
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+
+		ab_karsten_cautiousness = {
+			allow = {
+				culture_group = karsten
+			}
+			modifier = {
+				global_defender_dice_roll_bonus = 1
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+
+		ab_pikos_professionalism = {
+			modifier = {
+				yearly_army_professionalism = 0.01
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+
+		ab_ship_power_propagation = {
+			modifier = {
+				ship_power_propagation = 0.2
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+}
+
+# Age of Conflict
+age_of_absolutism = {
+	start = 699
+
+	can_start = {
+		is_institution_enabled = global_trade
+	}
+
+	absolutism = {
+		harsh_treatment = 1
+		stability = 1
+		decrease_autonomy_command = 1
+		strengthen_government = 2
+
+		increase_autonomy_command = -2
+		debase_currency = -1
+		execute_rebel_acceptance_command = -10
+		automatic_seat_in_parliament = -2
+		manual_seat_in_parliament = -2
+		war_exhaustion = -1
+	}
+
+	objectives = {
+		obj_professional_army = {
+			army_professionalism = 0.50
+		}
+
+		obj_honor_guard = {
+			has_global_modifier_value = {
+				which = discipline
+				value = 0.20
+				extra_shortcut = yes
+			}
+		}
+
+		obj_great_armada = {
+			num_of_heavy_ship = 40
+		}
+
+		obj_ruler_of_many = {
+			num_of_non_tributary_subjects = 5
+		}
+
+		obj_trade_domination = {
+			calc_true_if = {
+				all_active_trade_node = {
+					trade_share = {
+						country = ROOT
+						share = 50
+					}
+				}
+				amount = 3
+			}
+		}
+
+		obj_conflicts_o_plenty = {
+			is_at_war = yes
+		}
+
+		obj_militarized_militias = {
+			max_manpower = 80
+		}
+	}
+
+	abilities = {
+		ab_protective_fortifications = {
+			modifier = {
+				rival_border_fort_maintenance = -1.0
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+
+		ab_efficient_conquest = {
+			modifier = {
+				administrative_efficiency = 0.05
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_absolute_authority = {
+			modifier = {
+				yearly_absolutism = 1
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_state_restoration = {
+			effect = {
+				custom_tooltip = edict_of_absolutism_tt
+				set_country_flag = edict_of_absolutism
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+		ab_flexible_rivalries  = {
+			modifier = {
+				rival_change_cost = -0.5
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+		ab_youthful_replenishment = {
+			modifier = {
+				manpower_recovery_speed = 0.05
+			}
+			ai_will_do = {
+				factor = 1 # Someday Nelo will see this and get mad at me...
+			}
+		}
+
+		ab_ocean_expansion = {
+			modifier = {
+				heavy_ship_cost = -0.2
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+
+		ab_wapat_mages = {
+			allow = {
+				tag = A25
+			}
+			modifier = {
+				backrow_artillery_damage = 0.15
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+
+		ab_telman_bureaucracy = {
+			allow = {
+				culture_group = telman
+			}
+			modifier = {
+				state_maintenance_modifier = -0.30
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+
+		ab_sorokan_zeal = {
+			allow = {
+				culture_group = soroka
+			}
+			modifier = {
+				morale_damage_received = -0.10
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+
+		ab_manchu_banner = {
+			allow = {
+				OR = {
+					tag = MCH
+					tag = QNG
+				}
+			}
+			effect = {
+				if = {
+					limit = {
+						NOT = { primary_culture = manchu }
+						NOT = { primary_culture = manchu_new }
+						NOT = { has_government_attribute = allow_banners }
+					}
+					custom_tooltip = ab_manchu_banner_tt
+				}
+			}
+			modifier = {
+				amount_of_banners = 0.5
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+	}
+}
+
+# Age of Innovations
+age_of_revolutions = {
+	start = 818
+
+	can_start = {
+		is_institution_enabled = enlightenment
+	}
+
+	absolutism = {
+		harsh_treatment = 1
+		stability = 1
+		decrease_autonomy_command = 1
+		strengthen_government = 2
+
+		increase_autonomy_command = -2
+		debase_currency = -1
+		execute_rebel_acceptance_command = -10
+		automatic_seat_in_parliament = -2
+		manual_seat_in_parliament = -2
+		war_exhaustion = -1
+	}
+
+	objectives = {
+		obj_bright_society = {
+			innovativeness = 30
+		}
+
+		obj_forward_thinking = {
+			custom_trigger_tooltip = {
+				tooltip = forward_thinking_tooltip_tt
+				all_neighbor_country = {
+					NOT = { tech_difference = -1 }
+				}
+			}
+		}
+
+		obj_minds_of_the_future = {
+			num_of_owned_provinces_with = {
+				has_building = university
+				value = 5
+			}
+		}
+
+		obj_towns_of_tomorrow = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						exclude_from_progress = {
+							is_core = ROOT
+							controlled_by = owner
+						}
+						development_discounting_tribal = 30
+					}
+				}
+				amount = 5
+			}
+		}
+
+		obj_shining_star = {
+			custom_trigger_tooltip = {
+				tooltip = shining_star_tooltip_tt
+				any_owned_province = {
+					region_for_scope_province = {
+						type = all
+						OR = {
+							NOT = { development = PREV }
+							owned_by = ROOT
+						}
+					}
+				}
+			}
+
+		}
+
+		obj_following_trends = {
+			has_institution = enlightenment
+			all_state_province = {
+				enlightenment = 100
+			}
+		}
+
+		obj_well_read = {
+			AND = {
+				# Military Ideas
+				OR = {
+					full_idea_group = aristocracy_ideas
+					full_idea_group = plutocracy_ideas
+					full_idea_group = horde_gov_ideas
+					full_idea_group = theocracy_gov_ideas
+					full_idea_group = indigenous_ideas
+					full_idea_group = offensive_ideas
+					full_idea_group = defensive_ideas
+					full_idea_group = quality_ideas
+					full_idea_group = quantity_ideas
+					full_idea_group = naval_ideas
+					full_idea_group = mercenary_ideas
+				}
+				# Diplomatic Ideas
+				OR = {
+					full_idea_group = spy_ideas
+					full_idea_group = diplomatic_ideas
+					full_idea_group = trade_ideas
+					full_idea_group = exploration_ideas
+					full_idea_group = maritime_ideas
+					full_idea_group = influence_ideas
+					full_idea_group = court_ideas
+				}
+				# Administrative Ideas
+				OR = {
+					full_idea_group = innovativeness_ideas
+					full_idea_group = religious_ideas
+					full_idea_group = economic_ideas
+					full_idea_group = expansion_ideas
+					full_idea_group = administrative_ideas
+					full_idea_group = humanist_ideas
+					full_idea_group = infrastructure_ideas
+				}
+			}
+		}
+	}
+
+	abilities = {
+		ab_loyal_subjects = {
+			modifier = {
+				reduced_liberty_desire_on_same_continent = 25
+			}
+			ai_will_do = {
+				factor = 15
+				modifier = {
+					factor = 0
+					NOT = {
+						any_subject_country = {
+							liberty_desire = 30
+							same_continent = ROOT
+						}
+					}
+				}
+			}
+		}
+
+		ab_unrestricted_conquest = {
+			modifier = {
+				ignore_coring_distance = yes
+			}
+			ai_will_do = {
+				factor = 15
+				modifier = {
+					# AI peace code relies on being limited by coring range, or it will create crazy border gore where it can't reach its new lands
+					factor = 0
+					OR = {
+						is_subject = no
+						overlord = {
+							ai = yes
+						}
+					}
+				}
+			}
+		}
+
+		ab_improved_force_march = {
+			modifier = {
+				force_march_free = yes
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_refined_construction = {
+			modifier = {
+				build_cost = -0.20
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_motivated_advisors = {
+			modifier = {
+				advisor_cost = -0.1
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+
+		ab_enhanced_nationalism = {
+			modifier = {
+				culture_conversion_cost = -0.20
+			}
+			ai_will_do = {
+				factor = 15
+			}
+		}
+
+		ab_revamped_development = {
+			modifier = {
+				development_cost = -0.1
+			}
+			ai_will_do = {
+				factor = 20
+			}
+		}
+
+		ab_modern_monarchies = {
+			allow = {
+				government = monarchy
+			}
+			modifier = {
+				diplomatic_reputation = 2
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+
+		ab_new_republics = {
+			allow = {
+				government = republic
+			}
+			modifier = {
+				governing_capacity_modifier = 0.15
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+
+		ab_contemporary_theocracies = {
+			allow = {
+				government = theocracy
+			}
+			modifier = {
+				technology_cost = -0.05
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+
+		ab_austrian_morale = {
+			allow = {
+				OR = {
+					tag = HAB
+					tag = HLR
+				}
+			}
+			modifier = {
+				morale_damage_received = -0.2
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+	}
+}

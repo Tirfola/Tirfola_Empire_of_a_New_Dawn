@@ -1,0 +1,9 @@
+government = monarchy
+add_government_reform = feudalism_reform
+technology_group = golekian
+primary_culture = zarennna
+add_accepted_culture = laugo
+religion = pentethikan
+capital = 15
+government_rank = 2
+historical_rival = A14

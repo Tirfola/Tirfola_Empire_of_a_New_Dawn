@@ -1,0 +1,7 @@
+government = republic
+technology_group = golekian
+religion = pentethikan
+capital = 19
+government_rank = 1
+primary_culture = nangsik
+add_government_reform = civic_republicanism_government

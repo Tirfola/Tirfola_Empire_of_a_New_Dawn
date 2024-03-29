@@ -1,0 +1,16 @@
+owner = A10
+controller = A10
+add_core = A10
+
+culture = breggin
+religion = pentethikan
+
+base_tax = 3
+base_production = 5
+base_manpower = 1
+
+trade_goods = grain
+
+is_city = no
+
+discovered_by = golekian

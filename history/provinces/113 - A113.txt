@@ -1,0 +1,11 @@
+owner = A60
+controller = A60
+religion = pentethikan
+base_tax = 2
+base_production = 1
+base_manpower = 2
+trade_goods = iron
+is_city = no
+add_core = A60
+discovered_by = golekian
+culture = smaradt

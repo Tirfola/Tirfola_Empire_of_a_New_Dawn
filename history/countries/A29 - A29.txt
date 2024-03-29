@@ -1,0 +1,7 @@
+government = republic
+technology_group = golekian
+religion = pentethikan
+capital = 29
+government_rank = 1
+primary_culture = pensik
+add_government_reform = civic_republicanism_government

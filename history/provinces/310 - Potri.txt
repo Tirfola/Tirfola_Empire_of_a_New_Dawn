@@ -1,0 +1,17 @@
+owner = A03
+controller = A03
+add_core = A03
+
+culture = numen
+religion = pentethikan
+
+base_tax = 5
+base_production = 8
+base_manpower = 6
+
+trade_goods = glass
+
+is_city = no
+
+discovered_by = golekian
+center_of_trade = 1

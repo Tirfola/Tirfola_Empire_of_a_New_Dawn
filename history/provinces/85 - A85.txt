@@ -1,0 +1,19 @@
+owner = A07
+controller = A07
+add_core = A07
+add_core = A14
+add_core = A15
+
+culture = toxen
+religion = pentethikan
+
+base_tax = 4
+base_production = 5
+base_manpower = 5
+
+trade_goods = naval_supplies
+
+is_city = no
+
+discovered_by = golekian
+center_of_trade = 1

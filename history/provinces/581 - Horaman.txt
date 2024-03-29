@@ -1,0 +1,16 @@
+owner = A73
+controller = A73
+add_core = A73
+
+culture = dravniy
+religion = pentethikan
+
+base_tax = 1
+base_production = 1
+base_manpower = 2
+
+trade_goods = gems
+
+is_city = no
+
+discovered_by = golekian

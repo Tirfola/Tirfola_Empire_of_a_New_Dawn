@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = autocracy_reform
+technology_group = golekian
+religion = pentethikan
+capital = 20
+government_rank = 1
+primary_culture = soddelstam
+
+557.4.3 = {
+  monarch = {
+    name = "Marcus"
+    dynasty = "Varn"
+    birth_date = 539.4.3
+    death_date = 739.5.15
+    adm = 3
+    dip = 1
+    mil = 1
+  }
+}

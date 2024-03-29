@@ -1,0 +1,16 @@
+owner = A28
+controller = A28
+add_core = A28
+
+culture = makanstam
+religion = pentethikan
+
+base_tax = 3
+base_production = 3
+base_manpower = 1
+
+trade_goods = wool
+
+is_city = no
+
+discovered_by = golekian

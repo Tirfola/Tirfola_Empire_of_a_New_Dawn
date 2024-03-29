@@ -1,0 +1,17 @@
+owner = A85
+controller = A85
+add_core = A85
+
+culture = nerumen
+religion = pentethikan
+
+base_tax = 5
+base_production = 8
+base_manpower = 3
+
+trade_goods = wine
+
+is_city = no
+
+discovered_by = golekian
+add_province_triggered_modifier = aktipol_vineyards

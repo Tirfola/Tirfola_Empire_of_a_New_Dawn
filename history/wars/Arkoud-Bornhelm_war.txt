@@ -1,0 +1,40 @@
+name = "The 2nd Cherry War"
+war_goal = {
+  type = take_core
+  casus_belli = cb_core
+  province = 700
+}
+
+588.8.20 = {
+  add_attacker = A91
+  add_defender = A86
+  add_defender = A87
+}
+
+589.11.11 = {
+  battle = {
+    name = "Fort Defender"
+    location = 700
+    attacker = {
+      commander = "Totally Unnecessary Man"
+      infantry = 2600
+			cavalry = 644
+			losses = 23	# percent
+			country = A91
+    }
+    defender = {
+      commander = "Mourte"
+      infantry = 2465
+      cavalry = 386
+      losses = 18	# percent
+      country = A86
+    }
+  }
+  result = yes
+}
+
+593.1.30 = {
+	rem_attacker = A91
+	rem_defender = A86
+  rem_defender = A87
+}

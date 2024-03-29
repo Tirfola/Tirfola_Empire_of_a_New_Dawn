@@ -1,0 +1,16 @@
+owner = A13
+controller = A13
+add_core = A13
+
+culture = linjin
+religion = pentethikan
+
+base_tax = 5
+base_production = 3
+base_manpower = 5
+
+trade_goods = grain
+
+is_city = no
+
+discovered_by = golekian

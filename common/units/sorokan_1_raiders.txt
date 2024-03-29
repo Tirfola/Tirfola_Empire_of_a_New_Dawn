@@ -1,0 +1,16 @@
+# Soroka Level 1 Infantry
+type = infantry
+unit_type = golekian
+
+maneuver = 1
+offensive_morale = 1
+defensive_morale = 0
+offensive_fire = 0
+defensive_fire = 0
+offensive_shock = 1
+defensive_shock = 1
+
+trigger = {
+  NOT = { primary_culture = prosvity }
+  culture_group = soroka
+}

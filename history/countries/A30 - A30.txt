@@ -1,0 +1,20 @@
+government = monarchy
+add_government_reform = autocracy_reform
+technology_group = golekian
+religion = pentethikan
+capital = 30
+government_rank = 1
+primary_culture = toppestam
+historical_rival = A36
+
+575.8.25 = {
+  monarch = {
+    name = "Nils"
+    dynasty = "Wass"
+    birth_date = 557.8.25
+    death_date = 767.6.1
+    adm = 3
+    dip = 2
+    mil = 4
+  }
+}

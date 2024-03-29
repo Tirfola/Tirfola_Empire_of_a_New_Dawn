@@ -1,0 +1,16 @@
+owner = A36
+controller = A36
+add_core = A36
+
+culture = ravindi
+religion = boskylka
+
+base_tax = 3
+base_production = 4
+base_manpower = 3
+
+trade_goods = wine
+
+is_city = no
+
+discovered_by = golekian

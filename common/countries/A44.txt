@@ -1,0 +1,104 @@
+#Norway
+graphical_culture = westerngfx
+color = {
+	87 34  9
+}
+revolutionary_colors = {
+	16 13  16
+}
+historical_score = 25
+preferred_religion = protestant
+historical_idea_groups = {
+	 aristocracy_ideas
+	trade_ideas
+	defensive_ideas
+	offensive_ideas
+	economic_ideas
+	diplomatic_ideas
+	innovativeness_ideas
+	maritime_ideas
+}
+historical_units = {
+	golekian_1_levyman
+	golekian_1_spear_cavalry
+	golekian_5_infantry
+	golekian_6_chariot_cavalry
+	7_militarized_mages
+	golekian_9_spear_wall
+	golekian_10_reformed_spear_cavalry
+	10_flamers
+	golekian_12_lightsplitters
+	13_fire_breathers
+	golekian_14_fire_flingers
+	golekian_15_shielded_lightsplitters
+	18_spell_slingers
+	golekian_18_lightning_riders
+	golekian_19_armored_frostwielders
+	20_mindbenders
+	22_psychic_screamers
+	golekian_23_silvercoated_frostwielders
+	25_abyss_conjurers
+	golekian_26_frostguard
+	golekian_28_blitztamers
+	29_void_eaters
+	golekian_30_ice_sentinels
+}
+monarch_names = {
+	"Phillip #0" = 20
+	"Lachlan #0" = 20
+	"William #0" = 15
+	"John #0" = 15
+	"Arthur #0" = 10
+	"Thomas #0" = 10
+	"Ambrose #0" = 0
+	"Ralph #0" = 0
+	"Benjamin #0" = 0
+	"Brian #0" = 0
+	"Richard #0" = 0
+	"Christopher #0" = 0
+	"Conrad #0" = 0
+	"Denis #0" = 0
+	"Duncan #0" = 0
+	"Eustace #0" = 0
+	"Frederick #0" = 0
+	"Gerard #0" = 0
+	"Gregory #0" = 0
+	"George #0" = 0
+	"Homer #0" = 0
+	"Joseph #0" = 0
+	"Julius #0" = 0
+	"Kevin #0" = 0
+	"Laurence #0" = 0
+	"Leroy #0" = 0
+	"Lewis #0" = 0
+	"Matthew #0" = 0
+	"Michael #0" = 0
+	"Montgomery #0" = 0
+	"Nicholas #0" = 0
+	"Peter #0" = 0
+	"Rowan #0" = 0
+	"Scott #0" = 0
+	"Silvester #0" = 0
+	"Spencer #0" = 0
+	"Ulysses #0" = 0
+	"Victor #0" = 0
+
+	"Victoria #0" = -1
+	"Ambrosia #0" = -1
+	"Charlotte #0" = -1
+}
+leader_names = {
+	Arnesson  Amundsen
+	Bjelke  Bolt
+	Egilsson  Eriksson
+	Haraldsson
+	Larsson  Leifsson
+	Magnusson
+	Nansen  Norheim
+	Olavsson
+	Sverresson  Sigurdsson
+	Torgeirsson  Torsson
+}
+ship_names = {
+	 Ovlad
+}

@@ -1,0 +1,16 @@
+owner = A86
+controller = A86
+add_core = A86
+
+culture = rumen
+religion = pentethikan
+
+base_tax = 2
+base_production = 3
+base_manpower = 3
+
+trade_goods = wool
+
+is_city = no
+
+discovered_by = golekian

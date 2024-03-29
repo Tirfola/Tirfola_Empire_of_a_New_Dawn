@@ -1,0 +1,16 @@
+owner = A24
+controller = A24
+add_core = A24
+
+culture = cenlakstam
+religion = pentethikan
+
+base_tax = 3
+base_production = 3
+base_manpower = 4
+
+trade_goods = livestock
+
+is_city = no
+
+discovered_by = golekian

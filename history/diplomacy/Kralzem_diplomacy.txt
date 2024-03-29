@@ -1,0 +1,41 @@
+# Kralzem-Adren Vassalage
+vassal = {
+  first = A59
+  second = A70
+  start_date = 589.1.1
+}
+
+dependency = {
+  subject_type = "tributary_state"
+  first = A59
+  second = A61
+  start_date = 589.1.1
+}
+
+dependency = {
+  subject_type = "tributary_state"
+  first = A59
+  second = A67
+  start_date = 589.1.1
+}
+
+dependency = {
+  subject_type = "tributary_state"
+  first = A59
+  second = A66
+  start_date = 589.1.1
+}
+
+dependency = {
+  subject_type = "tributary_state"
+  first = A59
+  second = A65
+  start_date = 589.1.1
+}
+
+dependency = {
+  subject_type = "tributary_state"
+  first = A59
+  second = A62
+  start_date = 589.1.1
+}

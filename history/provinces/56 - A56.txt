@@ -1,0 +1,11 @@
+owner = A56
+controller = A56
+religion = pentethikan
+base_tax = 4
+base_production = 5
+base_manpower = 3
+trade_goods = grain
+is_city = no
+add_core = A56
+discovered_by = golekian
+culture = renivalci

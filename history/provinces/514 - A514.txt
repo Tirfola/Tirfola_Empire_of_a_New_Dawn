@@ -1,0 +1,11 @@
+owner = A58
+controller = A58
+religion = pentethikan
+base_tax = 5
+base_production = 3
+base_manpower = 3
+trade_goods = iron
+is_city = no
+add_core = A58
+discovered_by = golekian
+culture = ao_yavy

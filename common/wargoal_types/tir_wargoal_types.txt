@@ -1,0 +1,45 @@
+take_capital_lilypad_rebellion = {
+	type = take_core
+
+	attacker = {
+		badboy_factor = 0.50
+		prestige_factor = 2
+		peace_cost_factor = 0.50
+
+		allowed_provinces = {
+			OR = {
+				is_claim = FROM
+				is_core = FROM
+			}
+		}
+
+		peace_options = {
+			po_demand_provinces
+			po_revoke_cores
+			po_gold
+			po_become_vassal
+			po_change_government
+		}
+	}
+
+	defender = {
+		badboy_factor = 0.25
+		prestige_factor = 2
+		peace_cost_factor = 0.5
+
+		allowed_provinces = {
+			OR = {
+				is_claim = FROM
+				is_core = FROM
+			}
+		}
+
+		peace_options = {
+			po_demand_provinces
+			po_revoke_cores
+			po_gold
+			po_become_vassal
+			po_change_government
+		}
+	}
+}

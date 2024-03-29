@@ -1,0 +1,17 @@
+owner = A23
+controller = A23
+add_core = A23
+
+culture = soddelstam
+religion = pentethikan
+
+base_tax = 6
+base_production = 7
+base_manpower = 2
+
+trade_goods = glass
+
+is_city = no
+
+discovered_by = golekian
+center_of_trade = 1

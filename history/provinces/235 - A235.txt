@@ -1,0 +1,16 @@
+owner = A56
+controller = A56
+add_core = A56
+
+culture = cenlakstam
+religion = pentethikan
+
+base_tax = 2
+base_production = 1
+base_manpower = 1
+
+trade_goods = grain
+
+is_city = no
+
+discovered_by = golekian

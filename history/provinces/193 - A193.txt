@@ -1,0 +1,16 @@
+owner = A27
+controller = A27
+add_core = A27
+
+culture = grunnistam
+religion = pentethikan
+
+base_tax = 3
+base_production = 1
+base_manpower = 1
+
+trade_goods = livestock
+
+is_city = no
+
+discovered_by = golekian

@@ -1,0 +1,17 @@
+owner = A01
+controller = A01
+add_core = A01
+
+culture = odassen
+religion = pentethikan
+
+base_tax = 3
+base_production = 5
+base_manpower = 4
+
+trade_goods = iron
+
+is_city = no
+
+discovered_by = golekian
+fort_15th = yes

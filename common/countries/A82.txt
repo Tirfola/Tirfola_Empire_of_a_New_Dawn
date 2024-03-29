@@ -1,0 +1,116 @@
+#Norway
+graphical_culture = westerngfx
+color = {
+	119 203  239
+}
+revolutionary_colors = {
+	16 13  16
+}
+historical_score = 25
+preferred_religion = protestant
+historical_idea_groups = {
+	 aristocracy_ideas
+	trade_ideas
+	defensive_ideas
+	offensive_ideas
+	economic_ideas
+	diplomatic_ideas
+	innovativeness_ideas
+	maritime_ideas
+}
+historical_units = {
+	golekian_1_levyman
+	golekian_1_spear_cavalry
+	golekian_5_infantry
+	golekian_6_chariot_cavalry
+	7_militarized_mages
+	golekian_9_spear_wall
+	golekian_10_reformed_spear_cavalry
+	10_flamers
+	golekian_12_lightsplitters
+	13_fire_breathers
+	golekian_14_fire_flingers
+	golekian_15_shielded_lightsplitters
+	18_spell_slingers
+	golekian_18_lightning_riders
+	golekian_19_armored_frostwielders
+	20_mindbenders
+	22_psychic_screamers
+	golekian_23_silvercoated_frostwielders
+	25_abyss_conjurers
+	golekian_26_frostguard
+	golekian_28_blitztamers
+	29_void_eaters
+	golekian_30_ice_sentinels
+}
+monarch_names = {
+	"Johann #0" = 80
+	"Heinrich #2" = 60
+	"Dietrich #2" = 20
+	"Wilhelm #2" = 20
+	"Hermann #1" = 20
+	"Walter #1" = 20
+	"Wennemar #1" = 20
+	"Bernhard #0" = 20
+	"Cysse #0" = 20
+	"Franz #0" = 20
+	"Gotthard #0" = 20
+	"Konrad #2" = 20
+	"Siegfried #0" = 20
+	"Gerhard #2" = 15
+	"Arnold #1" = 15
+	"Robin #1" = 15
+	"Eberhard #3" = 10
+	"Burkhard #1" = 10
+	"Gottfried #1" = 10
+	"Adolf #0" = 0
+	"Albrecht #0" = 0
+	"Andreas #0" = 0
+	"Ferdinand #0" = 0
+	"Friedrich #0" = 0
+	"Georg #0" = 0
+	"Jakob #0" = 0
+	"Karl #0" = 0
+	"Lorenz #0" = 0
+	"Ludwig #0" = 0
+	"Lukas #0" = 0
+	"Markus #0" = 0
+	"Matthias #0" = 0
+	"Michael #0" = 0
+	"Nicolaus #0" = 0
+	"Paul #0" = 0
+	"Rudolf #0" = 0
+	"Sigmund #0" = 0
+	"Stephan #0" = 0
+	"Thomas #0" = 0
+	"Wenzel #0" = 0
+
+	"Maria #0" = -1
+	"Elmede #0" = -1
+	"Helgi #0" = -1
+	"Helvi #0" = -1
+	"Ilma #0" = -1
+	"Imetra #0" = -1
+	"Leili #0" = -1
+	"Maimu #0" = -1
+	"Vanema #0" = -1
+	"Raili #0" = -1
+	"Savna #0" = -1
+	"Brita #0" = -1
+	"Kordula #0" = -1
+}
+leader_names = {
+	Arnesson  Amundsen
+	Bjelke  Bolt
+	Egilsson  Eriksson
+	Haraldsson
+	Larsson  Leifsson
+	Magnusson
+	Nansen  Norheim
+	Olavsson
+	Sverresson  Sigurdsson
+	Torgeirsson  Torsson
+}
+ship_names = {
+	 Zobler
+}

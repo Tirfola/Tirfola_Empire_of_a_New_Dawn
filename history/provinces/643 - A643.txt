@@ -1,0 +1,12 @@
+owner = A30
+controller = A30
+culture = toppestam
+religion = pentethikan
+base_tax = 5
+base_production = 3
+base_manpower = 3
+trade_goods = wine
+is_city = no
+add_core = A30
+discovered_by = golekian
+fort_15th = yes

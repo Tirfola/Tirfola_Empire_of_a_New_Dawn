@@ -1,0 +1,11 @@
+owner = A51
+controller = A51
+religion = boskylka
+base_tax = 5
+base_production = 3
+base_manpower = 3
+trade_goods = wool
+is_city = no
+add_core = A51
+discovered_by = golekian
+culture = duzas

@@ -1,0 +1,7 @@
+government = monarchy
+add_government_reform = feudalism_reform
+technology_group = golekian
+primary_culture = ozerov
+religion = boskylka
+capital = 686
+government_rank = 1

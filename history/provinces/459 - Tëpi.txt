@@ -1,0 +1,18 @@
+owner = A11
+controller = A11
+add_core = A11
+
+culture = stepin
+religion = pentethikan
+
+base_tax = 9
+base_production = 10
+base_manpower = 6
+
+trade_goods = cloth
+
+is_city = no
+
+discovered_by = golekian
+center_of_trade = 2
+fort_15th = yes

@@ -1,0 +1,9 @@
+government = monarchy
+add_government_reform = feudalism_reform
+technology_group = golekian
+religion = boskylka
+primary_culture = spidot
+capital = 301
+government_rank = 1
+historical_friend = A46
+historical_rival = A42

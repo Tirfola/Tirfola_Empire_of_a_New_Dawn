@@ -1,0 +1,19 @@
+owner = A01
+controller = A01
+add_core = A01
+
+culture = numen
+religion = pentethikan
+
+base_tax = 12
+base_production = 9
+base_manpower = 8
+
+trade_goods = cloth
+
+is_city = no
+
+discovered_by = golekian
+capital = "Numerion"
+center_of_trade = 3
+fort_15th = yes

@@ -1,0 +1,19 @@
+accepted_voreo_assistance_opinion = {
+  opinion = 50
+  yearly_decay = 2.5
+}
+
+rejected_voreo_assistance_opinion = {
+  opinion = -50
+  yearly_decay = 2.5
+}
+
+accepted_empoken_deal_opinion = {
+  opinion = 50
+  yearly_decay = 2.5
+}
+
+rejected_empoken_deal_opinion = {
+  opinion = -50
+  yearly_decay = 2.5
+}

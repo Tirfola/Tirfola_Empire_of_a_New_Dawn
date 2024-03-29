@@ -1,0 +1,86 @@
+namespace = tir_boskylka
+
+# Return A83 to Country A83
+country_event = {
+  id = tir_boskylka.1
+  title = tir_boskylka.1.t
+  desc = tir_boskylka.1.d
+  picture = POPE_PREACHING_eventPicture
+
+  trigger = {
+    owns = 83
+    normal_or_historical_nations = yes
+    religion = boskylka
+    NOT = { tag = A83 }
+    NOT = { has_country_flag = reject_A83_independance }
+  }
+
+  mean_time_to_happen = {
+    months = 2
+
+    modifier = {
+			factor = 0.75
+			has_idea_group = religious_ideas
+		}
+		modifier = {
+			factor = 0.9
+			is_defender_of_faith = yes
+		}
+    modifier = {
+			factor = 1.1
+			NOT = { is_defender_of_faith = yes }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { advisor = theologian }
+		}
+		modifier = {
+			factor = 0.9
+			theologian = 2
+		}
+  }
+
+  option = {
+    name = "tir_boskylka.1.a"
+
+    ai_chance = { factor = 25 }
+    add_prestige = -10
+		add_stability = -1
+
+    every_country = {
+			limit = {
+				religion = boskylka
+				NOT = { tag = ROOT }
+			}
+			add_opinion = { who = ROOT modifier = opinion_declined_independent_state_support }
+		}
+		set_country_flag = reject_A83_independance
+  }
+
+  option = {
+    name = "tir_boskylka.1.b"
+    ai_chance = {
+      factor = 75
+      modifier = {
+				factor = 0
+				is_core = 118
+			}
+    }
+
+    83 = {
+      add_core = A83
+      cede_province = A83
+
+      if = {
+				limit = {
+					is_core = ROOT
+				}
+				remove_core = ROOT
+			}
+    }
+    add_prestige = 25
+    A83 = {
+			change_religion = boskylka
+		}
+  }
+}

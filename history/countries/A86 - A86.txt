@@ -1,0 +1,20 @@
+government = monarchy
+add_government_reform = autocracy_reform
+technology_group = golekian
+primary_culture = rumen
+add_accepted_culture = nerumen
+religion = pentethikan
+capital = 677
+historical_rival = A91
+566.6.5 = {
+	monarch = {
+		name = "Dulduna"
+		dynasty = "Rumenion"
+		birth_date = 548.6.5
+		death_date = 748.3.18
+		adm = 6
+		dip = 1
+		mil = 3
+	}
+}
+government_rank = 2

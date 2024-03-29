@@ -1,0 +1,13 @@
+owner = A37
+controller = A37
+culture = icuda
+religion = pentethikan
+base_tax = 7
+base_production = 7
+base_manpower = 6
+trade_goods = gems
+is_city = no
+add_core = A37
+discovered_by = golekian
+fort_15th = yes
+center_of_trade = 1

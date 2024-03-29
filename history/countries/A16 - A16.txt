@@ -1,0 +1,7 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = umu_wikyatsi
+technology_group = golekian
+religion = pentethikan
+capital = 388
+government_rank = 1

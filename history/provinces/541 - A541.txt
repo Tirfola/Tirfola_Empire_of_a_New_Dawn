@@ -1,0 +1,11 @@
+owner = A59
+controller = A59
+religion = pentethikan
+base_tax = 2
+base_production = 1
+base_manpower = 2
+trade_goods = tropical_wood
+is_city = no
+add_core = A59
+discovered_by = golekian
+culture = suhibilci

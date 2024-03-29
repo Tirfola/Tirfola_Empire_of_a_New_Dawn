@@ -1,0 +1,16 @@
+bookmark = {
+	name = "STARTDATE_NAME"
+	desc = "STARTDATE_DESC"
+	date = 589.11.11
+
+	center = 182
+	default = yes
+
+	country = A59
+	country = A01
+	country = A82
+	country = A86
+
+	easy_country = A59
+	easy_country = A86
+}

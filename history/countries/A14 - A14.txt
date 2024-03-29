@@ -1,0 +1,9 @@
+government = republic
+technology_group = golekian
+primary_culture = gogonna
+add_accepted_culture = laugo
+religion = pentethikan
+capital = 430
+government_rank = 1
+historical_rival = A15
+add_government_reform = oligarchy_reform

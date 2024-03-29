@@ -1,0 +1,9 @@
+government = republic
+technology_group = golekian
+religion = pentethikan
+capital = 667
+government_rank = 1
+primary_culture = cenlakstam
+add_accepted_culture = soddelstam
+historical_rival = A17
+add_government_reform = merchants_reform

@@ -1,0 +1,7 @@
+government = monarchy
+add_government_reform = sorokan_kratocracy_reform
+technology_group = golekian
+primary_culture = dravniy
+religion = pentethikan
+capital = 578
+government_rank = 3

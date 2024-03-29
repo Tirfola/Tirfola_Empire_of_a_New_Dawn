@@ -1,0 +1,19 @@
+owner = A15
+controller = A15
+add_core = A15
+add_core = A14
+
+culture = zarennna
+religion = pentethikan
+
+base_tax = 7
+base_production = 7
+base_manpower = 5
+
+trade_goods = dyes
+
+is_city = no
+
+discovered_by = golekian
+center_of_trade = 1
+fort_15th = yes

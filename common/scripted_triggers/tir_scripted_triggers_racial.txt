@@ -1,0 +1,129 @@
+ruler_is_sorokan = {
+  custom_trigger_tooltip = {
+    tooltip = ruler_is_sorokan_tt
+
+    OR = {
+      ruler_culture = napadaty
+      ruler_culture = prosvity
+      ruler_culture = dravniy
+    }
+  }
+}
+
+ruler_is_bockvas = {
+  custom_trigger_tooltip = {
+    tooltip = ruler_is_bockvas_tt
+
+    OR = {
+      ruler_culture = kotiro
+      ruler_culture = kotina
+    }
+  }
+}
+
+ruler_is_numeran = {
+  custom_trigger_tooltip = {
+    tooltip = ruler_is_numeran_tt
+
+    OR = {
+      ruler_culture = rumen
+      ruler_culture = nerumen
+      ruler_culture = ferian
+      ruler_culture = kassan
+      ruler_culture = numen
+      ruler_culture = odassen
+      ruler_culture = anakyaden
+      ruler_culture = bogdaxian
+      ruler_culture = toxen
+      ruler_culture = mitran
+    }
+  }
+}
+
+ruler_is_grivan = {
+  custom_trigger_tooltip = {
+    tooltip = ruler_is_grivan_tt
+
+    OR = {
+      always = no
+    }
+  }
+}
+
+ruler_is_mikran = {
+  custom_trigger_tooltip = {
+    tooltip = ruler_is_mikran_tt
+
+    OR = {
+      ruler_culture = stepin
+      ruler_culture = neduarin
+      ruler_culture = kaforin
+      ruler_culture = breggin
+      ruler_culture = linjin
+      ruler_culture = koderin
+    }
+  }
+}
+
+ruler_is_telman = {
+  custom_trigger_tooltip = {
+    tooltip = ruler_is_telman_tt
+
+    OR = {
+      ruler_culture = ravzeludi
+      ruler_culture = seravludi
+      ruler_culture = mociarnludi
+    }
+  }
+}
+
+ruler_is_karsten = {
+  custom_trigger_tooltip = {
+    tooltip = ruler_is_karsten_tt
+
+    OR = {
+      ruler_culture = goud
+      ruler_culture = eisier
+    }
+  }
+}
+
+ruler_is_perbuzur = {
+  custom_trigger_tooltip = {
+    tooltip = ruler_is_perbuzur_tt
+
+    OR = {
+      ruler_culture = umu_wikyatsi
+      ruler_culture = icuda
+    }
+  }
+}
+
+ruler_is_apolt = {
+  custom_trigger_tooltip = {
+    tooltip = ruler_is_apolt_tt
+
+    OR = {
+      ruler_culture = spidot
+      ruler_culture = enot
+    }
+  }
+}
+
+ruler_is_batenn = {
+  custom_trigger_tooltip = {
+    tooltip = ruler_is_batenn_tt
+
+    OR = {
+      ruler_culture = resenar
+      ruler_culture = granostam
+      ruler_culture = keiselstam
+      ruler_culture = flokorstam
+      ruler_culture = soddelstam
+      ruler_culture = krelfostam
+      ruler_culture = cenlakstam
+      ruler_culture = grunnistam
+      ruler_culture = kullstam
+    }
+  }
+}

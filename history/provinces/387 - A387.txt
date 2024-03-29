@@ -1,0 +1,16 @@
+owner = A16
+controller = A16
+add_core = A16
+
+culture = umu_wikyatsi
+religion = pentethikan
+
+base_tax = 1
+base_production = 4
+base_manpower = 4
+
+trade_goods = gold
+
+is_city = no
+
+discovered_by = golekian

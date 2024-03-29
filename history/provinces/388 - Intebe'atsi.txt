@@ -1,0 +1,16 @@
+latent_trade_goods = {
+	coal
+}
+
+owner = A16
+controller = A16
+culture = umu_wikyatsi
+religion = pentethikan
+base_tax = 5
+base_production = 6
+base_manpower = 4
+trade_goods = gems
+is_city = no
+add_core = A16
+discovered_by = golekian
+fort_15th = yes

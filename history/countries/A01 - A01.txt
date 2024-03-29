@@ -1,0 +1,22 @@
+government = monarchy
+add_government_reform = autocracy_reform
+technology_group = golekian
+primary_culture = numen
+add_accepted_culture = odassen
+religion = pentethikan
+capital = 127
+government_rank = 3
+historical_rival = A09
+historical_rival = A05
+
+563.5.14 = {
+  monarch = {
+    name = "Argis"
+    dynasty = "Numerion"
+    birth_date = 545.5.14
+    death_date = 689.8.22
+    adm = 5
+    dip = 2
+    mil = 5
+  }
+}

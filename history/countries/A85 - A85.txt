@@ -1,0 +1,7 @@
+government = republic
+technology_group = golekian
+primary_culture = nerumen
+religion = pentethikan
+capital = 682
+government_rank = 1
+add_government_reform = noble_elite_reform

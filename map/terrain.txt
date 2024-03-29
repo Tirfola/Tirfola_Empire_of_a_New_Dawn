@@ -1,0 +1,603 @@
+##################################################################
+### Terrain Categories
+###
+### Terrain types: plains, mountains, hills, desert, artic, forest, jungle, marsh, pti
+### Types are used by the game to apply certain bonuses/maluses on movement/combat etc.
+###
+### Sound types: plains, forest, desert, sea, jungle, mountains
+
+categories =  {
+  pti = {
+		type = pti
+	}
+
+  ocean = {
+    color = { 255 255 255 }
+
+    sound_type = sea
+    is_water = yes
+
+    movement_cost = 1
+
+
+    terrain_override = {
+      963
+    }
+  }
+
+  inland_ocean = {
+    color = { 0 0 200 }
+
+    sound_type = sea
+    is_water = yes
+    inland_sea = yes
+
+    movement_cost = 1
+
+
+    terrain_override = {
+    }
+  }
+
+  glacier = {
+    color = { 235 235 235 }
+
+    sound_type = desert
+
+    movement_cost = 1.25
+    defence = 1
+
+    local_development_cost = 0.5
+    nation_designer_cost_multiplier = 0.75
+    supply_limit = 2
+
+    terrain_override = {
+    }
+  }
+
+  farmlands = {
+    color = { 179 255 64 }
+
+    type = plains
+    sound_type = plains
+
+    movement_cost = 1.1
+
+    local_development_cost = -0.05
+    nation_designer_cost_multiplier = 1.05
+    supply_limit = 10
+    allowed_num_of_buildings = 1
+
+    terrain_override = {
+     331 332 335 # first_area
+     324 # second_area
+     127 326 # third_area
+     309 # fourth_area
+     2 305 # fifth_area
+     310 311 383 # eighth_area
+     338 # ninth_area
+     128 # tenth_area
+     137 362 # thirteenth_area
+     139 # seventeenth_area
+     361 390 # ninteenth_area
+     134 # twenty_one_area
+     7 131 # twenty_three_area
+     373 # twenty_four_area
+     379 # twenty_five_area
+     9 397 399 # twenty_eight_area
+     409 # twenty_nine_area
+     138 # thirty_two_area
+     400 # thirty_three_area
+     422 423 # thirty_four_area
+     427 428 # thirty_seven_area
+     435 439 # thirty_nine_area
+     414 415 # forty_three_area
+     413 # forty_four_area
+     453 # forty_six_area
+     11 146 # forty_seven_area
+     465 468 # forty_nine_area
+     161 # fifty_one_area
+     17 # fifty_two_area
+     20 166 670 # fifty_four_area
+     97 # eighty_five_area
+     275 276 280 # ninty_one_area
+     92 281 # ninty_two_area
+     268 # ninty_six_area
+     676 677 678 # one_fifty_five_area
+     682 # one_fifty_eight_area
+     816 # one_sixty_three_area
+     667 666 23 234 659 192 28 200 645 646 197 644 184 185
+     29 654 39 36 637 539 538
+    }
+  }
+
+  forest = {
+    color = { 18 74 9 }
+
+    type = forest
+    sound_type = forest
+
+    movement_cost = 1.25
+    defence = 1
+
+    local_development_cost = 0.2
+    nation_designer_cost_multiplier = 0.9
+    supply_limit = 4
+
+    terrain_override = {
+     43 # ninty_two_area
+     44 # ninty_four_area
+     683 # one_fifty_eight_area
+     689 690 691 704 705 # one_sixty_one_area
+     815 # one_sixty_three_area
+     212 213 83
+    }
+  }
+
+  hills = {
+    color = { 113 176 151 }
+
+    type = hills
+    sound_type = mountains
+
+    movement_cost = 1.4
+    defence = 1
+    local_defensiveness = 0.1
+
+    local_development_cost = 0.25
+    nation_designer_cost_multiplier = 0.85
+    supply_limit = 5
+
+    terrain_override = {
+     317 # sixth_area
+     4 129 318 # seventh_area
+     342 # tenth_area
+     364 # twelfth_area
+     384 385 # twentieth_area
+     378 # twenty_one_area
+     367 # twenty_two_area
+     320 # twenty_four_area
+     376 # twenty_five_area
+     135 380 # twenty_six_area
+     386 # twenty_seven_area
+     396 # twenty_eight_area
+     418 419 420 421 # thirty_five_area
+     142 430 # thirty_six_area
+     15 443 # forty_area
+     437 441 # forty_one_area
+     13 425 # forty_two_area
+     148 # forty_six_area
+     160 445 # fifty_one_area
+     162 # fifty_two_area
+     164 # fifty_three_area
+     168 # fifty_four_area
+     671 # fifty_five_area
+     170 171 # fifty_six_area
+     265 # sixty_three_area
+     153 282 # seventy_one_area
+     284 # eighty_one_area
+     41 299 # eighty_two_area
+     297 # eighty_four_area
+     295 # eighty_five_area
+     259 260 # eighty_nine_area
+     94 150 270 # ninty_area
+     91 277 279 # ninty_three_area
+     577 # ploshchistol_area
+     575 # volgarusia_area
+     673 # one_fifty_four_area
+     118 700 # one_fifty_nine_area
+     686 # one_sixty_two_area
+     817 # one_sixty_three_area
+     173 177 188 658 193 655 198 199 102 652 227 226 490 489 493
+     25 181 108 663 183 660 186 19 230 233 33 231 208 636
+     545 518 541 558 65 62 514 513 55 507 87 496 495 477
+    }
+  }
+
+  woods = {
+    color = { 41 155 22 }
+
+    type = forest
+    sound_type = forest
+
+    movement_cost = 1.1
+    defence = 1
+
+    local_development_cost = 0.15
+    nation_designer_cost_multiplier = 0.9
+    supply_limit = 6
+
+    terrain_override = {
+     333 # first_area
+     323 # second_area
+     327 328 329 # third_area
+     304 # fourth_area
+     307 # fifth_area
+     314 # seventh_area
+     1 334 336 337 # eleventh_area
+     359 360 # twelfth_area
+     356 357 358 # fourteenth_area
+     345 346 347 # fifteenth_area
+     352 353 # sixteenth_area
+     394 # eighteenth_area
+     395 # twenty_eight_area
+     136 354 # thirty_area
+     141 412 # thirty_two_area
+     432 433 # thirty_six_area
+     426 # thirty_seven_area
+     85 # thirty_eight_area
+     438 # thirty_nine_area
+     116 # forty_two_area
+     12 # forty_three_area
+     149 # forty_four_area
+     451 457 # forty_five_area
+     463 # forty_seven_area
+     458 459 460 461 # forty_eight_area
+     285 286 # eighty_seven_area
+     266 # ninty_six_area
+     675 # one_fifty_four_area
+     698 # one_fifty_five_area
+     679 680 # one_fifty_six_area
+     18 172 176 24 189 656 640 195 101 228 229 224 225
+     664 180 179 661 109 669 207 210 639 215 214 533 528
+     67 506 53 50 51
+    }
+  }
+
+  mountain = {
+    color = { 105 24 4 }
+
+    type = mountains
+    sound_type = mountains
+
+    movement_cost = 1.5
+    defence = 2
+    local_defensiveness = 0.25
+
+    local_development_cost = 0.35
+    nation_designer_cost_multiplier = 0.75
+    supply_limit = 4
+
+    terrain_override = {
+     377 # twenty_one_area
+     586 # twenty_six_area
+     16 387 388 # twenty_seven_area
+     143 # forty_area
+     442 # forty_one_area
+     444 # fifty_one_area
+     668 # fifty_three_area
+     37 216 283 # seventy_one_area
+     269 # ninty_area
+     278 # ninty_three_area
+     47 152 302 303 # ninty_five_area
+     581 # pristennaya_oblast_area
+     684 # one_fifty_seven_area
+     694 # one_sixty_area
+     570 647 223 487 35 221 219 220 217 218 105 211 638
+     57 511 510 515 113 550 549 553 554 556 60 114 48
+     478 476 472
+    }
+  }
+
+  impassable_mountains = {
+    color = { 128 128 128 }
+
+    sound_type = desert
+
+    movement_cost = 8
+    defence = 6
+
+    local_development_cost = 10
+
+    terrain_override = {
+    }
+  }
+
+  grasslands = {
+    color = { 90 235 27 }
+
+    type = plains
+    sound_type = plains
+
+    movement_cost = 1
+
+    supply_limit = 8
+    allowed_num_of_buildings = 1
+
+    terrain_override = {
+     330 # first_area
+     321 322 # second_area
+     325 # third_area
+     306 308 # fourth_area
+     312 # fifth_area
+     130 313 315 # sixth_area
+     316 # seventh_area
+     3 # eighth_area
+     339 340 341 # ninth_area
+     343 344 # tenth_area
+     363 # twelfth_area
+     365 366 # thirteenth_area
+     348 350 # fourteenth_area
+     349 # fifteenth_area
+     10 351 # sixteenth_area
+     140 404 405 # seventeenth_area
+     391 392 393 # eighteenth_area
+     8 # ninteenth_area
+     133 # twentieth_area
+     382 # twenty_one_area
+     6 # twenty_two_area
+     369 374 # twenty_three_area
+     370 371 372 # twenty_four_area
+     375 381 # twenty_five_area
+     398 # twenty_eight_area
+     406 407 # twenty_nine_area
+     355 447 # thirty_area
+     408 410 411 448 # thirty_one_area
+     401 403 # thirty_three_area
+     117 417 # thirty_four_area
+     144 434 # thirty_seven_area
+     14 429 431 # thirty_eight_area
+     436 # thirty_nine_area
+     440 # forty_area
+     424 # forty_two_area
+     416 584 # forty_three_area
+     449 450 585 # forty_four_area
+     456 # forty_five_area
+     452 454 # forty_six_area
+     462 # forty_seven_area
+     464 466 # fifty_area
+     446 # fifty_two_area
+     167 # fifty_four_area
+     37 169 # fifty_five_area
+     22 # fifty_six_area
+     151 273 # sixty_three_area
+     84 # eighty_one_area
+     293 # eighty_three_area
+     291 294 # eighty_five_area
+     154 156 288 289 # eighty_six_area
+     96 287 # eighty_seven_area
+     45 263 # eighty_eight_area
+     271 # ninty_area
+     82 # ninty_one_area
+     98 272 274 # ninty_four_area
+     93 267 # ninty_six_area
+     672 696 # one_fifty_four_area
+     697 # one_fifty_six_area
+     681 685 # one_fifty_seven_area
+     699 # one_fifty_eight_area
+     701 702 # one_fifty_nine_area
+     692 693 703 # one_sixty_area
+     687 688 706 # one_sixty_two_area
+     163 178 175 187 190 235 657 191 27 103 651 196 653 30 643 104 488
+     665 182 662 165 641 206 106 209 516 536 531 522 525 63 508 505
+
+    }
+  }
+
+  jungle = {
+    color = { 98 163 18 }
+
+    type = jungle
+    sound_type = jungle
+
+    movement_cost = 1.5
+    defence = 1
+
+    local_development_cost = 0.35
+    nation_designer_cost_multiplier = 0.8
+    supply_limit = 5
+
+    terrain_override = {
+      86 258 565 1184 1185 1186 1187 1188 1189 1190 1191 1192 1193 1194 1195 1196 1197 1199 1200 1201 1202 1206 1212
+    }
+  }
+
+  marsh = {
+    color = { 13 189 130 }
+
+    type = marsh
+    sound_type = forest
+
+    movement_cost = 1.3
+    defence = 1
+
+    local_development_cost = 0.25
+    nation_designer_cost_multiplier = 0.85
+    supply_limit = 5
+
+    terrain_override = {
+     298 # eighty_one_area
+     100 300 # eighty_two_area
+     95 155 290 292 # eighty_three_area
+     42 157 301 # eighty_four_area
+     296 # eighty_five_area
+     262 # eighty_eight_area
+     46 261 # eighty_nine_area
+    }
+  }
+
+  desert = {
+    color = { 242 242 111 }
+
+    type = desert
+    sound_type = desert
+
+    movement_cost = 1.05
+
+    local_development_cost = 0.5
+    nation_designer_cost_multiplier = 0.8
+    supply_limit = 4
+
+    terrain_override = {
+      1204 1205 1223 1224 1225
+    }
+  }
+
+  coastal_desert = {
+    color = { 255 211 110 }
+
+    type = desert
+    sound_type = desert
+
+    movement_cost = 1
+
+    local_development_cost = 0.35
+    nation_designer_cost_multiplier = 0.9
+    supply_limit = 4
+
+    terrain_override = {
+    }
+  }
+
+  coastline = {
+    color = { 49 175 191 }
+
+    sound_type = sea
+
+    movement_cost = 1
+
+    local_development_cost = 0.15
+    nation_designer_cost_multiplier = 0.85
+    supply_limit = 6
+
+    terrain_override = {
+     860 # one_fifty_four_area
+     818 # one_sixty_three_area
+    }
+  }
+
+  drylands = {
+    color = { 232 172 102 }
+
+    type = plains
+    sound_type = plains
+
+    movement_cost = 1
+
+    local_development_cost = 0.05
+    nation_designer_cost_multiplier = 0.95
+    supply_limit = 7
+    allowed_num_of_buildings = 1
+
+    terrain_override = {
+      469 147 470 73 74 582 72 580 567 587 69 56 26 648 649 650 485 90 492 494
+      34 31 32 232 527 526 524 523 521 520 540 546 504 498
+      519 537 534 532 61 64 70 54 480 479 484 483 49 1208 1210 1211 1222
+    }
+  }
+
+  highlands = {
+    color = { 176 129 21 }
+
+    type = hills
+    sound_type = mountains
+
+    movement_cost = 1.4
+    defence = 1
+    local_defensiveness = 0.1
+
+    local_development_cost = 0.2
+    nation_designer_cost_multiplier = 0.9
+    supply_limit = 6
+
+    terrain_override = {
+     319 368 # twenty_two_area
+     5 # twenty_six_area
+     568 # gornoslav_area
+     68 # volgarusia_area
+     559 563
+    }
+  }
+
+  savannah = {
+    color = { 248 199 23 }
+
+    type = plains
+    sound_type = plains
+
+    movement_cost = 1
+
+    local_development_cost = 0.15
+    nation_designer_cost_multiplier = 0.95
+    supply_limit = 6
+
+    terrain_override = {
+     111 566 # zaryadovia_area
+     569 # gornoslav_area
+     71 571 # ploshchistol_area
+     572 574 576 # volgarusia_area
+     112 573 578 # belokraniya_area
+     579 486 491 52 529 530 535 544 543 542
+     59 547 519 517 557 560 66 561 583 564
+     562 512 475 471 474 473 509 88 499 107
+     500 502 503 89 482 481 859 1203 1211 1213 1214 1215 1216 1217 1218 1219 1220 203 1198 1221
+    }
+  }
+
+  steppe = {
+    color = { 147 200 83 }
+
+    type = plains
+    sound_type = plains
+
+    movement_cost = 1
+
+    local_development_cost = 0.2
+    nation_designer_cost_multiplier = 0.9
+    supply_limit = 6
+
+    terrain_override = {
+    }
+  }
+
+}
+
+##################################################################
+### Graphical terrain
+###		type	=	refers to the terrain defined above, "terrain category"'s
+### 	color 	= 	index in bitmap color table (see terrain.bmp)
+###
+
+terrain = {
+	grasslands			= { type = grasslands		color = { 	0	 } }
+	hills				= { type = hills			color = { 	1	 } }
+	desert_mountain		= { type = mountain			color = { 	2	 } }
+	desert				= { type = desert			color = { 	3	 } }
+	plains				= { type = grasslands		color = { 	4	 } }
+	terrain_5			= { type = grasslands		color = { 	5	 } }
+	mountain			= { type = mountain			color = { 	6	 } }
+	desert_mountain_low	= { type = desert			color = { 	7	 } }
+	terrain_8			= { type = hills			color = { 	8	 } }
+	marsh				= { type = marsh			color = { 	9	 } }
+	terrain_10			= { type = farmlands		color = { 	10	 } }
+	terrain_11			= { type = farmlands		color = { 	11	 } }
+	forest_12			= { type = forest			color = { 	12	 } }
+	forest_13			= { type = forest			color = { 	13	 } }
+	forest_14			= { type = forest			color = { 	14	 } }
+	ocean				= { type = ocean			color = { 	15	 } }
+	snow				= { type = mountain 		color = { 	16	 } } # (SPECIAL CASE) Used to identify permanent snow
+	inland_ocean_17 	= { type = inland_ocean		color = {	17	 } }
+	coastal_desert_18	= { type = coastal_desert	color = { 	19	 } }
+	coastline			= { type = coastline		color = { 	35	 } }
+	savannah			= { type = savannah 		color = {	20	 } }
+	drylands			= { type = drylands			color = {	22	 } }
+	highlands			= { type = highlands		color = {	23	 } }
+	dry_highlands		= { type = highlands		color = {	24	 } }
+	woods				= { type = woods			color = { 	255	 } }
+	jungle				= { type = jungle			color = { 	254	 } }
+	terrain_21			= { type = farmlands		color = { 	21	 } }
+}
+
+##################################################################
+### Tree terrain
+###		terrain	=	refers to the terrain tag defined above
+### 	color 	= 	index in bitmap color table (see tree.bmp)
+###
+
+tree = {
+	forest				= { terrain = forest 			color = { 	3 4 6 7 19 20	} }
+	woods				= { terrain = woods 			color = { 	2 5 8 18	} }
+	jungle				= { terrain = jungle 			color = { 	13 14 15	} }
+	palms				= { terrain = desert 			color = { 	12	} }
+	savana				= { terrain = grasslands 		color = { 	27 28 29 30	} }
+}

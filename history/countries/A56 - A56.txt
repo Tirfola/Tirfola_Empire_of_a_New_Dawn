@@ -1,0 +1,8 @@
+government = monarchy
+add_government_reform = autocracy_reform
+technology_group = golekian
+religion = pentethikan
+capital = 234
+government_rank = 1
+primary_culture = grunnistam
+add_accepted_culture = cenlakstam

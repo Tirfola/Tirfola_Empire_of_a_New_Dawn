@@ -1,0 +1,16 @@
+owner = A88
+controller = A88
+add_core = A88
+
+culture = ozerov
+religion = boskylka
+
+base_tax = 5
+base_production = 3
+base_manpower = 3
+
+trade_goods = salt
+
+is_city = no
+
+discovered_by = golekian

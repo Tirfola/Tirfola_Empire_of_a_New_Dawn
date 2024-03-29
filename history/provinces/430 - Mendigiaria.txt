@@ -1,0 +1,18 @@
+owner = A14
+controller = A14
+add_core = A14
+add_core = A15
+
+culture = gogonna
+religion = pentethikan
+
+base_tax = 7
+base_production = 5
+base_manpower = 4
+
+trade_goods = iron
+
+is_city = no
+
+discovered_by = golekian
+fort_15th = yes

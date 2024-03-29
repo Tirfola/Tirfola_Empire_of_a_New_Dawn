@@ -1,0 +1,22 @@
+owner = A07
+controller = A07
+add_core = A07
+add_core = A14
+add_core = A15
+
+culture = toxen
+religion = pentethikan
+
+base_tax = 4
+base_production = 5
+base_manpower = 3
+
+trade_goods = cloth
+
+is_city = no
+
+discovered_by = golekian
+add_permanent_province_modifier = {
+	name = river_estuary_modifier
+	duration = -1
+}

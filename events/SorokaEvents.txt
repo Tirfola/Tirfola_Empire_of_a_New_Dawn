@@ -1,0 +1,63 @@
+namespace = tir_soroka
+
+country_event = {
+  id = tir_soroka.1
+  title = tir_soroka.1.t
+  desc = tir_soroka.1.d
+  picture = DIPLOMACY_eventPicture
+
+  is_triggered_only = yes
+  fire_only_once = yes
+
+  major = yes
+  major_trigger = {
+    tag = A59
+  }
+
+  trigger = {
+    tag = A68
+  }
+
+  option = {
+    name = "tir_soroka.1.a"
+
+    ai_chance = { factor = 100 }
+
+    add_opinion = {
+      who = FROM
+      modifier = historical_friend
+    }
+  }
+}
+
+country_event = {
+  id = tir_soroka.2
+  title = tir_soroka.2.t
+  desc = tir_soroka.2.d
+  picture = TOURNAMENT_eventPicture
+
+  trigger = {
+    has_reform = sorokan_kratocracy_reform
+  }
+
+  mean_time_to_happen = {
+    months = 120
+
+    modifier = {
+      factor = 0.75
+      NOT = { stability = 0 }
+    }
+  }
+  option = {
+    name = tir_soroka.2.a
+    random_list = {
+      50 = {
+        kill_ruler = yes
+      }
+      50 = {
+        change_mil = 1
+      }
+    }
+
+  }
+}

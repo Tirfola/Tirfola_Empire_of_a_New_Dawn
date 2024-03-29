@@ -1,0 +1,31 @@
+government = monarchy
+add_government_reform = autocracy_reform
+technology_group = golekian
+primary_culture = kassan
+add_accepted_culture = toxen
+religion = pentethikan
+capital = 4
+government_rank = 1
+historical_rival = A07
+
+545.7.15 = {
+  monarch = {
+    name = "Koinos"
+    dynasty = "Kassanerion"
+    birth_date = 527.7.15
+    death_date = 727.2.21
+    adm = 3
+    dip = 2
+    mil = 2
+  }
+
+  heir = {
+    name = "Risto"
+    dynasty = "Kassanerion"
+    birth_date = 571.3.18
+    death_date = 771.8.26
+    adm = 4
+    dip = 4
+    mil = 4
+  }
+}

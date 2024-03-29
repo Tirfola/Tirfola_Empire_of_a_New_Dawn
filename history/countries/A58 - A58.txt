@@ -1,0 +1,9 @@
+government = monarchy
+add_government_reform = feudalism_reform
+technology_group = golekian
+religion = pentethikan
+capital = 515
+government_rank = 1
+historical_rival = A57
+historical_rival = A60
+primary_culture = ao_yavy

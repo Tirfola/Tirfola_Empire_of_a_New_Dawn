@@ -1,0 +1,18 @@
+owner = A13
+controller = A13
+add_core = A13
+
+culture = linjin
+religion = pentethikan
+
+base_tax = 8
+base_production = 7
+base_manpower = 6
+
+trade_goods = paper
+
+is_city = no
+
+discovered_by = golekian
+center_of_trade = 1
+fort_15th = yes

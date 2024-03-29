@@ -1,0 +1,83 @@
+humiliated_enemy = {
+  prestige = 1
+}
+
+strong_rural_bureaucracy = {
+  state_maintenance_modifier = -0.25
+  harsh_treatment_cost = -0.33
+}
+
+arms_refinery = {
+  army_tradition = 0.5
+  land_attrition = -0.1
+}
+
+acquired_subjects = {
+  diplomatic_annexation_cost = -0.15
+}
+
+strengthened_borders = {
+  fort_maintenance_modifier = -0.1
+}
+
+seizure_of_power = {
+  ae_impact = -0.15
+}
+
+a_united_region = {
+  core_creation = -0.1
+}
+
+great_unification = {
+  administrative_efficiency = 0.025
+  manpower_recovery_speed = 0.1
+}
+
+integrated_people = {
+  local_unrest = -5
+}
+
+quelled_populace = {
+  local_unrest = -2
+}
+
+cultured_advisor = {
+  culture_conversion_cost = -0.3
+}
+
+superior_culture = {
+  global_tax_modifier = 0.1
+  development_cost = -0.1
+}
+
+flourishing_masses = {
+  local_prosperity_growth = 0.25
+}
+
+strong_civilization = {
+  development_cost_in_primary_culture = -0.05
+  manpower_in_own_culture_provinces = 0.1
+}
+
+cultured_trade = {
+  trade_value_modifier = 0.05
+}
+
+the_burghs_favor = {
+  burghers_loyalty_modifier = 0.1
+  mercantilism_cost = -0.3
+}
+
+efficient_trade_centers = {
+  trade_efficiency = 0.15
+}
+
+a_great_armada = {
+  global_sailors_modifier = 0.2
+  navy_tradition = 1
+}
+
+brilliant_advisors = {
+  advisor_cost = -0.1
+  possible_policy = 1
+}

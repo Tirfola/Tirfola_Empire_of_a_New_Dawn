@@ -1,0 +1,16 @@
+owner = A11
+controller = A11
+add_core = A11
+
+culture = kaforin
+religion = pentethikan
+
+base_tax = 4
+base_production = 3
+base_manpower = 2
+
+trade_goods = wine
+
+is_city = no
+
+discovered_by = golekian

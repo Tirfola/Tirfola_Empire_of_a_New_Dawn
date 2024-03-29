@@ -1,0 +1,7 @@
+government = monarchy
+add_government_reform = feudalism_reform
+technology_group = golekian
+primary_culture = starov
+religion = pentethikan
+capital = 874
+government_rank = 2

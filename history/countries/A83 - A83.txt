@@ -1,0 +1,19 @@
+government = theocracy
+technology_group = golekian
+religion = boskylka
+capital = 83
+government_rank = 1
+primary_culture = kurucas
+add_government_reform = leading_clergy_reform
+
+571.2.26 = {
+  monarch = {
+    name = "Melek"
+    dynasty = "Taskin"
+    birth_date = 553.2.26
+    death_date = 733.5.18
+    adm = 3
+    dip = 2
+    mil = 2
+  }
+}

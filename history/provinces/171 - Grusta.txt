@@ -1,0 +1,12 @@
+owner = A22
+controller = A22
+culture = soddelstam
+religion = pentethikan
+base_tax = 7
+base_production = 5
+base_manpower = 4
+trade_goods = gems
+is_city = no
+add_core = A22
+discovered_by = golekian
+fort_15th = yes

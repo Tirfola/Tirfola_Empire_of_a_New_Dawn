@@ -1,0 +1,16 @@
+owner = A85
+controller = A85
+add_core = A85
+
+culture = nerumen
+religion = pentethikan
+
+base_tax = 4
+base_production = 2
+base_manpower = 1
+
+trade_goods = wool
+
+is_city = no
+
+discovered_by = golekian

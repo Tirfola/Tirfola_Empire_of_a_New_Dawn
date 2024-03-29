@@ -1,0 +1,16 @@
+owner = A23
+controller = A23
+add_core = A23
+
+culture = cenlakstam
+religion = pentethikan
+
+base_tax = 4
+base_production = 3
+base_manpower = 3
+
+trade_goods = wool
+
+is_city = no
+
+discovered_by = golekian

@@ -1,0 +1,14 @@
+owner = A41
+controller = A41
+culture = spidot
+religion = boskylka
+base_tax = 2
+base_production = 1
+base_manpower = 1
+trade_goods = copper
+is_city = no
+add_core = A41
+discovered_by = golekian
+latent_trade_goods = {
+	coal
+}

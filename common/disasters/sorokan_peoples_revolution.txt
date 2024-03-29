@@ -1,0 +1,7 @@
+sorokan_peoples_revolution = {
+  potential = {
+    A68 = {
+      has_country_flag = sorokan_republican_objectors
+    }
+  }
+}

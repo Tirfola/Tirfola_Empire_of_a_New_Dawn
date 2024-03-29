@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = sorokan_kratocracy_reform
+technology_group = golekian
+primary_culture = dravniy
+add_accepted_culture = prosvity
+religion = pentethikan
+capital = 576
+government_rank = 1
+577.4.21 = {
+	monarch = {
+		name = "Boryslav"
+		dynasty = "Vasko"
+		birth_date = 547.7.15
+		death_date = 601.1.16# Died in Battle
+		adm = 1
+		dip = 3
+		mil = 5
+	}
+}

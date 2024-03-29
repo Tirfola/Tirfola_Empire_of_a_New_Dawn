@@ -1,0 +1,16 @@
+owner = A22
+controller = A22
+add_core = A22
+
+culture = soddelstam
+religion = pentethikan
+
+base_tax = 4
+base_production = 3
+base_manpower = 3
+
+trade_goods = salt
+
+is_city = no
+
+discovered_by = golekian

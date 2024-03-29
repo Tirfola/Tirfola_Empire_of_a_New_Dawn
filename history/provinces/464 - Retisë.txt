@@ -1,0 +1,18 @@
+owner = A11
+controller = A11
+add_core = A11
+
+culture = neduarin
+religion = pentethikan
+
+base_tax = 5
+base_production = 8
+base_manpower = 4
+
+trade_goods = cloth
+
+is_city = no
+
+discovered_by = golekian
+center_of_trade = 2
+fort_15th = yes

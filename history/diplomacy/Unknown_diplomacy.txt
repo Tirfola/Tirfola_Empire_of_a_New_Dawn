@@ -1,0 +1,34 @@
+# Creux Chos-Snue Strium Vassal
+vassal = {
+  first = A53
+  second = A54
+  start_date = 589.1.1
+}
+
+# Creux Chos-Hebreylor Vassal
+vassal = {
+  first = A53
+  second = A55
+  start_date = 589.1.1
+}
+
+# Tostros-Zoblealia Vassal
+vassal = {
+  first = A50
+  second = A49
+  start_date = 589.1.1
+}
+
+# Oscor-Neplia Vassal
+alliance = {
+  first = A33
+  second = A32
+  start_date = 589.1.1
+}
+
+# Oscurg-Napruoria Vassal
+alliance = {
+  first = A34
+  second = A31
+  start_date = 589.1.1
+}

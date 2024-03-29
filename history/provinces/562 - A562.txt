@@ -1,0 +1,12 @@
+owner = A64
+controller = A64
+religion = pentethikan
+base_tax = 5
+base_production = 4
+base_manpower = 3
+trade_goods = cloves
+is_city = no
+center_of_trade = 1
+add_core = A64
+discovered_by = golekian
+culture = zunankoci

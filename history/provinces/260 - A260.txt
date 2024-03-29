@@ -1,0 +1,15 @@
+owner = A46
+controller = A46
+culture = enot
+religion = boskylka
+base_tax = 2
+base_production = 1
+base_manpower = 2
+trade_goods = incense
+is_city = no
+add_core = A46
+discovered_by = golekian
+fort_15th = yes
+latent_trade_goods = {
+	coal
+}

@@ -1,0 +1,7 @@
+government = monarchy
+add_government_reform = feudalism_reform
+technology_group = golekian
+religion = pentethikan
+primary_culture = proizonci
+capital = 66
+government_rank = 1

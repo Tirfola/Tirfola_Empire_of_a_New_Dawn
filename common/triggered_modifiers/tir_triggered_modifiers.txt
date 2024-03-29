@@ -1,0 +1,14 @@
+A83_subjugation = {
+    potential = {
+      normal_or_historical_nations = yes
+      has_discovered = 83
+      religion = boskylka
+      NOT = { tag = A83 }
+    }
+
+    trigger = {
+      overlord_of = A83
+    }
+
+    diplomatic_reputation = -2
+}

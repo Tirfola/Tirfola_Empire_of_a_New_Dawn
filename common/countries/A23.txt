@@ -1,0 +1,120 @@
+#Norway
+graphical_culture = westerngfx
+color = {
+	54 50  55
+}
+revolutionary_colors = {
+	16 13  16
+}
+historical_score = 25
+preferred_religion = protestant
+historical_idea_groups = {
+	 aristocracy_ideas
+	trade_ideas
+	defensive_ideas
+	offensive_ideas
+	economic_ideas
+	diplomatic_ideas
+	innovativeness_ideas
+	maritime_ideas
+}
+historical_units = {
+	golekian_1_levyman
+	golekian_1_spear_cavalry
+	golekian_5_infantry
+	golekian_6_chariot_cavalry
+	7_militarized_mages
+	golekian_9_spear_wall
+	golekian_10_reformed_spear_cavalry
+	10_flamers
+	golekian_12_lightsplitters
+	13_fire_breathers
+	golekian_14_fire_flingers
+	golekian_15_shielded_lightsplitters
+	18_spell_slingers
+	golekian_18_lightning_riders
+	golekian_19_armored_frostwielders
+	20_mindbenders
+	22_psychic_screamers
+	golekian_23_silvercoated_frostwielders
+	25_abyss_conjurers
+	golekian_26_frostguard
+	golekian_28_blitztamers
+	29_void_eaters
+	golekian_30_ice_sentinels
+}
+monarch_names = {
+	"Karl #7" = 100
+	"Gustav #0" = 60
+	"Erik #13" = 40
+	"Johan #2" = 40
+	"Gustav #0 Adolf" = 40
+	"Karl #7 Gustav" = 20
+	"Karl #7 Johan" = 20
+	"Christian #0" = 20
+	"Christoph #0" = 20
+	"Adolf Fredrik #0" = 10
+	"Karl #7 Filip" = 10
+	"Magnus #3" = 10
+	"Adolf Johan #0" = 10
+
+	"Oskar #0" = 10
+	"Fredrik #0" = 5
+	"Fredrik Adolf #0" = 5
+	"Fredrik August #0" = 5
+	"Goran Love #0" = 5
+
+	"Sigismund #0" = 5
+	"Bjorn #3" = 1
+	"Knut #2" = 1
+	"Inge #2" = 1
+	"Sven #1" = 1
+	"Alfred #0" = 0
+	"Axel #0" = 0
+	"Bengt #0" = 0
+	"Edvard #0" = 0
+	"Einar #0" = 0
+	"Folke #0" = 0
+	"Gottfrid #0" = 0
+	"Henrik #0" = 0
+	"Jakob #0" = 0
+	"Lars #0" = 0
+	"Ludvig #0" = 0
+	"Mikael #0" = 0
+	"Nils #0" = 0
+	"Olof #0" = 0
+	"Patrik #0" = 0
+	"Rangvald #0" = 0
+	"Rettil #0" = 0
+	"Sigvard #0" = 0
+	"Simon #0" = 0
+	"Sten #0" = 0
+	"Svante #0" = 0
+	"Tomas #0" = 0
+	"Ulrik #0" = 0
+
+	"Christina #0" = -10
+	"Hedwig #0" = -5
+	"Katarina #0" = -1
+	"Margareta #0" = -1
+	"Anna #0" = -1
+	"Cecilia #0" = -1
+	"Elisabet #0" = -1
+	"Birgitta #0" = -1
+	"Ulrika Eleonora #0" = -10
+}
+leader_names = {
+	Arnesson  Amundsen
+	Bjelke  Bolt
+	Egilsson  Eriksson
+	Haraldsson
+	Larsson  Leifsson
+	Magnusson
+	Nansen  Norheim
+	Olavsson
+	Sverresson  Sigurdsson
+	Torgeirsson  Torsson
+}
+ship_names = {
+	 steven
+}

@@ -1,0 +1,21 @@
+owner = A17
+controller = A17
+add_core = A17
+
+culture = mitran
+religion = pentethikan
+
+base_tax = 4
+base_production = 5
+base_manpower = 4
+
+trade_goods = naval_supplies
+
+is_city = no
+
+discovered_by = golekian
+fort_15th = yes
+add_permanent_province_modifier = {
+	name = river_estuary_modifier
+	duration = -1
+}

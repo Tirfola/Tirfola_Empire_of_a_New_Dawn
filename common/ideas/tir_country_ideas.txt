@@ -1,0 +1,270 @@
+samov_imperi_ideas = {
+  free = yes
+  start = {
+    global_heretic_missionary_strength = 0.02
+    manpower_in_true_faith_provinces = 0.2
+  }
+
+  bonus = {
+    shock_damage_received = -0.15
+  }
+
+  trigger = {
+    tag = A94
+  }
+
+  close_pact = {
+    church_loyalty_modifier = 0.10
+  }
+
+  promote_evirian_trade = {
+    global_own_trade_power = 0.1
+  }
+
+  unified_court = {
+    stability_cost_modifier = -0.05
+  }
+
+  samov_imperi_legion = {
+    infantry_power = 0.1
+  }
+
+  reformed_armies = {
+    discipline = 0.05
+  }
+
+  scholars_of_boskylka = {
+    missionaries = 1
+  }
+
+  immagration_centers = {
+    dip_tech_cost_modifier = -0.1
+  }
+}
+
+soroka_ideas = {
+  free = yes
+  start = {
+    land_attrition = -0.15
+    movement_speed = 0.1
+  }
+
+  bonus = {
+    land_maintenance_modifier = -0.1
+  }
+
+  trigger = {
+    tag = A93
+  }
+
+  sorokan_destiny = {
+    can_chain_claim = yes
+    core_creation = -0.1
+  }
+
+  frontier_dominance = {
+    ae_impact = -0.1
+  }
+
+  sorokan_war_strategies = {
+    cavalry_flanking = 0.25
+    cavalry_power = 0.1
+  }
+
+  equal_right_to_power = {
+    years_of_nationalism = -5
+  }
+
+  streamlined_bureaucracy = {
+    legitimacy = 1
+    devotion = 1
+    horde_unity = 1
+    meritocracy = 1
+    republican_tradition = 0.3
+  }
+
+  marauding_tactics = {
+    leader_land_shock = 1
+  }
+
+  nomadic_melting_pot = {
+    num_accepted_cultures = 1
+    promote_culture_cost = -0.25
+  }
+}
+
+goleka_nation_ideas = {
+  free = yes
+  start = {
+    army_tradition = 1
+    development_cost = -0.1
+  }
+
+  bonus = {
+    yearly_army_professionalism = 0.01
+  }
+
+  trigger = {
+    tag = A95
+  }
+
+  ending_eras = {
+    ae_impact = -0.05
+  }
+
+  domestic_merchants = {
+    placed_merchant_power = 10
+  }
+
+  the_royal_elite = {
+    technology_cost = -0.1
+  }
+
+  kassan_philosphers = {
+    advisor_cost = -0.2
+  }
+
+  united_subcontinent = {
+    land_morale = 0.2
+  }
+
+  guilds_and_government = {
+    production_efficiency = 0.1
+  }
+
+  envirian_merchantry = {
+    trade_steering = 0.1
+  }
+}
+
+numeria_ideas = {
+  free = yes
+  start = {
+    morale_damage = 0.15
+    diplomatic_reputation = 2
+  }
+
+  bonus = {
+    discipline = 0.05
+  }
+
+  trigger = {
+    tag = A96
+  }
+
+  numerion_lineage = {
+    prestige = 1
+  }
+
+  mandatory_service = {
+    manpower_in_culture_group_provinces = 0.25 # Possible Wrong
+  }
+
+  crown_city = {
+    development_cost = -0.1
+  }
+
+  experienced_administration = {
+    governing_capacity_modifier = 0.2
+  }
+
+  lessons_of_war = {
+    land_morale = 0.1
+  }
+
+  evirian_trade = {
+    global_trade_power = 0.1
+  }
+
+  kassen_academies = {
+    embracement_cost = -0.2
+  }
+}
+
+nebiz_ideas = {
+  free = yes
+  start = {
+    land_forcelimit_modifier = 0.1
+    institution_spread_from_true_faith = 0.2
+  }
+
+  bonus = {
+    global_missionary_strength = 0.02
+  }
+
+  trigger = {
+    tag = A97
+  }
+
+  imperial_ambition = {
+    ae_impact = -0.1
+  }
+
+  expansionist_zeal = {
+    warscore_cost_vs_other_religion = -0.25
+  }
+
+  sacred_sanctuaries = {
+    missionaries = 1
+  }
+
+  faithful_reservists = {
+    manpower_in_true_faith_provinces = 0.3
+  }
+
+  nebiz_warriors = {
+    infantry_cost = -0.15
+  }
+
+  local_trade_dominance = {
+    global_own_trade_power = 0.15
+  }
+
+  disciplined_warriors = {
+    discipline = 0.05
+  }
+}
+
+drakai_ideas = {
+  free = yes
+  start = {
+    state_maintenance_modifier = -0.2
+    diplomats = 1
+  }
+
+  bonus = {
+    administrative_efficiency = 0.05
+  }
+
+  trigger = {
+    tag = A98
+  }
+
+  united_drukai = {
+    global_manpower_modifier = 0.15
+  }
+
+  cultivated_valor = {
+    improve_relation_modifier = 0.1
+  }
+
+  drukai_definitive_stand = {
+    global_heathen_missionary_strength = 0.01
+  }
+
+  strategic_bastions = {
+    morale_damage_received = -0.15
+  }
+
+  five_tributes = {
+    liberty_desire_from_subject_development = -0.1
+  }
+
+  batenn_missionaries = {
+    missionaries = 1
+  }
+
+  indomitable_spirit = {
+    land_morale = 0.15
+  }
+}

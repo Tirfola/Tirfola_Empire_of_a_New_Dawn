@@ -1,0 +1,14 @@
+owner = A57
+controller = A57
+religion = pentethikan
+base_tax = 2
+base_production = 1
+base_manpower = 1
+trade_goods = copper
+is_city = no
+culture = zilver
+add_core = A57
+discovered_by = golekian
+latent_trade_goods = {
+	coal
+}

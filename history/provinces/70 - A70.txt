@@ -1,0 +1,11 @@
+owner = A70
+controller = A70
+religion = pentethikan
+base_tax = 4
+base_production = 5
+base_manpower = 4
+trade_goods = cloth
+is_city = no
+add_core = A70
+discovered_by = golekian
+culture = jezerskici

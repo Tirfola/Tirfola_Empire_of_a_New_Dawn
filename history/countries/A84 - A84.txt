@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = autocracy_reform
+technology_group = golekian
+primary_culture = rumen
+religion = pentethikan
+capital = 672
+government_rank = 1
+
+554.5.5 = {
+  monarch = {
+    name = "Kire"
+    dynasty = "Lazarion"
+    birth_date = 536.5.5
+    death_date = 736.12.22
+    adm = 2
+    dip = 4
+    mil = 1
+  }
+}

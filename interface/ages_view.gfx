@@ -1,0 +1,1005 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_age_base"
+		texturefile = "gfx/interface/ages/age_base.dds"
+	}
+
+	spriteType = {
+		name = "GFX_age_objective_bg"
+		texturefile = "gfx/interface/ages/entry_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_golden_age_banner"
+		texturefile = "gfx/interface/ages/golden_age_banner.dds"
+	}
+
+	spriteType = {
+		name = "GFX_golden_age_banner_tattered"
+		texturefile = "gfx/interface/ages/golden_age_banner_tattered.dds"
+	}
+
+	spriteType = {
+		name = "GFX_age_golden_age_button"
+		texturefile = "gfx/interface/ages/age_golden_age_button.dds"
+	}
+
+	spriteType = {
+		name = "GFX_age_indicator_1"
+		texturefile = "gfx/interface/ages/age_indicator_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_age_indicator_2"
+		texturefile = "gfx/interface/ages/age_indicator_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_age_indicator_3"
+		texturefile = "gfx/interface/ages/age_indicator_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_age_indicator_4"
+		texturefile = "gfx/interface/ages/age_indicator_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_age_of_absolutism"
+		texturefile = "gfx/interface/ages/age_of_absolutism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_age_of_discovery"
+		texturefile = "gfx/interface/ages/age_of_discovery.dds"
+	}
+
+	spriteType = {
+		name = "GFX_age_of_reformation"
+		texturefile = "gfx/interface/ages/age_of_reformation.dds"
+	}
+
+	spriteType = {
+		name = "GFX_age_of_revolutions"
+		texturefile = "gfx/interface/ages/age_of_revolutions.dds"
+	}
+
+	spriteType = {
+		name = "GFX_age_can_unlock"
+		texturefile = "gfx/interface/ages/age_can_unlock.dds"
+	}
+
+	spriteType = {
+		name = "GFX_age_cannot_unlock"
+		texturefile = "gfx/interface/ages/age_cannot_unlock.dds"
+	}
+
+	spriteType = {
+		name = "GFX_age_alert_bg"
+		texturefile = "gfx/interface/ages/age_alert_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_age_banner_overlay"
+		texturefile = "gfx/interface/ages/age_banner_overlay.dds"
+	}
+
+	spriteType = {
+		name = "GFX_age_button"
+		texturefile = "gfx/interface/ages/age_button.dds"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_brown_bg"
+		texturefile = "gfx/interface/ages/brown_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_age_frame_addon"
+		texturefile = "gfx/interface/ages/age_frame_addon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_icon_age_s"
+		texturefile = "gfx/interface/ages/icon_age_s.dds"
+		noOfFrames = 4
+	}
+
+	spriteType = {
+		name = "GFX_icon_age_l"
+		texturefile = "gfx/interface/ages/icon_age_l.dds"
+		noOfFrames = 4
+	}
+
+	spriteType = {
+		name = "GFX_icon_age_of_absolutism_g"
+		texturefile = "gfx/interface/ages/icon_age_of_absolutism_g.dds"
+	}
+
+	spriteType = {
+		name = "GFX_icon_age_of_discovery_g"
+		texturefile = "gfx/interface/ages/icon_age_of_discovery_g.dds"
+	}
+
+	spriteType = {
+		name = "GFX_icon_age_of_reformation_g"
+		texturefile = "gfx/interface/ages/icon_age_of_reformation_g.dds"
+	}
+
+	spriteType = {
+		name = "GFX_icon_splendor_tiny"
+		texturefile = "gfx/interface/ages/icon_splendor_tiny.dds"
+	}
+
+	spriteType = {
+		name = "GFX_icon_absolutism"
+		texturefile = "gfx/interface/icon_absolutism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_icon_max_absolutism"
+		texturefile = "gfx/interface/icon_max_absolutism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_icon_religious"
+		texturefile = "gfx/interface/icon_religious.dds"
+	}
+
+
+
+
+
+
+
+	spriteType = {
+		name = "GFX_topbar_liberty_overlay_golden"
+		texturefile = "gfx/interface/ages/topbar_liberty_overlay_golden.dds"
+	}
+
+	spriteType = {
+		name = "GFX_age_frame_addon_golden"
+		texturefile = "gfx/interface/ages/age_frame_addon_golden.dds"
+	}
+
+	spriteType = {
+		name = "GFX_age_button_golden"
+		texturefile = "gfx/interface/ages/age_button_golden.dds"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_topbar_bg_golden"
+		texturefile = "gfx/interface/ages/topbar_UL_golden.dds"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_topbar_portrait_value_bg_golden"
+		texturefile = "gfx/interface/ages/topbar_portrait_value_bg_golden.dds"
+	}
+
+	# Age of Discovery Objectives
+	spriteType = {
+		name = "GFX_obj_discover_america"
+		texturefile = "gfx/interface/ages/obj_discover_america.dds"
+	}
+
+	spriteType = {
+		name = "GFX_obj_5_centers_of_trade"
+		texturefile = "gfx/interface/ages/obj_5_centers_of_trade.dds"
+	}
+
+	spriteType = {
+		name = "GFX_obj_30_development_city"
+		texturefile = "gfx/interface/ages/obj_30_development_city.dds"
+	}
+
+	spriteType = {
+		name = "GFX_obj_renaissance"
+		texturefile = "gfx/interface/ages/obj_renaissance.dds"
+	}
+
+	spriteType = {
+		name = "GFX_obj_two_unions"
+		texturefile = "gfx/interface/ages/obj_two_unions.dds"
+	}
+
+	spriteType = {
+		name = "GFX_obj_two_continents"
+		texturefile = "gfx/interface/ages/obj_two_continents.dds"
+	}
+
+	spriteType = {
+		name = "GFX_obj_humiliate_rival"
+		texturefile = "gfx/interface/ages/obj_humiliate_rival.dds"
+	}
+
+	spriteType = {
+		name = "GFX_obj_100_development"
+		texturefile = "gfx/interface/ages/obj_100_development.dds"
+	}
+
+	spriteType = {
+		name = "GFX_obj_many_vassals"
+		texturefile = "gfx/interface/ages/obj_many_vassals.dds"
+	}
+
+
+
+	# Age of Reformation Objectives
+	spriteType = {
+		name = "GFX_obj_christian_convert"
+		texturefile = "gfx/interface/ages/obj_christian_convert.dds"
+	}
+
+	spriteType = {
+		name = "GFX_obj_humanism_religious"
+		texturefile = "gfx/interface/ages/obj_humanism_religious.dds"
+	}
+
+	spriteType = {
+		name = "GFX_obj_convert_10_provinces"
+		texturefile = "gfx/interface/ages/obj_convert_10_provinces.dds"
+	}
+
+	spriteType = {
+		name = "GFX_obj_colonial_empire"
+		texturefile = "gfx/interface/ages/obj_colonial_empire.dds"
+	}
+
+	spriteType = {
+		name = "GFX_obj_force_converted"
+		texturefile = "gfx/interface/ages/obj_force_converted.dds"
+	}
+
+	spriteType = {
+		name = "GFX_obj_asian_trade"
+		texturefile = "gfx/interface/ages/obj_asian_trade.dds"
+	}
+
+	spriteType = {
+		name = "GFX_obj_unify_culture"
+		texturefile = "gfx/interface/ages/obj_unify_culture.dds"
+	}
+
+
+
+	# Age of Absolutism Objectives
+	spriteType = {
+		name = "GFX_obj_3_trade_companies"
+		texturefile = "gfx/interface/ages/obj_3_trade_companies.dds"
+	}
+
+	spriteType = {
+		name = "GFX_obj_universities"
+		texturefile = "gfx/interface/ages/obj_universities.dds"
+	}
+
+	spriteType = {
+		name = "GFX_obj_large_forcelimit"
+		texturefile = "gfx/interface/ages/obj_large_forcelimit.dds"
+	}
+
+	spriteType = {
+		name = "GFX_obj_90_absolutism"
+		texturefile = "gfx/interface/ages/obj_90_absolutism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_obj_emperor_of_china"
+		texturefile = "gfx/interface/ages/obj_emperor_of_china.dds"
+	}
+
+	spriteType = {
+		name = "GFX_obj_cultures_accepted"
+		texturefile = "gfx/interface/ages/obj_cultures_accepted.dds"
+	}
+
+	spriteType = {
+		name = "GFX_obj_win_religious_war"
+		texturefile = "gfx/interface/ages/obj_win_religious_war.dds"
+	}
+
+
+
+	# Age of Revolutions Objectives
+	spriteType = {
+		name = "GFX_obj_parliament"
+		texturefile = "gfx/interface/ages/obj_parliament.dds"
+	}
+
+	spriteType = {
+		name = "GFX_obj_emperor"
+		texturefile = "gfx/interface/ages/obj_emperor.dds"
+	}
+
+	spriteType = {
+		name = "GFX_obj_large_subject"
+		texturefile = "gfx/interface/ages/obj_large_subject.dds"
+	}
+
+	spriteType = {
+		name = "GFX_obj_disc_army"
+		texturefile = "gfx/interface/ages/obj_disc_army.dds"
+	}
+
+	spriteType = {
+		name = "GFX_obj_huge_capital"
+		texturefile = "gfx/interface/ages/obj_huge_capital.dds"
+	}
+
+	spriteType = {
+		name = "GFX_obj_great_general"
+		texturefile = "gfx/interface/ages/obj_great_general.dds"
+	}
+
+	spriteType = {
+		name = "GFX_obj_two_institutions"
+		texturefile = "gfx/interface/ages/obj_two_institutions.dds"
+	}
+
+
+
+
+	# NEW Abilities
+	spriteType = {
+		name = "GFX_ab_cavalry_armies"
+		texturefile = "gfx/interface/ages/ab_cavalry_armies.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_free_war_taxes"
+		texturefile = "gfx/interface/ages/ab_free_war_taxes.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_mercenary_discipline"
+		texturefile = "gfx/interface/ages/ab_mercenary_discipline.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_siege_blockades"
+		texturefile = "gfx/interface/ages/ab_siege_blockades.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_warscore_vs_religion"
+		texturefile = "gfx/interface/ages/ab_warscore_vs_religion.dds"
+	}
+
+
+
+
+	# Age of Discovery Abilities
+	spriteType = {
+		name = "GFX_ab_allow_feudal_de_jure_law"
+		texturefile = "gfx/interface/ages/ab_allow_feudal_de_jure_law.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_claim_duration"
+		texturefile = "gfx/interface/ages/ab_claim_duration.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_transfer_vassal_wargoal"
+		texturefile = "gfx/interface/ages/ab_transfer_vassal_wargoal.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_can_chain_claim"
+		texturefile = "gfx/interface/ages/ab_can_chain_claim.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_free_exploration_maintenance"
+		texturefile = "gfx/interface/ages/ab_free_exploration_maintenance.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_colony_boost_development"
+		texturefile = "gfx/interface/ages/ab_colony_boost_development.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_attack_bonus_in_capital_terrain"
+		texturefile = "gfx/interface/ages/ab_attack_bonus_in_capital_terrain.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_ottoman_siege_ability"
+		texturefile = "gfx/interface/ages/ab_ottoman_siege_ability.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_portugal_colonial_growth"
+		texturefile = "gfx/interface/ages/ab_portugal_colonial_growth.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_venice_ship_trade"
+		texturefile = "gfx/interface/ages/ab_venice_ship_trade.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_denmark_reduced_lib_desire"
+		texturefile = "gfx/interface/ages/ab_denmark_reduced_lib_desire.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_justified_wars"
+		texturefile = "gfx/interface/ages/ab_justified_wars.dds"
+	}
+
+
+
+	# Age of Reformation Abilities
+	spriteType = {
+		name = "GFX_ab_allow_religion_enforced"
+		texturefile = "gfx/interface/ages/ab_allow_religion_enforced.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_culture_cost"
+		texturefile = "gfx/interface/ages/ab_culture_cost.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_cheaper_enforce_religion"
+		texturefile = "gfx/interface/ages/ab_cheaper_enforce_religion.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_placed_merchants"
+		texturefile = "gfx/interface/ages/ab_placed_merchants.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_ship_power_propagation"
+		texturefile = "gfx/interface/ages/ab_ship_power_propagation.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_institution_spread_from_true_faith"
+		texturefile = "gfx/interface/ages/ab_institution_spread_from_true_faith.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_prestige_per_development_from_conversion"
+		texturefile = "gfx/interface/ages/ab_prestige_per_development_from_conversion.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_spain_tercio"
+		texturefile = "gfx/interface/ages/ab_spain_tercio.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_mughal_artillery"
+		texturefile = "gfx/interface/ages/ab_mughal_artillery.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_polish_legitimacy"
+		texturefile = "gfx/interface/ages/ab_polish_legitimacy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_persia_reinforce"
+		texturefile = "gfx/interface/ages/ab_persia_reinforce.dds"
+	}
+
+
+
+	# Age of Conflict Abilities
+	spriteType = {
+		name = "GFX_ab_allow_edict_of_absolutism"
+		texturefile = "gfx/interface/ages/ab_allow_edict_of_absolutism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_rival_change"
+		texturefile = "gfx/interface/ages/ab_rival_change.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_rival_border_fort"
+		texturefile = "gfx/interface/ages/ab_rival_border_fort.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_autonomy"
+		texturefile = "gfx/interface/ages/ab_autonomy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_harsh_treatment"
+		texturefile = "gfx/interface/ages/ab_harsh_treatment.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_adm_efficiency"
+		texturefile = "gfx/interface/ages/ab_adm_efficiency.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_yearly_absolutism"
+		texturefile = "gfx/interface/ages/ab_yearly_absolutism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_france_fire_damage"
+		texturefile = "gfx/interface/ages/ab_france_fire_damage.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_french_absolutism"
+		texturefile = "gfx/interface/ages/ab_french_absolutism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_dutch_anti_corruption"
+		texturefile = "gfx/interface/ages/ab_dutch_anti_corruption.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_sweden_manpower"
+		texturefile = "gfx/interface/ages/ab_sweden_manpower.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_manchu_banner"
+		texturefile = "gfx/interface/ages/ab_manchu_banner.dds"
+	}
+
+	# Age of Innovation Abilities
+	spriteType = {
+		name = "GFX_ab_allow_anti_revolutionary_zeal"
+		texturefile = "gfx/interface/ages/ab_allow_anti_revolutionary_zeal.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_bypass_forts"
+		texturefile = "gfx/interface/ages/ab_bypass_forts.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_force_march"
+		texturefile = "gfx/interface/ages/ab_force_march.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_more_ships_can_fire"
+		texturefile = "gfx/interface/ages/ab_more_ships_can_fire.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_no_distance_for_core"
+		texturefile = "gfx/interface/ages/ab_no_distance_for_core.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_backrow_artillery"
+		texturefile = "gfx/interface/ages/ab_backrow_artillery.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_same_contine_lib_desire"
+		texturefile = "gfx/interface/ages/ab_same_contine_lib_desire.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_pru_military"
+		texturefile = "gfx/interface/ages/ab_pru_military.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_gbr_fleet"
+		texturefile = "gfx/interface/ages/ab_gbr_fleet.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_russia_boost"
+		texturefile = "gfx/interface/ages/ab_russia_boost.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_austria_rep"
+		texturefile = "gfx/interface/ages/ab_austria_rep.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_napoleonic_warfare"
+		texturefile = "gfx/interface/ages/ab_napoleonic_warfare.dds"
+	}
+
+	### DOMINATION 1.35 - New Icons
+	spriteType = {
+		name = "GFX_ab_austrian_morale"
+		texturefile = "gfx/interface/ages/ab_austrian_morale.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_persia_development"
+		texturefile = "gfx/interface/ages/ab_persia_development.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_spain_shock_tactics"
+		texturefile = "gfx/interface/ages/ab_spain_shock_tactics.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_dutch_trade"
+		texturefile = "gfx/interface/ages/ab_dutch_trade.dds"
+	}
+
+
+
+
+
+
+	# Tirfola
+	# Age of Commerce
+	spriteType = {
+		name = "GFX_age_of_commerce"
+		texturefile = "gfx/interface/ages/age_of_commerce.dds"
+	}
+
+	spriteType = {
+		name = "GFX_obj_mutual_benefits"
+		texturefile = "gfx/interface/ages/obj_mutual_benefits.dds"
+	}
+
+	spriteType = {
+		name = "GFX_obj_local_monopoly"
+		texturefile = "gfx/interface/ages/obj_huge_capital.dds"
+	}
+
+	spriteType = {
+		name = "GFX_obj_maritime_legion"
+		texturefile = "gfx/interface/ages/obj_maritime_legion.dds"
+	}
+
+	spriteType = {
+		name = "GFX_obj_commerce_districts"
+		texturefile = "gfx/interface/ages/obj_commerce_districts.dds"
+	}
+
+	spriteType = {
+		name = "GFX_obj_many_pockets"
+		texturefile = "gfx/interface/ages/obj_many_pockets.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_galamoplia"
+		texturefile = "gfx/interface/ages/ab_more_ships_can_fire.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_shrewd_tactics"
+		texturefile = "gfx/interface/ages/ab_siege_blockades.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_silver_tongue"
+		texturefile = "gfx/interface/ages/ab_silver_tongue.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_powerful_guilds"
+		texturefile = "gfx/interface/ages/ab_powerful_guilds.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_greased_palms"
+		texturefile = "gfx/interface/ages/ab_placed_merchants.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_improved_strategy"
+		texturefile = "gfx/interface/ages/ab_mercantilism_cost.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_standardized_disputes"
+		texturefile = "gfx/interface/ages/ab_transfer_vassal_wargoal.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_bizev_coller_maneuvers"
+		texturefile = "gfx/interface/ages/ab_attack_bonus_in_capital_terrain.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_batennian_advantage"
+		texturefile = "gfx/interface/ages/ab_dutch_trade.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_numeran_resilience"
+		texturefile = "gfx/interface/ages/ab_shock_damage_received.dds"
+	}
+
+
+
+
+	# Age of Development
+	spriteType = {
+		name = "GFX_age_of_development"
+		texturefile = "gfx/interface/ages/age_of_development.dds"
+	}
+
+	spriteType = {
+		name = "GFX_obj_developed_nation"
+		texturefile = "gfx/interface/ages/obj_developed_nation.dds"
+	}
+
+	spriteType = {
+		name = "GFX_obj_prosperous_city"
+		texturefile = "gfx/interface/ages/obj_prosperous_city.dds"
+	}
+
+	spriteType = {
+		name = "GFX_obj_fantastical_fabrications"
+		texturefile = "gfx/interface/ages/obj_fantastical_fabrications.dds"
+	}
+
+	spriteType = {
+		name = "GFX_obj_widespread_infrastructure"
+		texturefile = "gfx/interface/ages/obj_widespread_infrastructure.dds"
+	}
+
+	spriteType = {
+		name = "GFX_obj_prosperous_economy"
+		texturefile = "gfx/interface/ages/obj_prosperous_economy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_obj_blossoming_goods"
+		texturefile = "gfx/interface/ages/obj_blossoming_goods.dds"
+	}
+
+	spriteType = {
+		name = "GFX_obj_spreading_the_wealth"
+		texturefile = "gfx/interface/ages/obj_spreading_the_wealth.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_bountiful_harvests"
+		texturefile = "gfx/interface/ages/ab_dutch_trade.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_impressive_monuments"
+		texturefile = "gfx/interface/ages/ab_dutch_trade.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_well_fed_populace"
+		texturefile = "gfx/interface/ages/ab_dutch_trade.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_satisfied_estates"
+		texturefile = "gfx/interface/ages/ab_dutch_trade.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_standardized_building"
+		texturefile = "gfx/interface/ages/ab_dutch_trade.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_repopulation"
+		texturefile = "gfx/interface/ages/ab_dutch_trade.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_educated_peasants"
+		texturefile = "gfx/interface/ages/ab_dutch_trade.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_quesmerian_influence"
+		texturefile = "gfx/interface/ages/ab_dutch_trade.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_karsten_cautiousness"
+		texturefile = "gfx/interface/ages/ab_dutch_trade.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_pikos_professionalism"
+		texturefile = "gfx/interface/ages/ab_dutch_trade.dds"
+	}
+
+
+
+	# Age of Conflict
+	spriteType = {
+		name = "GFX_age_of_conflict"
+		texturefile = "gfx/interface/ages/age_of_absolutism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_obj_professional_army"
+		texturefile = "gfx/interface/ages/obj_professional_army.dds"
+	}
+
+	spriteType = {
+		name = "GFX_obj_honor_guard"
+		texturefile = "gfx/interface/ages/obj_honor_guard.dds"
+	}
+
+	spriteType = {
+		name = "GFX_obj_great_armada"
+		texturefile = "gfx/interface/ages/obj_great_armada.dds"
+	}
+
+	spriteType = {
+		name = "GFX_obj_ruler_of_many"
+		texturefile = "gfx/interface/ages/obj_ruler_of_many.dds"
+	}
+
+	spriteType = {
+		name = "GFX_obj_trade_domination"
+		texturefile = "gfx/interface/ages/obj_trade_domination.dds"
+	}
+
+	spriteType = {
+		name = "GFX_obj_conflicts_o_plenty"
+		texturefile = "gfx/interface/ages/obj_conflicts_o_plenty.dds"
+	}
+
+	spriteType = {
+		name = "GFX_obj_militarized_militias"
+		texturefile = "gfx/interface/ages/obj_militarized_militias.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_protective_fortifications"
+		texturefile = "gfx/interface/ages/ab_rival_border_fort.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_efficient_conquest"
+		texturefile = "gfx/interface/ages/ab_adm_efficiency.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_absolute_authority"
+		texturefile = "gfx/interface/ages/ab_yearly_absolutism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_state_restoration"
+		texturefile = "gfx/interface/ages/ab_allow_edict_of_absolutism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_flexible_rivalries"
+		texturefile = "gfx/interface/ages/ab_rival_change.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_youthful_replenishment"
+		texturefile = "gfx/interface/ages/ab_sweden_manpower.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_ocean_expansion"
+		texturefile = "gfx/interface/ages/ab_sweden_manpower.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_wapat_mages"
+		texturefile = "gfx/interface/ages/ab_backrow_artillery.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_telman_bureaucracy"
+		texturefile = "gfx/interface/ages/ab_russia_boost.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_sorokan_zeal"
+		texturefile = "gfx/interface/ages/ab_austria_rep.dds"
+	}
+
+
+
+	# Age of Innovations
+	spriteType = {
+		name = "GFX_age_of_innovations"
+		texturefile = "gfx/interface/ages/age_of_revolutions.dds"
+	}
+
+	spriteType = {
+		name = "GFX_obj_bright_society"
+		texturefile = "gfx/interface/ages/obj_huge_capital.dds"
+	}
+
+	spriteType = {
+		name = "GFX_obj_forward_thinking"
+		texturefile = "gfx/interface/ages/obj_huge_capital.dds"
+	}
+
+	spriteType = {
+		name = "GFX_obj_minds_of_the_future"
+		texturefile = "gfx/interface/ages/obj_huge_capital.dds"
+	}
+
+	spriteType = {
+		name = "GFX_obj_towns_of_tomorrow"
+		texturefile = "gfx/interface/ages/obj_huge_capital.dds"
+	}
+
+	spriteType = {
+		name = "GFX_obj_shining_star"
+		texturefile = "gfx/interface/ages/obj_huge_capital.dds"
+	}
+
+	spriteType = {
+		name = "GFX_obj_following_trends"
+		texturefile = "gfx/interface/ages/obj_huge_capital.dds"
+	}
+
+	spriteType = {
+		name = "GFX_obj_well_read"
+		texturefile = "gfx/interface/ages/obj_huge_capital.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_loyal_subjects"
+		texturefile = "gfx/interface/ages/ab_same_contine_lib_desire.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_unrestricted_conquest"
+		texturefile = "gfx/interface/ages/ab_no_distance_for_core.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_improved_force_march"
+		texturefile = "gfx/interface/ages/ab_force_march.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_refined_construction"
+		texturefile = "gfx/interface/ages/ab_force_march.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_motivated_advisors"
+		texturefile = "gfx/interface/ages/ab_force_march.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_enhanced_nationalism"
+		texturefile = "gfx/interface/ages/ab_force_march.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_revamped_development"
+		texturefile = "gfx/interface/ages/ab_persia_development.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_modern_monarchies"
+		texturefile = "gfx/interface/ages/ab_persia_development.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_new_republics"
+		texturefile = "gfx/interface/ages/ab_persia_development.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_contemporary_theocracies"
+		texturefile = "gfx/interface/ages/ab_persia_development.dds"
+	}
+}

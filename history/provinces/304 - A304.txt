@@ -1,0 +1,17 @@
+owner = A02
+controller = A02
+add_core = A02
+
+culture = kassan
+religion = pentethikan
+
+base_tax = 5
+base_production = 3
+base_manpower = 7
+
+trade_goods = fish
+
+is_city = no
+
+discovered_by = golekian
+center_of_trade = 2

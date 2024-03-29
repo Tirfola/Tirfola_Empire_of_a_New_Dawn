@@ -1,0 +1,16 @@
+owner = A52
+controller = A52
+add_core = A52
+
+culture = jorstam
+religion = pentethikan
+
+base_tax = 2
+base_production = 2
+base_manpower = 1
+
+trade_goods = wool
+
+is_city = no
+
+discovered_by = golekian

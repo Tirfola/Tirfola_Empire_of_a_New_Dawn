@@ -1,0 +1,401 @@
+country_decisions = {
+  reform_numeria = {
+    major = yes
+
+    potential = {
+      culture_group = numeran
+      NOT = { exists = A96 }
+      NOT = { has_country_flag = numeria_nation }
+    }
+
+    provinces_to_highlight = {
+      OR = {
+        province_id = 127
+        province_id = 5
+        province_id = 310
+        province_id = 2
+        province_id = 373
+        province_id = 161
+        province_id = 4
+        province_id = 137
+        province_id = 667
+      }
+      NOT = { owned_by = ROOT }
+    }
+
+    allow = {
+      owns = 127
+      owns = 5
+      owns = 310
+      owns = 2
+      owns = 373
+      owns = 161
+      owns = 4
+      owns = 137
+      owns = 667
+    }
+
+    effect = {
+      set_country_flag = numeria_nation
+      change_tag = A96
+      add_prestige = 25
+      country_event = { id = ideagroups.1 } #Swap Ideas
+      if = {
+				limit = {
+					NOT = { government_rank = 3 }
+				}
+				set_government_rank = 3
+			}
+      add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+      obraposni_region = {
+        type = all
+        add_permanent_claim = ROOT
+      }
+    }
+
+    ai_will_do = {
+    	factor = 1
+    }
+  }
+
+  reunite_the_horde = {
+    major = yes
+
+    potential = {
+      culture_group = soroka
+      NOT = { exists = A93 }
+      NOT = { has_country_flag = soroka_nation }
+    }
+
+    provinces_to_highlight = {
+      OR = {
+        area = ploshchistol_area
+        province_id = 576
+        province_id = 578
+        province_id = 587
+      }
+      NOT = { owned_by = root }
+    }
+
+    allow = {
+      ploshchistol_area = {
+        type = all
+        owned_by = ROOT
+      }
+      owns = 576
+      owns = 578
+      owns = 587
+    }
+
+    effect = {
+      set_country_flag = soroka_nation
+      change_tag = A93
+      add_prestige = 25
+      country_event = { id = ideagroups.1 } #Swap Ideas
+      if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+      add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+      ploshchistol_area = {
+        type = all
+        add_permanent_claim = ROOT
+      }
+      volgarusia_area = {
+        type = all
+        add_permanent_claim = ROOT
+      }
+      gornoslav_area = {
+        type = all
+        add_permanent_claim = ROOT
+      }
+      zaryadovia_area = {
+        type = all
+        add_permanent_claim = ROOT
+      }
+      belokraniya_area = {
+        type = all
+        add_permanent_claim = ROOT
+      }
+      yakotka_area = {
+        type = all
+        add_permanent_claim = ROOT
+      }
+      pristennaya_oblast_area = {
+        type = all
+        add_permanent_claim = ROOT
+      }
+      22 = {
+        add_permanent_claim = ROOT
+      }
+      171 = {
+        add_permanent_claim = ROOT
+      }
+    }
+
+    ai_will_do = {
+    	factor = 1
+    }
+  }
+
+  reclaim_the_island = {
+    major = yes
+
+    potential = {
+      culture_group = samoveni_culture
+      NOT = { exists = A94 }
+      NOT = { has_country_flag = samov_imperi_nation }
+      religion = boskylka
+    }
+
+    provinces_to_highlight = {
+      region = samoveni_region
+      NOT = { owned_by = root }
+    }
+
+    allow = {
+      samoveni_region = {
+        type = all
+        owned_by = ROOT
+      }
+    }
+
+    effect = {
+      set_country_flag = samov_imperi_nation
+      change_tag = A94
+      add_prestige = 25
+      country_event = { id = ideagroups.1 } #Swap Ideas
+      if = {
+				limit = {
+					NOT = { government_rank = 3 }
+				}
+				set_government_rank = 3
+			}
+      add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+    }
+
+    ai_will_do = {
+    	factor = 1
+    }
+  }
+
+  unite_goleka = {
+    major = yes
+
+    potential = {
+      capital_scope = {
+        superregion = goleka_superregion
+      }
+      NOT = { exists = A95 }
+      NOT = { has_country_flag = goleka_nation }
+    }
+
+    provinces_to_highlight = {
+      OR = {
+        province_id = 127
+        province_id = 9
+        province_id = 28
+        province_id = 538
+        province_id = 83
+        province_id = 549
+        province_id = 98
+      }
+      NOT = { owned_by = ROOT }
+    }
+
+    allow = {
+      owns = 127
+      owns = 9
+      owns = 28
+      owns = 538
+      owns = 83
+      owns = 549
+      owns = 98
+      num_of_owned_provinces_with = {
+        value = 102
+        region = obraposni_region
+      }
+      num_of_owned_provinces_with = {
+        value = 37
+        region = mocurst_region
+      }
+      num_of_owned_provinces_with = {
+        value = 68
+        region = reczemni_region
+      }
+      num_of_owned_provinces_with = {
+        value = 73
+        region = xiktaseis_region
+      }
+    }
+
+    effect = {
+      set_country_flag = goleka_nation
+      change_tag = A95
+      add_prestige = 25
+      country_event = { id = ideagroups.1 } #Swap Ideas
+      if = {
+        limit = {
+          NOT = { government_rank = 3 }
+        }
+        set_government_rank = 3
+      }
+      add_country_modifier = {
+        name = "centralization_modifier"
+        duration = 7300
+      }
+      goleka_superregion = {
+        type = all
+        add_permanent_claim = ROOT
+      }
+    }
+
+    ai_will_do = {
+    	factor = 1
+    }
+  }
+
+  unite_the_people = {
+    major = yes
+
+    potential = {
+      culture_group = pikos
+      NOT = { exists = A97 }
+      NOT = { has_country_flag = nebiz_nation }
+      religion = boskylka
+    }
+
+    provinces_to_highlight = {
+      OR = {
+        province_id = 83
+        province_id = 474
+        province_id = 49
+        province_id = 51
+        province_id = 480
+        province_id = 482
+        province_id = 498
+        province_id = 508
+        province_id = 491
+        province_id = 54
+        province_id = 505
+        province_id = 640
+        province_id = 657
+      }
+    }
+
+    allow = {
+      owns = 83
+      owns = 474
+      owns = 49
+      owns = 51
+      owns = 480
+      owns = 482
+      owns = 498
+      owns = 508
+      owns = 491
+      owns = 54
+      owns = 505
+      owns = 640
+      owns = 657
+      adm_tech = 10
+      religious_unity = 1
+    }
+
+    effect = {
+      set_country_flag = nebiz_nation
+      change_tag = A97
+      add_prestige = 25
+      country_event = { id = ideagroups.1 } #Swap Ideas
+      if = {
+        limit = {
+          NOT = { government_rank = 3 }
+        }
+        set_government_rank = 3
+      }
+      add_country_modifier = {
+        name = "centralization_modifier"
+        duration = 7300
+      }
+      xiktaseis_region = {
+        type = all
+        add_permanent_claim = ROOT
+      }
+    }
+  }
+
+  form_drakai = {
+    major = yes
+
+    potential = {
+      culture_group = grivan
+      NOT = { exists = A98 }
+      NOT = { has_country_flag = drakai_nation }
+      religion = pentethikan
+    }
+
+    provinces_to_highlight = {
+      OR = {
+        province_id = 538
+        province_id = 536
+        province_id = 55
+        province_id = 61
+        province_id = 528
+        province_id = 70
+        province_id = 67
+        province_id = 63
+        province_id = 65
+        province_id = 516
+        province_id = 234
+        province_id = 188
+      }
+    }
+
+    allow = {
+      owns = 538
+      owns = 536
+      owns = 55
+      owns = 61
+      owns = 528
+      owns = 70
+      owns = 67
+      owns = 63
+      owns = 65
+      owns = 516
+      owns = 234
+      owns = 188
+      adm_tech = 16
+    }
+
+    effect = {
+      set_country_flag = drakai_nation
+      change_tag = A98
+      add_prestige = 25
+      country_event = { id = ideagroups.1 } #Swap Ideas
+      if = {
+        limit = {
+          NOT = { government_rank = 3 }
+        }
+        set_government_rank = 3
+      }
+      add_country_modifier = {
+        name = "centralization_modifier"
+        duration = 7300
+      }
+      xiktaseis_region = {
+        type = all
+        add_permanent_claim = ROOT
+      }
+    }
+  }
+}

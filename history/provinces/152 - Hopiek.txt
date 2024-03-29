@@ -1,0 +1,17 @@
+owner = A47
+controller = A47
+add_core = A47
+
+culture = eisier
+religion = pentethikan
+
+base_tax = 7
+base_production = 4
+base_manpower = 2
+
+trade_goods = gems
+
+is_city = no
+
+discovered_by = golekian
+fort_15th = yes

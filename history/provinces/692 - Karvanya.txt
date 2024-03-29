@@ -1,0 +1,16 @@
+owner = A92
+controller = A92
+add_core = A92
+
+culture = starov
+religion = boskylka
+
+base_tax = 2
+base_production = 4
+base_manpower = 3
+
+trade_goods = grain
+
+is_city = no
+
+discovered_by = golekian

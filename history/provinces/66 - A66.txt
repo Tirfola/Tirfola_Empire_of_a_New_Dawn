@@ -1,0 +1,11 @@
+owner = A66
+controller = A66
+religion = pentethikan
+base_tax = 5
+base_production = 3
+base_manpower = 4
+trade_goods = cocoa
+is_city = no
+add_core = A66
+discovered_by = golekian
+culture = proizonci

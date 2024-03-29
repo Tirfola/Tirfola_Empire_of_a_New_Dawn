@@ -1,0 +1,17 @@
+owner = A05
+controller = A05
+add_core = A05
+
+culture = anakyaden
+religion = pentethikan
+
+base_tax = 5
+base_production = 6
+base_manpower = 3
+
+trade_goods = cloth
+
+is_city = no
+
+discovered_by = golekian
+fort_15th = yes

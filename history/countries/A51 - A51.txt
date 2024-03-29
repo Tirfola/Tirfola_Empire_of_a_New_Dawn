@@ -1,0 +1,7 @@
+government = republic
+technology_group = golekian
+religion = boskylka
+capital = 51
+government_rank = 1
+primary_culture = duzas
+add_government_reform = oligarchy_reform

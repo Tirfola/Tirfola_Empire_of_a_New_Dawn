@@ -1,0 +1,12 @@
+owner = A53
+controller = A53
+religion = boskylka
+base_tax = 7
+base_production = 4
+base_manpower = 6
+trade_goods = paper
+is_city = no
+add_core = A53
+discovered_by = golekian
+fort_15th = yes
+culture = kurucas

@@ -1,0 +1,21 @@
+government = monarchy
+add_government_reform = autocracy_reform
+technology_group = golekian
+religion = pentethikan
+capital = 28
+government_rank = 2
+primary_culture = makanstam
+add_accepted_culture = kullstam
+historical_rival = A82
+
+585.3.19 = {
+  monarch = {
+    name = "Lars"
+    dynasty = "Thun"
+    birth_date = 567.3.19
+    death_date = 767.3.18
+    adm = 6
+    dip = 1
+    mil = 5
+  }
+}

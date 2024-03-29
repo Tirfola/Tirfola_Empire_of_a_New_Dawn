@@ -1,0 +1,16 @@
+owner = A10
+controller = A10
+add_core = A10
+
+culture = kaforin
+religion = pentethikan
+
+base_tax = 5
+base_production = 4
+base_manpower = 4
+
+trade_goods = fish
+
+is_city = no
+
+discovered_by = golekian

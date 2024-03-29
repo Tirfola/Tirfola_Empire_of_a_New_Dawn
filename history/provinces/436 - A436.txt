@@ -1,0 +1,17 @@
+owner = A15
+controller = A15
+add_core = A15
+add_core = A14
+
+culture = laugo
+religion = pentethikan
+
+base_tax = 4
+base_production = 3
+base_manpower = 4
+
+trade_goods = wool
+
+is_city = no
+
+discovered_by = golekian

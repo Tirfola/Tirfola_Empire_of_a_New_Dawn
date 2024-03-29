@@ -1,0 +1,16 @@
+owner = A42
+controller = A42
+add_core = A42
+
+culture = seravludi
+religion = pentethikan
+
+base_tax = 4
+base_production = 3
+base_manpower = 4
+
+trade_goods = livestock
+
+is_city = no
+
+discovered_by = golekian

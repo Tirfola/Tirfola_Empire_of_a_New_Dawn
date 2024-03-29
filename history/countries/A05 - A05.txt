@@ -1,0 +1,21 @@
+government = monarchy
+add_government_reform = autocracy_reform
+technology_group = golekian
+primary_culture = bogdaxian
+add_accepted_culture = anakyaden
+religion = pentethikan
+capital = 5
+government_rank = 2
+historical_rival = A01
+
+568.8.7 = {
+  monarch = {
+    name = "Leannatos"
+    dynasty = "Bogdaxion"
+    birth_date = 550.8.7
+    death_date = 750.11.4
+    adm = 3
+    dip = 3
+    mil = 6
+  }
+}

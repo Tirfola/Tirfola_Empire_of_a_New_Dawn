@@ -1,0 +1,12 @@
+owner = A58
+controller = A58
+religion = pentethikan
+base_tax = 8
+base_production = 6
+base_manpower = 8
+trade_goods = gems
+is_city = no
+add_core = A58
+discovered_by = golekian
+fort_15th = yes
+culture = ao_yavy

@@ -1,0 +1,16 @@
+owner = A40
+controller = A40
+culture = goud
+religion = pentethikan
+base_tax = 6
+base_production = 10
+base_manpower = 8
+trade_goods = gems
+is_city = no
+center_of_trade = 2
+add_core = A40
+discovered_by = golekian
+fort_15th = yes
+latent_trade_goods = {
+	coal
+}

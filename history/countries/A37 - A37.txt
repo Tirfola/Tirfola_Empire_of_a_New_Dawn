@@ -1,0 +1,8 @@
+government = monarchy
+add_government_reform = feudalism_reform
+technology_group = golekian
+religion = pentethikan
+primary_culture = icuda
+capital = 37
+government_rank = 1
+historical_rival = A47

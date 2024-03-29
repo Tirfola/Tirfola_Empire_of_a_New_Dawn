@@ -1,0 +1,124 @@
+﻿l_english:
+  # Båtenn Culture
+  batenn:0 "Båtenn"
+  resenar:0 "Resenär"
+  granostam:0 "Gränöstam"
+  keiselstam:0 "Keiselstam"
+  flokorstam:0 "Flokorstam"
+  soddelstam:0 "Söddelstam"
+  krelfostam:0 "Krelfostam"
+  cenlakstam:0 "Cenläkstam"
+  grunnistam:0 "Grunnistam"
+  makanstam:0 "Mäkanstam"
+  kullstam:0 "Kullstam"
+  toppestam:0 "Toppestam"
+  jorstam:0 "Jörstam"
+
+  # Mikran Culture
+  mikran:0 "Mikran"
+  stepin:0 "Stëpin"
+  neduarin:0 "Neduarin"
+  kaforin:0 "Kaforin"
+  breggin:0 "Breggin"
+  linjin:0 "Linjin"
+  koderin:0 "Kodërin"
+
+  # Numeran Culture
+  numeran:0 "Numeran"
+  ferian:0 "Ferian"
+  rumen:0 "Rumen"
+  nerumen:0 "Nerumen"
+  numen:0 "Numen"
+  odassen:0 "Odassen"
+  anakyaden:0 "Anakyaden"
+  bogdaxian:0 "Bogdaxian"
+  kassan:0 "Kassan"
+  toxen:0 "Toxen"
+  mitran:0 "Mitran"
+
+  # Tenki Culture
+  tenky:0 "Tenky"
+  nangsik:0 "Nangsik"
+  pensik:0 "Pensik"
+
+  # Sinitrolvi Culture
+  sinitrolvi:0 "Sinitrolvi"
+  zarennna:0 "Zarenna"
+  laugo:0 "Laugo"
+  gogonna:0 "Gogonna"
+
+  # Soroka Culture
+  soroka:0 "Soroka"
+  prosvity:0 "Prosvity"
+  napadaty:0 "Napadaty"
+  dravniy:0 "Dravniy"
+
+  # Snoot Myt Culture
+  snoot_myt:0 "Snoot Myt"
+  pirantiu:0 "Pirantiu"
+  auzantiu:0 "Auzantiu"
+
+  # Grivan Culture
+  grivan:0 "Grivan"
+  renivalci:0 "Renivalci"
+  suhibilci:0 "Suhibilci"
+  jezerskici:0 "Jezerskici"
+  proizonci:0 "Proizonci"
+  zunankoci:0 "Zunankoci"
+
+  # Karsten Culture
+  karsten:0 "Karsten"
+  goud:0 "Goud"
+  eisier:0 "Eisier"
+  koper:0 "Koper"
+  smaradt:0 "Smaradt"
+  zilver:0 "Zilver"
+
+  # Përbuzur Culture
+  perbuzur:0 "Përbuzur"
+  umu_wikyatsi:0 "Umu Wikyatsi"
+  icuda:0 "Icuda"
+  ao_yavy:0 "Ao Yavy"
+
+  # Pikos Culture
+  pikos:0 "Pikos"
+  golkardas:0 "Golkardas"
+  kurucas:0 "Kurucas"
+  dagarlas:0 "Dagarlas"
+  duzas:0 "Duzas"
+
+  # Kozsa Culture
+  kozsa:0 "Kozsa"
+  dravedi:0 "Dravedi"
+  ravindi:0 "Ravindi"
+
+  # Apolt Culture
+  apolt:0 "Apolt"
+  spidot:0 "Spidot"
+  enot:0 "Enot"
+
+  # Telman Culture
+  telman:0 "Telman"
+  ravzeludi:0 "Ravzeludi"
+  mociarnludi:0 "Mociarnludi"
+  seravludi:0 "Seravludi"
+
+  # Bock'vas Culture
+  bockvas:0 "Bock'Vas"
+  kotiro:0 "Kotiro"
+  kotina:0 "Kotina"
+
+  # Samoveni Culture
+  samoveni_culture:0 "Samoveni"
+  starov:0 "Starov"
+  polerov:0 "Polerov"
+  ozerov:0 "Ozerov"
+
+  # Kinto Culture
+  kinto:0 "Kinto"
+  kintu:0 "Kintu"
+
+  # Keros Culture
+  keros:0 "Keros"
+  dvebi:0 "Dvebi"
+  itavla:0 "Itavla"

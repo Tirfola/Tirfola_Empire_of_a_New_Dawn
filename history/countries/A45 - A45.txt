@@ -1,0 +1,9 @@
+government = republic
+technology_group = golekian
+primary_culture = mociarnludi
+religion = pentethikan
+capital = 45
+government_rank = 1
+historical_friend = A42
+historical_rival = A46
+add_government_reform = oligarchy_reform

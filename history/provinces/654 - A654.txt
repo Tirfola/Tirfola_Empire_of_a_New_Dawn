@@ -1,0 +1,11 @@
+owner = A29
+controller = A29
+religion = pentethikan
+base_tax = 2
+base_production = 1
+base_manpower = 2
+trade_goods = fish
+is_city = no
+add_core = A29
+discovered_by = golekian
+culture = pensik

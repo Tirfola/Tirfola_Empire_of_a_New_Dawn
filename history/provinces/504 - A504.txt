@@ -1,0 +1,11 @@
+owner = A53
+controller = A53
+religion = pentethikan
+base_tax = 5
+base_production = 4
+base_manpower = 3
+trade_goods = spices
+is_city = no
+add_core = A53
+discovered_by = golekian
+culture = golkardas

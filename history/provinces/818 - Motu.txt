@@ -1,0 +1,15 @@
+owner = C01
+controller = C01
+add_core = C01
+
+culture = kintu
+religion = toona_atua
+
+base_tax = 2
+base_production = 6
+base_manpower = 3
+
+trade_goods = naval_supplies
+
+is_city = no
+

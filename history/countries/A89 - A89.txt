@@ -1,0 +1,7 @@
+government = monarchy
+add_government_reform = feudalism_reform
+technology_group = golekian
+primary_culture = polerov
+religion = boskylka
+capital = 688
+government_rank = 1

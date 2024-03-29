@@ -1,0 +1,29 @@
+government = monarchy
+add_government_reform = autocracy_reform
+technology_group = golekian
+primary_culture = bogdaxian
+religion = pentethikan
+capital = 6
+government_rank = 1
+
+533.4.19 = {
+  monarch = {
+    name = "Dusana"
+    dynasty = "Bogdaxion"
+    birth_date = 515.4.19
+    death_date = 715.10.23
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+
+  heir = {
+    name = "Damos"
+    dynasty = "Bogdaxion"
+    birth_date = 553.7.15
+    death_date = 753.1.8
+    adm = 4
+    dip = 2
+    mil = 4
+  }
+}

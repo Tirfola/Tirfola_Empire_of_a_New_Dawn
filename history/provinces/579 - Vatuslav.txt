@@ -1,0 +1,14 @@
+owner = A72
+controller = A72
+culture = dravniy
+religion = pentethikan
+base_tax = 2
+base_production = 1
+base_manpower = 1
+trade_goods = wool
+is_city = no
+add_core = A72
+discovered_by = golekian
+latent_trade_goods = {
+	coal
+}

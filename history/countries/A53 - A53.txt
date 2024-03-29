@@ -1,0 +1,20 @@
+government = monarchy
+add_government_reform = feudalism_reform
+technology_group = golekian
+religion = boskylka
+capital = 498
+government_rank = 2
+primary_culture = kurucas
+add_accepted_culture = golkardas
+add_accepted_culture = dagarlas
+580.5.15 = {
+	monarch = {
+		name = "Elnur"
+		dynasty = "Alisev"
+		birth_date = 562.5.15
+		death_date = 733.7.9
+		adm = 4
+		dip = 4
+		mil = 6
+	}
+}

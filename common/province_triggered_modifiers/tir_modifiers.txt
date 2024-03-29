@@ -1,0 +1,1203 @@
+boskylka_83 = {
+	potential = {
+		normal_or_historical_nations = yes
+		owner = {
+			religion = boskylka
+			NOT = { tag = A83 }
+		}
+	}
+
+	trigger = {
+		NOT = { tag = A83 }
+	}
+
+	diplomatic_reputation = -1
+}
+
+karsten_culture_modifier = {
+	hidden = yes
+	potential = {
+		owner = {
+			culture_group = karsten
+		}
+	}
+
+	trigger = {
+		owner = {
+			culture_group = karsten
+		}
+	}
+
+	on_activation = {
+		# if = {
+		# 	limit = {
+		# 		OR = {
+		# 			trade_goods = iron
+		# 			trade_goods = copper
+		# 			trade_goods = gems
+		# 		}
+		# 	}
+		# 	add_province_modifier = {
+		# 		name = karsten_metal_modifier
+		# 		duration = -1
+		# 	}
+		# }
+		# else_if = {
+		# 	limit = {
+		# 		OR = {
+		# 			trade_goods = livestock
+		# 			trade_goods = grain
+		# 			trade_goods = spices
+		# 			trade_goods = cotton
+		# 			trade_goods = tobacco
+		# 			trade_goods = cocoa
+		# 		}
+		# 	}
+		# 	add_province_modifier = {
+		# 		name = karsten_plant_modifier
+		# 		duration = -1
+		# 	}
+		# }
+		if = {
+			limit = { has_terrain = mountain }
+			add_province_modifier = {
+				name = karsten_mountain_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_terrain = hills
+					has_terrain = highlands
+				}
+			}
+			add_province_modifier = {
+				name = karsten_hill_highlands_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_terrain = grasslands
+					has_terrain = drylands
+					has_terrain = farmlands
+					has_terrain = savannah
+				}
+			}
+			add_province_modifier = {
+				name = karsten_lower_elevation_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_terrain = woods
+					has_terrain = forest
+					has_terrain = jungle
+				}
+			}
+			add_province_modifier = {
+				name = karsten_woods_modifier
+				duration = -1
+			}
+		}
+	}
+	on_deactivation = {
+		remove_province_modifier = karsten_mountain_modifier
+		remove_province_modifier = karsten_hill_highlands_modifier
+		remove_province_modifier = karsten_lower_elevation_modifier
+		remove_province_modifier = karsten_woods_modifier
+		remove_province_modifier = karsten_metal_modifier
+		remove_province_modifier = karsten_plant_modifier
+	}
+}
+
+numeran_culture_modifier = {
+	hidden = yes
+	potential = {
+		owner = {
+			culture_group = numeran
+		}
+	}
+
+	trigger = {
+		owner = {
+			culture_group = numeran
+		}
+	}
+
+	on_activation = {
+		if = {
+			limit = { has_terrain = mountain }
+			add_province_modifier = {
+				name = numeran_mountains_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_terrain = hills
+					has_terrain = highlands
+				}
+			}
+			add_province_modifier = {
+				name = numeran_highlands_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_terrain = drylands
+					has_terrain = savannah
+				}
+			}
+			add_province_modifier = {
+				name = numeran_drylands_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_terrain = woods
+					has_terrain = forest
+				}
+			}
+			add_province_modifier = {
+				name = numeran_wooded_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = { has_terrain = jungle }
+			add_province_modifier = {
+				name = numeran_jungle_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = { has_terrain = marsh }
+			add_province_modifier = {
+				name = numeran_swamps_modifier
+				duration = -1
+			}
+		}
+	}
+
+	on_deactivation = {
+		if = {
+			limit = {
+				NOT = {
+					owner = {
+						culture_group = numeran
+					}
+				}
+			}
+			remove_province_modifier = numeran_mountains_modifier
+			remove_province_modifier = numeran_highlands_modifier
+			remove_province_modifier = numeran_drylands_modifier
+			remove_province_modifier = numeran_wooded_modifier
+			remove_province_modifier = numeran_jungle_modifier
+			remove_province_modifier = numeran_swamps_modifier
+		}
+		else {
+			# Do Nothing
+		}
+	}
+}
+
+batenn_culture_modifier = {
+	hidden = yes
+	potential = {
+		owner = {
+			culture_group = batenn
+		}
+	}
+
+	trigger = {
+		owner = {
+			culture_group = batenn
+		}
+	}
+
+	on_activation = {
+		if = {
+			limit = { has_terrain = mountain }
+			add_province_modifier = {
+				name = batenn_mountains_modifier
+				duration = -1
+			}
+		}
+	}
+
+	on_deactivation = {
+		remove_province_modifier = batenn_mountains_modifier
+	}
+}
+
+mikran_culture_modifier = {
+	hidden = yes
+	potential = {
+		owner = {
+			culture_group = mikran
+		}
+	}
+
+	trigger = {
+		owner = {
+			culture_group = mikran
+		}
+	}
+
+	on_activation = {
+		if = {
+			limit = { has_terrain = mountain }
+			add_province_modifier = {
+				name = mikran_mountains_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_terrain = hills
+					has_terrain = highlands
+				}
+			}
+			add_province_modifier = {
+				name = mikran_highlands_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_terrain = drylands
+					has_terrain = savannah
+				}
+			}
+			add_province_modifier = {
+				name = mikran_drylands_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_terrain = woods
+					has_terrain = forest
+				}
+			}
+			add_province_modifier = {
+				name = mikran_woodlands_modifier
+				duration = -1
+			}
+		}
+	}
+
+	on_deactivation = {
+		remove_province_modifier = mikran_mountains_modifier
+		remove_province_modifier = mikran_highlands_modifier
+		remove_province_modifier = mikran_drylands_modifier
+		remove_province_modifier = mikran_woodlands_modifier
+	}
+}
+
+telman_culture_modifier = {
+	hidden = yes
+	potential = {
+		owner = {
+			culture_group = telman
+		}
+	}
+
+	trigger = {
+		owner = {
+			culture_group = telman
+		}
+	}
+
+	on_activation = {
+		if = {
+			limit = { has_terrain = mountain }
+			add_province_modifier = {
+				name = telman_mountains_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_terrain = drylands
+					has_terrain = savannah
+				}
+			}
+			add_province_modifier = {
+				name = telman_drylands_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_terrain = woods
+					has_terrain = forest
+				}
+			}
+			add_province_modifier = {
+				name = telman_woodlands_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = { has_terrain = marsh }
+			add_province_modifier = {
+				name = telman_swamps_modifier
+				duration = -1
+			}
+		}
+	}
+
+	on_deactivation = {
+		remove_province_modifier = telman_mountains_modifier
+		remove_province_modifier = telman_drylands_modifier
+		remove_province_modifier = telman_woodlands_modifier
+		remove_province_modifier = telman_swamps_modifier
+	}
+}
+
+grivan_culture_modifier = {
+	hidden = yes
+	potential = {
+		owner = {
+			culture_group = grivan
+		}
+	}
+
+	trigger = {
+		owner = {
+			culture_group = grivan
+		}
+	}
+
+	on_activation = {
+		if = {
+			limit = { has_terrain = mountain }
+			add_province_modifier = {
+				name = grivan_mountains_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_terrain = hills
+					has_terrain = highlands
+				}
+			}
+			add_province_modifier = {
+				name = grivan_highlands_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = { has_terrain = drylands }
+			add_province_modifier = {
+				name = grivan_drylands_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = { has_terrain = savannah }
+			add_province_modifier = {
+				name = grivan_savannahs_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_terrain = woods
+					has_terrain = forest
+				}
+			}
+			add_province_modifier = {
+				name = grivan_woodlands_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = { has_terrain = marsh }
+			add_province_modifier = {
+				name = grivan_swamps_modifier
+				duration = -1
+			}
+		}
+	}
+
+	on_deactivation = {
+		remove_province_modifier = grivan_mountains_modifier
+		remove_province_modifier = grivan_highlands_modifier
+		remove_province_modifier = grivan_drylands_modifier
+		remove_province_modifier = grivan_savannahs_modifier
+		remove_province_modifier = grivan_woodlands_modifier
+		remove_province_modifier = grivan_swamps_modifier
+	}
+}
+
+soroka_culture_modifier = {
+	hidden = yes
+	potential = {
+		owner = {
+			culture_group = soroka
+		}
+	}
+
+	trigger = {
+		owner = {
+			culture_group = soroka
+		}
+	}
+
+	on_activation = {
+		if = {
+			limit = { has_terrain = mountain }
+			add_province_modifier = {
+				name = soroka_mountains_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_terrain = hills
+					has_terrain = highlands
+				}
+			}
+			add_province_modifier = {
+				name = soroka_highlands_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = { has_terrain = drylands }
+			add_province_modifier = {
+				name = soroka_drylands_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = { has_terrain = savannah }
+			add_province_modifier = {
+				name = soroka_savannahs_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_terrain = woods
+					has_terrain = forest
+				}
+			}
+			add_province_modifier = {
+				name = soroka_woodlands_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = { has_terrain = marsh }
+			add_province_modifier = {
+				name = soroka_swamps_modifier
+				duration = -1
+			}
+		}
+	}
+
+	on_deactivation = {
+		remove_province_modifier = soroka_mountains_modifier
+		remove_province_modifier = soroka_highlands_modifier
+		remove_province_modifier = soroka_drylands_modifier
+		remove_province_modifier = soroka_savannahs_modifier
+		remove_province_modifier = soroka_woodlands_modifier
+		remove_province_modifier = soroka_swamps_modifier
+	}
+}
+
+snoot_myt_culture_modifier = {
+	hidden = yes
+	potential = {
+		owner = {
+			culture_group = snoot_myt
+		}
+	}
+
+	trigger = {
+		owner = {
+			culture_group = snoot_myt
+		}
+	}
+
+	on_activation = {
+		if = {
+			limit = { has_terrain = mountain }
+			add_province_modifier = {
+				name = snoot_myt_mountains_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_terrain = hills
+					has_terrain = highlands
+				}
+			}
+			add_province_modifier = {
+				name = snoot_myt_highlands_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = { has_terrain = drylands }
+			add_province_modifier = {
+				name = snoot_myt_drylands_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = { has_terrain = savannah }
+			add_province_modifier = {
+				name = snoot_myt_savannahs_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = { has_terrain = marsh }
+			add_province_modifier = {
+				name = snoot_myt_swamps_modifier
+				duration = -1
+			}
+		}
+	}
+
+	on_deactivation = {
+		remove_province_modifier = snoot_myt_mountains_modifier
+		remove_province_modifier = snoot_myt_highlands_modifier
+		remove_province_modifier = snoot_myt_drylands_modifier
+		remove_province_modifier = snoot_myt_savannahs_modifier
+		remove_province_modifier = snoot_myt_swamps_modifier
+	}
+}
+
+sinitrolvi_culture_modifier = {
+	hidden = yes
+	potential = {
+		owner = {
+			culture_group = sinitrolvi
+		}
+	}
+
+	trigger = {
+		owner = {
+			culture_group = sinitrolvi
+		}
+	}
+
+	on_activation = {
+		if = {
+			limit = { has_terrain = mountain }
+			add_province_modifier = {
+				name = sinitrolvi_mountains_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_terrain = hills
+					has_terrain = highlands
+				}
+			}
+			add_province_modifier = {
+				name = sinitrolvi_highlands_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_terrain = drylands
+					has_terrain = savannah
+				}
+			}
+			add_province_modifier = {
+				name = sinitrolvi_drylands_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = { has_terrain = marsh }
+			add_province_modifier = {
+				name = sinitrolvi_swamps_modifier
+				duration = -1
+			}
+		}
+	}
+
+	on_deactivation = {
+		remove_province_modifier = sinitrolvi_mountains_modifier
+		remove_province_modifier = sinitrolvi_highlands_modifier
+		remove_province_modifier = sinitrolvi_drylands_modifier
+		remove_province_modifier = sinitrolvi_swamps_modifier
+	}
+}
+
+apolt_culture_modifier = {
+	hidden = yes
+	potential = {
+		owner = {
+			culture_group = apolt
+		}
+	}
+
+	trigger = {
+		owner = {
+			culture_group = apolt
+		}
+	}
+
+	on_activation = {
+		if = {
+			limit = {
+				OR = {
+					has_terrain = hills
+					has_terrain = highlands
+				}
+			}
+			add_province_modifier = {
+				name = apolt_highlands_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_terrain = grasslands
+					has_terrain = farmlands
+				}
+			}
+			add_province_modifier = {
+				name = apolt_lowlands_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_terrain = drylands
+					has_terrain = savannah
+				}
+			}
+			add_province_modifier = {
+				name = apolt_drylands_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_terrain = woods
+					has_terrain = forest
+				}
+			}
+			add_province_modifier = {
+				name = apolt_woodlands_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = { has_terrain = marsh }
+			add_province_modifier = {
+				name = apolt_swamps_modifier
+				duration = -1
+			}
+		}
+	}
+
+	on_deactivation = {
+		remove_province_modifier = apolt_highlands_modifier
+		remove_province_modifier = apolt_lowlands_modifier
+		remove_province_modifier = apolt_drylands_modifier
+		remove_province_modifier = apolt_woodlands_modifier
+		remove_province_modifier = apolt_swamps_modifier
+	}
+}
+
+perbuzur_culture_modifier = {
+	hidden = yes
+	potential = {
+		owner = {
+			culture_group = perbuzur
+		}
+	}
+
+	trigger = {
+		owner = {
+			culture_group = perbuzur
+		}
+	}
+
+	on_activation = {
+		if = {
+			limit = { has_terrain = mountain }
+			add_province_modifier = {
+				name = perbuzur_mountains_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_terrain = hills
+					has_terrain = highlands
+				}
+			}
+			add_province_modifier = {
+				name = perbuzur_highlands_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_terrain = grasslands
+					has_terrain = farmlands
+				}
+			}
+			add_province_modifier = {
+				name = perbuzur_lowlands_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = { has_terrain = drylands }
+			add_province_modifier = {
+				name = perbuzur_drylands_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = { has_terrain = savannah }
+			add_province_modifier = {
+				name = perbuzur_savannahs_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_terrain = woods
+					has_terrain = forest
+				}
+			}
+			add_province_modifier = {
+				name = perbuzur_woodlands_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = { has_terrain = marsh }
+			add_province_modifier = {
+				name = perbuzur_swamps_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = { has_terrain = coastline }
+			add_province_modifier = {
+				name = perbuzur_coasts_modifier
+				duration = -1
+			}
+		}
+	}
+
+	on_deactivation = {
+		remove_province_modifier = perbuzur_mountains_modifier
+		remove_province_modifier = perbuzur_highlands_modifier
+		remove_province_modifier = perbuzur_lowlands_modifier
+		remove_province_modifier = perbuzur_drylands_modifier
+		remove_province_modifier = perbuzur_savannahs_modifier
+		remove_province_modifier = perbuzur_woodlands_modifier
+		remove_province_modifier = perbuzur_swamps_modifier
+		remove_province_modifier = perbuzur_coasts_modifier
+	}
+}
+
+tenky_culture_modifier = {
+	hidden = yes
+	potential = {
+		owner = {
+			culture_group = tenky
+		}
+	}
+
+	trigger = {
+		owner = {
+			culture_group = tenky
+		}
+	}
+
+	on_activation = {
+		if = {
+			limit = { has_terrain = mountain }
+			add_province_modifier = {
+				name = tenky_mountains_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_terrain = hills
+					has_terrain = highlands
+				}
+			}
+			add_province_modifier = {
+				name = tenky_highlands_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = { has_terrain = drylands }
+			add_province_modifier = {
+				name = tenky_drylands_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = { has_terrain = savannah }
+			add_province_modifier = {
+				name = tenky_savannahs_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_terrain = woods
+					has_terrain = forest
+				}
+			}
+			add_province_modifier = {
+				name = tenky_woodlands_modifier
+				duration = -1
+			}
+		}
+	}
+
+	on_deactivation = {
+		remove_province_modifier = tenky_mountains_modifier
+		remove_province_modifier = tenky_highlands_modifier
+		remove_province_modifier = tenky_drylands_modifier
+		remove_province_modifier = tenky_savannahs_modifier
+		remove_province_modifier = tenky_woodlands_modifier
+	}
+}
+
+bockvas_culture_modifier = {
+	hidden = yes
+	potential = {
+		owner = {
+			culture_group = bockvas
+		}
+	}
+
+	trigger = {
+		owner = {
+			culture_group = bockvas
+		}
+	}
+
+	on_activation = {
+		if = {
+			limit = { has_terrain = mountain }
+			add_province_modifier = {
+				name = bockvas_mountains_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_terrain = drylands
+					has_terrain = savannah
+				}
+			}
+			add_province_modifier = {
+				name = bockvas_drylands_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_terrain = woods
+					has_terrain = forest
+				}
+			}
+			add_province_modifier = {
+				name = bockvas_woodlands_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = { has_terrain = jungle }
+			add_province_modifier = {
+				name = bockvas_jungle_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = { has_terrain = marsh }
+			add_province_modifier = {
+				name = bockvas_swamps_modifier
+				duration = -1
+			}
+		}
+	}
+
+	on_deactivation = {
+		remove_province_modifier = bockvas_mountains_modifier
+		remove_province_modifier = bockvas_drylands_modifier
+		remove_province_modifier = bockvas_woodlands_modifier
+		remove_province_modifier = bockvas_jungle_modifier
+		remove_province_modifier = bockvas_swamps_modifier
+	}
+}
+
+kozsa_culture_modifier = {
+	hidden = yes
+	potential = {
+		owner = {
+			culture_group = kozsa
+		}
+	}
+
+	trigger = {
+		owner = {
+			culture_group = kozsa
+		}
+	}
+
+	on_activation = {
+		if = {
+			limit = { has_terrain = mountain }
+			add_province_modifier = {
+				name = kozsa_mountains_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_terrain = hills
+					has_terrain = highlands
+				}
+			}
+			add_province_modifier = {
+				name = kozsa_highlands_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = { has_terrain = drylands }
+			add_province_modifier = {
+				name = kozsa_drylands_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = { has_terrain = savannah }
+			add_province_modifier = {
+				name = kozsa_savannahs_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_terrain = woods
+					has_terrain = forest
+				}
+			}
+			add_province_modifier = {
+				name = kozsa_woodlands_modifier
+				duration = -1
+			}
+		}
+	}
+
+	on_deactivation = {
+		remove_province_modifier = kozsa_mountains_modifier
+		remove_province_modifier = kozsa_highlands_modifier
+		remove_province_modifier = kozsa_drylands_modifier
+		remove_province_modifier = kozsa_savannahs_modifier
+		remove_province_modifier = kozsa_woodlands_modifier
+	}
+}
+
+keros_culture_modifier = {
+	hidden = yes
+	potential = {
+		owner = {
+			culture_group = keros
+		}
+	}
+
+	trigger = {
+		owner = {
+			culture_group = keros
+		}
+	}
+
+	on_activation = {
+		if = {
+			limit = {
+				OR = {
+					has_terrain = hills
+					has_terrain = highlands
+				}
+			}
+			add_province_modifier = {
+				name = keros_highlands_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = { has_terrain = drylands }
+			add_province_modifier = {
+				name = keros_drylands_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = { has_terrain = savannah }
+			add_province_modifier = {
+				name = keros_savannahs_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_terrain = woods
+					has_terrain = forest
+				}
+			}
+			add_province_modifier = {
+				name = keros_woodlands_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = { has_terrain = jungle }
+			add_province_modifier = {
+				name = keros_jungles_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = { has_terrain = marsh }
+			add_province_modifier = {
+				name = keros_swamps_modifier
+				duration = -1
+			}
+		}
+	}
+
+	on_deactivation = {
+		remove_province_modifier = keros_highlands_modifier
+		remove_province_modifier = keros_drylands_modifier
+		remove_province_modifier = keros_savannahs_modifier
+		remove_province_modifier = keros_woodlands_modifier
+		remove_province_modifier = keros_jungles_modifier
+		remove_province_modifier = keros_swamps_modifier
+	}
+}
+
+pikos_culture_modifier = {
+	hidden = yes
+	potential = {
+		owner = {
+			culture_group = pikos
+		}
+	}
+
+	trigger = {
+		owner = {
+			culture_group = pikos
+		}
+	}
+
+	on_activation = {
+		if = {
+			limit = {
+				OR = {
+					has_terrain = hills
+					has_terrain = highlands
+				}
+			}
+			add_province_modifier = {
+				name = pikos_highlands_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = { has_terrain = savannah }
+			add_province_modifier = {
+				name = pikos_savannahs_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_terrain = woods
+					has_terrain = forest
+				}
+			}
+			add_province_modifier = {
+				name = pikos_woodlands_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = { has_terrain = jungle }
+			add_province_modifier = {
+				name = pikos_jungles_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = { has_terrain = marsh }
+			add_province_modifier = {
+				name = pikos_swamps_modifier
+				duration = -1
+			}
+		}
+	}
+
+	on_deactivation = {
+		remove_province_modifier = pikos_highlands_modifier
+		remove_province_modifier = pikos_savannahs_modifier
+		remove_province_modifier = pikos_woodlands_modifier
+		remove_province_modifier = pikos_jungles_modifier
+		remove_province_modifier = pikos_swamps_modifier
+	}
+}

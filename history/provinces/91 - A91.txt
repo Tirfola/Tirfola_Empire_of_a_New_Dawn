@@ -1,0 +1,17 @@
+owner = A82
+controller = A82
+add_core = A82
+
+culture = seravludi
+religion = pentethikan
+
+base_tax = 5
+base_production = 3
+base_manpower = 1
+
+trade_goods = iron
+
+is_city = no
+
+discovered_by = golekian
+fort_15th = yes

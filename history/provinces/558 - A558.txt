@@ -1,0 +1,11 @@
+owner = A61
+controller = A61
+religion = pentethikan
+base_tax = 5
+base_production = 4
+base_manpower = 2
+trade_goods = iron
+is_city = no
+add_core = A61
+discovered_by = golekian
+culture = proizonci

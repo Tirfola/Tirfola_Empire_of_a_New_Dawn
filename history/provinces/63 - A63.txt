@@ -1,0 +1,12 @@
+owner = A63
+controller = A63
+religion = pentethikan
+base_tax = 3
+base_production = 4
+base_manpower = 5
+trade_goods = cloves
+is_city = no
+add_core = A63
+discovered_by = golekian
+fort_15th = yes
+culture = zunankoci

@@ -1,0 +1,965 @@
+generic_goleka_mission_one = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		capital_scope = {
+			OR = {
+				superregion = goleka_superregion
+				region = samoveni_region
+			}
+		}
+	}
+
+	humiliate_the_enemy = {
+		icon = mission_impaled_soldies
+		position = 2
+
+		required_missions = { raise_a_grand_army }
+
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = obj_humiliate_rival_tooltip
+				has_country_flag = humiliated_rival
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = humiliated_enemy # +1 Yearly Prestige for 15 years
+				duration = 5475
+			}
+		}
+	}
+
+	refine_our_arms = {
+		icon = mission_guns_of_urban
+		position = 4
+
+		required_missions = { conquer_new_states }
+
+		trigger = {
+			has_mil_advisor_2 = yes	# Level 2 Military Advisor
+
+			OR = {
+				has_commanding_three_star = yes # 3 Star General
+				num_of_regiments_at_full_drill  = 20 # 20 Units at Max Drill
+				has_global_modifier_value = { # 110% Discipline
+					which = discipline
+					value = 0.10
+				}
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = arms_refinery # 0.5 Army Tradition for 25 Years
+				duration = 9125 # -10% Attrition for 25 Years
+			}
+
+		}
+	}
+
+	professionalize_the_army = {
+		icon = mission_assemble_an_army
+		position = 5
+
+		required_missions = { refine_our_arms }
+
+		trigger = {
+			army_professionalism = 0.3 # 30% Professionalism
+			army_size = 50 # Have over 50,000 Troops
+		}
+
+		effect = {
+			custom_tooltip = claims_on_border_states_region_tooltip_tt
+			custom_tooltip = claims_on_capital_provinces_region_tooltip_tt
+			hidden_effect = {
+				if = {
+					limit = { capital_scope = { region = obraposni_region } }
+					every_neighbor_province = { # Claims on Bordering States in the Capital region
+						limit = { region = obraposni_region }
+						every_province_in_state = {
+							add_permanent_claim = ROOT
+						}
+					}
+					every_capital_province = { # Claims on Country Capitals of all countries in region
+						limit = { region = obraposni_region }
+						add_permanent_claim = ROOT
+					}
+				}
+				else_if = {
+					limit = { capital_scope = { region = mocurst_region } }
+					every_neighbor_province = { # Claims on Bordering States in the Capital region
+						if = {
+							limit = { region = mocurst_region }
+							every_province_in_state = {
+								add_permanent_claim = ROOT
+							}
+						}
+					}
+					every_capital_province = { # Claims on Country Capitals of all countries in region
+						limit = { region = mocurst_region }
+						add_permanent_claim = ROOT
+					}
+				}
+				else_if = {
+					limit = { capital_scope = { region = reczemni_region } }
+					every_neighbor_province = { # Claims on Bordering States in the Capital region
+						if = {
+							limit = { region = reczemni_region }
+							every_province_in_state = {
+								add_permanent_claim = ROOT
+							}
+						}
+					}
+					every_capital_province = { # Claims on Country Capitals of all countries in region
+						limit = { region = reczemni_region }
+						add_permanent_claim = ROOT
+					}
+				}
+				else_if = {
+					limit = { capital_scope = { region = xiktaseis_region } }
+					every_neighbor_province = { # Claims on Bordering States in the Capital region
+						if = {
+							limit = { region = xiktaseis_region }
+							every_province_in_state = {
+								add_permanent_claim = ROOT
+							}
+						}
+					}
+					every_capital_province = { # Claims on Country Capitals of all countries in region
+						limit = { region = xiktaseis_region }
+						add_permanent_claim = ROOT
+					}
+				}
+				else_if = {
+					limit = { capital_scope = { region = samoveni_region } }
+					every_neighbor_province = { # Claims on Bordering States in the Capital region
+						if = {
+							limit = { region = samoveni_region }
+							every_province_in_state = {
+								add_permanent_claim = ROOT
+							}
+						}
+					}
+					every_capital_province = { # Claims on Country Capitals of all countries in region
+						limit = { region = samoveni_region }
+						add_permanent_claim = ROOT
+					}
+				}
+			}
+		}
+	}
+
+	unite_the_region = {
+		icon = mission_unite_home_region
+		position = 6
+
+		required_missions = { professionalize_the_army seize_power }
+
+		provinces_to_highlight = {
+		}
+
+		trigger = {
+			capital_scope = {
+				region_for_scope_province = { # All provinces in capital region owned by us or non-tributary subject
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+		}
+
+		effect = {
+			custom_tooltip = claims_on_border_states_goleka_tooltip_tt
+			hidden_effect = {
+				every_neighbor_province = {
+					limit = { superregion = goleka_superregion }
+					every_province_in_state = { # Claims on bordering states in goleka
+						add_permanent_claim = ROOT
+					}
+				}
+			}
+
+			custom_tooltip = claims_on_capital_provinces_goleka_tooltip_tt
+			hidden_effect = {
+				every_capital_province = { # Claims on country capitals in goleka
+					limit = { superregion = goleka_superregion }
+					add_permanent_claim = ROOT
+				}
+			}
+
+			add_country_modifier = { # -10% Core Creation Cost for 25 years
+				name = a_united_region
+				duration = 9125
+			}
+		}
+	}
+}
+
+generic_goleka_mission_two = {
+	slot = 2
+	generic = yes
+	ai = yes
+	potential = {
+		capital_scope = {
+			OR = {
+				superregion = goleka_superregion
+				region = samoveni_region
+			}
+		}
+	}
+
+	raise_a_grand_army = {
+		icon = mission_build_up_to_force_limit
+		position = 1
+
+		required_missions = {  } # Empty
+
+		trigger = {
+			army_size_percentage = 1
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "thriving_arms_industry" # Thriving Arms Industry
+				duration = 9125 #25 years
+			}
+		}
+	}
+
+	conquer_new_states = {
+		icon = mission_cannons_firing
+		position = 3
+
+		required_missions = { humiliate_the_enemy trust_worthy_allies }
+
+		trigger = {
+			grown_by_states = 5
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = strong_rural_bureaucracy # -25% State Maintenance for 25 Years
+				duration = 9125 # -33% Harsh Treatment Cost for 25 Years
+			}
+		}
+	}
+
+	acquire_subjects = {
+		icon = mission_have_two_subjects
+		position = 4
+
+		required_missions = { conquer_new_states }
+
+		trigger = {
+			calc_true_if = { # 2 Non-tributory Subject
+				all_country = {
+					is_subject_of = ROOT
+					NOT = { is_subject_of_type = tributary_state }
+				}
+				amount = 2
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = acquired_subjects # Diplomatic Annexation Cost -15% for 25 Years
+				duration = 9125
+			}
+		}
+	}
+
+	seize_power = {
+		icon = mission_monarch_in_throne_room
+		position = 5
+
+		required_missions = { acquire_subjects }
+
+		trigger = {
+			crown_land_share = 50 # Have 50% Crown Land
+			estate_loyalty = { # 40 Loyalty for all 3 Estates
+				estate = estate_burghers
+				loyalty = 40
+			}
+			estate_loyalty = { # 40 Loyalty for all 3 Estates
+				estate = estate_nobles
+				loyalty = 40
+			}
+			estate_loyalty = { # 40 Loyalty for all 3 Estates
+				estate = estate_church
+				loyalty = 40
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = seizure_of_power # -15% Aggressive Expansion Impact for 25 Years
+				duration = 9125
+			}
+		}
+	}
+
+	expand_across_goleka = {
+		icon = mng_heavens_will
+		position = 7
+
+		required_missions = { unite_the_region unite_the_culture }
+
+		provinces_to_highlight = {
+			superregion = goleka_superregion
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 102
+				region = obraposni_region
+			}
+			num_of_owned_provinces_with = {
+				value = 37
+				region = mocurst_region
+			}
+			num_of_owned_provinces_with = {
+				value = 68
+				region = reczemni_region
+			}
+			num_of_owned_provinces_with = {
+				value = 73
+				region = xiktaseis_region
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = great_unification # Permanent +2.5% Admin Efficiency
+				duration = -1 # Permanent +10% Manpower Recovery
+			}
+		}
+	}
+}
+
+generic_goleka_mission_three = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		capital_scope = {
+			OR = {
+				superregion = goleka_superregion
+				region = samoveni_region
+			}
+		}
+	}
+
+	trust_worthy_allies = {
+		icon = mission_alliances
+		position = 2
+
+		required_missions = { raise_a_grand_army }
+
+		trigger = {
+			calc_true_if = { # 2 Allies Countries have 150 Relations
+				all_ally = {
+					has_opinion = {
+						who = ROOT
+						value = 150
+					}
+				}
+				amount = 2
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "influential_diplomacy" # Influential Diplomats for 25 years
+				duration = 9125 #25 years
+			}
+		}
+	}
+
+	secure_our_borders = {
+		icon = mission_portuguese_interference
+		position = 4
+
+		required_missions = { conquer_new_states }
+
+		trigger = {
+			calc_true_if = { # Have 2 max level forts on border
+				all_neighbor_country = {
+					any_neighbor_province = {
+						fort_level = 2
+						owned_by = ROOT
+					}
+				}
+				amount = 2
+			}
+		}
+
+		effect = {
+			custom_tooltip = strengthened_borders_tooltip_tt
+			hidden_effect = {
+				every_owned_province = {
+					limit = { has_influencing_fort = yes }
+					every_province_in_state = {
+						add_province_modifier = {
+							name = quelled_populace # -2 Unrest in states with forts for 25 years
+							duration = 9125
+						}
+					}
+				}
+			}
+			add_country_modifier = {
+				name = strengthened_borders
+				duration = 9125 # -10% fort maintenance for 25 years
+			}
+		}
+	}
+
+	unite_the_culture = {
+		icon = mch_proclaim_later_jin
+		position = 6
+
+		required_missions = { seize_power protect_our_brethren }
+
+		provinces_to_highlight = {
+			culture_group = ROOT
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+
+		trigger = {
+			owns_all_provinces = {
+				culture_group = ROOT
+			}
+		}
+
+		effect = {
+			custom_tooltip = all_culture_group_provinces_pacified_tooltip_tt
+			hidden_effect = {
+				every_owned_province = {
+					limit = { culture_group = ROOT }
+					add_province_modifier = {
+						name = integrated_people # -5 Unrest in culture group provinces for 25 years
+						duration = 9125
+					}
+				}
+			}
+			add_manpower = 10 # 10,000 Manpower
+		}
+	}
+
+	favor_the_burghs = {
+		icon = mission_wine_monopolies
+		position = 7
+
+		required_missions = { high_income }
+
+		trigger = {
+			estate_loyalty = { # 60 Loyalty
+				estate = estate_burghers
+				loyalty = 60
+			}
+			estate_influence = {
+				estate = estate_burghers
+				influence = 50
+			}
+			NOT = {
+				estate_influence = {
+					estate = estate_church
+					influence = 35
+				}
+			}
+			NOT = {
+				estate_influence = {
+					estate = estate_nobles
+					influence = 35
+				}
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = the_burghs_favor # Burghs Loyalty +10% for 25 years
+				duration = 9125 # -30% promote mercantilism for 25 years
+			}
+		}
+	}
+
+	trade_expansion = {
+		icon = mission_rb_colonise_spice_islands
+		position = 8
+
+		required_missions = { favor_the_burghs }
+
+		trigger = {
+			home_trade_node = {
+				trade_share = {
+					country = ROOT
+					share = 75
+				}
+			}
+		}
+
+		effect = {
+			hidden_effect = {
+				home_trade_node_effect_scope = {
+					random_trade_node_member_province = {
+						limit = {
+							owned_by = ROOT
+						}
+						save_event_target_as = reward_province
+					}
+					random_trade_node_member_province = {
+						limit = {
+							owned_by = ROOT
+							is_capital = yes
+						}
+						save_event_target_as = reward_province
+					}
+					random_trade_node_member_province = {
+						limit = {
+							owned_by = ROOT
+							development = CAPITAL
+							is_capital = no
+						}
+						save_event_target_as = reward_province
+					}
+					random_trade_node_member_province = {
+						limit = {
+							owned_by = ROOT
+							development = CAPITAL
+							is_capital = no
+							development = 20
+						}
+						save_event_target_as = reward_province
+					}
+					random_trade_node_member_province = {
+						limit = {
+							owned_by = ROOT
+							development = CAPITAL
+							is_capital = no
+							development = 25
+						}
+						save_event_target_as = reward_province
+					}
+					random_trade_node_member_province = {
+						limit = {
+							owned_by = ROOT
+							development = CAPITAL
+							is_capital = no
+							development = 30
+						}
+						save_event_target_as = reward_province
+					}
+				}
+			}
+			if = {
+				limit = { has_saved_event_target = reward_province }
+				event_target:reward_province = {
+					add_province_modifier = {
+						name = "dominant_trade_hub"
+						duration = -1
+					}
+				}
+			}
+			else = {
+				custom_tooltip = dominant_home_node_reward_tooltip
+			}
+		}
+	}
+
+	promoted_mercantilism = {
+		icon = mission_hanseatic_city
+		position = 9
+
+		required_missions = { trade_expansion }
+
+		trigger = {
+			mercantilism = 35
+			calc_true_if = {
+				all_owned_province = {
+					OR = {
+						has_building = marketplace
+						has_building = trade_depot
+						has_building = stock_exchange
+					}
+				}
+				amount = 10
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = efficient_trade_centers # 15% trade Efficiency for 25 years
+				duration = 9125
+			}
+		}
+	}
+
+	naval_supremacy = {
+		icon = mission_establish_high_seas_navy
+		position = 11
+
+		required_missions = { expand_production }
+
+		trigger = {
+			OR = {
+				num_of_light_ship = 50
+				num_of_galley = 50
+			}
+			num_of_heavy_ship = 20
+			has_flagship = yes
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = a_great_armada # Permanent national sailor modifier +20%
+				duration = -1 # Permanent yearly navy tradition +1
+			}
+		}
+	}
+}
+
+generic_goleka_mission_four = {
+	slot = 4
+	generic = yes
+	ai = yes
+	potential = {
+		capital_scope = {
+			OR = {
+				superregion = goleka_superregion
+				region = samoveni_region
+			}
+		}
+	}
+
+	protect_our_brethren = {
+		icon = mission_subdue_rajputana
+		position = 5
+
+		required_missions = { secure_our_borders strengthen_our_roots }
+
+		trigger = {
+			calc_true_if = {
+				all_owned_province = {
+					culture = ROOT
+					has_building = ramparts
+				}
+				amount = 2
+			}
+		}
+
+		effect = {
+			custom_tooltip = claims_on_all_culture_group_tooltip_tt
+			hidden_effect = {
+				every_province = {
+					limit = { culture_group = ROOT }
+					add_permanent_claim = ROOT
+				}
+			}
+		}
+	}
+
+	high_income = {
+		icon = mission_high_income
+		position = 5
+
+		required_missions = { }
+
+		trigger = {
+			share_of_starting_income = 1.5
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = growing_economy
+				duration = 9125 #25 years
+			}
+		}
+	}
+
+	expand_production = {
+		icon = mission_have_manufactories
+		position = 10
+
+		required_missions = { promoted_mercantilism amass_wealth }
+
+		trigger = {
+			calc_true_if = {
+				desc = build_manufactories_mission_tooltip
+				all_owned_province = {
+					OR = {
+						has_building = mills
+						has_building = farm_estate
+						has_building = tradecompany
+						has_building = plantations
+						has_building = textile
+						has_building = weapons
+						has_building = wharf
+						has_building = furnace
+					}
+				}
+				amount = 20
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "proto_industrialization"
+				duration = 9125
+			}
+			add_years_of_income = 1.5
+		}
+	}
+}
+
+generic_goleka_mission_five = {
+	slot = 5
+	generic = yes
+	ai = yes
+	potential = {
+		capital_scope = {
+			OR = {
+				superregion = goleka_superregion
+				region = samoveni_region
+			}
+		}
+	}
+
+	minister_of_acculturation = {
+		icon = mission_arts_and_letters
+		position = 2
+
+		required_missions = { }
+
+		trigger = {
+			has_dip_advisor_2 = yes # Have Level 2 Dip Advisor
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = cultured_advisor # -30% culture conversion cost for 15 years
+				duration = 5475
+			}
+		}
+	}
+
+	expand_x = {
+		icon = mission_conquer_kanem_bornu
+		position = 3
+
+		required_missions = { minister_of_acculturation }
+
+		provinces_to_highlight = {
+			has_owner_culture = no
+			owned_by = ROOT
+		}
+
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = culture_convert_10_provinces_tooltip_tt
+				check_variable = { which = num_converted_to_own_culture value = 10 }
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = superior_culture # +10% Tax Income from converted Provinces for 25 Years
+				duration = 9125 # -10% Dev cost from converted Provinces for 25 Years
+			}
+		}
+	}
+
+	strengthen_our_roots = {
+		icon = mission_dominate_genoa
+		position = 4
+
+		required_missions = { expand_x }
+
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					has_owner_culture = yes
+					owned_by = ROOT
+					NOT = { development = 6 }
+				}
+				num_of_times_improved_by_owner = 5
+			}
+
+		}
+
+		trigger = {
+			all_owned_province = {
+				OR = {
+					has_owner_culture = no
+					AND = {
+						has_owner_culture = yes
+						development = 6
+					}
+				}
+			}
+			calc_true_if = {
+				all_owned_province = {
+					has_owner_culture = yes
+					num_of_times_improved_by_owner = 5
+				}
+				amount = 5
+			}
+		}
+
+		effect = {
+			custom_tooltip = flourishing_masses_tooltip_tt
+			hidden_effect = {
+				every_owned_province = {
+					limit = { culture = ROOT }
+					add_province_modifier = {
+						name = flourishing_masses # +0.25 Local Prosperity Growth in state with X Provinces for 10 years
+						duration = 3650
+					}
+				}
+			}
+		}
+	}
+
+	prosperous_core = {
+		icon = mission_conquer_mewar
+		position = 5
+
+		required_missions = { strengthen_our_roots }
+
+		provinces_to_highlight = {
+			has_owner_culture = yes
+			owned_by = ROOT
+			OR = {
+				is_prosperous = no
+				nationalism = 1
+			}
+		}
+
+		trigger = {
+			all_owned_province = {
+				OR = {
+					has_owner_culture = no
+					AND = {
+						has_owner_culture = yes
+						is_prosperous = yes # All states with primary culture have prosperity
+						NOT = { nationalism = 1 } # All provinces with primary culture have no seperatism
+					}
+				}
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = strong_civilization # Permanent -5% dev cost to primary culture provinces
+				duration = -1 # Permanent +10% manpower modifier to provinces with primary culture
+			}
+
+			custom_tooltip = cultured_trade_tooltip_tt
+			hidden_effect = {
+				every_owned_province = {
+					limit = {culture = ROOT }
+					add_province_modifier = {
+						name = cultured_trade # Permanent +5% trade value modifier to provinces with primary culture
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+
+	grow_x = {
+		icon = mission_conquer_50_development
+		position = 7
+
+		required_missions = { high_income }
+
+		trigger = {
+			grown_by_development = 50
+		}
+
+		effect = {
+			capital_scope = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+				area = {
+					limit = { owned_by = ROOT }
+					add_province_modifier = {
+						name = "growth_of_capital"
+						duration = 9125 #25 years
+					}
+				}
+			}
+		}
+	}
+
+	economic_expansion = {
+		icon = mission_early_game_buildings
+		position = 8
+
+		required_missions = { grow_x }
+
+		trigger = {
+			num_of_owned_provinces_with = {
+				has_tax_building_trigger = yes
+				value = 5
+			}
+			num_of_owned_provinces_with = {
+				has_production_building_trigger = yes
+				value = 5
+			}
+		}
+
+		effect = {
+			add_adm_power = 50
+			add_country_modifier = {
+				name = "building_spree"
+				duration = 9125
+			}
+		}
+	}
+
+	amass_wealth = {
+		icon = mission_war_chest
+		position = 9
+
+		required_missions = { economic_expansion }
+
+		trigger = {
+			treasury = 2000
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "strong_treasury"
+				duration = 9125
+			}
+		}
+	}
+
+	industrial_ingenuity = {
+		icon = mission_guilds_of_barcelona
+		position = 11
+
+		required_missions = { expand_production }
+
+		trigger = {
+			has_institution = enlightenment
+			innovativeness = 40
+			calc_true_if = {
+				all_owned_province = {
+					has_building = university
+				}
+				amount = 10
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = brilliant_advisors # Permanent -10% advisor cost
+				duration = -1 # permanent +1 possible policies
+			}
+		}
+	}
+}

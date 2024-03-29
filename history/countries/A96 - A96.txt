@@ -1,0 +1,7 @@
+government = monarchy
+add_government_reform = autocracy_reform
+technology_group = golekian
+primary_culture = numen
+religion = pentethikan
+capital = 127
+government_rank = 3

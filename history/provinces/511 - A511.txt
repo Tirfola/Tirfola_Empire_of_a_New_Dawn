@@ -1,0 +1,12 @@
+owner = A57
+controller = A57
+religion = pentethikan
+base_tax = 4
+base_production = 4
+base_manpower = 2
+trade_goods = copper
+is_city = no
+add_core = A57
+discovered_by = golekian
+fort_15th = yes
+culture = zilver

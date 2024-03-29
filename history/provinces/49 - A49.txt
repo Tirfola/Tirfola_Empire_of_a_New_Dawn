@@ -1,0 +1,11 @@
+owner = A49
+controller = A49
+religion = boskylka
+base_tax = 2
+base_production = 1
+base_manpower = 2
+trade_goods = livestock
+is_city = no
+add_core = A49
+discovered_by = golekian
+culture = duzas

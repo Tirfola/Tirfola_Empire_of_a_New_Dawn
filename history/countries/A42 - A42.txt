@@ -1,0 +1,12 @@
+government = republic
+technology_group = golekian
+primary_culture = mociarnludi
+add_accepted_culture = seravludi
+religion = pentethikan
+capital = 293
+government_rank = 1
+historical_friend = A45
+historical_rival = A42
+historical_rival = A82
+historical_rival = A17
+add_government_reform = oligarchy_reform

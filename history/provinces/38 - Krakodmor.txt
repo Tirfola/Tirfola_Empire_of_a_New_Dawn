@@ -1,0 +1,16 @@
+owner = A38
+controller = A38
+add_core = A38
+
+culture = seravludi
+religion = pentethikan
+
+base_tax = 3
+base_production = 6
+base_manpower = 3
+
+trade_goods = paper
+
+is_city = no
+
+discovered_by = golekian

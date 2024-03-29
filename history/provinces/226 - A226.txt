@@ -1,0 +1,11 @@
+owner = A30
+controller = A30
+culture = koper
+religion = pentethikan
+base_tax = 4
+base_production = 3
+base_manpower = 2
+trade_goods = livestock
+is_city = no
+add_core = A30
+discovered_by = golekian

@@ -1,0 +1,22 @@
+government = monarchy
+add_government_reform = autocracy_reform
+technology_group = golekian
+primary_culture = toxen
+religion = pentethikan
+capital = 373
+government_rank = 1
+historical_friend = A14
+historical_rival = A17
+historical_rival = A04
+
+567.4.22 = {
+  monarch = {
+    name = "Dimnos"
+    dynasty = "Toxerion"
+    birth_date = 549.4.22
+    death_date = 749.1.6
+    adm = 1
+    dip = 5
+    mil = 5
+  }
+}

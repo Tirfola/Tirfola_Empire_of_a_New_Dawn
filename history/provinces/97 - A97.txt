@@ -1,0 +1,18 @@
+owner = A42
+controller = A42
+add_core = A42
+
+culture = seravludi
+religion = pentethikan
+
+base_tax = 4
+base_production = 8
+base_manpower = 4
+
+trade_goods = gems
+
+is_city = no
+
+discovered_by = golekian
+fort_15th = yes
+center_of_trade = 2

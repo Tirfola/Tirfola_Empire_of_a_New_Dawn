@@ -1,0 +1,13 @@
+owner = A25
+controller = A25
+religion = pentethikan
+base_tax = 3
+base_production = 4
+base_manpower = 4
+trade_goods = tobacco
+is_city = no
+center_of_trade = 1
+add_core = A25
+discovered_by = golekian
+fort_15th = yes
+culture = pirantiu

@@ -1,0 +1,20 @@
+# Sukrai-Tekustvo Guarantee
+guarantee = {
+  first = A82
+  second = A39
+  start_date = 589.1.1
+}
+
+# Sukrai-Tisars Guarantee
+guarantee = {
+  first = A82
+  second = A38
+  start_date = 589.1.1
+}
+
+# Kaintu-Wakruhau Alliance
+alliance = {
+  first = A43
+  second = A44
+  start_date = 589.1.1
+}

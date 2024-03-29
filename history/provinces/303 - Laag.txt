@@ -1,0 +1,14 @@
+owner = A47
+controller = A47
+culture = eisier
+religion = pentethikan
+base_tax = 3
+base_production = 2
+base_manpower = 1
+trade_goods = iron
+is_city = no
+add_core = A47
+discovered_by = golekian
+latent_trade_goods = {
+	coal
+}

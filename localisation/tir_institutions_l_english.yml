@@ -1,0 +1,32 @@
+﻿l_english:
+ feudalism:0 "Centralization"
+ feudalism_date:0 "4"
+ desc_feudalism:0 "This is a placeholder"
+
+ renaissance:0 "Regulated Coins"
+ renaissance_date:0 "595"
+ desc_renaissance:0 "This is a placeholder"
+
+ new_world_i:0 "Fertilized Soil"
+ new_world_i_date:0 "632"
+ desc_new_world_i:0 "This is a placeholder"
+
+ printing_press:0 "Local Census"
+ printing_press_date:0 "655"
+ desc_printing_press:0 "This is a placeholder"
+
+ global_trade:0 "Global Dominion"
+ global_trade_date:0 "699"
+ desc_global_trade:0 "This is a placeholder"
+
+ manufactories:0 "Manufactories"
+ manufactories_date:0 "760"
+ desc_manufactories:0 "This is a placeholder"
+
+ enlightenment:0 "Universities"
+ enlightenment_date:0 "818"
+ desc_enlightenment:0 "This is a placeholder"
+
+ industrialization:0 "Arcane Industries"
+ industrialization_date:0 "870"
+ desc_industrialization:0 "This is a placeholder"

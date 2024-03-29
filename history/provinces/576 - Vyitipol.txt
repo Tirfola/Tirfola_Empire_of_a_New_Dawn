@@ -1,0 +1,16 @@
+owner = A71
+controller = A71
+add_core = A71
+
+culture = dravniy
+religion = pentethikan
+
+base_tax = 2
+base_production = 3
+base_manpower = 4
+
+trade_goods = grain
+
+is_city = no
+
+discovered_by = golekian

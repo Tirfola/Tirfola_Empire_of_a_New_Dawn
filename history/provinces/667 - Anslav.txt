@@ -1,0 +1,13 @@
+owner = A23
+controller = A23
+culture = cenlakstam
+religion = pentethikan
+base_tax = 8
+base_production = 8
+base_manpower = 6
+trade_goods = dyes
+is_city = no
+center_of_trade = 2
+add_core = A23
+discovered_by = golekian
+fort_15th = yes

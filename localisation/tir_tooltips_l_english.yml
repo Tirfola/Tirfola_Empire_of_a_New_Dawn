@@ -1,0 +1,96 @@
+﻿l_english:
+ # Ages
+ developed_nation_tt:0 "Increase your nation development by 30."
+ blossoming_goods_tt:0 "Be a leading producer in any trade good."
+ shining_star_tooltip_tt:0 "Own highest development province in §Y[Root.Capital.GetRegionName]§!"
+ forward_thinking_tooltip_tt:0 "Be ahead by §Y1§! techology compared to §YAll§! of your neighbors"
+
+ # Institution
+ # Centralization
+ FRIENDLY_NEIGHBOR_OR_COAST_PROVINCE_HAS_EMBRACED:0 "Nearby Friendly Province has §YCentralization§!"
+ NEIGHBOR_NOT_OWNED_IS_CENTRALIZATION:0 "Borders Nation with §YCentralization§!"
+ tooltip_centralization_embraced:0 "Not Trade Company & Owner has embraced §YCentralization§!"
+
+ # Regulated Coins
+ FRIENDLY_NEIGHBOR_OR_COAST_PROVINCE_HAS_EMBRACED_REGULATED_COINS:0 "Nearby Friendly Province has §YRegulated Coins§!"
+ NEIGHBOR_NOT_OWNED_IS_REGULATED_COINS:0 "Borders Nation with §YRegulated Coins§!"
+ tooltip_regulated_coins_embraced:0 "Not Trade Company & Owner has embraced §YRegulated Coins§!"
+ TOOLTIP_20_DEVELOPMENT_REGULATED_COINS:0 "At or Over 20 Development"
+ TOOLTIP_20_DEVELOPMENT_AND_CAPITAL_REGULATED_COINS:0 "Capital and 20 Development"
+ TOOLTIP_TRADE_LEVEL_1_REGULATED_COINS:0 "Level 1 Center of Trade"
+ TOOLTIP_TRADE_LEVEL_2_REGULATED_COINS:0 "Level 2 Center of Trade"
+ TOOLTIP_TRADE_LEVEL_3_REGULATED_COINS:0 "Level 3 Center of Trade"
+ TOOLTIP_WORLD_CITY_REGULATED_COINS:0 "25 Development and 20 Trade Power"
+
+ # Fertilized Soil
+ FRIENDLY_NEIGHBOR_OR_COAST_PROVINCE_HAS_EMBRACED_FERTILIZED_SOIL:0 "Nearby Friendly Province has §YFertilized Soil§!"
+ NEIGHBOR_NOT_OWNED_IS_FERTILIZED_SOIL:0 "Borders Nation with §YFertilized Soil§!"
+ tooltip_fertilized_soil_embraced:0 "Not Trade Company & Owner has embraced §YFertilized Soil§!"
+ TOOLTIP_10_DEVELOPMENT_AND_FOOD_FERTILIZED_SOIL:0 "Atleast 10 Development And is Grain, Livestock, Cotton, Or Wine"
+
+ # Local Census
+ FRIENDLY_NEIGHBOR_OR_COAST_PROVINCE_HAS_EMBRACED_LOCAL_CENSUS:0 "Nearby Friendly Province has §YLocal Census§!"
+ NEIGHBOR_NOT_OWNED_IS_LOCAL_CENSUS:0 "Borders Nation with §YLocal Census§!"
+ tooltip_local_census_embraced:0 "Not Trade Company & Owner has embraced §YLocal Census§!"
+ TOOLTIP_20_DEVELOPMENT_WITH_PAPER_LOCAL_CENSUS:0 "Paper Province With 20 Development"
+ TOOLTIP_10_DEVELOPMENT_WITH_PAPER_LOCAL_CENSUS:0 "Paper Province With 10 Development"
+ TOOLTIP_20_DEVELOPMENT_WITHOUT_PAPER_LOCAL_CENSUS:0 "Non-Paper Province With 20 Development"
+
+ # Global Dominion
+ FRIENDLY_NEIGHBOR_OR_COAST_PROVINCE_HAS_EMBRACED_GLOBAL_DOMINION:0 "Nearby Friendly Province has §YGlobal Dominion§!"
+ NEIGHBOR_NOT_OWNED_IS_GLOBAL_DOMINION:0 "Borders Nation with §YGlobal Dominion§!"
+ tooltip_global_dominion_embraced:0 "Not Trade Company & Owner has embraced §YGlobal Dominion§!"
+ TOOLTIP_MAX_MANPOWER_AND_8_DEV_GLOBAL_DOMINION:0 "8 Base Manpower with 30,000 Max Manpower"
+ TOOLTIP_MAX_MANPOWER_AND_8_DEV_WITH_50_PERCENT_OF_MAX_GLOBAL_DOMINION:0 "8 Base Manpower with 30,000 Max Manpower Filled 50%"
+ TOOLTIP_6_DEV_AND_50_NAVY_ARMY_GLOBAL_DOMINION:0 "6 Base Manpower And 50 Standing Army Or Navy"
+
+ # Manufactories
+ FRIENDLY_NEIGHBOR_OR_COAST_PROVINCE_HAS_EMBRACED_MANUFACTORIES:0 "Nearby Friendly Province has §YManufactories§!"
+ NEIGHBOR_NOT_OWNED_IS_MANUFACTORIES:0 "Borders Nation with §YManufactories§!"
+ tooltip_manufactories_embraced:0 "Not Trade Company & Owner has embraced §YManufactories§!"
+
+ # Universities
+ FRIENDLY_NEIGHBOR_OR_COAST_PROVINCE_HAS_EMBRACED_UNIVERSITIES:0 "Nearby Friendly Province has §YUniversites§!"
+ NEIGHBOR_NOT_OWNED_IS_UNIVERSITIES:0 "Borders Nation with §YUniversites§!"
+ tooltip_universities_embraced:0 "Not Trade Company & Owner has embraced §YUniversites§!"
+
+ # Arcane Industries
+ FRIENDLY_NEIGHBOR_OR_COAST_PROVINCE_HAS_EMBRACED_ARCANE_INDUSTRIES:0 "Nearby Friendly Province has §YArcane Industries§!"
+ NEIGHBOR_NOT_OWNED_IS_ARCANE_INDUSTRIES:0 "Borders Nation with §YArcane Industries§!"
+ tooltip_arcane_industries_embraced:0 "Not Trade Company & Owner has embraced §YArcane Industries§!"
+
+ is_not_on_an_island:0 "§Y[This.Capital.GetCapitalName]§! is not on an island!"
+
+ # Events
+ # Lilypad Rebellion
+ enable_merc_troop_empoken_battalion:0 "Enables Empoken Battalion"
+
+ # Institution Events
+ tir_institution_events.2.a.tt:1 "§YEmbracing§! §YRegulated Coins§! Institution will be vital for future advancements in §YTechnology§!."
+
+ # Missions
+ # expand_x
+ culture_convert_10_provinces_tooltip_tt:0 "Convert 10 Provinces to your §YPrimary§! Culture"
+
+ # strengthened_borders
+ strengthened_borders_tooltip_tt:0 "-2 Unrest in §YStates§! with §PForts§! for §Y25 years§!"
+
+ # professionalize_the_army
+ claims_on_border_states_region_tooltip_tt:0 "Gain §YPermanent Claims§! on all §YBordering States§! within your capital region"
+ claims_on_capital_provinces_region_tooltip_tt:0 "Gain §YPermanent Claims§! on all §YCountry Capitals§! within your capital region"
+
+ # unite_the_region
+ claims_on_border_states_goleka_tooltip_tt:0 "Gain §YPermanent Claims§! on all §YBordering States§! in Goleka"
+ claims_on_capital_provinces_goleka_tooltip_tt:0 "Gain §YPermanent Claims§! on all §YCountry Capitals§! in Goleka"
+
+ # unite_the_culture
+ all_culture_group_provinces_pacified_tooltip_tt:0 "§Y-5 Unrest§! in Provinces with §YPrimary Culture§! for §Y25 years§!"
+
+ # protect_our_brethren
+ claims_on_all_culture_group_tooltip_tt:0 "Gain §YPermanent Claims§! in all §YCulture Group§! provinces"
+
+ # strengthen_our_roots
+ flourishing_masses_tooltip_tt:0 "§Y+0.25 Local Prosperity Growth§! in Provinces with §YPrimary Culture§! for §Y10 years§!"
+
+ # prosperous_core
+ cultured_trade_tooltip_tt:0 "Permanent §Y+5% Trade Value§! in Provinces with §YPrimary Culture§!"

@@ -1,0 +1,16 @@
+owner = A12
+controller = A12
+add_core = A12
+
+culture = flokorstam
+religion = pentethikan
+
+base_tax = 5
+base_production = 5
+base_manpower = 4
+
+trade_goods = grain
+
+is_city = no
+
+discovered_by = golekian

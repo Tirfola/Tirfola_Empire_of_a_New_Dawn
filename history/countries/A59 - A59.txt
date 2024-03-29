@@ -1,0 +1,21 @@
+government = monarchy
+add_government_reform = autocracy_reform
+technology_group = golekian
+religion = pentethikan
+primary_culture = renivalci
+add_accepted_culture = suhibilci
+add_accepted_culture = jezerskici
+capital = 538
+government_rank = 3
+
+551.1.3 = {
+	monarch = {
+		name = "Tian"
+		dynasty = "Krivec"
+		birth_date = 533.11.3
+		death_date = 733.8.21
+		adm = 5
+		dip = 2
+		mil = 4
+	}
+}

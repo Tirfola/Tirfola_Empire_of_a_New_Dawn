@@ -1,0 +1,17 @@
+owner = A84
+controller = A84
+add_core = A84
+
+culture = rumen
+religion = pentethikan
+
+base_tax = 4
+base_production = 7
+base_manpower = 3
+
+trade_goods = gems
+
+is_city = no
+
+discovered_by = golekian
+center_of_trade = 2

@@ -1,0 +1,13 @@
+owner = A09
+controller = A09
+culture = keiselstam
+religion = pentethikan
+base_tax = 9
+base_production = 11
+base_manpower = 8
+trade_goods = cloth
+is_city = no
+center_of_trade = 3
+add_core = A09
+discovered_by = golekian
+fort_15th = yes

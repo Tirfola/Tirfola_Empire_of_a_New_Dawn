@@ -1,0 +1,12 @@
+owner = A32
+controller = A32
+religion = pentethikan
+base_tax = 5
+base_production = 4
+base_manpower = 4
+trade_goods = cloth
+is_city = no
+center_of_trade = 1
+add_core = A32
+discovered_by = golekian
+culture = itavla

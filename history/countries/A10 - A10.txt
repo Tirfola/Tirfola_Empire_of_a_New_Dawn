@@ -1,0 +1,9 @@
+government = republic
+technology_group = golekian
+primary_culture = breggin
+religion = pentethikan
+capital = 10
+government_rank = 1
+historical_friend = A11
+historical_rival = A08
+add_government_reform = oligarchy_reform

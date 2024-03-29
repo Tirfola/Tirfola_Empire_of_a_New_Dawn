@@ -1,0 +1,24 @@
+government = monarchy
+add_government_reform = autocracy_reform
+primary_culture = keiselstam
+add_accepted_culture = flokorstam
+add_accepted_culture = granostam
+technology_group = golekian
+religion = pentethikan
+capital = 9
+government_rank = 3
+historical_friend = A08
+historical_rival = A01
+historical_rival = A11
+
+568.10.13 = {
+  monarch = {
+    name = "Jan"
+    dynasty = "Meske"
+    birth_date = 550.10.13
+    death_date = 750.1.27
+    adm = 2
+    dip = 5
+    mil = 5
+  }
+}

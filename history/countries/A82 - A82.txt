@@ -1,0 +1,10 @@
+government = republic
+technology_group = golekian
+primary_culture = ravzeludi
+add_accepted_culture = seravludi
+religion = pentethikan
+capital = 98
+government_rank = 2
+historical_rival = A42
+historical_rival = A28
+add_government_reform = noble_elite_reform

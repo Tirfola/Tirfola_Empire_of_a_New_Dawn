@@ -1,0 +1,11 @@
+owner = A34
+controller = A34
+religion = boskylka
+base_tax = 2
+base_production = 1
+base_manpower = 2
+trade_goods = copper
+is_city = no
+add_core = A34
+discovered_by = golekian
+culture = dvebi

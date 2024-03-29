@@ -1,0 +1,20 @@
+government = monarchy
+add_government_reform = feudalism_reform
+technology_group = golekian
+religion = pentethikan
+capital = 549
+government_rank = 2
+historical_friend = A57
+historical_rival = A58
+primary_culture = smaradt
+564.1.14 = {
+	monarch = {
+		name = "Tryna"
+		dynasty = "Baas"
+		birth_date = 546.1.14
+		death_date = 733.8.13
+		adm = 4
+		dip = 4
+		mil = 2
+	}
+}

@@ -1,0 +1,15 @@
+owner = C01
+controller = C01
+add_core = C01
+
+culture = kintu
+religion = toona_atua
+
+base_tax = 8
+base_production = 8
+base_manpower = 7
+
+trade_goods = gems
+
+is_city = no
+

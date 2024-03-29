@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = autocracy_reform
+primary_culture = flokorstam
+technology_group = golekian
+religion = pentethikan
+capital = 414
+government_rank = 1
+
+579.2.12 = {
+  monarch = {
+    name = "Jakob"
+    dynasty = "Allin"
+    birth_date = 561.2.12
+    death_date = 761.6.8
+    adm = 3
+    dip = 4
+    mil = 2
+  }
+}

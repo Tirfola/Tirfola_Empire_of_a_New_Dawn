@@ -1,0 +1,13 @@
+owner = A35
+controller = A35
+culture = koper
+religion = pentethikan
+base_tax = 5
+base_production = 7
+base_manpower = 3
+trade_goods = copper
+is_city = no
+center_of_trade = 1
+add_core = A35
+discovered_by = golekian
+fort_15th = yes

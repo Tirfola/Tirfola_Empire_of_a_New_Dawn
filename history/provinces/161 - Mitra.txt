@@ -1,0 +1,18 @@
+owner = A17
+controller = A17
+add_core = A17
+
+culture = mitran
+religion = pentethikan
+
+base_tax = 8
+base_production = 10
+base_manpower = 5
+
+trade_goods = glass
+
+is_city = no
+
+discovered_by = golekian
+center_of_trade = 2
+fort_15th = yes

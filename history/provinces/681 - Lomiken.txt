@@ -1,0 +1,16 @@
+owner = A86
+controller = A86
+add_core = A86
+
+culture = nerumen
+religion = pentethikan
+
+base_tax = 4
+base_production = 3
+base_manpower = 4
+
+trade_goods = grain
+
+is_city = no
+
+discovered_by = golekian

@@ -1,0 +1,9 @@
+government = republic
+mercantilism = 1
+add_government_reform = feudalism_reform
+technology_group = golekian
+primary_culture = kintu
+add_accepted_culture = odassen
+religion = toona_atua
+capital = 816
+government_rank = 2

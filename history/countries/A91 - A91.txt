@@ -1,0 +1,20 @@
+government = monarchy
+add_government_reform = feudalism_reform
+technology_group = golekian
+primary_culture = resenar
+religion = pentethikan
+capital = 694
+government_rank = 1
+historical_rival = A86
+
+530.7.16 = {
+  monarch = {
+    name = "Rasmus"
+    dynasty = "Bagge"
+    birth_date = 512.7.16
+    death_date = 712.4.19
+    adm = 4
+    dip = 4
+    mil = 6
+  }
+}

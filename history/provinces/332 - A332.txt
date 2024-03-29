@@ -1,0 +1,16 @@
+owner = A01
+controller = A01
+add_core = A01
+
+culture = numen
+religion = pentethikan
+
+base_tax = 3
+base_production = 3
+base_manpower = 6
+
+trade_goods = cloth
+
+is_city = no
+
+discovered_by = golekian

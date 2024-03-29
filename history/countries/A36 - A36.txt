@@ -1,0 +1,9 @@
+government = monarchy
+add_government_reform = elective_monarchy_reform
+technology_group = golekian
+religion = boskylka
+capital = 637
+government_rank = 2
+primary_culture = dravedi
+add_accepted_culture = ravindi
+historical_rival = A30

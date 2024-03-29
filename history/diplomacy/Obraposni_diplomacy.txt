@@ -1,0 +1,20 @@
+# Edanos-Katagya Alliance
+alliance = {
+  first = A01
+  second = A03
+  start_date = 589.1.1
+}
+
+# Vunorio-Ypodex Alliance
+alliance = {
+  first = A04
+  second = A02
+  start_date = 589.1.1
+}
+
+# Dyduno-Camepi Alliance
+alliance = {
+  first = A05
+  second = A06
+  start_date = 589.1.1
+}

@@ -1,0 +1,12 @@
+owner = A59
+controller = A59
+religion = pentethikan
+base_tax = 5
+base_production = 7
+base_manpower = 3
+trade_goods = cloth
+is_city = no
+add_core = A59
+discovered_by = golekian
+fort_15th = yes
+culture = suhibilci

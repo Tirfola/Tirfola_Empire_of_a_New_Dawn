@@ -1,0 +1,19 @@
+government = theocracy
+technology_group = golekian
+religion = pentethikan
+capital = 490
+government_rank = 1
+primary_culture = jorstam
+add_government_reform = monastic_order_reform
+
+553.4.20 = {
+  monarch = {
+    name = "Lucan"
+    dynasty = "Eklund"
+    birth_date = 535.4.20
+    death_date = 735.6.10
+    adm = 4
+    dip = 1
+    mil = 1
+  }
+}

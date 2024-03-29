@@ -1,0 +1,26 @@
+namespace = tir_goleka_missions
+
+# Finish Humiliate Rival mission for all AI
+country_event = {
+  id = tir_goleka_missions.1
+  title = tir_goleka_missions.1.t
+  desc = tir_goleka_missions.1.d
+  picture = DIPLOMACY_eventPicture
+
+  hidden = yes
+
+  trigger = {
+    ai = yes
+  }
+
+  mean_time_to_happen = {
+    days = 1
+  }
+
+  option = {
+    tir_goleka_missions.1.a
+    complete_mission = humiliate_the_enemy
+
+    ai_chance = { factor = 1 }
+  }
+}

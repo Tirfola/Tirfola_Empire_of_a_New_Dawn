@@ -1,0 +1,11 @@
+owner = A41
+controller = A41
+culture = spidot
+religion = boskylka
+base_tax = 4
+base_production = 5
+base_manpower = 4
+trade_goods = glass
+is_city = no
+add_core = A41
+discovered_by = golekian

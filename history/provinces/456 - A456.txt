@@ -1,0 +1,16 @@
+owner = A11
+controller = A11
+add_core = A11
+
+culture = stepin
+religion = pentethikan
+
+base_tax = 5
+base_production = 5
+base_manpower = 3
+
+trade_goods = glass
+
+is_city = no
+
+discovered_by = golekian

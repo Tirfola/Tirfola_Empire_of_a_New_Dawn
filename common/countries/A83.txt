@@ -1,0 +1,98 @@
+#Norway
+graphical_culture = westerngfx
+color = {
+	0 43  0
+}
+revolutionary_colors = {
+	16 13  16
+}
+historical_score = 25
+preferred_religion = protestant
+historical_idea_groups = {
+	 aristocracy_ideas
+	trade_ideas
+	defensive_ideas
+	offensive_ideas
+	economic_ideas
+	diplomatic_ideas
+	innovativeness_ideas
+	maritime_ideas
+}
+historical_units = {
+	golekian_1_levyman
+	golekian_1_spear_cavalry
+	golekian_5_infantry
+	golekian_6_chariot_cavalry
+	7_militarized_mages
+	golekian_9_spear_wall
+	golekian_10_reformed_spear_cavalry
+	10_flamers
+	golekian_12_lightsplitters
+	13_fire_breathers
+	golekian_14_fire_flingers
+	golekian_15_shielded_lightsplitters
+	18_spell_slingers
+	golekian_18_lightning_riders
+	golekian_19_armored_frostwielders
+	20_mindbenders
+	22_psychic_screamers
+	golekian_23_silvercoated_frostwielders
+	25_abyss_conjurers
+	golekian_26_frostguard
+	golekian_28_blitztamers
+	29_void_eaters
+	golekian_30_ice_sentinels
+}
+monarch_names = {
+	"Ibrahim #0 Muhammad" = 20
+	"Ibrahim #0" = 20
+	"Farrukhsiyar Khalil #0" = 60
+	"Bahram Farrukhsiyar #0" = 40
+	"Ghazi Farrukhsiyar #0" = 20
+	"Ismail #0" = 10
+	"Tahmasp #0" = 10
+	"Junayd #0" = 10
+	"Farrukh #0" = 10
+ 	"Khalilullah #0" = 10
+
+
+	"Adila #0" = -3
+	"Malahat #0" = -3
+	"Ummugulsum #0" = -1
+	"Khadija #0" = -1
+	"Abida #0" = -1
+	"Bika #0" = -1
+	"Lal Bi #0" = -1
+	"Khanikah #0" = -1
+	"Halima #0" = -1
+	"Shahnavaz #0" = -1
+	"Gunish #0" = -1
+	"Pari #0" = -1
+	"Khair #0" = -1
+	"Shah #0" = -1
+	"Farangis #0" = -1
+	"Mahin Banu #0" = -1
+	"Tajlu #0" = -1
+	"Gowhar #0" = -1
+	"Zainab #0" = -1
+	"Fatemeh #0" = -1
+
+
+
+
+}
+leader_names = {
+	Arnesson  Amundsen
+	Bjelke  Bolt
+	Egilsson  Eriksson
+	Haraldsson
+	Larsson  Leifsson
+	Magnusson
+	Nansen  Norheim
+	Olavsson
+	Sverresson  Sigurdsson
+	Torgeirsson  Torsson
+}
+ship_names = {
+	 Zobler
+}

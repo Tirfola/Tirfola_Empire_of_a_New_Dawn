@@ -1,0 +1,14 @@
+owner = A05
+controller = A05
+culture = bogdaxian
+religion = pentethikan
+base_tax = 5
+base_production = 3
+base_manpower = 5
+trade_goods = gems
+is_city = no
+add_core = A05
+discovered_by = golekian
+latent_trade_goods = {
+	coal
+}

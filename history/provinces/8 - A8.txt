@@ -1,0 +1,16 @@
+owner = A08
+controller = A08
+add_core = A08
+
+culture = granostam
+religion = pentethikan
+
+base_tax = 4
+base_production = 3
+base_manpower = 2
+
+trade_goods = wool
+
+is_city = no
+
+discovered_by = golekian

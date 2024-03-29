@@ -1,0 +1,212 @@
+namespace = tir_lilypad
+
+# Lilypad War Start
+country_event = {
+  id = tir_lilypad.1
+  title = tir_lilypad.1.t
+  desc = tir_lilypad.1.d
+  picture = DIPLOMACY_eventPicture
+
+  fire_only_once = yes
+
+  major = yes
+  major_trigger = {
+    tag = A07
+  }
+
+  trigger = {
+    tag = A14
+  }
+
+
+  option = {
+    name = "tir_lilypad.1.a"
+
+    ai_chance = { factor = 75 }
+
+    # Instant
+    A14 = {
+      remove_core = 434
+      remove_core = 85
+    }
+    A07 = {
+			add_opinion = {
+				who = FROM
+				modifier = accepted_voreo_assistance_opinion
+			}
+		}
+    create_alliance = A07
+
+    # Timer until war end
+    add_country_modifier = {
+      name = accepted_voreo_assistance
+      duration = -1
+    }
+
+    # Timer for 5 years
+    add_country_modifier = {
+      name = reduced_adm_dip
+      duration = 1825
+    }
+  }
+  option = {
+    name = "tir_lilypad.1.b"
+
+    ai_chance = { factor = 25 }
+
+    # Instant
+    A07 = {
+      add_opinion = {
+        who = FROM
+        modifier = rejected_voreo_assistance_opinion
+      }
+      remove_guarantee = A14
+    }
+    add_prestige = 30
+
+    # Timer till war end
+    add_country_modifier = {
+      name = rejected_voreo_assistance
+      duration = -1
+    }
+
+    # Timer 5 Years
+    add_country_modifier = {
+      name = self_finance
+      duration = 1825
+    }
+  }
+}
+
+country_event = {
+  id = tir_lilypad.2
+  title = tir_lilypad.2.t
+  desc = tir_lilypad.2.d
+  picture = MERCHANTS_TALKING_eventPicture
+
+  fire_only_once = yes
+
+  major = yes
+  major_trigger = {
+    tag = A17
+  }
+
+  trigger = {
+    tag = A15
+  }
+
+  option = {
+    name = "tir_lilypad.2.a"
+
+    ai_chance = { factor = 75 }
+
+    # Instant
+    add_loan = {
+      fixed_interest = 2
+      duration = 60
+    }
+    add_loan = {
+      fixed_interest = 2
+      duration = 60
+    }
+    A17 = {
+      add_opinion = {
+        who = FROM
+        modifier = accepted_empoken_deal_opinion
+      }
+      # add_guarantee = A15
+    }
+
+    # Timer Until War end
+    add_country_modifier = {
+      name = accepted_empoken_deal
+      duration = -1
+    }
+    custom_tooltip = enable_merc_troop_empoken_battalion
+    # Mercenary Troop Empoken Battalion available
+  }
+  option = {
+    name = "tir_lilypad.2.b"
+
+    ai_chance = { factor = 25 }
+
+    # Instant
+    A17 = {
+      add_opinion = {
+        who = FROM
+        modifier = rejected_empoken_deal_opinion
+      }
+    }
+    add_prestige = 30
+
+    # Timer until war end
+    add_country_modifier = {
+      name = rejected_empoken_deal
+      duration = -1
+    }
+  }
+}
+
+country_event = {
+  id = tir_lilypad.3
+  title = tir_lilypad.3.t
+  desc = tir_lilypad.3.d
+  picture = MERCHANTS_TALKING_eventPicture
+
+  fire_only_once = yes
+
+  trigger = {
+    tag = A15
+    AND = {
+      OR = {
+        has_country_modifier = accepted_empoken_deal
+        has_country_modifier = rejected_empoken_deal
+      }
+      ROOT = {
+        NOT = {
+          is_in_war = {
+            casus_belli = cb_lilypad_rebellion
+          }
+        }
+      }
+    }
+  }
+
+  option = {
+    name = "tir_lilypad.3.a"
+    remove_country_modifier = accepted_empoken_deal
+    remove_country_modifier = rejected_empoken_deal
+  }
+}
+
+country_event = {
+  id = tir_lilypad.4
+  title = tir_lilypad.4.t
+  desc = tir_lilypad.4.d
+  picture = MERCHANTS_TALKING_eventPicture
+
+  fire_only_once = yes
+
+  trigger = {
+    tag = A14
+    AND = {
+      OR = {
+        has_country_modifier = accepted_voreo_assistance
+        has_country_modifier = rejected_voreo_assistance
+      }
+      ROOT = {
+        NOT = {
+          is_in_war = {
+            casus_belli = cb_lilypad_rebellion
+          }
+        }
+      }
+    }
+  }
+
+  option = {
+    name = "tir_lilypad.3.a"
+    remove_country_modifier = accepted_voreo_assistance
+    remove_country_modifier = rejected_voreo_assistance
+  }
+}

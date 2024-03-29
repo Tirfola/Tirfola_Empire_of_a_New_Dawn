@@ -1,0 +1,16 @@
+owner = A37
+controller = A37
+add_core = A37
+
+culture = icuda
+religion = pentethikan
+
+base_tax = 6
+base_production = 4
+base_manpower = 3
+
+trade_goods = gold
+
+is_city = no
+
+discovered_by = golekian

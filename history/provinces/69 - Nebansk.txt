@@ -1,0 +1,16 @@
+owner = A69
+controller = A69
+add_core = A69
+
+culture = prosvity
+religion = pentethikan
+
+base_tax = 1
+base_production = 1
+base_manpower = 2
+
+trade_goods = livestock
+
+is_city = no
+
+discovered_by = golekian

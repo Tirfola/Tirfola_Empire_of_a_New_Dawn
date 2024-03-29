@@ -1,0 +1,16 @@
+owner = A07
+controller = A07
+add_core = A07
+
+culture = toxen
+religion = pentethikan
+
+base_tax = 5
+base_production = 3
+base_manpower = 2
+
+trade_goods = livestock
+
+is_city = no
+
+discovered_by = golekian

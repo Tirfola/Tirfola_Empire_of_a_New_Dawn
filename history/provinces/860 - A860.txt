@@ -1,0 +1,17 @@
+owner = A84
+controller = A84
+add_core = A84
+
+culture = rumen
+religion = pentethikan
+
+base_tax = 1
+base_production = 2
+base_manpower = 1
+
+trade_goods = naval_supplies
+
+is_city = no
+
+discovered_by = golekian
+dock = yes
