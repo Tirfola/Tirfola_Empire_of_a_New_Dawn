@@ -1,4 +1,5 @@
 From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 2728;4846;sea;1408;-1;-1;-1;-1;Tiwi-Woolna
-302;283;land;959;1781;578;1791;591;Iyastki-Low-Connection
+283;302;land;959;1781;578;1791;591;Iyastki-Low-Connection
+591;603;land;600;2192;726;2194;730;Janot-Pass
 -1;-1;;-1;-1;-1;-1;-1;-1;

@@ -350,6 +350,50 @@ pikos_ideas = {
   }
 }
 
+azadi_ideas = {
+  free = yes
+  start = {
+    global_trade_goods_size_modifier = 0.1
+    fort_maintenance_modifier = -0.2
+  }
+
+  bonus = {
+    technology_cost = -0.1
+  }
+
+  trigger = {
+    culture_group = yexali
+  }
+
+  azadi_ideas_1 = {
+    rival_change_cost = -0.5
+  }
+
+  azadi_ideas_2 = {
+    church_loyalty_modifier = 0.1
+  }
+
+  azadi_ideas_3 = {
+    movement_speed = 0.15
+  }
+
+  azadi_ideas_4 = {
+    yearly_corruption = -0.1
+  }
+
+  azadi_ideas_5 = {
+    garrison_size = 0.2
+  }
+
+  azadi_ideas_6 = {
+    war_taxes_cost_modifier = -0.5
+  }
+
+  azadi_ideas_7 = {
+    artillery_power = 0.1
+  }
+}
+
 goleka_generic_ideas = {
   free = yes
   start = {

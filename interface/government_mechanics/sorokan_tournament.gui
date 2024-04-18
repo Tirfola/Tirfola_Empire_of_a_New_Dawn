@@ -1,0 +1,34 @@
+guiTypes = {
+  windowType = {
+    name = "sorokan_tournament_gov_mech_1"
+    size = { x = 300 y = 100 }
+    backGround = ""
+    moveable = 0
+    dontRender = ""
+    horizontalBorder = ""
+
+    ### interaction button
+		guiButtonType = {
+			name = "government_interaction_button"
+			quadTextureSprite = "GFX_tournament_button"
+			position = { x = 115 y = 0 }
+			buttonFont = "vic_18"
+			clicksound = back_click
+		}
+
+    # bar and frame for the power type associated with this interaction (if it's unique to the interaction - if not, these will be hidden)
+		iconType = {
+			name = "government_power_bar"
+			spriteType = "GFX_prussian_militarization_power_bar"
+			position = { x = 28 y = 69 }
+		}
+
+    # Frame
+		iconType = {
+			name = "government_power_bar_frame"
+			spriteType = "GFX_tournament_frame"
+			position = { x = 12 y = 20 }
+			alwaystransparent = yes
+		}
+  }
+}

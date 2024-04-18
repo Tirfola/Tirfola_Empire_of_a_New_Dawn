@@ -1,0 +1,30 @@
+spriteTypes = {
+  # All
+  spriteType = {
+    name = "GFX_azadi_flag_border"
+    texturefile = "gfx//interface//event_interfaces//azadi_flag_border.dds"
+    transparencecheck = yes
+  }
+
+  spriteType = {
+    name = "GFX_oni_icon"
+    texturefile = "gfx//interface//religion_mechanics//oni_icon.dds"
+    transparencecheck = yes
+  }
+
+  spriteType = {
+    name = "GFX_oti_icon"
+    texturefile = "gfx//interface//religion_mechanics//oti_icon.dds"
+    transparencecheck = yes
+  }
+
+  spriteType = {
+    name = "GFX_oni_button"
+    texturefile = "gfx//interface//religion_mechanics//oni_button.dds"
+  }
+
+  spriteType = {
+    name = "GFX_oti_button"
+    texturefile = "gfx//interface//religion_mechanics//oti_button.dds"
+  }
+}

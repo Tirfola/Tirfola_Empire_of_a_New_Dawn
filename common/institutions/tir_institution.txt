@@ -395,7 +395,7 @@ new_world_i = {
   }
 
   start_chance = 5
-  on_start = institution_events.3
+  on_start = tir_institution_events.3
 
   can_embrace = {
 		always = yes
@@ -561,7 +561,7 @@ printing_press = {
   }
 
   start_chance = 5
-  on_start = institution_events.4
+  on_start = tir_institution_events.4
 
   can_embrace = {
 		always = yes

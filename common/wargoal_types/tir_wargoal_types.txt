@@ -43,3 +43,36 @@ take_capital_lilypad_rebellion = {
 		}
 	}
 }
+
+azadi_take_elector = {
+	type = take_capital
+
+	attacker = {
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 1
+
+		allowed_provinces = {
+			always = no
+		}
+		allowed_provinces_are_eligible = yes
+
+		deny_annex = yes
+
+		peace_options = {
+			po_azadi_take_elector
+		}
+	}
+
+	defender = {
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 1
+
+		peace_options = {
+			po_gold
+			po_humiliate
+		}
+	}
+	war_name = TAKE_ELECTOR_NAME
+}

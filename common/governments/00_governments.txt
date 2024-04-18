@@ -111,6 +111,7 @@ monarchy = {
 
 				# Tirfola
 				sorokan_kratocracy_reform
+				border_citadel_reform
 			}
 		}
 		hereditary_vs_nobility = {

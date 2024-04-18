@@ -1,0 +1,9 @@
+government = monarchy
+add_government_reform = border_citadel_reform
+technology_group = golekian
+religion = konchi
+primary_culture = gartas
+capital = 76
+government_rank = 1
+set_country_flag = allowed_by_xudan
+

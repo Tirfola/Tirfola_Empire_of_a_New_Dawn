@@ -1,0 +1,91 @@
+Added Provinces to Batusk
+Changed Provinces/Areas in A'zadi Region
+Added Province names
+Added Kon'chi religion with their special mechanic
+Added a mountain pass from Placeholder to Placeholder (591/603)
+Fixed Pikos Professionalism not being limited to the Pikos culture group
+Fixed mission "Expand *Primary Culture*" highlighting provinces you do not own
+Fixed Kralzem Influence ability picture in age of Development being a black box
+Made Empoken gaurentee Heibatua with correct option in the Lilypad war
+Fixed bug where game development shows wrong colors before you hit the play button
+Added the Amma Narsa Mechanic
+Added Cultures Eksotas, Markistas, Sohitas, and Gartas
+Moved Main Menu Camera to start over Goleka
+Added A'zadi Country Flags
+Changed Plurals of Dyduno and Voreo
+Changed Country Flags of Luspen And Sukrai
+Added Generic A'zadi Ideas
+Added Yexali Terrain Culture Modifiers
+Added Formables An'Andria and Etireim
+Added more to the Tree map and Fixed some trees that were in the water
+Updated the Colormaps
+Updated Province A789 to fill the entire lake
+
+# Things to Remove before Next Release
+Extra Provinces in Batusk
+
+# Need to Do
+1 Bug Fixes
+3 Summer map, etc..
+4 Fix two flags with Gleam (Uzofa, Gulli)
+4 Boskylka Mechanics
+4 Winters/Climate/Monsoons
+4.5 All Province Names
+4.5 River Map, Lutenbal
+4.5 Institution Events
+4.5 Water Provinces
+4.5 Add new War Goal for taking back Cultural Mainland.
+4.5 Add new War Goal for taking provinces of certain culture.
+4.5 Events
+4.5 A'zadi Mission Tree
+
+5 Add Events to get at end of Lilypad Rebellion
+5 Add Events for Voreo and Empoken
+6 Add Pictures to age's abilities and objectives
+6 Monuments
+
+# Bugs
+Fix wars showing 100% Win/Lose at beginning of game
+Generic Goleka Mission secure_our_borders doesn't work correctly, Double counts forts bordering more than 1 nations
+Institutions show base game institution for events on spawn
+unite_the_region doesn't have highlighted provinces
+Culture Modifiers do not apply to newly conquered provinces of your own culture
+Event tir_boskylka.2 options do not have weights to them
+Development shows exaggerated development colors before you start the game
+Green color in summer months are exaggerated (In-game filter)
+A'zadi Most Elector Vote doesn't do first update till an heir spawns in game
+
+HRE Influence doesn't match Amma Narsa Influence
+Border Citadels don't show in map mode
+Buyil diplomacy picture is confusing
+Forming one tag doesn't give CB's against everyone who voted against it
+Tag AZI has Edanos Flag for some reason...
+Annexing HRE Elector makes you an HRE Elector
+Check for Regency for voting
+Need to change
+
+
+
+# Localisation Needed
+Institution Events missing localisation
+boskylka_83 mention the pope as placeholder
+Country Ideas missing localisation
+Lilypad Event Description
+Start Date Description
+descriptions to Ages
+
+# Boskylka
+Patriach Authority Mechanics
+Modifiers in static modifiers for bonuses.
+Icons in Religion.txt
+
+# Need to Do for mod Generic
+Update storepage and Discord with looking for artists
+
+# A'zadi
+Is Izoyi Modifier needed with the game using HRE mechanic now?
+
+# Needed
+Actions? Keep them, There will be actions later
+What are the actions? TBD. Next Update
+Change name of culture bonus for terrain to something else. (IE: Suitability, Adapted, etc)

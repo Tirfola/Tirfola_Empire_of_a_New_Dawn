@@ -9,6 +9,11 @@
 
  boskylka_religion:0 "Boskylka Religious Group"
  boskylka:0 "Boskylka"
+ konchi:0 "Kon'chi"
  blood_god:0 "BLOOD FOR THE BLOOD GOD!"
 
  toona_atua:0 "To'ona atua"
+
+ devotion:0 "Devotion"
+ current_piety_text:0 "Current Devotion"
+ CURRENT_PIETY:0 "Current Devotion"

@@ -1,7 +1,12 @@
-religion = pentethikan
-base_tax = 1
+religion = konchi
+base_tax = 2
 base_production = 1
-base_manpower = 1
-trade_goods = wine
-is_city = no
+base_manpower = 3
+trade_goods = livestock
+is_city = yes
 discovered_by = golekian
+add_core = B02
+owner = B02
+controller = B02
+hre = yes
+culture = markistas

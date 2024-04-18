@@ -1,0 +1,2591 @@
+# Kon'Chiz Religion
+custom_icon = {
+  name = low_devotion_icon
+  potential = {
+    religion = konchi
+  }
+
+  tooltip = ONI_TT
+}
+
+custom_icon = {
+  name = high_devotion_icon
+  potential = {
+    religion = konchi
+  }
+
+  tooltip = OTI_TT
+}
+
+custom_button = {
+  name = low_devotion_action
+  potential = {
+    religion = konchi
+  }
+  trigger = {
+    custom_trigger_tooltip = {
+      tooltip = konchi_trigger_button_tt
+      treasury = 100
+    }
+
+    custom_trigger_tooltip = {
+      tooltip = oti_button_bonus_tt
+      NOT = { has_country_modifier = oti_button_bonus }
+    }
+
+    custom_trigger_tooltip = {
+      tooltip = oni_button_bonus_tt
+      NOT = { has_country_modifier = oni_button_bonus }
+    }
+  }
+  effect = {
+    add_treasury = -100
+    add_piety = -0.05
+
+    add_country_modifier = {
+      name = "oti_button_bonus"
+      duration = 1825
+    }
+  }
+  tooltip = low_devotion_action_tt
+}
+
+custom_button = {
+  name = high_devotion_action
+  potential = {
+    religion = konchi
+  }
+  trigger = {
+    custom_trigger_tooltip = {
+      tooltip = konchi_trigger_button_tt
+      treasury = 100
+    }
+
+    custom_trigger_tooltip = {
+      tooltip = oti_button_bonus_tt
+      NOT = { has_country_modifier = oti_button_bonus }
+    }
+
+    custom_trigger_tooltip = {
+      tooltip = oni_button_bonus_tt
+      NOT = { has_country_modifier = oni_button_bonus }
+    }
+  }
+  effect = {
+    add_treasury = -100
+    add_piety = 0.05
+
+    add_country_modifier = {
+      name = "oni_button_bonus"
+      duration = 1825
+    }
+  }
+  tooltip = high_devotion_action_tt
+}
+
+# A'zadi HRE Mechanic
+custom_icon = {
+  name = faction_amma_narsa_background
+}
+
+custom_text_box = {
+  name = xudan_timer_text
+
+  tooltip = xudan_timer_tt
+}
+
+custom_shield = {
+  name = xudan_flag
+
+  tooltip = xudan_flag_tt
+  global_event_target = xudan
+  open_country = yes
+}
+
+custom_shield = {
+  name = next_xudan_flag
+
+  tooltip = next_xudan_flag_tt
+  global_event_target = next_xudan
+  open_country = yes
+}
+
+custom_text_box = {
+  name = xudan_name_text
+
+  tooltip = xudan_name_tt
+}
+
+custom_button = {
+  name = azadi_reduce_timer
+
+  trigger = {
+    hidden_trigger = {
+      tag = event_target:xudan
+      AZI = {
+        check_variable = {
+          which = azadi_power
+          value = 10
+        }
+        check_variable = {
+          which = azadi_timer
+          value = 1
+        }
+      }
+    }
+  }
+
+  effect = {
+    hidden_effect = {
+      AZI = {
+        subtract_variable = {
+          which = azadi_power
+          value = 10
+        }
+        subtract_variable = {
+          which = azadi_timer
+          value = 1
+        }
+      }
+    }
+  }
+
+  tooltip = reduce_timer_tt
+}
+
+custom_text_box = {
+  name = azadi_timer_left_text
+
+  tooltip = timer_left_tt
+}
+
+custom_text_box = {
+  name = azadi_influence_text
+
+  tooltip = influence_tt
+}
+
+custom_shield = {
+  name = citadel_flag_1
+  potential = {
+    AZI = {
+      check_variable = {
+        which = border_citadel_count
+        value = 0.01
+      }
+    }
+    event_target:border_citadel_1 = {
+      NOT = { tag = AZI }
+    }
+  }
+
+  tooltip = citadel_1_tt
+
+  global_event_target = border_citadel_1
+  open_country = yes
+}
+custom_shield = {
+  name = citadel_flag_2
+  potential = {
+    AZI = {
+      check_variable = {
+        which = border_citadel_count
+        value = 0.02
+      }
+    }
+    event_target:border_citadel_2 = {
+      NOT = { tag = AZI }
+    }
+  }
+
+  tooltip = citadel_2_tt
+
+  global_event_target = border_citadel_2
+  open_country = yes
+}
+custom_shield = {
+  name = citadel_flag_3
+  potential = {
+    AZI = {
+      check_variable = {
+        which = border_citadel_count
+        value = 0.03
+      }
+    }
+    event_target:border_citadel_3 = {
+      NOT = { tag = AZI }
+    }
+  }
+
+  tooltip = citadel_3_tt
+
+  global_event_target = border_citadel_3
+  open_country = yes
+}
+custom_shield = {
+  name = citadel_flag_4
+  potential = {
+    AZI = {
+      check_variable = {
+        which = border_citadel_count
+        value = 0.04
+      }
+    }
+    event_target:border_citadel_4 = {
+      NOT = { tag = AZI }
+    }
+  }
+
+  tooltip = citadel_4_tt
+
+  global_event_target = border_citadel_4
+  open_country = yes
+}
+custom_shield = {
+  name = citadel_flag_5
+  potential = {
+    AZI = {
+      check_variable = {
+        which = border_citadel_count
+        value = 0.05
+      }
+    }
+    event_target:border_citadel_5 = {
+      NOT = { tag = AZI }
+    }
+  }
+
+  tooltip = citadel_5_tt
+
+  global_event_target = border_citadel_5
+  open_country = yes
+}
+custom_shield = {
+  name = citadel_flag_6
+  potential = {
+    AZI = {
+      check_variable = {
+        which = border_citadel_count
+        value = 0.06
+      }
+    }
+    event_target:border_citadel_6 = {
+      NOT = { tag = AZI }
+    }
+  }
+
+  tooltip = citadel_6_tt
+
+  global_event_target = border_citadel_6
+  open_country = yes
+}
+
+
+custom_button = {
+  name = azadi_farovon_reform
+
+  trigger = {
+    hidden_trigger = {
+      tag = event_target:xudan
+      AZI = {
+        NOT = { has_country_flag = azadi_farovon_reform } # Does not already have the reform
+        NOT = { # It has been 15 years
+          check_variable = {
+            which = azadi_timer
+            value = 1
+          }
+        }
+        NOT = { # Is not currently voting on something
+          check_variable = {
+            which = voting_started
+            value = 1
+          }
+        }
+      }
+    }
+  }
+
+  effect = {
+    country_event = { id = tir_amma_narsa.1 }
+  }
+  tooltip = farovon_reform_tt
+}
+custom_icon = {
+  name = "farovon_passed"
+
+  potential = {
+    AZI = {
+      has_country_flag = azadi_farovon_reform
+    }
+  }
+
+  frame = {
+    number = 2
+  }
+}
+custom_button = {
+  name = azadi_raqku_reform
+
+  trigger = {
+    hidden_trigger = {
+      tag = event_target:xudan
+      AZI = {
+        has_country_flag = azadi_farovon_reform
+        NOT = { has_country_flag = azadi_raqku_reform }
+        NOT = { # It has been 15 years
+          check_variable = {
+            which = azadi_timer
+            value = 1
+          }
+        }
+        NOT = { # Is not currently voting on something
+          check_variable = {
+            which = voting_started
+            value = 1
+          }
+        }
+      }
+    }
+  }
+
+  effect = {
+    country_event = { id = tir_amma_narsa.1 }
+  }
+  tooltip = raqku_reform_tt
+}
+custom_icon = {
+  name = "raqku_passed"
+
+  potential = {
+    AZI = {
+      has_country_flag = azadi_raqku_reform
+    }
+  }
+
+  frame = {
+    number = 2
+  }
+}
+custom_button = {
+  name = azadi_saylov_reform
+
+  trigger = {
+    hidden_trigger = {
+      tag = event_target:xudan
+      AZI = {
+        has_country_flag = azadi_raqku_reform
+        NOT = { has_country_flag = azadi_saylov_reform }
+        NOT = { # It has been 15 years
+          check_variable = {
+            which = azadi_timer
+            value = 1
+          }
+        }
+        NOT = { # Is not currently voting on something
+          check_variable = {
+            which = voting_started
+            value = 1
+          }
+        }
+      }
+    }
+  }
+
+  effect = {
+    country_event = { id = tir_amma_narsa.1 }
+  }
+  tooltip = saylov_reform_tt
+}
+custom_icon = {
+  name = "saylov_passed"
+
+  potential = {
+    AZI = {
+      has_country_flag = azadi_saylov_reform
+    }
+  }
+
+  frame = {
+    number = 2
+  }
+}
+custom_button = {
+  name = azadi_kengtirsh_reform
+
+  trigger = {
+    hidden_trigger = {
+      tag = event_target:xudan
+      AZI = {
+        has_country_flag = azadi_saylov_reform
+        NOT = { has_country_flag = azadi_kengtirsh_reform }
+        NOT = { # It has been 15 years
+          check_variable = {
+            which = azadi_timer
+            value = 1
+          }
+        }
+        NOT = { # Is not currently voting on something
+          check_variable = {
+            which = voting_started
+            value = 1
+          }
+        }
+      }
+    }
+  }
+
+  effect = {
+    country_event = { id = tir_amma_narsa.1 }
+  }
+  tooltip = kengtirsh_reform_tt
+}
+custom_icon = {
+  name = "kengtirsh_passed"
+
+  potential = {
+    AZI = {
+      has_country_flag = azadi_kengtirsh_reform
+    }
+  }
+
+  frame = {
+    number = 2
+  }
+}
+custom_button = {
+  name = azadi_pulotin_reform
+
+  trigger = {
+    hidden_trigger = {
+      tag = event_target:xudan
+      AZI = {
+        has_country_flag = azadi_kengtirsh_reform
+        NOT = { has_country_flag = azadi_pulotin_reform }
+        NOT = { # It has been 15 years
+          check_variable = {
+            which = azadi_timer
+            value = 1
+          }
+        }
+        NOT = { # Is not currently voting on something
+          check_variable = {
+            which = voting_started
+            value = 1
+          }
+        }
+      }
+    }
+  }
+
+  effect = {
+    country_event = { id = tir_amma_narsa.1 }
+  }
+  tooltip = pulotin_reform_tt
+}
+custom_icon = {
+  name = "pulotin_passed"
+
+  potential = {
+    AZI = {
+      has_country_flag = azadi_pulotin_reform
+    }
+  }
+
+  frame = {
+    number = 2
+  }
+}
+custom_button = {
+  name = azadi_cheqal_reform
+
+  trigger = {
+    hidden_trigger = {
+      tag = event_target:xudan
+      AZI = {
+        has_country_flag = azadi_raqku_reform
+        NOT = { has_country_flag = azadi_cheqal_reform }
+        NOT = { has_country_flag = azadi_galk_reform }
+        NOT = { # It has been 15 years
+          check_variable = {
+            which = azadi_timer
+            value = 1
+          }
+        }
+        NOT = { # Is not currently voting on something
+          check_variable = {
+            which = voting_started
+            value = 1
+          }
+        }
+      }
+    }
+  }
+
+  effect = {
+    country_event = { id = tir_amma_narsa.1 }
+  }
+  tooltip = cheqal_reform_tt
+}
+custom_icon = {
+  name = "cheqal_passed"
+
+  potential = {
+    AZI = {
+      has_country_flag = azadi_cheqal_reform
+    }
+  }
+
+  frame = {
+    number = 2
+  }
+}
+custom_button = {
+  name = azadi_isabulish_reform
+
+  trigger = {
+    hidden_trigger = {
+      tag = event_target:xudan
+      AZI = {
+        has_country_flag = azadi_cheqal_reform
+        NOT = { has_country_flag = azadi_isabulish_reform }
+        NOT = { # It has been 15 years
+          check_variable = {
+            which = azadi_timer
+            value = 1
+          }
+        }
+        NOT = { # Is not currently voting on something
+          check_variable = {
+            which = voting_started
+            value = 1
+          }
+        }
+      }
+    }
+  }
+
+  effect = {
+    country_event = { id = tir_amma_narsa.1 }
+  }
+  tooltip = isabulish_reform_tt
+}
+custom_icon = {
+  name = "isabulish_passed"
+
+  potential = {
+    AZI = {
+      has_country_flag = azadi_isabulish_reform
+    }
+  }
+
+  frame = {
+    number = 2
+  }
+}
+custom_button = {
+  name = azadi_ikitin_reform
+
+  trigger = {
+    hidden_trigger = {
+      tag = event_target:xudan
+      AZI = {
+        has_country_flag = azadi_isabulish_reform
+        NOT = { has_country_flag = azadi_ikitin_reform }
+        NOT = { # It has been 15 years
+          check_variable = {
+            which = azadi_timer
+            value = 1
+          }
+        }
+        NOT = { # Is not currently voting on something
+          check_variable = {
+            which = voting_started
+            value = 1
+          }
+        }
+      }
+    }
+  }
+
+  effect = {
+    country_event = { id = tir_amma_narsa.1 }
+  }
+  tooltip = ikitin_reform_tt
+}
+custom_icon = {
+  name = "ikitin_passed"
+
+  potential = {
+    AZI = {
+      has_country_flag = azadi_ikitin_reform
+    }
+  }
+
+  frame = {
+    number = 2
+  }
+}
+custom_button = {
+  name = azadi_birayan_reform
+
+  trigger = {
+    hidden_trigger = {
+      tag = event_target:xudan
+      AZI = {
+        has_country_flag = azadi_ikitin_reform
+        NOT = { has_country_flag = azadi_birayan_reform }
+        NOT = { # It has been 15 years
+          check_variable = {
+            which = azadi_timer
+            value = 1
+          }
+        }
+        NOT = { # Is not currently voting on something
+          check_variable = {
+            which = voting_started
+            value = 1
+          }
+        }
+      }
+    }
+  }
+
+  effect = {
+    country_event = { id = tir_amma_narsa.1 }
+  }
+  tooltip = birayan_reform_tt
+}
+custom_icon = {
+  name = "birayan_passed"
+
+  potential = {
+    AZI = {
+      has_country_flag = azadi_birayan_reform
+    }
+  }
+
+  frame = {
+    number = 2
+  }
+}
+custom_button = {
+  name = azadi_galk_reform
+
+  trigger = {
+    hidden_trigger = {
+      tag = event_target:xudan
+      AZI = {
+        has_country_flag = azadi_raqku_reform
+        NOT = { has_country_flag = azadi_galk_reform }
+        NOT = { has_country_flag = azadi_cheqal_reform }
+        NOT = { # It has been 15 years
+          check_variable = {
+            which = azadi_timer
+            value = 1
+          }
+        }
+        NOT = { # Is not currently voting on something
+          check_variable = {
+            which = voting_started
+            value = 1
+          }
+        }
+      }
+    }
+  }
+
+  effect = {
+    country_event = { id = tir_amma_narsa.1 }
+  }
+  tooltip = galk_reform_tt
+}
+custom_icon = {
+  name = "galk_passed"
+
+  potential = {
+    AZI = {
+      has_country_flag = azadi_galk_reform
+    }
+  }
+
+  frame = {
+    number = 2
+  }
+}
+custom_button = {
+  name = azadi_dartlizi_reform
+
+  trigger = {
+    hidden_trigger = {
+      tag = event_target:xudan
+      AZI = {
+        has_country_flag = azadi_galk_reform
+        NOT = { has_country_flag = azadi_dartlizi_reform }
+        NOT = { # It has been 15 years
+          check_variable = {
+            which = azadi_timer
+            value = 1
+          }
+        }
+        NOT = { # Is not currently voting on something
+          check_variable = {
+            which = voting_started
+            value = 1
+          }
+        }
+      }
+    }
+  }
+
+  effect = {
+    country_event = { id = tir_amma_narsa.1 }
+  }
+  tooltip = dartlizi_reform_tt
+}
+custom_icon = {
+  name = "dartlizi_passed"
+
+  potential = {
+    AZI = {
+      has_country_flag = azadi_dartlizi_reform
+    }
+  }
+
+  frame = {
+    number = 2
+  }
+}
+custom_button = {
+  name = azadi_ijoyar_reform
+
+  trigger = {
+    hidden_trigger = {
+      tag = event_target:xudan
+      AZI = {
+        has_country_flag = azadi_dartlizi_reform
+        NOT = { has_country_flag = azadi_ijoyar_reform }
+        NOT = { # It has been 15 years
+          check_variable = {
+            which = azadi_timer
+            value = 1
+          }
+        }
+        NOT = { # Is not currently voting on something
+          check_variable = {
+            which = voting_started
+            value = 1
+          }
+        }
+      }
+    }
+  }
+
+  effect = {
+    country_event = { id = tir_amma_narsa.1 }
+  }
+  tooltip = ijoyar_reform_tt
+}
+custom_icon = {
+  name = "ijoyar_passed"
+
+  potential = {
+    AZI = {
+      has_country_flag = azadi_ijoyar_reform
+    }
+  }
+
+  frame = {
+    number = 2
+  }
+}
+custom_button = {
+  name = azadi_hamsax_reform
+
+  trigger = {
+    hidden_trigger = {
+      tag = event_target:xudan
+      AZI = {
+        has_country_flag = azadi_ijoyar_reform
+        NOT = { has_country_flag = azadi_hamsax_reform }
+        NOT = { # It has been 15 years
+          check_variable = {
+            which = azadi_timer
+            value = 1
+          }
+        }
+        NOT = { # Is not currently voting on something
+          check_variable = {
+            which = voting_started
+            value = 1
+          }
+        }
+      }
+    }
+  }
+
+  effect = {
+    country_event = { id = tir_amma_narsa.1 }
+  }
+  tooltip = hamsax_reform_tt
+}
+custom_icon = {
+  name = "hamsax_passed"
+
+  potential = {
+    AZI = {
+      has_country_flag = azadi_hamsax_reform
+    }
+  }
+
+  frame = {
+    number = 2
+  }
+}
+
+custom_button = {
+  name = azadi_no_button
+
+  trigger = {
+    hidden_trigger = {
+      is_part_of_hre = yes
+      AZI = {
+        check_variable = {
+          which = voting_started
+          value = 1
+        }
+      }
+      ROOT = {
+        check_variable = {
+          which = vote_for
+          value = 1
+        }
+      }
+    }
+  }
+
+  effect = {
+    hidden_effect = {
+      ROOT = {
+        set_variable = {
+          which = vote_for
+          value = 0
+        }
+      }
+      AZI = {
+        change_variable = {
+          which = vote_against_count
+          value = 1
+        }
+        subtract_variable = {
+          which = vote_for_count
+          value = 1
+        }
+      }
+    }
+  }
+
+  tooltip = azadi_no_button_tt
+}
+custom_button = {
+  name = azadi_yes_button
+
+  trigger = {
+    hidden_trigger = {
+      is_part_of_hre = yes
+      AZI = {
+        check_variable = {
+          which = voting_started
+          value = 1
+        }
+      }
+      ROOT = { # Is 1
+        NOT = {
+          check_variable = {
+            which = vote_for
+            value = 1
+          }
+        }
+      }
+    }
+  }
+
+  effect = {
+    hidden_effect = {
+      ROOT = {
+        set_variable = {
+          which = vote_for
+          value = 1
+        }
+      }
+      AZI = {
+        change_variable = {
+          which = vote_for_count
+          value = 1
+        }
+        subtract_variable = {
+          which = vote_against_count
+          value = 1
+        }
+      }
+    }
+  }
+
+  tooltip = azadi_yes_button_tt
+}
+
+custom_text_box = {
+  name = voting_timer_text
+  potential = {
+    AZI = {
+      check_variable = {
+        which = voting_started
+        value = 1
+      }
+    }
+  }
+
+  tooltip = voting_timer_tt
+}
+
+custom_text_box = {
+  name = voting_against_text
+  potential = {
+    AZI = {
+      check_variable = {
+        which = voting_started
+        value = 1
+      }
+    }
+  }
+
+  tooltip = voting_against_tt
+}
+custom_text_box = {
+  name = voting_for_text
+  potential = {
+    AZI = {
+      check_variable = {
+        which = voting_started
+        value = 1
+      }
+    }
+  }
+
+  tooltip = voting_for_tt
+}
+
+custom_shield = {
+  name = azadi_member_flag_1
+  potential = {
+    AZI = {
+      check_variable = {
+        which = voting_started
+        value = 1
+      }
+    }
+  }
+
+  trigger = {
+    hidden_trigger = {
+      exists = A99
+    }
+  }
+
+  tooltip = azadi_member_flag_1_tt
+  global_event_target = azadi_member_1
+  open_country = yes
+}
+custom_icon = {
+  name = ai_accept_member_1
+  potential = {
+    AZI = {
+      check_variable = {
+        which = voting_started
+        value = 1
+      }
+    }
+    event_target:azadi_member_1 = {
+      exists = yes
+    }
+  }
+
+  frame = {
+    number = 2
+    trigger = {
+      A99 = {
+        check_variable = {
+          which = vote_for
+          value = 1
+        }
+      }
+    }
+  }
+}
+custom_shield = {
+  name = azadi_member_flag_2
+  potential = {
+    AZI = {
+      check_variable = {
+        which = voting_started
+        value = 1
+      }
+    }
+  }
+
+  trigger = {
+    hidden_trigger = {
+      exists = A81
+    }
+  }
+
+  tooltip = azadi_member_flag_2_tt
+  global_event_target = azadi_member_2
+  open_country = yes
+}
+custom_icon = {
+  name = ai_accept_member_2
+  potential = {
+    AZI = {
+      check_variable = {
+        which = voting_started
+        value = 1
+      }
+    }
+    event_target:azadi_member_2 = {
+      exists = yes
+    }
+  }
+
+  frame = {
+    number = 2
+    trigger = {
+      A81 = {
+        check_variable = {
+          which = vote_for
+          value = 1
+        }
+      }
+    }
+  }
+}
+custom_shield = {
+  name = azadi_member_flag_3
+  potential = {
+    AZI = {
+      check_variable = {
+        which = voting_started
+        value = 1
+      }
+    }
+  }
+
+  trigger = {
+    hidden_trigger = {
+      exists = B04
+    }
+  }
+
+  tooltip = azadi_member_flag_3_tt
+  global_event_target = azadi_member_3
+  open_country = yes
+}
+custom_icon = {
+  name = ai_accept_member_3
+  potential = {
+    AZI = {
+      check_variable = {
+        which = voting_started
+        value = 1
+      }
+    }
+    event_target:azadi_member_3 = {
+      exists = yes
+    }
+  }
+
+  frame = {
+    number = 2
+    trigger = {
+      B04 = {
+        check_variable = {
+          which = vote_for
+          value = 1
+        }
+      }
+    }
+  }
+}
+custom_shield = {
+  name = azadi_member_flag_4
+  potential = {
+    AZI = {
+      check_variable = {
+        which = voting_started
+        value = 1
+      }
+    }
+  }
+
+  trigger = {
+    hidden_trigger = {
+      exists = A79
+    }
+  }
+  tooltip = azadi_member_flag_4_tt
+  global_event_target = azadi_member_4
+  open_country = yes
+}
+custom_icon = {
+  name = ai_accept_member_4
+  potential = {
+    AZI = {
+      check_variable = {
+        which = voting_started
+        value = 1
+      }
+    }
+    event_target:azadi_member_4 = {
+      exists = yes
+    }
+  }
+
+  frame = {
+    number = 2
+    trigger = {
+      A79 = {
+        check_variable = {
+          which = vote_for
+          value = 1
+        }
+      }
+    }
+  }
+}
+custom_shield = {
+  name = azadi_member_flag_5
+  potential = {
+    AZI = {
+      check_variable = {
+        which = voting_started
+        value = 1
+      }
+    }
+  }
+
+  trigger = {
+    hidden_trigger = {
+      exists = A80
+    }
+  }
+
+  tooltip = azadi_member_flag_5_tt
+  global_event_target = azadi_member_5
+  open_country = yes
+}
+custom_icon = {
+  name = ai_accept_member_5
+  potential = {
+    AZI = {
+      check_variable = {
+        which = voting_started
+        value = 1
+      }
+    }
+    event_target:azadi_member_5 = {
+      exists = yes
+    }
+  }
+
+  frame = {
+    number = 2
+    trigger = {
+      A80 = {
+        check_variable = {
+          which = vote_for
+          value = 1
+        }
+      }
+    }
+  }
+}
+custom_shield = {
+  name = azadi_member_flag_6
+  potential = {
+    AZI = {
+      check_variable = {
+        which = voting_started
+        value = 1
+      }
+    }
+  }
+
+  trigger = {
+    hidden_trigger = {
+      exists = B01
+    }
+  }
+  tooltip = azadi_member_flag_6_tt
+  global_event_target = azadi_member_6
+  open_country = yes
+}
+custom_icon = {
+  name = ai_accept_member_6
+  potential = {
+    AZI = {
+      check_variable = {
+        which = voting_started
+        value = 1
+      }
+    }
+    event_target:azadi_member_6 = {
+      exists = yes
+    }
+  }
+
+  frame = {
+    number = 2
+    trigger = {
+      B01 = {
+        check_variable = {
+          which = vote_for
+          value = 1
+        }
+      }
+    }
+  }
+}
+custom_shield = {
+  name = azadi_member_flag_7
+  potential = {
+    AZI = {
+      check_variable = {
+        which = voting_started
+        value = 1
+      }
+    }
+  }
+
+  trigger = {
+    hidden_trigger = {
+      exists = B02
+    }
+  }
+  tooltip = azadi_member_flag_7_tt
+  global_event_target = azadi_member_7
+  open_country = yes
+}
+custom_icon = {
+  name = ai_accept_member_7
+  potential = {
+    AZI = {
+      check_variable = {
+        which = voting_started
+        value = 1
+      }
+    }
+    event_target:azadi_member_7 = {
+      exists = yes
+    }
+  }
+
+  frame = {
+    number = 2
+    trigger = {
+      B02 = {
+        check_variable = {
+          which = vote_for
+          value = 1
+        }
+      }
+    }
+  }
+}
+custom_shield = {
+  name = azadi_member_flag_8
+  potential = {
+    AZI = {
+      check_variable = {
+        which = voting_started
+        value = 1
+      }
+    }
+  }
+
+  trigger = {
+    hidden_trigger = {
+      exists = B03
+    }
+  }
+  tooltip = azadi_member_flag_8_tt
+  global_event_target = azadi_member_8
+  open_country = yes
+}
+custom_icon = {
+  name = ai_accept_member_8
+  potential = {
+    AZI = {
+      check_variable = {
+        which = voting_started
+        value = 1
+      }
+    }
+    event_target:azadi_member_8 = {
+      exists = yes
+    }
+  }
+
+  frame = {
+    number = 2
+    trigger = {
+      B03 = {
+        check_variable = {
+          which = vote_for
+          value = 1
+        }
+      }
+    }
+  }
+}
+custom_shield = {
+  name = azadi_member_flag_9
+  potential = {
+    AZI = {
+      check_variable = {
+        which = voting_started
+        value = 1
+      }
+    }
+  }
+
+  trigger = {
+    hidden_trigger = {
+      exists = A78
+    }
+  }
+  tooltip = azadi_member_flag_9_tt
+  global_event_target = azadi_member_9
+  open_country = yes
+}
+custom_icon = {
+  name = ai_accept_member_9
+  potential = {
+    AZI = {
+      check_variable = {
+        which = voting_started
+        value = 1
+      }
+    }
+    event_target:azadi_member_9 = {
+      exists = yes
+    }
+  }
+
+  frame = {
+    number = 2
+    trigger = {
+      A78 = {
+        check_variable = {
+          which = vote_for
+          value = 1
+        }
+      }
+    }
+  }
+}
+custom_shield = {
+  name = azadi_member_flag_10
+  potential = {
+    AZI = {
+      check_variable = {
+        which = voting_started
+        value = 1
+      }
+    }
+  }
+
+  trigger = {
+    hidden_trigger = {
+      exists = A77
+    }
+  }
+  tooltip = azadi_member_flag_10_tt
+  global_event_target = azadi_member_10
+  open_country = yes
+}
+custom_icon = {
+  name = ai_accept_member_10
+  potential = {
+    AZI = {
+      check_variable = {
+        which = voting_started
+        value = 1
+      }
+    }
+    event_target:azadi_member_10 = {
+      exists = yes
+    }
+  }
+
+  frame = {
+    number = 2
+    trigger = {
+      A77 = {
+        check_variable = {
+          which = vote_for
+          value = 1
+        }
+      }
+    }
+  }
+}
+custom_shield = {
+  name = azadi_member_flag_11
+  potential = {
+    AZI = {
+      check_variable = {
+        which = voting_started
+        value = 1
+      }
+    }
+  }
+
+  trigger = {
+    hidden_trigger = {
+      exists = B05
+    }
+  }
+  tooltip = azadi_member_flag_11_tt
+  global_event_target = azadi_member_11
+  open_country = yes
+}
+custom_icon = {
+  name = ai_accept_member_11
+  potential = {
+    AZI = {
+      check_variable = {
+        which = voting_started
+        value = 1
+      }
+    }
+    event_target:azadi_member_11 = {
+      exists = yes
+    }
+  }
+
+  frame = {
+    number = 2
+    trigger = {
+      B05 = {
+        check_variable = {
+          which = vote_for
+          value = 1
+        }
+      }
+    }
+  }
+}
+custom_shield = {
+  name = azadi_member_flag_12
+  potential = {
+    AZI = {
+      check_variable = {
+        which = voting_started
+        value = 1
+      }
+    }
+  }
+
+  trigger = {
+    hidden_trigger = {
+      exists = B06
+    }
+  }
+  tooltip = azadi_member_flag_12_tt
+  global_event_target = azadi_member_12
+  open_country = yes
+}
+custom_icon = {
+  name = ai_accept_member_12
+  potential = {
+    AZI = {
+      check_variable = {
+        which = voting_started
+        value = 1
+      }
+    }
+    event_target:azadi_member_12 = {
+      exists = yes
+    }
+  }
+
+  frame = {
+    number = 2
+    trigger = {
+      B06 = {
+        check_variable = {
+          which = vote_for
+          value = 1
+        }
+      }
+    }
+  }
+}
+custom_shield = {
+  name = azadi_member_flag_13
+  potential = {
+    AZI = {
+      check_variable = {
+        which = voting_started
+        value = 1
+      }
+    }
+  }
+
+  trigger = {
+    hidden_trigger = {
+      exists = A76
+    }
+  }
+  tooltip = azadi_member_flag_13_tt
+  global_event_target = azadi_member_13
+  open_country = yes
+}
+custom_icon = {
+  name = ai_accept_member_13
+  potential = {
+    AZI = {
+      check_variable = {
+        which = voting_started
+        value = 1
+      }
+    }
+    event_target:azadi_member_13 = {
+      exists = yes
+    }
+  }
+
+  frame = {
+    number = 2
+    trigger = {
+      A76 = {
+        check_variable = {
+          which = vote_for
+          value = 1
+        }
+      }
+    }
+  }
+}
+custom_shield = {
+  name = azadi_member_flag_14
+  potential = {
+    AZI = {
+      check_variable = {
+        which = voting_started
+        value = 1
+      }
+    }
+  }
+
+  trigger = {
+    hidden_trigger = {
+      exists = B07
+    }
+  }
+  tooltip = azadi_member_flag_14_tt
+  global_event_target = azadi_member_14
+  open_country = yes
+}
+custom_icon = {
+  name = ai_accept_member_14
+  potential = {
+    AZI = {
+      check_variable = {
+        which = voting_started
+        value = 1
+      }
+    }
+    event_target:azadi_member_14 = {
+      exists = yes
+    }
+  }
+
+  frame = {
+    number = 2
+    trigger = {
+      B07 = {
+        check_variable = {
+          which = vote_for
+          value = 1
+        }
+      }
+    }
+  }
+}
+custom_shield = {
+  name = azadi_member_flag_15
+  potential = {
+    AZI = {
+      check_variable = {
+        which = voting_started
+        value = 1
+      }
+    }
+  }
+
+  trigger = {
+    hidden_trigger = {
+      exists = A75
+    }
+  }
+  tooltip = azadi_member_flag_15_tt
+  global_event_target = azadi_member_15
+  open_country = yes
+}
+custom_icon = {
+  name = ai_accept_member_15
+  potential = {
+    AZI = {
+      check_variable = {
+        which = voting_started
+        value = 1
+      }
+    }
+    event_target:azadi_member_15 = {
+      exists = yes
+    }
+  }
+
+  frame = {
+    number = 2
+    trigger = {
+      A75 = {
+        check_variable = {
+          which = vote_for
+          value = 1
+        }
+      }
+    }
+  }
+}
+
+custom_shield = {
+  name = azadi_first_elector_flag
+
+  tooltip = first_elector_tt
+  global_event_target = azadi_elector_1
+  open_country = yes
+}
+custom_shield = {
+  name = azadi_first_elector_vote
+
+  effect = {
+    if = {
+      limit = { tag = event_target:azadi_elector_1 }
+      if = {
+        limit = { has_country_flag = opened_elector_vote }
+        clr_country_flag = opened_elector_vote
+      }
+      else = {
+        set_country_flag = opened_elector_vote
+      }
+    }
+  }
+
+  tooltip = first_elector_vote_tt
+
+  global_event_target = first_elector_vote
+  open_country = no
+}
+
+custom_shield = {
+  name = azadi_second_elector_flag
+
+  tooltip = second_elector_tt
+  global_event_target = azadi_elector_2
+  open_country = yes
+}
+custom_shield = {
+  name = azadi_second_elector_vote
+
+  effect = {
+    if = {
+      limit = { tag = event_target:azadi_elector_2 }
+      if = {
+        limit = { has_country_flag = opened_elector_vote }
+        clr_country_flag = opened_elector_vote
+      }
+      else = {
+        set_country_flag = opened_elector_vote
+      }
+    }
+  }
+
+  tooltip = second_elector_vote_tt
+
+  global_event_target = second_elector_vote
+  open_country = no
+}
+
+custom_shield = {
+  name = azadi_third_elector_flag
+
+  tooltip = third_elector_tt
+  global_event_target = azadi_elector_3
+  open_country = yes
+}
+custom_shield = {
+  name = azadi_third_elector_vote
+
+  effect = {
+    if = {
+      limit = { tag = event_target:azadi_elector_3 }
+      if = {
+        limit = { has_country_flag = opened_elector_vote }
+        clr_country_flag = opened_elector_vote
+      }
+      else = {
+        set_country_flag = opened_elector_vote
+      }
+    }
+  }
+
+  tooltip = third_elector_vote_tt
+
+  global_event_target = third_elector_vote
+  open_country = no
+}
+
+custom_shield = {
+  name = azadi_fourth_elector_flag
+  potential = {
+    AZI = {
+      has_country_flag = fourth_elector_activated
+    }
+  }
+  tooltip = fourth_elector_tt
+  global_event_target = azadi_elector_4
+  open_country = yes
+}
+custom_shield = {
+  name = azadi_fourth_elector_vote
+  potential = {
+    AZI = {
+      has_country_flag = fourth_elector_activated
+    }
+  }
+
+  effect = {
+    if = {
+      limit = { tag = event_target:azadi_elector_4 }
+      if = {
+        limit = { has_country_flag = opened_elector_vote }
+        clr_country_flag = opened_elector_vote
+      }
+      else = {
+        set_country_flag = opened_elector_vote
+      }
+    }
+  }
+
+  tooltip = fourth_elector_vote_tt
+
+  global_event_target = fourth_elector_vote
+  open_country = no
+}
+
+custom_icon = {
+  name = elector_vote_background
+  potential = {
+    has_country_flag = opened_elector_vote
+  }
+}
+
+custom_text_box = {
+  name = cast_elector_vote_text
+  potential = {
+    has_country_flag = opened_elector_vote
+  }
+}
+
+custom_shield = {
+  name = azadi_elector_vote_1
+  potential = {
+    has_country_flag = opened_elector_vote
+  }
+
+  trigger = {
+    hidden_trigger = {
+      exists = event_target:azadi_member_1
+    }
+  }
+
+  effect = {
+    if = {
+      limit = { tag = event_target:azadi_elector_1 }
+      A99 = {
+        save_global_event_target_as = first_elector_vote
+      }
+    }
+    else_if = {
+      limit = { tag = event_target:azadi_elector_2 }
+      A99 = {
+        save_global_event_target_as = second_elector_vote
+      }
+    }
+    else_if = {
+      limit = { tag = event_target:azadi_elector_3 }
+      A99 = {
+        save_global_event_target_as = third_elector_vote
+      }
+    }
+    else_if = {
+      limit = { tag = event_target:azadi_elector_4 }
+      A99 = {
+        save_global_event_target_as = fourth_elector_vote
+      }
+    }
+    clr_country_flag = opened_elector_vote
+  }
+
+  tooltip = azadi_member_flag_1_tt
+
+  global_event_target = azadi_member_1
+  open_country = no
+}
+custom_shield = {
+  name = azadi_elector_vote_2
+  potential = {
+    has_country_flag = opened_elector_vote
+  }
+
+  trigger = {
+    hidden_trigger = {
+      exists = event_target:azadi_member_2
+    }
+  }
+
+  effect = {
+    if = {
+      limit = { tag = event_target:azadi_elector_1 }
+      A81 = {
+        save_global_event_target_as = first_elector_vote
+      }
+    }
+    else_if = {
+      limit = { tag = event_target:azadi_elector_2 }
+      A81 = {
+        save_global_event_target_as = second_elector_vote
+      }
+    }
+    else_if = {
+      limit = { tag = event_target:azadi_elector_3 }
+      A81 = {
+        save_global_event_target_as = third_elector_vote
+      }
+    }
+    else_if = {
+      limit = { tag = event_target:azadi_elector_4 }
+      A81 = {
+        save_global_event_target_as = fourth_elector_vote
+      }
+    }
+    clr_country_flag = opened_elector_vote
+  }
+
+  tooltip = azadi_member_flag_2_tt
+
+  global_event_target = azadi_member_2
+  open_country = no
+}
+custom_shield = {
+  name = azadi_elector_vote_3
+  potential = {
+    has_country_flag = opened_elector_vote
+  }
+
+  trigger = {
+    hidden_trigger = {
+      exists = event_target:azadi_member_3
+    }
+  }
+
+  effect = {
+    if = {
+      limit = { tag = event_target:azadi_elector_1 }
+      B04 = {
+        save_global_event_target_as = first_elector_vote
+      }
+    }
+    else_if = {
+      limit = { tag = event_target:azadi_elector_2 }
+      B04 = {
+        save_global_event_target_as = second_elector_vote
+      }
+    }
+    else_if = {
+      limit = { tag = event_target:azadi_elector_3 }
+      B04 = {
+        save_global_event_target_as = third_elector_vote
+      }
+    }
+    else_if = {
+      limit = { tag = event_target:azadi_elector_4 }
+      B04 = {
+        save_global_event_target_as = fourth_elector_vote
+      }
+    }
+    clr_country_flag = opened_elector_vote
+  }
+
+  tooltip = azadi_member_flag_3_tt
+
+  global_event_target = azadi_member_3
+  open_country = no
+}
+custom_shield = {
+  name = azadi_elector_vote_4
+  potential = {
+    has_country_flag = opened_elector_vote
+  }
+
+  trigger = {
+    hidden_trigger = {
+      exists = event_target:azadi_member_4
+    }
+  }
+
+  effect = {
+    if = {
+      limit = { tag = event_target:azadi_elector_1 }
+      A79 = {
+        save_global_event_target_as = first_elector_vote
+      }
+    }
+    else_if = {
+      limit = { tag = event_target:azadi_elector_2 }
+      A79 = {
+        save_global_event_target_as = second_elector_vote
+      }
+    }
+    else_if = {
+      limit = { tag = event_target:azadi_elector_3 }
+      A79 = {
+        save_global_event_target_as = third_elector_vote
+      }
+    }
+    else_if = {
+      limit = { tag = event_target:azadi_elector_4 }
+      A79 = {
+        save_global_event_target_as = fourth_elector_vote
+      }
+    }
+    clr_country_flag = opened_elector_vote
+  }
+
+  tooltip = azadi_member_flag_4_tt
+
+  global_event_target = azadi_member_4
+  open_country = no
+}
+custom_shield = {
+  name = azadi_elector_vote_5
+  potential = {
+    has_country_flag = opened_elector_vote
+  }
+
+  trigger = {
+    hidden_trigger = {
+      exists = event_target:azadi_member_5
+    }
+  }
+
+  effect = {
+    if = {
+      limit = { tag = event_target:azadi_elector_1 }
+      A80 = {
+        save_global_event_target_as = first_elector_vote
+      }
+    }
+    else_if = {
+      limit = { tag = event_target:azadi_elector_2 }
+      A80 = {
+        save_global_event_target_as = second_elector_vote
+      }
+    }
+    else_if = {
+      limit = { tag = event_target:azadi_elector_3 }
+      A80 = {
+        save_global_event_target_as = third_elector_vote
+      }
+    }
+    else_if = {
+      limit = { tag = event_target:azadi_elector_4 }
+      A80 = {
+        save_global_event_target_as = fourth_elector_vote
+      }
+    }
+    clr_country_flag = opened_elector_vote
+  }
+
+  tooltip = azadi_member_flag_5_tt
+
+  global_event_target = azadi_member_5
+  open_country = no
+}
+custom_shield = {
+  name = azadi_elector_vote_6
+  potential = {
+    has_country_flag = opened_elector_vote
+  }
+
+  trigger = {
+    hidden_trigger = {
+      exists = event_target:azadi_member_6
+    }
+  }
+
+  effect = {
+    if = {
+      limit = { tag = event_target:azadi_elector_1 }
+      B01 = {
+        save_global_event_target_as = first_elector_vote
+      }
+    }
+    else_if = {
+      limit = { tag = event_target:azadi_elector_2 }
+      B01 = {
+        save_global_event_target_as = second_elector_vote
+      }
+    }
+    else_if = {
+      limit = { tag = event_target:azadi_elector_3 }
+      B01 = {
+        save_global_event_target_as = third_elector_vote
+      }
+    }
+    else_if = {
+      limit = { tag = event_target:azadi_elector_4 }
+      B01 = {
+        save_global_event_target_as = fourth_elector_vote
+      }
+    }
+    clr_country_flag = opened_elector_vote
+  }
+
+  tooltip = azadi_member_flag_6_tt
+
+  global_event_target = azadi_member_6
+  open_country = no
+}
+
+custom_shield = {
+  name = azadi_elector_vote_7
+  potential = {
+    has_country_flag = opened_elector_vote
+  }
+
+  trigger = {
+    hidden_trigger = {
+      exists = event_target:azadi_member_7
+    }
+  }
+
+  effect = {
+    if = {
+      limit = { tag = event_target:azadi_elector_1 }
+      B02 = {
+        save_global_event_target_as = first_elector_vote
+      }
+    }
+    else_if = {
+      limit = { tag = event_target:azadi_elector_2 }
+      B02 = {
+        save_global_event_target_as = second_elector_vote
+      }
+    }
+    else_if = {
+      limit = { tag = event_target:azadi_elector_3 }
+      B02 = {
+        save_global_event_target_as = third_elector_vote
+      }
+    }
+    else_if = {
+      limit = { tag = event_target:azadi_elector_4 }
+      B02 = {
+        save_global_event_target_as = fourth_elector_vote
+      }
+    }
+    clr_country_flag = opened_elector_vote
+  }
+
+  tooltip = azadi_member_flag_7_tt
+
+  global_event_target = azadi_member_7
+  open_country = no
+}
+custom_shield = {
+  name = azadi_elector_vote_8
+  potential = {
+    has_country_flag = opened_elector_vote
+  }
+
+  trigger = {
+    hidden_trigger = {
+      exists = event_target:azadi_member_8
+    }
+  }
+
+  effect = {
+    if = {
+      limit = { tag = event_target:azadi_elector_1 }
+      B03 = {
+        save_global_event_target_as = first_elector_vote
+      }
+    }
+    else_if = {
+      limit = { tag = event_target:azadi_elector_2 }
+      B03 = {
+        save_global_event_target_as = second_elector_vote
+      }
+    }
+    else_if = {
+      limit = { tag = event_target:azadi_elector_3 }
+      B03 = {
+        save_global_event_target_as = third_elector_vote
+      }
+    }
+    else_if = {
+      limit = { tag = event_target:azadi_elector_4 }
+      B03 = {
+        save_global_event_target_as = fourth_elector_vote
+      }
+    }
+    clr_country_flag = opened_elector_vote
+  }
+
+  tooltip = azadi_member_flag_8_tt
+
+  global_event_target = azadi_member_8
+  open_country = no
+}
+custom_shield = {
+  name = azadi_elector_vote_9
+  potential = {
+    has_country_flag = opened_elector_vote
+  }
+
+  trigger = {
+    hidden_trigger = {
+      exists = event_target:azadi_member_9
+    }
+  }
+
+  effect = {
+    if = {
+      limit = { tag = event_target:azadi_elector_1 }
+      A78 = {
+        save_global_event_target_as = first_elector_vote
+      }
+    }
+    else_if = {
+      limit = { tag = event_target:azadi_elector_2 }
+      A78 = {
+        save_global_event_target_as = second_elector_vote
+      }
+    }
+    else_if = {
+      limit = { tag = event_target:azadi_elector_3 }
+      A78 = {
+        save_global_event_target_as = third_elector_vote
+      }
+    }
+    else_if = {
+      limit = { tag = event_target:azadi_elector_4 }
+      A78 = {
+        save_global_event_target_as = fourth_elector_vote
+      }
+    }
+    clr_country_flag = opened_elector_vote
+  }
+
+  tooltip = azadi_member_flag_9_tt
+
+  global_event_target = azadi_member_9
+  open_country = no
+}
+custom_shield = {
+  name = azadi_elector_vote_10
+  potential = {
+    has_country_flag = opened_elector_vote
+  }
+
+  trigger = {
+    hidden_trigger = {
+      exists = event_target:azadi_member_10
+    }
+  }
+
+  effect = {
+    if = {
+      limit = { tag = event_target:azadi_elector_1 }
+      A77 = {
+        save_global_event_target_as = first_elector_vote
+      }
+    }
+    else_if = {
+      limit = { tag = event_target:azadi_elector_2 }
+      A77 = {
+        save_global_event_target_as = second_elector_vote
+      }
+    }
+    else_if = {
+      limit = { tag = event_target:azadi_elector_3 }
+      A77 = {
+        save_global_event_target_as = third_elector_vote
+      }
+    }
+    else_if = {
+      limit = { tag = event_target:azadi_elector_4 }
+      A77 = {
+        save_global_event_target_as = fourth_elector_vote
+      }
+    }
+    clr_country_flag = opened_elector_vote
+  }
+
+  tooltip = azadi_member_flag_10_tt
+
+  global_event_target = azadi_member_10
+  open_country = no
+}
+custom_shield = {
+  name = azadi_elector_vote_11
+  potential = {
+    has_country_flag = opened_elector_vote
+  }
+
+  trigger = {
+    hidden_trigger = {
+      exists = event_target:azadi_member_11
+    }
+  }
+
+  effect = {
+    if = {
+      limit = { tag = event_target:azadi_elector_1 }
+      B05 = {
+        save_global_event_target_as = first_elector_vote
+      }
+    }
+    else_if = {
+      limit = { tag = event_target:azadi_elector_2 }
+      B05 = {
+        save_global_event_target_as = second_elector_vote
+      }
+    }
+    else_if = {
+      limit = { tag = event_target:azadi_elector_3 }
+      B05 = {
+        save_global_event_target_as = third_elector_vote
+      }
+    }
+    else_if = {
+      limit = { tag = event_target:azadi_elector_4 }
+      B05 = {
+        save_global_event_target_as = fourth_elector_vote
+      }
+    }
+    clr_country_flag = opened_elector_vote
+  }
+
+  tooltip = azadi_member_flag_11_tt
+
+  global_event_target = azadi_member_11
+  open_country = no
+}
+custom_shield = {
+  name = azadi_elector_vote_12
+  potential = {
+    has_country_flag = opened_elector_vote
+  }
+
+  trigger = {
+    hidden_trigger = {
+      exists = event_target:azadi_member_12
+    }
+  }
+
+  effect = {
+    if = {
+      limit = { tag = event_target:azadi_elector_1 }
+      B06 = {
+        save_global_event_target_as = first_elector_vote
+      }
+    }
+    else_if = {
+      limit = { tag = event_target:azadi_elector_2 }
+      B06 = {
+        save_global_event_target_as = second_elector_vote
+      }
+    }
+    else_if = {
+      limit = { tag = event_target:azadi_elector_3 }
+      B06 = {
+        save_global_event_target_as = third_elector_vote
+      }
+    }
+    else_if = {
+      limit = { tag = event_target:azadi_elector_4 }
+      B06 = {
+        save_global_event_target_as = fourth_elector_vote
+      }
+    }
+    clr_country_flag = opened_elector_vote
+  }
+
+  tooltip = azadi_member_flag_12_tt
+
+  global_event_target = azadi_member_12
+  open_country = no
+}
+
+custom_shield = {
+  name = azadi_elector_vote_13
+  potential = {
+    has_country_flag = opened_elector_vote
+  }
+
+  trigger = {
+    hidden_trigger = {
+      exists = event_target:azadi_member_13
+    }
+  }
+
+  effect = {
+    if = {
+      limit = { tag = event_target:azadi_elector_1 }
+      A76 = {
+        save_global_event_target_as = first_elector_vote
+      }
+    }
+    else_if = {
+      limit = { tag = event_target:azadi_elector_2 }
+      A76 = {
+        save_global_event_target_as = second_elector_vote
+      }
+    }
+    else_if = {
+      limit = { tag = event_target:azadi_elector_3 }
+      A76 = {
+        save_global_event_target_as = third_elector_vote
+      }
+    }
+    else_if = {
+      limit = { tag = event_target:azadi_elector_4 }
+      A76 = {
+        save_global_event_target_as = fourth_elector_vote
+      }
+    }
+    clr_country_flag = opened_elector_vote
+  }
+
+  tooltip = azadi_member_flag_13_tt
+
+  global_event_target = azadi_member_13
+  open_country = no
+}
+custom_shield = {
+  name = azadi_elector_vote_14
+  potential = {
+    has_country_flag = opened_elector_vote
+  }
+
+  trigger = {
+    hidden_trigger = {
+      exists = event_target:azadi_member_14
+    }
+  }
+
+  effect = {
+    if = {
+      limit = { tag = event_target:azadi_elector_1 }
+      B07 = {
+        save_global_event_target_as = first_elector_vote
+      }
+    }
+    else_if = {
+      limit = { tag = event_target:azadi_elector_2 }
+      B07 = {
+        save_global_event_target_as = second_elector_vote
+      }
+    }
+    else_if = {
+      limit = { tag = event_target:azadi_elector_3 }
+      B07 = {
+        save_global_event_target_as = third_elector_vote
+      }
+    }
+    else_if = {
+      limit = { tag = event_target:azadi_elector_4 }
+      B07 = {
+        save_global_event_target_as = fourth_elector_vote
+      }
+    }
+    clr_country_flag = opened_elector_vote
+  }
+
+  tooltip = azadi_member_flag_14_tt
+
+  global_event_target = azadi_member_14
+  open_country = no
+}
+custom_shield = {
+  name = azadi_elector_vote_15
+  potential = {
+    has_country_flag = opened_elector_vote
+  }
+
+  trigger = {
+    hidden_trigger = {
+      exists = event_target:azadi_member_15
+    }
+  }
+
+  effect = {
+    if = {
+      limit = { tag = event_target:azadi_elector_1 }
+      A75 = {
+        save_global_event_target_as = first_elector_vote
+      }
+    }
+    else_if = {
+      limit = { tag = event_target:azadi_elector_2 }
+      A75 = {
+        save_global_event_target_as = second_elector_vote
+      }
+    }
+    else_if = {
+      limit = { tag = event_target:azadi_elector_3 }
+      A75 = {
+        save_global_event_target_as = third_elector_vote
+      }
+    }
+    else_if = {
+      limit = { tag = event_target:azadi_elector_4 }
+      A75 = {
+        save_global_event_target_as = fourth_elector_vote
+      }
+    }
+    clr_country_flag = opened_elector_vote
+  }
+
+  tooltip = azadi_member_flag_15_tt
+
+  global_event_target = azadi_member_15
+  open_country = no
+}
+
+custom_button = {
+  name = elector_vote_close
+  potential = {
+    has_country_flag = opened_elector_vote
+  }
+
+  effect = {
+    clr_country_flag = opened_elector_vote
+  }
+}
+
+### A'zadi Xudan Actions Diplomacy ###
+custom_text_box = {
+  name = xudan_actions_text
+  potential = {
+    FROM = {
+      tag = event_target:xudan
+    }
+  }
+}
+
+custom_icon = {
+  name = xudan_diplomacy_background
+  potential = {
+    FROM = {
+      tag = event_target:xudan
+    }
+  }
+}
+
+custom_shield = {
+  name = xudan_diplomacy_flag
+  potential = {
+    FROM = {
+      tag = event_target:xudan
+    }
+  }
+  tooltip = xudan_flag_tt
+  global_event_target = xudan
+  open_country = yes
+}
+
+custom_button = {
+  name = xudan_action_set_elector
+  potential = {
+    FROM = {
+      tag = event_target:xudan
+    }
+  }
+
+  trigger = {
+    hidden_trigger = {
+      NOT = { is_azadi_elector = { NATION = ROOT } }
+      elector_slot_available = yes
+    }
+
+  }
+
+  effect = {
+    hidden_effect = {
+      set_elector_to_next = { NATION = ROOT }
+    }
+  }
+}
+
+custom_button = {
+  name = xudan_action_set_citadel
+  potential = {
+    FROM = {
+      tag = event_target:xudan
+    }
+  }
+
+  trigger = {
+    hidden_trigger = {
+      NOT = { num_of_cities = 2 }
+      NOT = { has_reform = border_citadel_reform }
+      NOT = { is_azadi_elector = { NATION = ROOT } }
+      NOT = {
+        check_variable = {
+          which = border_citadel_count
+          value = 0.06
+        }
+      }
+    }
+  }
+
+  effect = {
+    hidden_effect = {
+      ROOT = {
+        set_country_flag = allowed_by_xudan
+      }
+      add_government_reform = border_citadel_reform
+      set_next_citadel = { NATION = ROOT }
+      AZI = {
+        change_variable = {
+          which = border_citadel_count
+          value = 0.01
+        }
+      }
+    }
+  }
+}

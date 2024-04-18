@@ -27,6 +27,7 @@
  NEIGHBOR_NOT_OWNED_IS_FERTILIZED_SOIL:0 "Borders Nation with §YFertilized Soil§!"
  tooltip_fertilized_soil_embraced:0 "Not Trade Company & Owner has embraced §YFertilized Soil§!"
  TOOLTIP_10_DEVELOPMENT_AND_FOOD_FERTILIZED_SOIL:0 "Atleast 10 Development And is Grain, Livestock, Cotton, Or Wine"
+ tir_institution_events.3.a.tt:1 "§YEmbracing§! the §YFertilized Soil§! Institution will be vital for future advancements in §YTechnology§!."
 
  # Local Census
  FRIENDLY_NEIGHBOR_OR_COAST_PROVINCE_HAS_EMBRACED_LOCAL_CENSUS:0 "Nearby Friendly Province has §YLocal Census§!"
@@ -35,6 +36,7 @@
  TOOLTIP_20_DEVELOPMENT_WITH_PAPER_LOCAL_CENSUS:0 "Paper Province With 20 Development"
  TOOLTIP_10_DEVELOPMENT_WITH_PAPER_LOCAL_CENSUS:0 "Paper Province With 10 Development"
  TOOLTIP_20_DEVELOPMENT_WITHOUT_PAPER_LOCAL_CENSUS:0 "Non-Paper Province With 20 Development"
+ tir_institution_events.4.a.tt:1 "§YEmbracing§! the §YLocal Census§! Institution will be vital for future advancements in §YTechnology§!."
 
  # Global Dominion
  FRIENDLY_NEIGHBOR_OR_COAST_PROVINCE_HAS_EMBRACED_GLOBAL_DOMINION:0 "Nearby Friendly Province has §YGlobal Dominion§!"
@@ -63,10 +65,22 @@
 
  # Events
  # Lilypad Rebellion
- enable_merc_troop_empoken_battalion:0 "Enables Empoken Battalion"
+ enable_merc_troop_empoken_battalion:0 "Enables §YEmpoken Battalion§!"
+
+ # Edanos Flavor Events
+ tir_edanos_fla.1.a.tt:0 "§YKatagya§! is not yet ready to join with our Edanite cousins. The necessary infrastructure must be built, nobles and peasants convinced, and agreements signed before such a decision can be done. Send the list to Numerion!\n"
+ tir_edanos_fla.1.b.tt:0 "Should §YEdanos§! choose to press this further, we may find ourselves at war with our former friends in Numerion. Should this come to pass, we can only pray that the other powers intervene on our behalf…\n"
+
+ tir_edanos_fla.2.a.tt:0 "We will gain access to several §YDecisions§! that will allow us to bring §YEdanos§! and §YKatagya§! closer together than ever before. We must move quickly to secure our power in the court of Potri."
+
+ tir_edanos_fla.3.a.tt:0 "We will gain access to several §YDecisions§! that will allow us to influence §YKatagya§! in our favour, appealing to the countryside yeomen, traders and nobles in order to bring §YDyduno§! and §YKatagya§! closer together than ever before. We must move quickly to secure our power in the countryside, and prepare for sweeping change!"
+
+ tir_edanos_fla.4.a.tt:0 "Our invasion of §YKatagya§! will most likely not go over lightly with the other powers of Numeria. By going with this option, we risk a §Rwar§! that we cannot win.\n"
+
+ tir_edanos_fla.5.c.tt:0 "§YKatagya§! gets 15 months of vision on §YEdanos§! provinces."
 
  # Institution Events
- tir_institution_events.2.a.tt:1 "§YEmbracing§! §YRegulated Coins§! Institution will be vital for future advancements in §YTechnology§!."
+ tir_institution_events.2.a.tt:0 "§YEmbracing§! §YRegulated Coins§! Institution will be vital for future advancements in §YTechnology§!."
 
  # Missions
  # expand_x
@@ -94,3 +108,99 @@
 
  # prosperous_core
  cultured_trade_tooltip_tt:0 "Permanent §Y+5% Trade Value§! in Provinces with §YPrimary Culture§!"
+
+ # the_toxerion_connection
+ the_toxerion_connection_tooltip_tt:0 "§YDyduno§! has gotten the event §YEmeros Toxerion and the Terastoti§!"
+
+ # Religion
+ # Kon'chi
+ high_devotion_action_tt:0 "To be able to turn to Oni Worship, we need at least §Y100.0§!¤. This would have the following impact:"
+ low_devotion_action_tt:0 "To be able to turn to Oti Worship, we need at least §Y100.0§!¤. This would have the following impact:"
+
+ konchi_trigger_button_tt:0 "[Root.KonchiMoney]"
+ oti_button_bonus_tt:0 "[Root.KonchiOtiBonus]"
+ oni_button_bonus_tt:0 "[Root.KonchiOniBonus]"
+ enough_money:0 "Have at least §Y100.0§!¤"
+ oti_button_bonus_text:0 "Do NOT have the modifier §YOti Worship§!"
+ oni_button_bonus_text:0 "Do NOT have the modifier §YOni Worship§!"
+
+ ONI_TT:0 "§YOni§!\nNational Tax Modifier: §G+10.0%§!\nLand Maintenance Modifier: §G-15.0%§!\nTolerance of the True Faith: §G+2.00§!\nFort Defense: §G+20.0%§!"
+ OTI_TT:0 "§YOti§!\nGlobal Trade Power: §G+10.0%§!\nMissionary Strength: §G+3.0%§!\nLand Force Limit Modifier: §G+20.0%§!\nSiege Ability: §G+20.0%§!"
+
+ # Mechanics
+ # A'zadi
+ xudan_timer_tt:0 "§YYears§! remaining until next §YXudan§! election"
+ xudan_flag_tt:0 "§Y[xudan.GetName]§!"
+ next_xudan_flag_tt:0 "Next Xudan: §Y[next_xudan.GetName]§!\n\nHow to get §YPoints§!:\nIs §YVassal/March/Personal Union§! §G+200§!\nIn §YAlliance§! §G+50§!\nIs §YSelf§! §G+100§!\nHas Another §YElector§! voting for us §G+200§!\nHas §YElector that is a Vassal§! §R-100§! per §YElector§!\nIs §YRival§! §R-1000§!\nAt §YWar§! with §R-1000§!\nSame §YPrimary Culture§! §G+5§!\n§YRoyal Marriage§! §G+10§!\nWas §YPrevious Xudan§! §G+25§!\n§YXudan§! With No §YHeir§! §R-1000§!\nIs §YVassal§! §R-100§!\nIs §YElector§! §G+10§!\nHas half §YArmy Strength§! as Elector §R-100§!\n§YOpinion§! from -200/200 is §R-100§!/§G100§!\n§YPrestige§! is §R-10§!/§G10§!\n§YLegitimacy§! is §R-50§!/§G50§!\n§YDiplomatic Reputation§! is §G+10§! Per"
+ xudan_name_tt:0 "Current §YXudan§!"
+ reduce_timer_tt:0 "§YReduce§! timer till next §YReform§! available"
+ timer_left_tt:0 "§YYears§! left until next §YReform§! available"
+ influence_tt:0 "Current §YInfluence§!"
+ azadi_no_button_tt:0 "Change Vote to §YNo§!"
+ azadi_yes_button_tt:0 "Change Vote to §YYes§!"
+ voting_timer_tt:0 "§YDays§! left till voting ends"
+ voting_against_tt:0 "Voting §YAgainst§! Count"
+ voting_for_tt:0 "Voting §YFor§! Count"
+ citadel_1_tt:0 "§Y[border_citadel_1.GetName]§!"
+ citadel_2_tt:0 "§Y[border_citadel_2.GetName]§!"
+ citadel_3_tt:0 "§Y[border_citadel_3.GetName]§!"
+ citadel_4_tt:0 "§Y[border_citadel_4.GetName]§!"
+ citadel_5_tt:0 "§Y[border_citadel_5.GetName]§!"
+ citadel_6_tt:0 "§Y[border_citadel_6.GetName]§!"
+ azadi_member_flag_1_tt:0 "§Y[azadi_member_1.GetName]§!"
+ azadi_member_flag_2_tt:0 "§Y[azadi_member_2.GetName]§!"
+ azadi_member_flag_3_tt:0 "§Y[azadi_member_3.GetName]§!"
+ azadi_member_flag_4_tt:0 "§Y[azadi_member_4.GetName]§!"
+ azadi_member_flag_5_tt:0 "§Y[azadi_member_5.GetName]§!"
+ azadi_member_flag_6_tt:0 "§Y[azadi_member_6.GetName]§!"
+ azadi_member_flag_7_tt:0 "§Y[azadi_member_7.GetName]§!"
+ azadi_member_flag_8_tt:0 "§Y[azadi_member_8.GetName]§!"
+ azadi_member_flag_9_tt:0 "§Y[azadi_member_9.GetName]§!"
+ azadi_member_flag_10_tt:0 "§Y[azadi_member_10.GetName]§!"
+ azadi_member_flag_11_tt:0 "§Y[azadi_member_11.GetName]§!"
+ azadi_member_flag_12_tt:0 "§Y[azadi_member_12.GetName]§!"
+ azadi_member_flag_13_tt:0 "§Y[azadi_member_13.GetName]§!"
+ azadi_member_flag_14_tt:0 "§Y[azadi_member_14.GetName]§!"
+ azadi_member_flag_15_tt:0 "§Y[azadi_member_15.GetName]§!"
+ cast_elector_vote_text:0 "Cast Xudan Vote"
+ CAST_VOTE_TEXT:0 "Cast Xudan Vote"
+ first_elector_tt:0 "§Y[azadi_elector_1.GetName]§!"
+ second_elector_tt:0 "§Y[azadi_elector_2.GetName]§!"
+ third_elector_tt:0 "§Y[azadi_elector_3.GetName]§!"
+ fourth_elector_tt:0 "§Y[azadi_elector_4.GetName]§!"
+ first_elector_vote_tt:0 "§Y[first_elector_vote.GetName]§!\nNation with the most points currently has: §Y[azadi_elector_1.most_points.GetValue]§! points\nYou currently have §Y[ROOT.elector1_points.GetValue]§! points"
+ second_elector_vote_tt:0 "§Y[second_elector_vote.GetName]§!\nNation with the most points currently has: §Y[azadi_elector_2.most_points.GetValue]§! points\nYou currently have §Y[ROOT.elector2_points.GetValue]§! points"
+ third_elector_vote_tt:0 "§Y[third_elector_vote.GetName]§!\nNation with the most points currently has: §Y[azadi_elector_3.most_points.GetValue]§! points\nYou currently have §Y[ROOT.elector3_points.GetValue]§! points"
+ fourth_elector_vote_tt:0 "§Y[fourth_elector_vote.GetName]§!\nNation with the most points currently has: §Y[azadi_elector_4.most_points.GetValue]§! points\nYou currently have §Y[ROOT.elector4_points.GetValue]§! points"
+ xudan_actions_text:0 "Xudan Actions"
+ XUDAN_ACTIONS_TEXT:0 "Xudan Actions"
+ voting_for_text:0 "[AZI.vote_for_count.GetValue]"
+ VOTING_FOR_TEXT:0 "[AZI.vote_for_count.GetValue]"
+ voting_against_text:0 "[AZI.vote_against_count.GetValue]"
+ VOTING_AGAINST_TEXT:0 "[AZI.vote_against_count.GetValue]"
+ farovon:0 "Farovon"
+ raqku:0 "Raqku"
+ saylov:0 "Saylov"
+ kengtirsh:0 "Kengtirsh"
+ pulotin:0 "Pulotin"
+ cheqal:0 "Cheqal"
+ isabulish:0 "Isabulish"
+ ikitin:0 "Ikitin"
+ birayan:0 "Birayan"
+ galk:0 "Galk"
+ dartlizi:0 "Dartlizi"
+ ijoyar:0 "Ijoyar"
+ hamsax:0 "Hamsax"
+ farovon_reform_tt:0 "§YFarovon§!\n\nLocal Construction Cost: §G-5%§!\nLocal Development Cost: §G-5%§!"
+ raqku_reform_tt:0 "§YRaqku§!\n\nLand Force Limit Modifier: §G+10%§!\nDiplomats for Xudan: §G+1§!"
+ saylov_reform_tt:0 "§YSaylov§!\n\nFourth Elector Slot"
+ kengtirsh_reform_tt:0 "§YKengtirsh§!\n\nRemove Province War Score Cost From Izoyi: §G-50%§!\nRemove Aggressive Expansion Impact From Izoyi: §G-25%§!"
+ pulotin_reform_tt:0 "§YPulotin§!\n\nIncome for all Members: §G+15§! Yearly"
+ cheqal_reform_tt:0 "§YCheqal§!\n\nFort Maintenance Cost Bordering Non-Faith Countries: §G-50%§!"
+ isabulish_reform_tt:0 "§YIsabulish§!\n\nManpower For All Member: §G+500§!\nAdditional Manpower For Electors: §G+1500§!\nAdditional Manpower for Xudan: §G+500§!"
+ ikitin_reform_tt:0 "§YIkitin§!\n\nDisallow Internal Wars\nTechnology Cost: §G-5%§!"
+ birayan_reform_tt:0 "§YBirayan§!\n\nCountry Changes to §YAn'Andria§!\n§RAll Member Who Vote Yes Are Integrated§!"
+ galk_reform_tt:0 "§YGalk§!\n\nRemove Izoyi Technology Cost: §G-10%§!"
+ dartlizi_reform_tt:0 "§YDartlizi§!\n\nCore Creation Cost: §G-10%§!"
+ ijoyar_reform_tt:0 "§YIjoyar§!\n\nDiplomatic Reputation For Xudan: §G+2§!\nImprove Relations: §G+20%§!"
+ hamsax_reform_tt:0 "§YHamsax§!\n\nCountry Changes to §YEtireim§!\n§RAll Member Who Vote Yes Are Integrated§!"

@@ -28,6 +28,7 @@ country_event = {
       add_province_triggered_modifier = kozsa_culture_modifier
       add_province_triggered_modifier = keros_culture_modifier
       add_province_triggered_modifier = pikos_culture_modifier
+      add_province_triggered_modifier = yexali_culture_modifier
     }
   }
 }

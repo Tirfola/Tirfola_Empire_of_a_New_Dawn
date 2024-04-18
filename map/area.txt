@@ -121,10 +121,10 @@ eighteenth_area = {
 ninteenth_area = {
 	8 361 389 390
 }
-twentieth_area = {
+anaterastoli_area = {
 	133 384 385
 }
-twenty_one_area = {
+anakya_area = {
 	134 377 378 382
 }
 twenty_two_area = {
@@ -482,40 +482,40 @@ one_thirty_nine_area = {
 	625 629 631 632
 }
 one_forty_area = {
-	76 619 628 630
+	76 628 629 632
 }
 one_forty_one = {
-	77 616 617 618
+	616 618 619
 }
 one_forty_two_area = {
-	622 623 624 627
+	621 623 624 625 627
 }
 one_forty_three_area = {
-	78 620 621 626
+	78 620 626
 }
 one_forty_four_area = {
-	611 612 613 614
+	613 614 622
 }
 one_forty_five_area = {
 	79 606 607 608
 }
 one_forty_six_area = {
-	110 609 610 615
+	110 610 615
 }
 one_forty_seven_area = {
-	81 598 599
+
 }
 one_forty_eight_area = {
-	601 602 603 604
+	601 602 603 604 609
 }
 one_forty_nine_area = {
-	455 497 501 597
+	455 501 81 599
 }
 one_fifty_area = {
 	588 589 590 591 592
 }
 one_fifty_one_area = {
-	80 593 594 595 596
+	588 589 591 593 594
 }
 one_fifty_two_area = {
 	86 258

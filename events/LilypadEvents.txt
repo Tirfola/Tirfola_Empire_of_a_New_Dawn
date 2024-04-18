@@ -114,7 +114,7 @@ country_event = {
         who = FROM
         modifier = accepted_empoken_deal_opinion
       }
-      # add_guarantee = A15
+      create_guarantee = A15
     }
 
     # Timer Until War end

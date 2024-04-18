@@ -18,7 +18,8 @@ historical_rival = A07
     dip = 2
     mil = 2
   }
-
+}
+571.3.18 = {
   heir = {
     name = "Risto"
     dynasty = "Kassanerion"

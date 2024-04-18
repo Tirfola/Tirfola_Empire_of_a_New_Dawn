@@ -25,18 +25,113 @@
  tir_soroka.1.d:0 "Placeholder"
  tir_soroka.1.a:0 "Placeholder"
 
- tir_soroka.2.t:0 "Challenged for the Crown"
+ tir_soroka.2.t:0 "A Tournament for the Crown"
  tir_soroka.2.d:0 "Your ruler has been challenged to a duel to the death to determine if you are worthy"
  tir_soroka.2.a:0 "A Duel to the Death!"
+
+ # Edanos Events
+ tir_edanos_fla.1.t:0 "Of Cousins and Rivalries"
+ tir_edanos_fla.1.d:0 "For many years before his ascension to the Katagyan throne, Perdikkas had lived in the Edanite Court in Numerion, the grand seat of power for both his nation and his family, however far he was from a direct relation. In his youth, learning about all the latest gossip and engaging in debates with the few other nobles he could speak openly to had been a pleasure which he would have enjoyed daily if not for his father’s constant droning about the importance of an ‘administrative education’. By the time he had turned 16, he was already known as a regular of the debate hall, although it rarely won him much popularity amongst the women gawking at the brave warriors of the rest of the family. This little haven, he thought, would remain for him and his groups of intelligentsian aristocrats. Which would then leave him all the more surprised when he began to see Argis Numerion, the heir to the Edanite crown and certainly a much more important noble than he  was, attending his weekly debates. In time, debates over ideas for the future of Edanos and the Numerion family would leave Perdikkas and Argis as more than relatives; well and truly friends, if not comrades in their ideas.\n\nIt would be this friendship which Perdikkas would eventually pull on as his ambition grew. In 7 years, Argis and he would begin to bring the Katagyan nobility to their side, whether through careful bribes, quiet blackmail or even the occasional assassination of a turncoat or particularly resistant noble. Then, when they felt secure in their foothold on the courts of Potri, they turned to the markets, spreading discontent amongst the trading classes, attempting to rile them into open discontent with the ruling regime, if not outright looking for other leadership options.\n\nThis would culminate in the Spring of 584, as Perdikkas and Argis would lead a contingent of 7 thousand mercenaries (funded directly by the family’s treasury, of course) in order to seize the throne in Potri. With the local Anakyaden nobles on their side, and the traders unwilling to assist their homegrown monarch, Perdikkas and Argis would march side by side into Potri, declaring Perdikkas the new king in Potri.\n\nIt has been several years now since that day of glory on the 6th of June, but it seems that at last the Numerions are trying to call in the favour. They ask that we join the Edanite realm, and bring our two nations closer than ever."
+ tir_edanos_fla.1.a:0 "We are not opposed to the idea, but Katagya is not yet ready for such integration."
+ tir_edanos_fla.1.b:0 "Refuse! We did not seize Potri to give it away!"
+
+ tir_edanos_fla.2.t:0 "Acceptance"
+ tir_edanos_fla.2.d:0 "Our messenger brings back mixed tidings. While Katagya has not accepted our immediate offer, they have presented us with another option. By integrating our two nations closer together and securing the loyalties of influential powerholders, we can still hope to unite our two nations into one.\n\nHowever, we will have to move fast. We have no doubt that Dyduno will be moving fast to try and expand their own influence, hoping to secure control over Katagya before we can. We must show them the diplomatic prowess of the Numerions!"
+ tir_edanos_fla.2.a:0 "The Katagyan Game is on!"
+
+ tir_edanos_fla.3.t:0 "Numerans Move to Woo Katagya!"
+ tir_edanos_fla.3.d:0 "Our messengers bring bad tidings, liege! The Edanites, in their hunger and lust for power, have begun to move to influence Katagya and attempt to bring the small kingdom to our south under their complete control. This cannot stand! We looked the other way when they ruthlessly deposed an Anakyaden monarch, but we shall sit idle no longer. We must appeal to our cultural brothers and sisters to resist Edanite efforts and to bring about stronger Dydunite control."
+ tir_edanos_fla.3.a:0 "For the future of our people! The Katagyan Game is on!"
+
+ tir_edanos_fla.4.t:0 "Scorned!"
+ tir_edanos_fla.4.d:0 "A betrayal of the highest magnitude! Truly unbelievable conduct! To think that we helped them to their current position once! Katagya has sent our messengers away, daring to outright refuse to join us! This cannot stand! Rally the banners, Katagya shall burn for this!"
+ tir_edanos_fla.4.a:0 "Death to the traitors!"
+ tir_edanos_fla.4.b:0 "It pains us but we cannot win. Stand down for now."
+
+ tir_edanos_fla.5.t:0 "Edanos invades Katagya!"
+ tir_edanos_fla.5.d:0 "News has reached us from the court of Potri; Edanite troops have spilled over the border and begun to occupy Katagya in the hopes of expanding the dominance of Edanos even further. This is a massive diplomatic attack on the fabric that makes up the web of Numerian diplomacy, and we should not let them get away with this! However, direct intervention could prove costly, so economic strikes against their nation or infiltration of their armed forces may prove much more prudent forms of battling the Edanite power. Then again, maybe we should simply turn our heads the other way in the hopes that we maintain cordial or amicable relations with them."
+ tir_edanos_fla.5.a:0 "Drive the invaders back to Numerion!"
+ tir_edanos_fla.5.b:0 "We shall sabotage their merchants and guilds, harming their economy."
+ tir_edanos_fla.5.c:0 "We will use our spies to provide the Katagyans with information on troop positions."
+ tir_edanos_fla.5.dd:0 "Maybe peace can prevail through appeasement?"
+
+ tir_edanos_fla.6.t:0 "The Praxikopima"
+ tir_edanos_fla.6.d:0 "It’s early in the morning when the first horns blast. Beyond the walls, over 30 thousand Anakyaden peasants, yeomen, mercenaries and nobles rush towards the gates of Potri. If everything has gone to plan, the city will be theirs before the end of the day.\n\nHerion has family in the north. He lived a significant part of his childhood in Anakya, before moving to Potri. Now, as he lifts the gate up for his brethren, he is filled with pride. Change is coming, and fast. He knows. Everyone knows it.\n\nBy noon, the streets of the city square run red with crimson blood. The few in the garrison still standing loyal to the Numerion invaders were overrun by the massive liberation force from the countryside. A majority of the city locks themselves away in their houses, either fearful of Anakyaden barbarism or Edanite retribution. Neither comes.\n\nBy 7pm, they have broken into the castle at the centre of the city. Perdikkas is dragged out in chains before a mass of soldiers. He expects death, but he will not be given that mercy.\n\n“Go, cousin of the Numerions! Go back to their seat of power, and tell them that we shall have no more Edanite Kings here!”"
+ tir_edanos_fla.6.a:0 "The crowd roars in triumph. The Numerion in Potri has fallen."
+
+ tir_edanos_fla.7.t:0 "Homecoming"
+ tir_edanos_fla.7.d:0 "Alathira is the first from her village who hears the news. She is on the trail back to her home, having just encountered a news runner from Potri. She calms him down and helps him steady her breathing, but after hearing his news, she feels she might soon need to calm down from her excitement.\n\n“The Dydunites, kuria. They’ve taken control of Potri. All citizens of Katagya are to prepare for the ballot counters to come. Baskim Laomedion, our new King, has ordered a meeting of the representatives of all Anakyaden cities, towns and villages.”\n\nDespite herself, she smiles brightly, nearly giddy with excitement. She is already getting ready to leave for the capital, because she knows her villagers are sure to choose their benevolent mayor as their representative."
+ tir_edanos_fla.7.a:0 "A great day for all Anakyaden!"
+
+ tir_edanos_fla.8.t:0 "United, At Long Last"
+ tir_edanos_fla.8.d:0 "Myrionus is patrolling the walls of Potri when he first sees the Blue and White banners. They arrive by day, and before the end of the night, he finds himself with several new colleagues from the new garrison deployed to the city. It happens so fast, that he barely even sees it happen. But it certainly does.\n\nPerdikkas looks over his land. It is still his, despite all of the fear-mongering of the Dydunites. Argis had been sure to emphasise that countless times, to the point that Perdikkas could recite exactly what he said each time; “Though Katagya is joining the realm, it shall preserve a great degree of autonomy. You will not be a King, but a Duke of an Edanite Duchy.” At least now when he returned to Numerion, maybe the debate hall would be a bit livelier."
+ tir_edanos_fla.8.a:0 "Everything is just like it should be."
+
+ tir_edanos_fla.9.t:0 "Edanos Revealed"
+ tir_edanos_fla.9.d:0 "§YEdanos's§! rivals have shared their spy network. Now we can closely monitor their army movements."
+ tir_edanos_fla.9.a:0 "Nothing will escape our eyes."
+
+ tir_edanos_fla.10.t:0 "Emeros Toxerion and the Terastoti"
+ tir_edanos_fla.10.d:0 "In the west, our Toxerion brethren have been a relatively recent addition to the collection of Numerian lineages, all vying for the spot of the heirs of Numeran. Their rise to power in Voreo has been quite interesting however. Emerging victorious as the most savvy amongst traders and the greatest leaders of men, nowadays it is hard to separate the Toxerion lineage from their seat of power in Toxerion itself. However, their control was not always so limited to Voreo and Toxerion.\n\nNearly 100 years ago now, Emeros Toxerion ruled the duchy of Anaterastoli. A scion of the Toxerion family, he nonetheless remained close to his relatives, and a strong network of marriages have meant that now the Toxerions in Voreo have a legitimate claim to the duchy. Of course, their distance from these lands and the disparity in the strength between our two kingdoms means that they have no way of actually taking this territory, but perhaps we should be watchful of what those sly traders will use these claims for. For now however, we shouldn’t concern ourselves too much."
+ tir_edanos_fla.10.a:0 "This will be a nuisance to us, but that's it. Nothing more."
+
+ tir_edanos_fla.11.t:0 "Opportunity on the Terastoti"
+ tir_edanos_fla.11.d:0 "We bring news of note, my liege! Through clever investigation of both familial and matrimonial ties and links between our various scions and relatives, we have managed to uncover a strong claim for our dynasty on the duchy of Anaterastoli, which was ruled by Emeros Toxerion nearly 100 years ago. Despite this great difference in time, the links between these eastern Toxerions and our own line has remained consistent enough to allow us to justify our claim to these lands to our Numeran brethren with very limited backlash."
+ tir_edanos_fla.11.a:0 "Let all Numerans know! Who knows how this may be of use to us."
+
+ tir_edanos_fla.12.t:0 "An Excellent Deal!"
+ tir_edanos_fla.12.d:0 "We have done it once more! It is clear to all that are not willfully ignorant or blind that Edanos is on the ascent. The next centuries for Numeria lie in Numerion, and soon the world shall spin around the city. We know this well, and have been preparing accordingly. Our diplomats in Numerion have wrangled an excellent deal for ourselves. In exchange for our claims in Anaterastoli, we shall enter into an alliance with the Edanites. They will guarantee us trade dominance in the Mitra Zone, as well as protection from foreign nations while we expand our merchant’s reach as far as they will go. And we will support the Edanites in their Golekan ambitions.\n\nA toast to our new Numerion allies! The future is looking golden!"
+ tir_edanos_fla.12.a:0 "And let's keep it that way."
+
+ tir_edanos_fla.13.t:0 "Naftikípolis, City of the Sea"
+ tir_edanos_fla.13.d:0 "Nestor looked over at the vast eastern sea. For so long, it had called to him. The crashing waves, the great bounties it gave to people, the smell… it all felt right to him, like as if he was at home. For a long time now, this city on the coast, at the mouth of the Terastoti, had relied on farming grain for most of its exports. He knew that it couldn’t last. He had greater ambitions than to remain another nameless noble leading another farming town. With the Emperor’s monetary support, one day this city where Nestor now stood would become the Naval Yard of all Goleka.\n\nHe stared out east once more, hands clasped behind his back. The water seemed almost endless, and yet he knew there had to be land out there. After all, everyone knew of the Båtennstolos, the great Båtenn fleet which had changed Goleka. They had to have come from somewhere, no? There was land out there, that he was sure of. But his ships were still too rudimentary for such a mission. They would need more reach, more supply storages, more, more, more…\n\nOne day, he would learn the secret of the Båtenn. He promised himself that he would see the land out east before his death. He had to."
+ tir_edanos_fla.13.a:0 "But for now, preparing Edanos’ new naval capital would have to do."
 
  # Boskylka Events
  tir_boskylka.1.t:0 "A83"
  tir_boskylka.1.d:0 "Placeholder"
  tir_boskylka.1.a:0 "Placeholder"
  tir_boskylka.1.b:0 "Release A83"
+ tir_boskylka.2.t:0 "Boskylka Derivative Buttons"
+ tir_boskylka.2.d:0 "Placeholder"
+ tir_boskylka.2.a:0 "Support Modernism"
+ tir_boskylka.2.b:0 "Support Traditionalism"
+ tir_boskylka.2.c:0 "§RClose§!"
+
+ # A'zadi Events
+ tir_amma_narsa.1.t:0 "Introduction of a New Reform in the Ozeriv Hall"
+ tir_amma_narsa.1.d:0 "Amidst the confines of the venerable Ozeriv Hall, where the fate of our realm hangs in the balance, a momentous occasion unfolds. A new reform, [AZI.VotingReform] has been presented to the esteemed members of the discussion circle, sparking fervent debate and anticipation for the future."
+ tir_amma_narsa.1.a:0 "Let the voting begin!"
+
+ tir_amma_narsa.11.t:0 "Passing of the Xudan"
+ tir_amma_narsa.11.d:0 "A somber cloud hangs over the land as news spreads like wildfire - the Xudan, revered and beloved by all, has departed from this world, leaving behind a legacy woven into the very fabric of our nation. Their wisdom, guidance, and unwavering dedication shall forever be remembered."
+ tir_amma_narsa.11.a:0 "Long Live the Xudan!"
+
+ tir_amma_narsa.12.t:0 "A New Xudan Ascends"
+ tir_amma_narsa.12.d:0 "After much deliberation and scrutiny, the esteemed electors of the Yexali have reached a momentous decision - a new Xudan has been chosen to guide our realm towards a brighter future. With great anticipation and hope, the populace eagerly awaits the coronation of this illustrious leader. May [xudan.Monarch.GetName] of [xudan.GetName] lead us to greatness."
+ tir_amma_narsa.12.a:0 "Our schemes worked!"
+
+ tir_amma_narsa.13.t:0 "Reform Passed in the Ozeriv Hall"
+ tir_amma_narsa.13.d:0 "Amidst the echoing chambers of the revered Ozeriv Hall, where the fate of our nation is often decided, a new reform has been passed, the [AZI.VotingReform]. This decision reverberates through the corridors of power, signaling a shift in the political landscape and promising potential changes to come."
+ tir_amma_narsa.13.a:0 "Let us hope that this change will bring us prosperity."
+
+ tir_amma_narsa.130.t:0 "Rejection of Reform in the Ozeriv Hall"
+ tir_amma_narsa.130.d:0 "Within the solemn chambers of the esteemed Ozeriv Hall, where the echoes of tradition resonate through time, a pivotal moment has unfolded. The proposed reform, [AZI.VotingReform], once thought to herald a new era, has been met with staunch opposition and ultimately voted down."
+ tir_amma_narsa.130.a:0 "Let us hope the old ways will bring us favor."
 
  # Institution Events
+ # Regulated Coins
  tir_institution_events.2.t:0 "Regulated Coins!"
  tir_institution_events.2.d:0 "The conception of §YRegulated Coins§! stands as a watershed moment in the evolution of commerce. Typically crafted from precious metals like gold and silver. This innovation revolutionized trade by providing a consistent and universally accepted standard of commerce. The idea quickly gained traction, spreading throughout neighboring regions and civilizations. §YRegulated Coins§! not only facilitated smoother transactions but also laid the groundwork for structured monetary systems, profoundly influencing the economic foundations of societies across the ages."
  tir_institution_events.2.a:0 "This changes everything..."
  tir_institution_events.201.d:0 "Travelers speak of a great rebirth of old ideals in faraway lands. It is hard to treat such rumors seriously, though according to the reporters great secrets have been uncovered by the thinkers of this 'Regulated Coin'.""
+ # Fertilized Soil
+ tir_institution_events.3.t:0 "Fertilized Soil!"
+ tir_institution_events.3.d:0 "The production of Fertilizer has heralded a new era not only for Båtenn and Numeran, it has also led to the spread of materials and techniques as well as a realization of the vastness of farming. As animals, crop types, silver and diseases spread across the Goleka, the first steps have been taken towards a truly global economy. With our lands and people being mapped and documented, ideas as well as religious and philosophical debate are increasingly being colored by what we have found in farming societies. Great minds feel the need to question what was once truth, and from [institution_origin.GetCapitalName] to Fatehpur Sikri, the nature of the world is now up for debate."
+ tir_institution_events.3.a:0 "This changes everything..."
+ tir_institution_events.301.d:0 "Merchants are reporting an increased influx of goods that seem entirely alien to them. These exotic goods are brought by travelers who claim to have met strange men from afar. While it is hard to know what to make of such rumors, these men are convinced our world is now changing fundamentally and that these strangers are the bringers of bad fortune."
+ # Local Census
+ tir_institution_events.4.t:0 "Local Census!"
+ tir_institution_events.4.d:0 "The ability to mass-produce the written word would revolutionize the spread of information, and in many ways early modern society as a whole. Pioneered by Renaissance men such as Venetian Printer Aldus Manutius, the new art helped fuel the Renaissance by making the translated classics more widely available. Later the Reformation benefitted greatly from the ability to spread critical publications and translations of the Holy Scriptures.\n\nNow that Printing has matured as a technique and spread throughout [institution_origin.GetContinentName], hundreds of thousands of copies of everything from religious and political pamphlets to scientific treatises and instructions on how to behave are circulating the continent. With print shops growing evermore commonplace, rulers have found it hard to contain the new technique, as the comparatively easy means of production makes it easy for censorship to be sidestepped by moving business across a border or even just changing the name on a title page."
+ tir_institution_events.4.a:0 "This changes everything..."
+ tir_institution_events.401.d:0 "Rumors have reached us of far-away lands where the written word is mass-produced in huge and never before imagined numbers. According to these informants, this has reshaped their learned and political world entirely."

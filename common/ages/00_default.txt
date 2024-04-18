@@ -426,6 +426,9 @@ age_of_reformation = {
 		}
 
 		ab_pikos_professionalism = {
+			allow = {
+				culture_group = pikos
+			}
 			modifier = {
 				yearly_army_professionalism = 0.01
 			}

@@ -1,7 +1,12 @@
-religion = pentethikan
-base_tax = 1
+religion = konchi
+base_tax = 3
 base_production = 1
-base_manpower = 1
-trade_goods = wine
+base_manpower = 6
+trade_goods = iron
 is_city = no
 discovered_by = golekian
+add_core = B04
+owner = B04
+controller = B04
+hre = yes
+culture = eksotas

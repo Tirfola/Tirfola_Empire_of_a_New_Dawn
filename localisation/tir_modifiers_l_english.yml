@@ -1,6 +1,5 @@
 ﻿l_english:
  # Province Modifiers
- aktipol_vineyards:0 "Aktipol Vineyards"
  boskylka_83:0 "Occupied Mümesu"
  quelled_populace:0 "Quelled Populace"
  integrated_people:0 "Integrated People"
@@ -86,9 +85,19 @@
  pikos_woodlands_modifier:0 "Pikos Woodlands"
  pikos_jungles_modifier:0 "Pikos Jungles"
  pikos_swamps_modifier:0 "Pikos Swamps"
+ yexali_highlands_modifier:0 "Yexali Highlands"
+ yexali_drylands_modifier:0 "Yexali Drylands"
+ yexali_woodlands_modifier:0 "Yexali Woodlands"
+ yexali_hills_modifier:0 "Yexali Hills"
+ yexali_desert_modifier:0 "Yexali Deserts"
+ populace_cowed:0 "Populace Cowed"
+ an_era_of_discontent:0 "An Era Of Discontent"
 
  # Triggered Modifiers
  A83_subjugation:0 "Pope Subjugation"
+ boskylka_derivative_positive_tick:0 "Piety Decay"
+ boskylka_derivative_negative_tick:0 "Piety Decay"
+ izoyi:0 "Izoyi"
 
  # Country Modifiers
  humiliated_enemy:0 "Humiliated Enemy"
@@ -109,3 +118,7 @@
  a_great_armada:0 "A Great Armada"
  efficient_trade_centers:0 "Efficient Trade Centers"
  brilliant_advisors:0 "Brilliant Advisors"
+ oni_button_bonus:0 "Oni Worship"
+ oti_button_bonus:0 "Oti Worship"
+ legitimised_ambitions:0 "Legitimised Ambitions"
+ prospering_arms_industry:0 "Prospering Arms Industry"

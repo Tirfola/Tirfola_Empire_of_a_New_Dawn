@@ -14,4 +14,3 @@ trade_goods = wine
 is_city = no
 
 discovered_by = golekian
-add_province_triggered_modifier = aktipol_vineyards

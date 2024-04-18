@@ -17,3 +17,18 @@ rejected_empoken_deal_opinion = {
   opinion = -50
   yearly_decay = 2.5
 }
+
+aggressive_manoeuvres = {
+  opinion = -50
+  yearly_decay = 2
+}
+
+edanos_appeasement = {
+  opinion = 50
+  yearly_decay = 2.5
+}
+
+excellent_exchange = {
+  opinion = 50
+  yearly_decay = 2.5
+}

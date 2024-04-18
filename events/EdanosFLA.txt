@@ -1,0 +1,465 @@
+namespace = tir_edanos_fla
+
+# Of Cousins and Rivalries *Edanos*
+country_event = {
+  id = tir_edanos_fla.1
+  title = tir_edanos_fla.1.t
+  desc = tir_edanos_fla.1.d
+  picture = BURGHER_ESTATE_eventPicture
+
+  is_triggered_only = yes
+
+  major = yes
+  major_trigger = {
+    tag = A01
+  }
+
+  option = {
+    name = "tir_edanos_fla.1.a"
+    custom_tooltip = tir_edanos_fla.1.a.tt
+    ai_chance = { factor = 10 }
+    add_country_modifier = {
+      name = "awaiting_intergration"
+      duration = -1
+    }
+    A01 = {
+      create_guarantee = A03
+      country_event = { id = tir_edanos_fla.2 }
+    }
+    A05 = {
+      country_event = { id = tir_edanos_fla.3 }
+    }
+  }
+
+  option = {
+    name = "tir_edanos_fla.1.b"
+    custom_tooltip = tir_edanos_fla.1.b.tt
+    ai_chance = { factor = 1 }
+    add_country_modifier = {
+      name = "preparing_for_the_edanite_flood"
+      duration = -1
+    }
+    A01 = {
+      country_event = {
+        id = tir_edanos_fla.4
+        days = 10
+      }
+    }
+  }
+}
+
+# Acceptance *Katagya*
+country_event = {
+  id = tir_edanos_fla.2
+  title = tir_edanos_fla.2.t
+  desc = tir_edanos_fla.2.d
+  picture = COURT_eventPicture
+
+  is_triggered_only = yes
+
+  option = {
+    name = "tir_edanos_fla.2.a"
+    custom_tooltip = tir_edanos_fla.2.a.tt
+    ai_chance = { factor = 1 }
+    set_country_flag = influence_katagya_as_edanos
+  }
+}
+
+# Numerans Move to Woo Katagya! *Dyduno*
+country_event = {
+  id = tir_edanos_fla.3
+  title = tir_edanos_fla.3.t
+  desc = tir_edanos_fla.3.d
+  picture = BURGHER_ESTATE_UPSET_eventPicture
+
+  is_triggered_only = yes
+
+  option = {
+    name = "tir_edanos_fla.3.a"
+    custom_tooltip = tir_edanos_fla.3.a.tt
+    ai_chance = { factor = 1 }
+    set_country_flag = influence_katagya_as_dyduno
+  }
+}
+
+# Scorned! *Edanos*
+country_event = {
+  id = tir_edanos_fla.4
+  title = tir_edanos_fla.4.t
+  desc = tir_edanos_fla.4.d
+  picture = ACCUSATION_eventPicture
+
+  is_triggered_only = yes
+
+  major = yes
+  major_trigger = {
+    tag = A05
+  }
+
+  option = {
+    name = "tir_edanos_fla.4.a"
+    custom_tooltip = tir_edanos_fla.4.a.tt
+    ai_chance = {
+      factor = 5
+    }
+
+    declare_war_with_cb = {
+      who = A03
+      casus_belli = cb_vassalize_mission
+    }
+    A04 = {
+      country_event = { id = tir_edanos_fla.5 }
+    }
+    A05 = {
+      country_event = { id = tir_edanos_fla.5 }
+    }
+    every_known_country = {
+      limit = { culture_group = numeran }
+      add_opinion = {
+        who = A01
+        modifier = aggressive_manoeuvres
+      }
+    }
+  }
+
+  option = {
+    name = "tir_edanos_fla.4.b"
+    add_country_modifier = {
+      name = "edanos_humiliation"
+      duration = 5475
+    }
+    ai_chance = { factor = 1 }
+  }
+}
+
+# Edanos invades Katagya! *Dyduno, Vunorio*
+country_event = {
+  id = tir_edanos_fla.5
+  title = tir_edanos_fla.5.t
+  desc = tir_edanos_fla.5.d
+  picture = BORDER_TENSION_eventPicture
+
+  is_triggered_only = yes
+
+  major = yes
+  major_trigger = {
+    tag = A03
+  }
+
+  option = {
+    name = "tir_edanos_fla.5.a"
+    join_all_defensive_wars_of = A03
+    ai_chance = {
+      factor = 3
+      modifier = {
+        factor = 4
+        is_rival = A01
+      }
+      modifier = {
+        factor = 4.5
+        has_opinion = {
+          who = A01
+          value = -50
+        }
+      }
+      modifier = {
+        factor = 1
+        has_opinion = {
+          who = A03
+          value = 0
+        }
+      }
+    }
+  }
+
+  option = {
+    name = "tir_edanos_fla.5.b"
+    ai_chance = {
+      factor = 1
+      modifier = {
+        factor = 0
+        NOT = { treasury = 150 }
+      }
+      modifier = {
+        factor = 1.5
+        AND = {
+          has_opinion = {
+            who = A03
+            value = 150
+          }
+          has_opinion = {
+            who = A01
+            value = 50
+          }
+        }
+      }
+    }
+    add_treasury = -100
+    if = {
+      limit = { A01 = { has_country_modifier = edanos_trade_sabotage } }
+      A01 = {
+        add_treasury = -500
+      }
+    }
+    else = {
+      A01 = {
+        add_country_modifier = {
+          name = "edanos_trade_sabotage"
+          duration = 3650
+        }
+      }
+    }
+  }
+
+  option = {
+    name = "tir_edanos_fla.5.c"
+    ai_chance = {
+      factor = 1
+      modifier = {
+        factor = 1.5
+        AND = {
+          has_opinion = {
+            who = A03
+            value = 150
+          }
+          has_opinion = {
+            who = A01
+            value = 50
+          }
+        }
+      }
+    }
+    if = {
+      limit = { A03 = { has_country_modifier = katagya_all_seeing } }
+      custom_tooltip = tir_edanos_fla.5.c.tt
+      hidden_effect = {
+        country_event = { id = tir_edanos_fla.9 }
+      }
+    }
+    else = {
+      A03 = {
+        add_country_modifier = {
+          name = "katagya_all_seeing"
+          duration = 1825
+        }
+      }
+    }
+  }
+
+  option = {
+    name = "tir_edanos_fla.5.dd"
+    ai_chance = {
+      factor = 0.2
+      modifier = {
+        factor = 3
+        OR = {
+          has_opinion = {
+            who = A01
+            value = 150
+          }
+          alliance_with = A01
+        }
+      }
+    }
+    A01 = {
+      add_opinion = {
+        who = FROM
+        modifier = edanos_appeasement
+      }
+    }
+  }
+}
+
+# The Praxikopima *Dyduno*
+country_event = {
+  id = tir_edanos_fla.6
+  title = tir_edanos_fla.6.t
+  desc = tir_edanos_fla.6.d
+  picture = SIEGE_PRAGUE_CASTLE_eventPicture
+
+  is_triggered_only = yes
+
+  option = {
+    name = "tir_edanos_fla.6.a"
+    ai_chance = { factor = 1 }
+    country_event = { id = tir_edanos_fla.7 }
+  }
+}
+
+# Homecoming *Dyduno*
+country_event = {
+  id = tir_edanos_fla.7
+  title = tir_edanos_fla.7.t
+  desc = tir_edanos_fla.7.d
+  picture = FEAST_eventPicture
+
+  is_triggered_only = yes
+
+  major = yes
+  major_trigger = {
+    tag = A01
+  }
+
+  option = {
+    name = "tir_edanos_fla.7.a"
+
+    ai_chance = { factor = 1 }
+
+    define_ruler = {
+      name = "Baskim"
+      dynasty = "Laomedion"
+      adm = 6
+      dip = 5
+      mil = 6
+    }
+    hidden_effect = {
+      add_ruler_personality = kind_hearted_personality
+      add_ruler_personality = charismatic_negotiator_personality
+    }
+    create_march = A03
+    A03 = {
+      change_primary_culture = anakyaden
+      remove_country_modifier = awaiting_intergration
+      every_owned_province = {
+        limit = { culture = anakyaden }
+        remove_province_modifier = an_era_of_discontent
+      }
+    }
+  }
+}
+
+# United, At Long Last *Edanos*
+country_event = {
+  id = tir_edanos_fla.8
+  title = tir_edanos_fla.8.t
+  desc = tir_edanos_fla.8.d
+  picture = REFORM_eventPicture
+
+  is_triggered_only = yes
+
+  major = yes
+  major_trigger = {
+    tag = A05
+  }
+
+  option = {
+    name = "tir_edanos_fla.8.a"
+    ai_chance = { factor = 1 }
+    if = {
+      limit = { senior_union_with = A03 }
+    }
+    else = {
+      create_march = A03
+    }
+    A03 = {
+      set_government_rank = 1
+      remove_country_modifier = awaiting_intergration
+    }
+  }
+}
+
+# FOW For Katagya *Hidden*
+country_event = {
+  id = tir_edanos_fla.9
+  title = tir_edanos_fla.9.t
+  desc = tir_edanos_fla.9.d
+  picture = SPY_eventPicture
+
+  is_triggered_only = yes
+
+  hidden = yes
+
+  option = {
+    name = "tir_edanos_fla.9.a"
+    ai_chance = { factor = 1 }
+    A01 = {
+      remove_fow = 15
+    }
+  }
+}
+
+# Emeros Toxerion and the Terastoti *Dyduno*
+country_event = {
+  id = tir_edanos_fla.10
+  title = tir_edanos_fla.10.t
+  desc = tir_edanos_fla.10.d
+  picture = COURT_eventPicture
+
+  fire_only_once = yes
+
+  mean_time_to_happen = {
+    days = 1
+  }
+
+  trigger = {
+    is_year = 599
+  }
+
+  immediate = {
+    set_country_flag = toxerion_connection
+  }
+
+  option = {
+    name = "tir_edanos_fla.10.a"
+    ai_chance = { factor = 1 }
+    A07 = {
+      country_event = { id = tir_edanos_fla.11 }
+    }
+  }
+}
+
+# Opportunity on the Terastoti *Voreo*
+country_event = {
+  id = tir_edanos_fla.11
+  title = tir_edanos_fla.11.t
+  desc = tir_edanos_fla.11.d
+  picture = NOBLE_ESTATE_DEMANDS_eventPicture
+
+  is_triggered_only = yes
+
+  option = {
+    name = "tir_edanos_fla.11.a"
+    ai_chance = { factor = 1 }
+    A07 = {
+      add_permanent_claim = 383
+      add_permanent_claim = anaterastoli_area
+    }
+  }
+}
+
+# An Excellent Deal! *Voreo*
+country_event = {
+  id = tir_edanos_fla.12
+  title = tir_edanos_fla.12.t
+  desc = tir_edanos_fla.12.d
+  picture = CITY_VIEW_eventPicture
+
+  is_triggered_only = yes
+
+  option = {
+    name = "tir_edanos_fla.12.a"
+    ai_chance = { factor = 1 }
+    add_historical_friend = A07
+  }
+}
+
+country_event = {
+  id = tir_edanos_fla.13
+  title = tir_edanos_fla.13.t
+  desc = tir_edanos_fla.13.d
+  picture = CITY_VIEW_eventPicture
+
+  is_triggered_only = yes
+
+  option = {
+    name = "tir_edanos_fla.13.a"
+
+    330 = {
+      change_trade_goods = naval_supplies
+      add_province_modifier = {
+        name = naftikipolis_docks_1
+        duration = -1
+      }
+    }
+  }
+}

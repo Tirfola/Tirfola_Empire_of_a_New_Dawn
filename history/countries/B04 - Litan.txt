@@ -1,0 +1,8 @@
+government = monarchy
+add_government_reform = autocracy_reform
+technology_group = golekian
+religion = konchi
+primary_culture = eksotas
+capital = 604
+government_rank = 1
+

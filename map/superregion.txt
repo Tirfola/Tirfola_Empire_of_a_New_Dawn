@@ -1,7 +1,7 @@
 # A region can only belong to one super region.
 # Color = { 244 157 55 }
 goleka_superregion = {
-	xiktaseis_region obraposni_region mocurst_region reczemni_region a'zadi_region goleka_water_region
+	xiktaseis_region obraposni_region mocurst_region reczemni_region azadi_region goleka_water_region
 }
 lutenbal_superregion = {
 	samoveni_region new_region

@@ -16,7 +16,8 @@ government_rank = 1
     dip = 2
     mil = 2
   }
-
+}
+553.7.15 = {
   heir = {
     name = "Damos"
     dynasty = "Bogdaxion"

@@ -8341,3 +8341,6 @@
  # Emporio Iliky
  STARTDATE_NAME:0 "Emporio Iliky"
  STARTDATE_DESC:0 "Placeholder"
+
+ # Country Flags
+ FlagA79:0 "£A79£"

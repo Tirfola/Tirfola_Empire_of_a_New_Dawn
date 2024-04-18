@@ -2,3 +2,12 @@
  cb_lilypad_rebellion:0 "Lilypad Rebellion"
  cb_lilypad_rebellion_desc:0 "Placeholder"
  take_capital_lilypad_rebellion:0 "Lilypad Rebellion"
+
+ cb_sieze_elector:0 "Seize the Electorate"
+ cb_sieze_elector_desc:0 "By right of military, we shall have say in Amma Narsa."
+ azadi_take_elector:0 "Take Elector"
+ po_azadi_take_elector:0 "Claim the Electorate"
+ PEACE_po_azadi_take_elector:0 "Claim the Electorate"
+ CB_ALLOWED_po_azadi_take_elector:0 "Claim the Electorate"
+ po_azadi_take_elector_desc:0 "[Root.GetName] becomes §YElector§! of the Amma Narsa."
+ TAKE_ELECTOR_NAME:0 "$ORDER$$FIRST$-$SECOND$ War of Electorate Superiority"

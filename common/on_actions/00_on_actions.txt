@@ -2,9 +2,6 @@
 
 # country
 on_startup = {
-	emperor = {
-		save_global_event_target_as = Emperor
-	}
 	if = {
 		limit = { is_emperor_of_china = yes }
 		# save_global_event_target_as = EmperorOfChina
@@ -16,6 +13,7 @@ on_startup = {
 		tir_lilypad.1 # Lilypad Rebellion
 		tir_lilypad.2 # Lilypad Rebellion
 		tir_culture.1 # Culture Bonuses
+		tir_amma_narsa.3 # A'zadi HRE
 	}
 	on_startup_effect = yes
 	on_startup_dlc_cleanup_effect = yes
@@ -1012,6 +1010,7 @@ on_monarch_death = {
 		flavor_mal.11 # Mali pretenders
 		flavor_mal.47 # Pilgrimage ends prematurely
 		government_events.3	# Election of a new Ruler
+		tir_amma_narsa.10 # Azadi Xudan Tirfola
 	}
 }
 
@@ -1111,6 +1110,7 @@ on_diplomatic_annex = {
 	events = {
 		610
 		appanages_event.1
+		tir_amma_narsa.5 # Amma Narsa Losing Member *Tirfola*
 	}
 	FRA = {
 		if = {
@@ -1434,14 +1434,20 @@ on_native_change_government = {
 on_integrate = {
 	events = {
 		610
+		tir_amma_narsa.5 # Tirfola
+		tir_amma_narsa.10 # Azadi Xudan Tirfola
 	}
 }
 
 # Nation annexed.
 # FROM is the nation being annexed
 on_annexed = {
+	FROM = {
+		country_event = { id = tir_amma_narsa.10 } # Azadi Xudan Tirfola
+	}
 	events = {
 		celestial_empire_events.1 # Empire dismantled
+		tir_amma_narsa.5 # Amma Narsa Losing Member *Tirfola*
 	}
 	on_annexed_estate_privileges_effect = yes
 	FROM = {
@@ -1914,11 +1920,15 @@ on_siberian_pulse = {
 
 
 # country random events
-on_monthly_pulse = {
+on_monthly_pulse = { # Not consistent
+	events = { # Sometimes pulse is delayed
+		tir_amma_narsa.4 # Monthly Amma Narsa Influence *Tirfola*
+	}
 }
 on_yearly_pulse = {
 	events = {
 		flavor_mos.3 #Yearly Tatar Yoke Tribute
+		tir_amma_narsa.2 # Yearly Amma Narsa Timer *Tirfola*
 	}
 }
 on_yearly_pulse_2 = {
@@ -4842,6 +4852,10 @@ on_reform_enacted = {
 }
 
 on_reform_changed = {
+	if = { # Tirfola
+		limit = { has_country_flag = allowed_by_xudan }
+		clr_country_flag = allowed_by_xudan
+	}
 }
 
 on_trade_company_investment = {
@@ -4990,6 +5004,9 @@ on_dependency_lost = {
 
 # ROOT = New vassal, FROM = Overlord
 on_create_vassal = {
+	events = {
+		tir_amma_narsa.8 # *Tirfola*
+	}
 	on_religion_change_estate_privileges_effect = yes
 	if = {
 		limit = {
@@ -5108,6 +5125,9 @@ on_flagship_destroyed = {
 
 # this = Released country, FROM = Releasing country
 on_country_released = {
+	events = {
+		tir_amma_narsa.8 # Amma Narsa Add Country *Tirfola*
+	}
 	if = {
 		limit = {
 			tag = PAP
@@ -5323,6 +5343,9 @@ on_conquest = {
 }
 
 on_country_creation = {
+	events = {
+		tir_amma_narsa.8 # Add Country to Amma Narsa *Tirfola*
+	}
 	if = {
 		limit = {
 			tag = PAP

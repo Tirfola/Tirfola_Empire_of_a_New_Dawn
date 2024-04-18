@@ -1,0 +1,54 @@
+religiously_maintained = {
+  fort_maintenance_modifier = -0.5
+}
+
+preparing_for_integration = {
+  administrative_efficiency = -0.05
+}
+
+preparing_the_bureaucracy = {
+  administrative_efficiency = -0.05
+}
+
+convincing_the_powerholders = {
+  improve_relation_modifier = -0.5
+  diplomats = -1
+}
+
+maintaining_strict_order = {
+  land_morale = -0.1
+}
+
+populace_cowed = {
+  local_unrest = -10
+  min_local_autonomy = -25
+}
+
+seditious_ideas = {
+  global_unrest = 1
+}
+
+widespread_sedition = {
+  global_unrest = 5
+  global_tax_modifier = -0.1
+  production_efficiency = -0.1
+}
+
+two_nation_nobility = {
+  nobles_loyalty_modifier = 0.1
+  nobles_influence_modifier = 0.15
+}
+
+disloyal_nobles = {
+  nobles_loyalty_modifier = -0.2
+  global_tax_modifier = -0.2
+}
+
+funding_resistance = {
+  global_tax_income = -24
+}
+
+an_era_of_discontent = {
+  local_unrest = 20
+  min_local_autonomy = 50
+}

@@ -1,0 +1,59 @@
+farovon_reform = {
+  build_cost = -0.05
+  development_cost = -0.05
+}
+
+raqku_reform = {
+  land_forcelimit_modifier = 0.1
+}
+
+raqku_reform_xudan = {
+  land_forcelimit_modifier = 0.1
+  diplomats = 1
+}
+
+kengtirsh_reform = {
+  province_warscore_cost = -0.5
+  ae_impact = -0.25
+}
+
+pulotin_reform = {
+  global_tax_income = 15
+}
+
+isabulish_reform = {
+  global_manpower = 0.5
+}
+
+isabulish_reform_elector = {
+  global_manpower = 2
+}
+
+isabulish_reform_xudan = {
+  global_manpower = 1
+}
+
+isabulish_reform_xudan_elector = {
+  global_manpower = 2.5
+}
+
+ikitin_reform = {
+  technology_cost = -0.05
+}
+
+galk_reform = {
+  technology_cost = -0.1
+}
+
+dartlizi_reform = {
+  core_creation = -0.1
+}
+
+ijoyar_reform = {
+  improve_relation_modifier = 0.2
+}
+
+ijoyar_reform_xudan = {
+  improve_relation_modifier = 0.2
+  diplomatic_reputation = 2
+}

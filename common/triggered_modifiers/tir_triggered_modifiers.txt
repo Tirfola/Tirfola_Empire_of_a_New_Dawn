@@ -12,3 +12,43 @@ A83_subjugation = {
 
     diplomatic_reputation = -2
 }
+
+boskylka_derivative_positive_tick = {
+  potential = {
+    religion = konchi
+  }
+
+  trigger = {
+    NOT = { piety = -0.001 }
+  }
+
+  monthly_piety = 0.001
+}
+boskylka_derivative_negative_tick = {
+  potential = {
+    religion = konchi
+  }
+
+  trigger = {
+    piety = 0.001
+  }
+
+  monthly_piety = -0.001
+}
+
+izoyi = {
+  potential = {
+    is_part_of_hre = yes
+  }
+
+  trigger = {
+    is_part_of_hre = yes
+  }
+
+  province_warscore_cost = 0.5
+  ae_impact = 0.25
+  development_cost = -0.1
+  technology_cost = 0.1
+  build_cost = -0.1
+  global_unrest = -1
+}

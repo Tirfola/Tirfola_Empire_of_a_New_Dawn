@@ -1,6 +1,9 @@
 government = monarchy
 add_government_reform = feudalism_reform
 technology_group = golekian
-primary_culture = prussian
-religion = pentethikan
-capital = 1
+religion = konchi
+capital = 629
+government_rank = 1
+
+primary_culture = gartas
+save_global_event_target_as = azadi_elector_2

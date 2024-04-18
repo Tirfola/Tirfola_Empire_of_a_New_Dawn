@@ -1,0 +1,2 @@
+technology_group = golekian
+save_global_event_target_as = azadi_elector_4

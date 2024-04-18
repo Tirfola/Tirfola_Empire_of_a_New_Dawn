@@ -3,8 +3,8 @@
 obraposni_region = {
 	areas = {
 		first_area second_area third_area fourth_area fifth_area sixth_area seventh_area eighth_area ninth_area tenth_area
-		eleventh_area twelfth_area thirteenth_area fourteenth_area fifteenth_area sixteenth_area seventeenth_area eighteenth_area ninteenth_area twentieth_area
-		twenty_one_area twenty_two_area twenty_three_area twenty_four_area twenty_five_area twenty_six_area twenty_seven_area twenty_eight_area twenty_nine_area thirty_area
+		eleventh_area twelfth_area thirteenth_area fourteenth_area fifteenth_area sixteenth_area seventeenth_area eighteenth_area ninteenth_area anaterastoli_area
+		anakya_area twenty_two_area twenty_three_area twenty_four_area twenty_five_area twenty_six_area twenty_seven_area twenty_eight_area twenty_nine_area thirty_area
 		thirty_one_area thirty_two_area thirty_three_area thirty_four_area thirty_five_area thirty_six_area thirty_seven_area thirty_eight_area thirty_nine_area forty_area
 		forty_one_area forty_two_area forty_three_area forty_four_area forty_five_area forty_six_area forty_seven_area forty_eight_area forty_nine_area fifty_area
 	}
@@ -34,7 +34,7 @@ mocurst_region = {
 	}
 }
 # Color { 38 46 45 }
-a'zadi_region = {
+azadi_region = {
 	areas = {
 		one_thirty_eight_area one_thirty_nine_area one_forty_area one_forty_one one_forty_two_area one_forty_three_area one_forty_four_area one_forty_five_area one_forty_six_area one_forty_seven_area
 		one_forty_eight_area one_forty_nine_area one_fifty_area one_fifty_one_area

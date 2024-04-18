@@ -1,7 +1,12 @@
-religion = pentethikan
-base_tax = 1
-base_production = 1
-base_manpower = 1
-trade_goods = chinaware
+religion = konchi
+base_tax = 6
+base_production = 2
+base_manpower = 5
+trade_goods = copper
 is_city = no
 discovered_by = golekian
+add_core = A75
+owner = A75
+controller = A75
+hre = yes
+culture = gartas

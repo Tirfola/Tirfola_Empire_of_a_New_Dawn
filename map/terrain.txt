@@ -80,7 +80,7 @@ categories =  {
      137 362 # thirteenth_area
      139 # seventeenth_area
      361 390 # ninteenth_area
-     134 # twenty_one_area
+     134 # anakya_area
      7 131 # twenty_three_area
      373 # twenty_four_area
      379 # twenty_five_area
@@ -153,8 +153,8 @@ categories =  {
      4 129 318 # seventh_area
      342 # tenth_area
      364 # twelfth_area
-     384 385 # twentieth_area
-     378 # twenty_one_area
+     384 385 # anaterastoli_area
+     378 # anakya_area
      367 # twenty_two_area
      320 # twenty_four_area
      376 # twenty_five_area
@@ -190,7 +190,8 @@ categories =  {
      817 # one_sixty_three_area
      173 177 188 658 193 655 198 199 102 652 227 226 490 489 493
      25 181 108 663 183 660 186 19 230 233 33 231 208 636
-     545 518 541 558 65 62 514 513 55 507 87 496 495 477
+     545 518 541 558 65 62 514 513 55 507 87 496 495 477 594
+     609 627 601 81 599 616 629 632 625
     }
   }
 
@@ -240,7 +241,7 @@ categories =  {
      679 680 # one_fifty_six_area
      18 172 176 24 189 656 640 195 101 228 229 224 225
      664 180 179 661 109 669 207 210 639 215 214 533 528
-     67 506 53 50 51
+     67 506 53 50 51 593 455 607
     }
   }
 
@@ -259,7 +260,7 @@ categories =  {
     supply_limit = 4
 
     terrain_override = {
-     377 # twenty_one_area
+     377 # anakya_area
      586 # twenty_six_area
      16 387 388 # twenty_seven_area
      143 # forty_area
@@ -275,7 +276,7 @@ categories =  {
      694 # one_sixty_area
      570 647 223 487 35 221 219 220 217 218 105 211 638
      57 511 510 515 113 550 549 553 554 556 60 114 48
-     478 476 472
+     478 476 472 591 603 76 633 634
     }
   }
 
@@ -323,8 +324,8 @@ categories =  {
      140 404 405 # seventeenth_area
      391 392 393 # eighteenth_area
      8 # ninteenth_area
-     133 # twentieth_area
-     382 # twenty_one_area
+     133 # anaterastoli_area
+     382 # anakya_area
      6 # twenty_two_area
      369 374 # twenty_three_area
      370 371 372 # twenty_four_area
@@ -370,7 +371,7 @@ categories =  {
      687 688 706 # one_sixty_two_area
      163 178 175 187 190 235 657 191 27 103 651 196 653 30 643 104 488
      665 182 662 165 641 206 106 209 516 536 531 522 525 63 508 505
-
+     501 613 606 608 79 618 619 628 624 81
     }
   }
 
@@ -482,7 +483,8 @@ categories =  {
     terrain_override = {
       469 147 470 73 74 582 72 580 567 587 69 56 26 648 649 650 485 90 492 494
       34 31 32 232 527 526 524 523 521 520 540 546 504 498
-      519 537 534 532 61 64 70 54 480 479 484 483 49 1208 1210 1211 1222
+      519 537 534 532 61 64 70 54 480 479 484 483 49 1208 1210
+      1211 1222 604 614 623 622 588 621
     }
   }
 
@@ -531,6 +533,7 @@ categories =  {
      59 547 519 517 557 560 66 561 583 564
      562 512 475 471 474 473 509 88 499 107
      500 502 503 89 482 481 859 1203 1211 1213 1214 1215 1216 1217 1218 1219 1220 203 1198 1221
+     589
     }
   }
 

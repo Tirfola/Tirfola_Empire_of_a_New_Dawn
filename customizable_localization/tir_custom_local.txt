@@ -1,0 +1,35 @@
+defined_text = {
+  name = KonchiMoney
+  random = no
+  text = { localisation_key = enough_money trigger = { NOT = { treasury = 100 } } }
+}
+
+defined_text = {
+  name = KonchiOtiBonus
+  random = no
+  text = { localisation_key = oti_button_bonus_text trigger = { has_country_modifier = oti_button_bonus } }
+}
+
+defined_text = {
+  name = KonchiOniBonus
+  random = no
+  text = { localisation_key = oni_button_bonus_text trigger = { has_country_modifier = oni_button_bonus } }
+}
+
+defined_text = {
+  name = VotingReform
+  random = no
+  text = { localisation_key = farovon trigger = { NOT = { AZI = { has_country_flag = raqku } } }
+  text = { localisation_key = raqku trigger = { AND = { AZI = { has_country_flag = farovon } NOT = { AZI = { has_country_flag = raqku } } } }
+  text = { localisation_key = saylov trigger = { AND = { AZI = { has_country_flag = raqku } NOT = { AZI = { has_country_flag = saylov } } } }
+  text = { localisation_key = kengtirsh trigger = { AND = { AZI = { has_country_flag = saylov } NOT = { AZI = { has_country_flag = kengtirsh } } } }
+  text = { localisation_key = pulotin trigger = { AND = { AZI = { has_country_flag = kengtirsh } NOT = { AZI = { has_country_flag = pulotin } } } }
+  text = { localisation_key = cheqal trigger = { AND = { AZI = { has_country_flag = pulotin } NOT = { AZI = { has_country_flag = cheqal } } } }
+  text = { localisation_key = isabulish trigger = { AND = { AZI = { has_country_flag = cheqal } NOT = { AZI = { has_country_flag = isabulish } } } }
+  text = { localisation_key = ikitin trigger = { AND = { AZI = { has_country_flag = isabulish } NOT = { AZI = { has_country_flag = ikitin } } } }
+  text = { localisation_key = birayan trigger = { AND = { AZI = { has_country_flag = ikitin } NOT = { AZI = { has_country_flag = birayan } } } }
+  text = { localisation_key = galk trigger = { AND = { AZI = { has_country_flag = birayan } NOT = { AZI = { has_country_flag = galk } } } }
+  text = { localisation_key = dartlizi trigger = { AND = { AZI = { has_country_flag = galk } NOT = { AZI = { has_country_flag = dartlizi } } } }
+  text = { localisation_key = ijoyar trigger = { AND = { AZI = { has_country_flag = dartlizi } NOT = { AZI = { has_country_flag = ijoyar } } } }
+  text = { localisation_key = hamsax trigger = { AND = { AZI = { has_country_flag = ijoyar } NOT = { AZI = { has_country_flag = hamsax } } } }
+}

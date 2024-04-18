@@ -362,5 +362,9 @@
 
 
  # Tirfola
- sorokan_kratocracy_reform:0 " Sorokan Kratocracy"
+ sorokan_kratocracy_reform:0 "Sorokan Kratocracy"
  sorokan_kratocracy_reform_desc:0 "Long held belief is "Might makes Right", This has been immortalized into Sorokan culture. Further brought forth by Sorokan government in which those who can take power deserve it and all of it benefits."
+
+ border_citadel_reform:0 "Border Citadel"
+ border_citadel_reform_desc:0 "A bastion sitting on the border of the realm which serves as the first line of defense against outsiders who wish to reap our soil. The Xudan has given it the special rights and privileges in order to perform its duties."
+ WARDEN:0 "Warden"

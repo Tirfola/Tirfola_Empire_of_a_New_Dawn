@@ -1,7 +1,12 @@
-religion = pentethikan
-base_tax = 1
-base_production = 1
-base_manpower = 1
-trade_goods = gold
+religion = konchi
+base_tax = 7
+base_production = 4
+base_manpower = 7
+trade_goods = cloth
 is_city = no
 discovered_by = golekian
+add_core = A76
+owner = A76
+controller = A76
+hre = yes
+culture = gartas

@@ -81,3 +81,12 @@ brilliant_advisors = {
   advisor_cost = -0.1
   possible_policy = 1
 }
+
+legitimised_ambitions = {
+  ae_impact = -0.1
+}
+
+prospering_arms_industry = {
+  land_morale = 0.075
+  land_maintenance_modifier = -0.075
+}

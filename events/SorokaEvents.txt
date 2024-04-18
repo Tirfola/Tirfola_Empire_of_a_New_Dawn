@@ -30,34 +30,30 @@ country_event = {
   }
 }
 
+# Gathering of Contestants
 country_event = {
   id = tir_soroka.2
   title = tir_soroka.2.t
   desc = tir_soroka.2.d
   picture = TOURNAMENT_eventPicture
 
-  trigger = {
-    has_reform = sorokan_kratocracy_reform
-  }
+  is_triggered_only = yes
 
-  mean_time_to_happen = {
-    months = 120
-
-    modifier = {
-      factor = 0.75
-      NOT = { stability = 0 }
-    }
-  }
   option = {
-    name = tir_soroka.2.a
-    random_list = {
-      50 = {
-        kill_ruler = yes
-      }
-      50 = {
-        change_mil = 1
-      }
-    }
+    name = "tir_soroka.2.a"
+    country_event = { id = tir_soroka.200 }
+  }
+}
 
+country_event = {
+  id = tir_soroka.200
+  title = tir_soroka.200.t
+  desc = tir_soroka.200.d
+  picture = TOURNAMENT_eventPicture
+
+  is_triggered_only = yes
+
+  option = {
+    name = "tir_soroka.200.a"
   }
 }

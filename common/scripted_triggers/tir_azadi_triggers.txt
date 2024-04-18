@@ -1,0 +1,95 @@
+is_azadi_elector = {
+  $NATION$ = {
+    OR = {
+      tag = event_target:azadi_elector_1
+      tag = event_target:azadi_elector_2
+      tag = event_target:azadi_elector_3
+      AND = {
+        AZI = { has_country_flag = fourth_elector_activated }
+        tag = event_target:azadi_elector_4
+      }
+    }
+  }
+}
+
+has_elector_voting_for_us = {
+  $NATION$ = {
+    OR = {
+      AND = {
+        NOT = { tag = event_target:azadi_elector_1 }
+        tag = event_target:first_elector_vote
+      }
+      AND = {
+        NOT = { tag = event_target:azadi_elector_2 }
+        tag = event_target:second_elector_vote
+      }
+      AND = {
+        NOT = { tag = event_target:azadi_elector_3 }
+        tag = event_target:third_elector_vote
+      }
+      AND = {
+        NOT = { tag = event_target:azadi_elector_1 }
+        tag = event_target:fourth_elector_vote
+        AZI = { has_country_flag = fourth_elector_activated }
+      }
+    }
+  }
+}
+
+has_azadi_elector_vassal = {
+  OR = {
+    $ELECTOR1$ = {
+      vassal_of = $NATION$
+    }
+    $ELECTOR2$ = {
+      vassal_of = $NATION$
+    }
+    $ELECTOR3$ = {
+      vassal_of = $NATION$
+    }
+    $ELECTOR4$ = {
+      vassal_of = $NATION$
+    }
+  }
+}
+
+has_azadi_same_culture = {
+  OR = {
+    AND = {
+      $ELECTOR$ = { primary_culture = eksotas }
+      $NATION$ = { primary_culture = eksotas }
+    }
+    AND = {
+      $ELECTOR$ = { primary_culture = markistas }
+      $NATION$ = { primary_culture = markistas }
+    }
+    AND = {
+      $ELECTOR$ = { primary_culture = sohitas }
+      $NATION$ = { primary_culture = sohitas }
+    }
+    AND = {
+      $ELECTOR$ = { primary_culture = gartas }
+      $NATION$ = { primary_culture = gartas }
+    }
+  }
+}
+
+elector_slot_available = {
+  OR = {
+    event_target:azadi_elector_1 = {
+      tag = AZI
+    }
+    event_target:azadi_elector_2 = {
+      tag = AZI
+    }
+    event_target:azadi_elector_3 = {
+      tag = AZI
+    }
+    event_target:azadi_elector_4 = {
+      AND = {
+        tag = AZI
+        AZI = { has_country_flag = fourth_elector_activated }
+      }
+    }
+  }
+}

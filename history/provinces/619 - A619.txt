@@ -1,7 +1,12 @@
-religion = pentethikan
-base_tax = 1
-base_production = 1
-base_manpower = 1
-trade_goods = wine
+religion = konchi
+base_tax = 4
+base_production = 3
+base_manpower = 2
+trade_goods = dyes
 is_city = no
 discovered_by = golekian
+add_core = A77
+owner = A77
+controller = A77
+hre = yes
+culture = sohitas

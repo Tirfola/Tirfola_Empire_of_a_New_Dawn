@@ -6,3 +6,26 @@ cb_lilypad_rebellion = {
 
 	war_goal = take_capital_lilypad_rebellion
 }
+
+cb_sieze_elector = {
+	valid_for_subject = no
+	months = 240
+
+	prerequisites = {
+		is_part_of_hre = yes
+		NOT = { tag = event_target:azadi_elector_1 }
+		NOT = { tag = event_target:azadi_elector_2 }
+		NOT = { tag = event_target:azadi_elector_3 }
+		NOT = { tag = event_target:azadi_elector_4 }
+		FROM = {
+			OR	= {
+				tag = event_target:azadi_elector_1
+				tag = event_target:azadi_elector_2
+				tag = event_target:azadi_elector_3
+				tag = event_target:azadi_elector_4
+			}
+		}
+	}
+
+	war_goal = azadi_take_elector
+}

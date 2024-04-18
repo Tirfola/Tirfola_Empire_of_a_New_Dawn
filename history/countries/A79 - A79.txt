@@ -1,6 +1,24 @@
 government = monarchy
-add_government_reform = feudalism_reform
+add_government_reform = feudal_monarchy
 technology_group = golekian
-primary_culture = prussian
-religion = pentethikan
-capital = 1
+religion = konchi
+capital = 607
+government_rank = 2
+elector = yes
+
+primary_culture = markistas
+save_global_event_target_as = xudan
+save_global_event_target_as = previous_xudan
+save_global_event_target_as = azadi_elector_1
+
+563.5.14 = {
+  monarch = {
+    name = "Jorj"
+    dynasty = "Erlanzu"
+    birth_date = 541.7.3
+    death_date = 629.1.19
+    adm = 3
+    dip = 5
+    mil = 1
+  }
+}

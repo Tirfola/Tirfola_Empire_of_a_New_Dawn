@@ -1201,3 +1201,82 @@ pikos_culture_modifier = {
 		remove_province_modifier = pikos_swamps_modifier
 	}
 }
+
+yexali_culture_modifier = {
+	hidden = yes
+	potential = {
+		owner = {
+			culture_group = yexali
+		}
+	}
+
+	trigger = {
+		owner = {
+			culture_group = yexali
+		}
+	}
+
+	on_activation = {
+		if = {
+			limit = {
+				has_terrain = highlands
+			}
+			add_province_modifier = {
+				name = yexali_highlands_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_terrain = savannah
+					has_terrain = drylands
+				}
+			}
+			add_province_modifier = {
+				name = yexali_drylands_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_terrain = woods
+					has_terrain = forest
+					has_terrain = jungle
+				}
+			}
+			add_province_modifier = {
+				name = yexali_woodlands_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = { has_terrain = hills }
+			add_province_modifier = {
+				name = yexali_hills_modifier
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_terrain = desert
+					has_terrain = coastal_desert
+				}
+			}
+			add_province_modifier = {
+				name = yexali_desert_modifier
+				duration = -1
+			}
+		}
+	}
+
+	on_deactivation = {
+		remove_province_modifier = yexali_highlands_modifier
+		remove_province_modifier = yexali_drylands_modifier
+		remove_province_modifier = yexali_woodlands_modifier
+		remove_province_modifier = yexali_hills_modifier
+		remove_province_modifier = yexali_desert_modifier
+	}
+}

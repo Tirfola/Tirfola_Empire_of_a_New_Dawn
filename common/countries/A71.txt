@@ -1,4 +1,4 @@
-#Norway
+#Muynak
 graphical_culture = westerngfx
 color = {
 	112 28 28
@@ -7,7 +7,7 @@ revolutionary_colors = {
 	16 13  16
 }
 historical_score = 25
-preferred_religion = protestant
+preferred_religion = pentethikan
 historical_idea_groups = {
 	 aristocracy_ideas
 	trade_ideas
@@ -19,8 +19,8 @@ historical_idea_groups = {
 	maritime_ideas
 }
 historical_units = {
-	golekian_1_levyman
-	golekian_1_spear_cavalry
+	sorokan_1_raiders
+	sorokan_3_war_riders
 	golekian_5_infantry
 	golekian_6_chariot_cavalry
 	7_militarized_mages

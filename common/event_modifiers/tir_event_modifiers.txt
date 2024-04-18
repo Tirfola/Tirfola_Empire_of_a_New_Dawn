@@ -37,331 +37,64 @@ developing_country = {
   development_cost = -0.1
 }
 
-karsten_mountain_modifier = {
-  local_development_cost = -0.3
-}
-
-karsten_hill_highlands_modifier = {
-  local_development_cost = -0.20
-}
-
-karsten_lower_elevation_modifier = {
-  local_development_cost = 0.1
-}
-
-karsten_woods_modifier = {
-  local_development_cost = 0.15
-}
-
-karsten_metal_modifier = {
-  trade_goods_size_modifier = 0.1
-}
-
-karsten_plant_modifier = {
-  trade_goods_size_modifier = -0.1
-}
-
-numeran_mountains_modifier = {
-  local_development_cost = 0.05
-}
-
-numeran_highlands_modifier = {
-  local_development_cost = -0.05
-}
-
-numeran_drylands_modifier = {
-  local_development_cost = 0.1
-}
-
-numeran_wooded_modifier = {
-  local_development_cost = -0.05
-}
-
-numeran_jungle_modifier = {
-  local_development_cost = 0.05
-}
-
-numeran_swamps_modifier = {
-  local_development_cost = 0.1
-}
-
-batenn_mountains_modifier = {
-  local_development_cost = 0.05
-}
-
-mikran_mountains_modifier = {
-  local_development_cost = 0.1
-}
-
-mikran_highlands_modifier = {
-  local_development_cost = -0.05
-}
-
-mikran_drylands_modifier = {
-  local_development_cost = 0.05
-}
-
-mikran_woodlands_modifier = {
-  local_development_cost = -0.1
-}
-
-telman_mountains_modifier = {
-  local_development_cost = 0.05
-}
-
-telman_drylands_modifier = {
-  local_development_cost = 0.2
-}
-
-telman_woodlands_modifier = {
-  local_development_cost = -0.1
-}
-
-telman_swamps_modifier = {
-  local_development_cost = -0.15
-}
-
-grivan_mountains_modifier = {
-  local_development_cost = 0.05
-}
-
-grivan_highlands_modifier = {
-  local_development_cost = 0.05
-}
-
-grivan_drylands_modifier = {
-  local_development_cost = -0.05
-}
-
-grivan_savannahs_modifier = {
-  local_development_cost = -0.1
-}
-
-grivan_woodlands_modifier = {
-  local_development_cost = 0.05
-}
-
-grivan_swamps_modifier = {
-  local_development_cost = 0.1
-}
-
-soroka_mountains_modifier = {
-  local_development_cost = 0.1
-}
-
-soroka_highlands_modifier = {
-  local_development_cost = 0.05
-}
-
-soroka_drylands_modifier = {
-  local_development_cost = -0.10
-}
-
-soroka_savannahs_modifier = {
-  local_development_cost = -0.15
-}
-
-soroka_woodlands_modifier = {
-  local_development_cost = 0.15
-}
-
-soroka_swamps_modifier = {
-  local_development_cost = 0.15
-}
-
-snoot_myt_mountains_modifier = {
-  local_development_cost = -0.05
-}
-
-snoot_myt_highlands_modifier = {
-  local_development_cost = -0.15
-}
-
-snoot_myt_drylands_modifier = {
-  local_development_cost = 0.05
-}
-
-snoot_myt_savannahs_modifier = {
-  local_development_cost = 0.1
-}
-
-snoot_myt_swamps_modifier = {
-  local_development_cost = 0.1
-}
-
-sinitrolvi_mountains_modifier = {
-  local_development_cost = -0.05
-}
-
-sinitrolvi_highlands_modifier = {
-  local_development_cost = -0.15
-}
-
-sinitrolvi_drylands_modifier = {
-  local_development_cost = 0.05
-}
-
-sinitrolvi_swamps_modifier = {
-  local_development_cost = 0.05
-}
-
-apolt_highlands_modifier = {
-  local_development_cost = -0.05
-}
-
-apolt_lowlands_modifier = {
-  local_development_cost = 0.05
-}
-
-apolt_drylands_modifier = {
-  local_development_cost = 0.1
-}
-
-apolt_woodlands_modifier = {
-  local_development_cost = -0.1
-}
-
-apolt_swamps_modifier = {
-  local_development_cost = -0.3
-}
-
-perbuzur_mountains_modifier = {
-  local_development_cost = -0.25
-}
-
-perbuzur_highlands_modifier = {
-  local_development_cost = -0.15
-}
-
-perbuzur_lowlands_modifier = {
-  local_development_cost = 0.05
-}
-
-perbuzur_drylands_modifier = {
-  local_development_cost = 0.05
-}
-
-perbuzur_savannahs_modifier = {
-  local_development_cost = 0.1
-}
-
-perbuzur_woodlands_modifier = {
-  local_development_cost = 0.1
-}
-
-perbuzur_swamps_modifier = {
-  local_development_cost = 0.15
-}
-
-perbuzur_coasts_modifier = {
-  local_development_cost = 0.05
-}
-
-tenky_mountains_modifier = {
-  local_development_cost = 0.05
-}
-
-tenky_highlands_modifier = {
-  local_development_cost = -0.05
-}
-
-tenky_drylands_modifier = {
-  local_development_cost = 0.05
-}
-
-tenky_savannahs_modifier = {
-  local_development_cost = 0.1
-}
-
-tenky_woodlands_modifier = {
-  local_development_cost = -0.05
-}
-
-bockvas_mountains_modifier = {
-  local_development_cost = 0.05
-}
-
-bockvas_drylands_modifier = {
-  local_development_cost = 0.1
-}
-
-bockvas_woodlands_modifier = {
-  local_development_cost = -0.2
-}
-
-bockvas_jungle_modifier = {
-  local_development_cost = -0.05
-}
-
-bockvas_swamps_modifier = {
-  local_development_cost = -0.05
-}
-
-kozsa_mountains_modifier = {
-  local_development_cost = -0.05
-}
-
-kozsa_highlands_modifier = {
-  local_development_cost = -0.1
-}
-
-kozsa_drylands_modifier = {
-  local_development_cost = 0.05
-}
-
-kozsa_savannahs_modifier = {
-  local_development_cost = 0.1
-}
-
-kozsa_woodlands_modifier = {
-  local_development_cost = -0.1
-}
-
-keros_highlands_modifier = {
-  local_development_cost = -0.05
-}
-
-keros_drylands_modifier = {
-  local_development_cost = -0.05
-}
-
-keros_savannahs_modifier = {
-  local_development_cost = -0.1
-}
-
-keros_woodlands_modifier = {
-  local_development_cost = 0.1
-}
-
-keros_jungles_modifier = {
-  local_development_cost = 0.1
-}
-
-keros_swamps_modifier = {
-  local_development_cost = 0.1
-}
-
-pikos_highlands_modifier = {
-  local_development_cost = -0.05
-}
-
-pikos_savannahs_modifier = {
-  local_development_cost = -0.05
-}
-
-pikos_woodlands_modifier = {
-  local_development_cost = -0.1
-}
-
-pikos_jungles_modifier = {
-  local_development_cost = -0.1
-}
-
-pikos_swamps_modifier = {
-  local_development_cost = 0.1
-}
-
 # Institutions
 birthplace_of_regulated_coins = {
 	local_development_cost = -0.05
+}
+
+birthplace_of_fertilized_soil = {
+	province_trade_power_value = 5
+}
+
+birthplace_of_local_census = {
+  local_institution_spread = 0.1
+}
+
+oni_button_bonus = {
+  global_unrest = +2
+  stability_cost_modifier = 0.2
+  monthly_piety = 0.002
+}
+
+# Religion
+oti_button_bonus = {
+  global_unrest = +2
+  stability_cost_modifier = 0.2
+  monthly_piety = -0.002
+}
+
+# Edanos
+awaiting_intergration = {
+  global_tax_income = 36
+  land_forcelimit = -100
+  administrative_efficiency = -1
+}
+
+preparing_for_the_edanite_flood = {
+  global_tax_income = 12
+  global_manpower = 15
+  land_forcelimit = 10
+}
+
+edanos_humiliation = {
+  trade_efficiency = -0.15
+  improve_relation_modifier = -0.5
+  diplomatic_reputation = -3
+}
+
+edanos_trade_sabotage = {
+  merchants = -1
+  trade_efficiency = -0.25
+}
+
+katagya_all_seeing = {
+  manpower_recovery_speed = 0.2
+  land_morale = 0.25
+  discipline = 0.1
+}
+
+naftikipolis_docks_1 = {
+  owner = {
+    naval_forcelimit = 10
+  }
 }

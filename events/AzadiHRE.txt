@@ -1,0 +1,1750 @@
+namespace = tir_amma_narsa
+
+# Voting Event
+country_event = {
+  id = tir_amma_narsa.1
+  title = tir_amma_narsa.1.t
+  desc = tir_amma_narsa.1.d
+  picture = easterngfx_COURT_eventPicture
+
+  is_triggered_only = yes
+
+  immediate = {
+    hidden_effect = {
+      AZI = {
+        set_variable = {
+          which = voting_started
+          value = 1
+        }
+        set_variable = {
+          which = vote_for_count
+          value = 0
+        }
+        set_variable = {
+          which = vote_against_count
+          value = 0
+        }
+      }
+      every_country = {
+        limit = { is_part_of_hre = yes }
+        set_variable = { # Set all countries against reform
+          which = vote_for
+          value = 0
+        }
+      }
+      event_target:xudan = {
+        country_event = { id = tir_amma_narsa.14 days = 1 } # Voting Timer
+      }
+    }
+  }
+
+  option = {
+    name = "tir_amma_narsa.1.a"
+  }
+}
+
+# Increment A'zadi Timer *Hidden*
+country_event = {
+  id = tir_amma_narsa.2
+  title = tir_amma_narsa.2.t
+  desc = tir_amma_narsa.2.d
+  picture = POPE_PREACHING_eventPicture
+
+  is_triggered_only = yes
+  hidden = yes
+
+  trigger = {
+    tag = event_target:xudan
+  }
+
+  immediate = {
+    AZI = {
+      if = {
+        limit = {
+          check_variable = {
+            which = azadi_timer
+            value = 1
+          }
+        }
+        subtract_variable = {
+          which = azadi_timer
+          value = 1
+        }
+      }
+      if = {
+        limit = {
+          event_target:xudan = { ai = yes }
+          NOT = {
+            check_variable = {
+              which = voting_started
+              value = 2
+            }
+          }
+          NOT = {
+            check_variable = {
+              which = azadi_timer
+              value = 1
+            }
+          }
+        }
+        country_event = { id = tir_amma_narsa.1 }
+      }
+
+      if = {
+        limit = {
+          check_variable = {
+            which = xudan_timer
+            value = 2
+          }
+        }
+        subtract_variable = {
+          which = xudan_timer
+          value = 1
+        }
+      }
+      else = {
+        event_target:xudan = {
+          country_event = { id = tir_amma_narsa.10 }
+        }
+      }
+    }
+    if = { # AI makes new Elector
+      limit = {
+        elector_slot_available = yes
+        ai = yes
+      }
+      if = { # Make Xudan Elector if not already
+        limit = {
+          NOT = { is_azadi_elector = { NATION = event_target:xudan } }
+        }
+        set_elector_to_next = { NATION = event_target:xudan }
+      }
+      else_if = { # Make Xudan Vote become elector if not an elector
+        limit = {
+          NOT = { is_azadi_elector = { NATION = event_target:xudan_elector_vote } }
+        }
+        set_elector_to_next = { NATION = event_target:xudan_elector_vote }
+      }
+      else = {
+        random_list = {
+          10 = { # Player becomes Elector
+            any_country = {
+              limit = {
+                is_part_of_hre = yes
+                NOT = { ai = yes }
+                NOT = { is_azadi_elector = { NATION = THIS } }
+              }
+              set_elector_to_next = { NATION = THIS }
+            }
+          }
+          90 = { # Random country in Amma Narsa
+            any_country = {
+              limit = {
+                is_part_of_hre = yes
+                NOT = { is_azadi_elector = { NATION = THIS } }
+              }
+              set_elector_to_next = { NATION = THIS }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  option = {
+    name = "tir_amma_narsa.1.a"
+  }
+}
+
+# Setup Azadi HRE *Hidden*
+country_event = {
+  id = tir_amma_narsa.3
+  title = tir_amma_narsa.3.t
+  desc = tir_amma_narsa.3.d
+  picture = POPE_PREACHING_eventPicture
+
+  is_triggered_only = yes
+  hidden = yes
+
+  trigger = {
+    tag = A79
+  }
+
+  immediate = {
+    # Global Variables
+    AZI = {
+      set_allow_female_emperor = yes
+      set_variable = { # Vote For Count
+        which = vote_for_count
+        value = 1
+      }
+      set_variable = { # Vote Against Count
+        which = vote_against_count
+        value = 14
+      }
+      set_variable = { # Voting Started
+        which = voting_started
+        value = 0 # 0 == Not on-going, 1 == On-going
+      }
+      set_variable = { # Timer
+        which = azadi_timer
+        value = 12 # Should be 15
+      }
+      set_variable = { # Influence
+        which = azadi_power
+        value = 5
+      }
+      set_variable = { # Member Count
+        which = amma_narsa_count
+        value = 0.15 # Num of Members * 0.01
+      }
+      set_variable = { # Border Citadel Count
+        which = border_citadel_count
+        value = 0.04 # Num of Citadels * 0.01
+      }
+      set_variable = { # Elector Count
+        which = azadi_elector_count
+        value = 0.3
+      }
+      set_variable = { # Timer for Xudan Re-election
+        which = xudan_timer
+        value = 7
+      }
+      set_variable = { # Timer for Reform Voting
+        which = voting_timer
+        value = 365
+      }
+      save_global_event_target_as = azadi_elector_4
+      save_global_event_target_as = border_citadel_5
+      save_global_event_target_as = border_citadel_6
+      random = {
+        chance = 50
+        set_country_flag = etireim_run
+      }
+    }
+    # Members
+    A99 = {
+      save_global_event_target_as = azadi_member_1
+    }
+    A81 = {
+      save_global_event_target_as = azadi_member_2
+    }
+    B04 = {
+      save_global_event_target_as = azadi_member_3
+    }
+    A79 = {
+      save_global_event_target_as = xudan
+      save_global_event_target_as = azadi_elector_1
+      save_global_event_target_as = first_elector_vote
+      save_global_event_target_as = second_elector_vote
+      save_global_event_target_as = third_elector_vote
+      save_global_event_target_as = fourth_elector_vote
+      save_global_event_target_as = azadi_member_4
+      save_global_event_target_as = previous_xudan
+      elector = yes
+      set_emperor = yes
+      set_variable = {
+        which = most_points
+        value = -200
+      }
+    }
+    A80 = {
+      save_global_event_target_as = azadi_member_5
+    }
+    B01 = {
+      save_global_event_target_as = azadi_member_6
+      save_global_event_target_as = border_citadel_1
+    }
+    B02 = {
+      save_global_event_target_as = azadi_member_7
+      save_global_event_target_as = border_citadel_2
+    }
+    B03 = {
+      save_global_event_target_as = azadi_member_8
+      save_global_event_target_as = border_citadel_3
+    }
+    A78 = {
+      save_global_event_target_as = azadi_member_9
+    }
+    A77 = {
+      save_global_event_target_as = azadi_elector_3
+      save_global_event_target_as = azadi_member_10
+      set_variable = {
+        which = most_points
+        value = -200
+      }
+    }
+    B05 = {
+      save_global_event_target_as = azadi_member_11
+    }
+    B06 = {
+      save_global_event_target_as = azadi_member_12
+    }
+    A76 = {
+      save_global_event_target_as = azadi_elector_2
+      save_global_event_target_as = azadi_member_13
+      set_variable = {
+        which = most_points
+        value = -200
+      }
+    }
+    B07 = {
+      save_global_event_target_as = azadi_member_14
+      save_global_event_target_as = border_citadel_4
+    }
+    A75 = {
+      save_global_event_target_as = azadi_member_15
+    }
+
+    every_country = {
+      limit = {
+        is_part_of_hre = yes
+      }
+      set_variable = {
+        which = vote_for
+        value = 0 # 0 == Vote Against, 1 == Vote for
+      }
+      set_variable = {
+        which = elector1_points
+        value = 0
+      }
+      set_variable = {
+        which = elector2_points
+        value = 0
+      }
+      set_variable = {
+        which = elector3_points
+        value = 0
+      }
+      set_variable = {
+        which = elector4_points
+        value = 0
+      }
+    }
+    event_target:xudan = {
+      country_event = { id = tir_amma_narsa.7 }
+    }
+  }
+
+  option = {
+    name = "tir_amma_narsa.1.a"
+  }
+}
+
+# Increment A'zadi Power *Hidden* and Elector Votes
+country_event = {
+  id = tir_amma_narsa.4
+  title = tir_amma_narsa.4.t
+  desc = tir_amma_narsa.4.d
+  picture = POPE_PREACHING_eventPicture
+
+  is_triggered_only = yes
+  hidden = yes
+
+  trigger = {
+    tag = event_target:xudan
+  }
+
+  immediate = {
+    AZI = {
+      set_variable = {
+        which = vote_for_count
+        value = 0
+      }
+      set_variable = {
+        which = vote_against_count
+        value = 0
+      }
+      change_variable = { # Base
+        which = azadi_power
+        value = 0.15
+      }
+      change_variable = { # Add Citadel Power Bonus
+        which = azadi_power
+        which = border_citadel_count
+      }
+      if = { # Members below 8
+        limit = { # Member count below 8
+          NOT = {
+            check_variable = {
+              which = amma_narsa_count
+              value = 0.08
+            }
+          }
+        }
+        subtract_variable = {
+          which = azadi_power
+          which = amma_narsa_count
+        }
+      }
+      if = { # Elector 1 is vassal
+        limit = {
+          event_target:azadi_elector_1 = {
+            OR = {
+              is_vassal = yes
+              is_march = yes
+            }
+          }
+        }
+        subtract_variable = { # Elector are Vassals
+          which = azadi_power
+          value = 0.1
+        }
+      }
+      if = { # Elector 2 is vassal
+        limit = {
+          event_target:azadi_elector_2 = {
+            OR = {
+              is_vassal = yes
+              is_march = yes
+            }
+          }
+        }
+        subtract_variable = { # Elector are Vassals
+          which = azadi_power
+          value = 0.1
+        }
+      }
+      if = { # Elector 3 is vassal
+        limit = {
+          event_target:azadi_elector_3 = {
+            OR = {
+              is_vassal = yes
+              is_march = yes
+            }
+          }
+        }
+        subtract_variable = { # Elector are Vassals
+          which = azadi_power
+          value = 0.1
+        }
+      }
+      if = { # Elector 4 is vassal
+        limit = {
+          event_target:azadi_elector_4 = {
+            OR = {
+              is_vassal = yes
+              is_march = yes
+            }
+          }
+        }
+        subtract_variable = { # Elector are Vassals
+          which = azadi_power
+          value = 0.1
+        }
+      }
+      if = { # Electors below 3
+        limit = {
+          NOT = {
+            check_variable = {
+              which = azadi_elector_count
+              value = 0.3
+            }
+          }
+        }
+        subtract_variable = {
+          which = azadi_power
+          which = azadi_elector_count
+        }
+      }
+      if = { # Xudan Randomly Reduce the reform timer
+        limit = { # Has enough influence and reform timer is greater than 1
+          AND = {
+            check_variable = {
+              which = azadi_power
+              value = 12
+            }
+            check_variable = {
+              which = azadi_timer
+              value = 1
+            }
+            event_target:xudan = {
+              ai = yes
+            }
+          }
+        }
+        random = { # 5% chance to apply timer
+          chance = 10
+
+          subtract_variable = {
+            which = azadi_power
+            value = 10
+          }
+          subtract_variable = {
+            which = azadi_timer
+            value = 1
+          }
+        }
+      }
+    }
+    every_country = { # Determine Reform Votes
+      limit = { is_part_of_hre = yes }
+      if = {
+        limit = { NOT = { ai = yes } }
+        if = {
+          limit = {
+            check_variable = {
+              which = vote_for
+              value = 1
+            }
+          }
+          AZI = {
+            change_variable = {
+              which = vote_for_count
+              value = 1
+            }
+          }
+        }
+        else = {
+          AZI = {
+            change_variable = {
+              which = vote_against_count
+              value = 1
+            }
+          }
+        }
+      }
+      else_if = { # Xudan will always vote yes
+        limit = {
+          tag = event_target:xudan
+        }
+        set_variable = {
+          which = vote_for
+          value = 1
+        }
+        AZI = {
+          change_variable = {
+            which = vote_for_count
+            value = 1
+          }
+        }
+      }
+      else_if = {
+        limit = {
+          has_opinion = {
+            who = event_target:xudan
+            value = 50
+          }
+        }
+        set_variable = {
+          which = vote_for
+          value = 1
+        }
+        AZI = {
+          change_variable = {
+            which = vote_for_count
+            value = 1
+          }
+        }
+      }
+      else = {
+        set_variable = {
+          which = vote_for
+          value = 0
+        }
+        AZI = {
+          change_variable = {
+            which = vote_against_count
+            value = 1
+          }
+        }
+      }
+    }
+    country_event = { id = tir_amma_narsa.15 }
+  }
+
+  option = {
+    name = "tir_amma_narsa.4.a"
+  }
+}
+
+# On Annex Effects
+country_event = {
+  id = tir_amma_narsa.5
+  title = tir_amma_narsa.5.t
+  desc = tir_amma_narsa.5.d
+  picture = POPE_PREACHING_eventPicture
+
+  is_triggered_only = yes
+  hidden = yes
+
+  trigger = {
+    FROM = {
+      is_part_of_hre = yes
+    }
+  }
+
+  immediate = {
+    if = {
+      limit = { ROOT = { NOT = { is_part_of_hre = yes } } }
+      ROOT = { country_event = { id = tir_amma_narsa.6 } }
+    }
+    if = {
+      limit = { FROM = { is_azadi_elector = { NATION = FROM } } }
+      # Change Elector slot to AZI
+      if = {
+        limit = { FROM = { tag = event_target:azadi_elector_1 } }
+        AZI = {
+          save_global_event_target_as = azadi_elector_1
+          save_global_event_target_as = first_elector_vote
+        }
+      }
+      if = {
+        limit = { FROM = { tag = event_target:azadi_elector_2 } }
+        AZI = {
+          save_global_event_target_as = azadi_elector_2
+          save_global_event_target_as = second_elector_vote
+        }
+      }
+      if = {
+        limit = { FROM = { tag = event_target:azadi_elector_3 } }
+        AZI = {
+          save_global_event_target_as = azadi_elector_3
+          save_global_event_target_as = third_elector_vote
+        }
+      }
+      if = {
+        limit = { FROM = { tag = event_target:azadi_elector_4 } }
+        AZI = {
+          save_global_event_target_as = azadi_elector_4
+          save_global_event_target_as = fourth_elector_vote
+        }
+      }
+    }
+    AZI = {
+      subtract_variable = {
+        which = amma_narsa_count
+        value = 0.01
+      }
+    }
+  }
+
+
+  option = {
+    name = "tir_amma_narsa.5.a"
+  }
+}
+
+# Non-Amma Narsa country annexing Amma Narsa Country Effect
+country_event = {
+  id = tir_amma_narsa.6
+  title = tir_amma_narsa.6.t
+  desc = tir_amma_narsa.6.d
+  picture = POPE_PREACHING_eventPicture
+
+  is_triggered_only = yes
+  hidden = yes
+
+  immediate = {
+    AZI = {
+      subtract_variable = {
+        which = azadi_power
+        value = 10
+      }
+    }
+    AZI = {
+      country_event = { id = tir_amma_narsa.9 }
+    }
+  }
+
+  option = {
+    name = "tir_amma_narsa.6.a"
+  }
+}
+
+# Monthly Elector vote on Xudan
+country_event = {
+  id = tir_amma_narsa.7
+  title = tir_amma_narsa.7.t
+  desc = tir_amma_narsa.7.d
+  picture = POPE_PREACHING_eventPicture
+
+  is_triggered_only = yes
+  hidden = yes
+
+  immediate = {
+    AZI = {
+      # Setup
+      set_variable = {
+        which = most_elector_votes
+        value = -1
+      }
+      set_variable = {
+        which = 1_vote
+        value = 0
+      }
+      set_variable = {
+        which = 2_vote
+        value = 0
+      }
+      set_variable = {
+        which = 3_vote
+        value = 0
+      }
+      set_variable = {
+        which = 4_vote
+        value = 0
+      }
+
+      save_global_event_target_as = tied_1
+      save_global_event_target_as = tied_2
+      save_global_event_target_as = tied_3
+      save_global_event_target_as = tied_4
+      A79 = {
+        save_global_event_target_as = azadi_highest_vote
+      }
+
+      # 1st Vote
+      if = {
+        limit = {
+          event_target:azadi_elector_1 = {
+            NOT = { tag = AZI }
+          }
+        }
+        change_variable = {
+          which = 1_vote
+          value = 1
+        }
+      }
+
+      # 2nd Vote
+      if = {
+        limit = {
+          event_target:azadi_elector_2 = {
+            NOT = { tag = AZI }
+          }
+        }
+        if = {
+          limit = {
+            AND = {
+              event_target:second_elector_vote = { tag = event_target:first_elector_vote }
+              event_target:first_elector_vote = { NOT = { tag = AZI } }
+            }
+          }
+          change_variable = {
+            which = 1_vote
+            value = 1
+          }
+        }
+        else = {
+          change_variable = {
+            which = 2_vote
+            value = 1
+          }
+        }
+      }
+
+      # 3rd Vote
+      if = {
+        limit = {
+          event_target:azadi_elector_3 = {
+            NOT = { tag = AZI }
+          }
+        }
+        if = {
+          limit = {
+            AND = {
+              event_target:third_elector_vote = { tag = event_target:first_elector_vote }
+              event_target:first_elector_vote = { NOT = { tag = AZI } }
+            }
+          }
+          change_variable = {
+            which = 1_vote
+            value = 1
+          }
+        }
+        else_if = {
+          limit = {
+            AND = {
+              event_target:third_elector_vote = { tag = event_target:second_elector_vote }
+              event_target:second_elector_vote = { NOT = { tag = AZI } }
+            }
+          }
+          change_variable = {
+            which = 2_vote
+            value = 1
+          }
+        }
+        else = {
+          change_variable = {
+            which = 3_vote
+            value = 1
+          }
+        }
+      }
+
+      # 4th Vote
+      if = {
+        limit = {
+          event_target:azadi_elector_4 = {
+            NOT = { tag = AZI }
+          }
+        }
+        if = {
+          limit = {
+            AND = {
+              event_target:fourth_elector_vote = { tag = event_target:first_elector_vote }
+              event_target:first_elector_vote = { NOT = { tag = AZI } }
+            }
+          }
+          change_variable = {
+            which = 1_vote
+            value = 1
+          }
+        }
+        else_if = {
+          limit = {
+            AND = {
+              event_target:fourth_elector_vote = { tag = event_target:second_elector_vote }
+              event_target:second_elector_vote = { NOT = { tag = AZI } }
+            }
+          }
+          change_variable = {
+            which = 2_vote
+            value = 1
+          }
+        }
+        else_if = {
+          limit = {
+            AND = {
+              event_target:fourth_elector_vote = { tag = event_target:third_elector_vote }
+              event_target:third_elector_vote = { NOT = { tag = AZI } }
+            }
+          }
+          change_variable = {
+            which = 3_vote
+            value = 1
+          }
+        }
+        else = {
+          change_variable = {
+            which = 4_vote
+            value = 1
+          }
+        }
+      }
+
+      set_variable = {
+        which = vote_plus_1
+        which = 1_vote
+      }
+      change_variable = {
+        which = vote_plus_1
+        value = 1
+      }
+      # Check for ties Votes
+      if = { # Check if 1st and 2nd vote tied
+        limit = { # Check for ties
+          AND = {
+            check_variable = {
+              which = 2_vote
+              which = 1_vote
+            }
+            NOT = {
+              check_variable = {
+                which = 2_vote
+                which = vote_plus_1
+              }
+            }
+          }
+        }
+        event_target:first_elector_vote = {
+          save_global_event_target_as = tied_1
+        }
+        event_target:second_elector_vote = {
+          save_global_event_target_as = tied_2
+        }
+      }
+
+      set_variable = {
+        which = vote_plus_1
+        which = 3_vote
+      }
+      change_variable = {
+        which = vote_plus_1
+        value = 1
+      }
+      if = { # Check if 1rd and 3th vote tied
+        limit = { # Check for ties
+          AND = {
+            check_variable = {
+              which = 1_vote
+              which = 3_vote
+            }
+            NOT = {
+              check_variable = {
+                which = 1_vote
+                which = vote_plus_1
+              }
+            }
+          }
+        }
+        event_target:first_elector_vote = {
+          save_global_event_target_as = tied_1
+        }
+        event_target:third_elector_vote = {
+          save_global_event_target_as = tied_3
+        }
+      }
+
+      set_variable = {
+        which = vote_plus_1
+        which = 4_vote
+      }
+      change_variable = {
+        which = vote_plus_1
+        value = 1
+      }
+      if = { # Check if 1rd and 4th vote tied
+        limit = { # Check for ties
+          AND = {
+            check_variable = {
+              which = 1_vote
+              which = 4_vote
+            }
+            NOT = {
+              check_variable = {
+                which = 1_vote
+                which = vote_plus_1
+              }
+            }
+          }
+        }
+        event_target:first_elector_vote = {
+          save_global_event_target_as = tied_1
+        }
+        event_target:fourth_elector_vote = {
+          save_global_event_target_as = tied_4
+        }
+      }
+
+      set_variable = {
+        which = vote_plus_1
+        which = 3_vote
+      }
+      change_variable = {
+        which = vote_plus_1
+        value = 1
+      }
+      if = { # Check if 2rd and 3th vote tied
+        limit = { # Check for ties
+          AND = {
+            check_variable = {
+              which = 2_vote
+              which = 3_vote
+            }
+            NOT = {
+              check_variable = {
+                which = 2_vote
+                which = vote_plus_1
+              }
+            }
+          }
+        }
+        event_target:second_elector_vote = {
+          save_global_event_target_as = tied_2
+        }
+        event_target:third_elector_vote = {
+          save_global_event_target_as = tied_3
+        }
+      }
+
+
+      set_variable = {
+        which = vote_plus_1
+        which = 4_vote
+      }
+      change_variable = {
+        which = vote_plus_1
+        value = 1
+      }
+      if = { # Check if 2rd and 4th vote tied
+        limit = { # Check for ties
+          AND = {
+            check_variable = {
+              which = 2_vote
+              which = 4_vote
+            }
+            NOT = {
+              check_variable = {
+                which = 2_vote
+                which = vote_plus_1
+              }
+            }
+          }
+        }
+        event_target:second_elector_vote = {
+          save_global_event_target_as = tied_2
+        }
+        event_target:fourth_elector_vote = {
+          save_global_event_target_as = tied_4
+        }
+      }
+
+      set_variable = {
+        which = vote_plus_1
+        which = 4_vote
+      }
+      change_variable = {
+        which = vote_plus_1
+        value = 1
+      }
+      if = { # Check if 3rd and 4th vote tied
+        limit = { # Check for ties
+          AND = {
+            check_variable = {
+              which = 3_vote
+              which = 4_vote
+            }
+            NOT = {
+              check_variable = {
+                which = 3_vote
+                which = vote_plus_1
+              }
+            }
+          }
+        }
+        event_target:third_elector_vote = {
+          save_global_event_target_as = tied_3
+        }
+        event_target:fourth_elector_vote = {
+          save_global_event_target_as = tied_4
+        }
+      }
+
+      # Get highest vote, Highest vote can also be tied
+      if = { # Check 1st has highest vote
+        limit = {
+          AND = {
+            check_variable = {
+              which = 1_vote
+              which = 2_vote
+            }
+            check_variable = {
+              which = 1_vote
+              which = 3_vote
+            }
+            check_variable = {
+              which = 1_vote
+              which = 4_vote
+            }
+          }
+        }
+        event_target:first_elector_vote = {
+          save_global_event_target_as = azadi_highest_vote
+        }
+      }
+      else_if = { # Check 2nd has highest vote
+        limit = {
+          AND = {
+            check_variable = {
+              which = 2_vote
+              which = 1_vote
+            }
+            check_variable = {
+              which = 2_vote
+              which = 3_vote
+            }
+            check_variable = {
+              which = 2_vote
+              which = 4_vote
+            }
+          }
+        }
+        event_target:second_elector_vote = {
+          save_global_event_target_as = azadi_highest_vote
+        }
+      }
+      else_if = { # Check 3rd has highest vote
+        limit = {
+          AND = {
+            check_variable = {
+              which = 3_vote
+              which = 1_vote
+            }
+            check_variable = {
+              which = 3_vote
+              which = 2_vote
+            }
+            check_variable = {
+              which = 3_vote
+              which = 4_vote
+            }
+          }
+        }
+        event_target:third_elector_vote = {
+          save_global_event_target_as = azadi_highest_vote
+        }
+      }
+      else_if = { # Check 3rd has highest vote
+        limit = {
+          AND = {
+            check_variable = {
+              which = 4_vote
+              which = 1_vote
+            }
+            check_variable = {
+              which = 4_vote
+              which = 2_vote
+            }
+            check_variable = {
+              which = 4_vote
+              which = 3_vote
+            }
+          }
+        }
+        event_target:fourth_elector_vote = {
+          save_global_event_target_as = azadi_highest_vote
+        }
+      }
+
+      if = { # Get Highest Development of tied
+        limit = { # If tie
+          OR = {
+            exists = event_target:tied_1
+            exists = event_target:tied_2
+            exists = event_target:tied_3
+            exists = event_target:tied_4
+          }
+        }
+        if = {
+          limit = {
+            AND = {
+              exists = event_target:tied_1
+              event_target:tied_1 = {
+                AND = { # Highest Development of tied
+                  total_development = event_target:tied_2
+                  total_development = event_target:tied_3
+                  total_development = event_target:tied_4
+                }
+              }
+            }
+          }
+          event_target:first_elector_vote = {
+            save_global_event_target_as = azadi_highest_vote
+          }
+        }
+        else_if = {
+          limit = {
+            AND = {
+              exists = event_target:tied_2
+              event_target:tied_2 = {
+                AND = { # Highest Development of tied
+                  total_development = event_target:tied_1
+                  total_development = event_target:tied_3
+                  total_development = event_target:tied_4
+                }
+              }
+            }
+          }
+          event_target:second_elector_vote = {
+            save_global_event_target_as = azadi_highest_vote
+          }
+        }
+        else_if = {
+          limit = {
+            AND = {
+              exists = event_target:tied_3
+              event_target:tied_3 = {
+                AND = { # Highest Development of tied
+                  total_development = event_target:tied_1
+                  total_development = event_target:tied_2
+                  total_development = event_target:tied_4
+                }
+              }
+            }
+          }
+          event_target:third_elector_vote = {
+            save_global_event_target_as = azadi_highest_vote
+          }
+        }
+        else_if = {
+          limit = {
+            AND = {
+              exists = event_target:tied_4
+              event_target:tied_4 = {
+                AND = { # Highest Development of tied
+                  total_development = event_target:tied_1
+                  total_development = event_target:tied_2
+                  total_development = event_target:tied_3
+                }
+              }
+            }
+          }
+          event_target:fourth_elector_vote = {
+            save_global_event_target_as = azadi_highest_vote
+          }
+        }
+      }
+
+      event_target:azadi_highest_vote = { # Set Xudan
+        save_global_event_target_as = next_xudan
+      }
+    }
+  }
+
+  option = {
+    name = "tir_amma_narsa.7.a"
+  }
+}
+
+# Add Country into Amma Narsa
+country_event = {
+  id = tir_amma_narsa.8
+  title = tir_amma_narsa.8.t
+  desc = tir_amma_narsa.8.d
+  picture = POPE_PREACHING_eventPicture
+
+  is_triggered_only = yes
+  hidden = yes
+
+  trigger = {
+    capital_scope = { region = azadi_region }
+    culture_group = yexali
+  }
+
+  immediate = {
+    set_in_empire = yes
+    AZI = {
+      change_variable = {
+        which = amma_narsa_count
+        value = 0.01
+      }
+    }
+  }
+
+  option = {
+    name = "tir_amma_narsa.1.a"
+  }
+}
+
+# Event for taking Non-Amma Narsa Annexing Country
+country_event = {
+  id = tir_amma_narsa.9
+  title = tir_amma_narsa.9.t
+  desc = tir_amma_narsa.9.d
+  picture = POPE_PREACHING_eventPicture
+
+  is_triggered_only = yes
+
+  major = yes
+  major_trigger = {
+    tag = event_target:xudan
+  }
+
+  option = {
+    name = "tir_amma_narsa.9.a"
+  }
+}
+
+# Change Xudan
+country_event = {
+  id = tir_amma_narsa.10
+  title = tir_amma_narsa.10.t
+  desc = tir_amma_narsa.10.d
+  picture = POPE_PREACHING_eventPicture
+
+  is_triggered_only = yes
+  hidden = yes
+
+  trigger = {
+    tag = event_target:xudan
+  }
+
+  immediate = {
+    # Winner has been decided
+    # Make the voted be elector
+    country_event = { id = tir_amma_narsa.15 }
+    event_target:xudan = { # Make previous xudan
+      save_global_event_target_as = previous_xudan
+      country_event = { id = tir_amma_narsa.11 }
+    }
+    event_target:azadi_highest_vote = { # Set Xudan
+      save_global_event_target_as = xudan
+      save_event_target_as = Emperor
+      set_emperor = yes
+      country_event = { id = tir_amma_narsa.12 } # We became Xudan
+    }
+
+    AZI = {
+      set_variable = {
+        which = xudan_timer
+        value = 20
+      }
+    }
+  }
+
+  option = {
+    name = "tir_amma_narsa.10.a"
+  }
+}
+
+# Previous Xudan Event
+country_event = {
+  id = tir_amma_narsa.11
+  title = tir_amma_narsa.11.t
+  desc = tir_amma_narsa.11.d
+  picture = DEATH_OF_HEIR_eventPicture
+
+  is_triggered_only = yes
+
+  trigger = {
+    NOT = { tag = event_target:xudan }
+    tag = event_target:previous_xudan
+  }
+
+  option = {
+    name = "tir_amma_narsa.11.a"
+  }
+}
+
+# New Xudan Event
+country_event = {
+  id = tir_amma_narsa.12
+  title = tir_amma_narsa.12.t
+  desc = tir_amma_narsa.12.d
+  picture = GOOD_WITH_MONARCH_eventPicture
+
+  is_triggered_only = yes
+
+  trigger = {
+    tag = event_target:xudan
+  }
+
+  major = yes
+  major_trigger = {
+    is_part_of_hre = yes
+  }
+
+  option = {
+    name = "tir_amma_narsa.12.a"
+    if = {
+      limit = { tag = event_target:previous_xudan }
+      AZI = {
+        change_variable = {
+          which = azadi_power
+          value = 15
+        }
+      }
+    }
+  }
+}
+
+# Passing Reform
+country_event = {
+  id = tir_amma_narsa.13
+  title = tir_amma_narsa.13.t
+  desc = tir_amma_narsa.13.d
+  picture = FEAST_eventPicture
+
+  is_triggered_only = yes
+
+  immediate = {
+    hidden_effect = {
+      AZI = {
+        set_variable = {
+          which = azadi_timer
+          value = 15
+        }
+      }
+    }
+  }
+
+  option = {
+    name = "tir_amma_narsa.13.a"
+  }
+}
+
+# Failed Reform
+country_event = {
+  id = tir_amma_narsa.130
+  title = tir_amma_narsa.130.t
+  desc = tir_amma_narsa.130.d
+  picture = LIBERUM_VETO_eventPicture
+
+  is_triggered_only = yes
+
+  immediate = {
+    hidden_effect = {
+      AZI = {
+        set_variable = {
+          which = azadi_timer
+          value = 15
+        }
+      }
+    }
+  }
+
+  option = {
+    name = "tir_amma_narsa.130.a"
+  }
+}
+
+# Voting Timer
+country_event = {
+  id = tir_amma_narsa.14
+  title = tir_amma_narsa.14.t
+  desc = tir_amma_narsa.14.d
+  picture = POPE_PREACHING_eventPicture
+
+  is_triggered_only = yes
+  hidden = yes
+
+  immediate = {
+    if = {
+      limit = {
+        AZI = {
+          check_variable = {
+            which = voting_timer
+            value = 2
+          }
+        }
+      }
+      AZI = {
+        subtract_variable = {
+          which = voting_timer
+          value = 1
+        }
+      }
+      event_target:xudan = {
+        country_event = { id = tir_amma_narsa.14 days = 2 }
+      }
+    }
+    else = { # Need to set Reform or no reform
+      # Finish Reform Voting
+      AZI = {
+        set_variable = {
+          which = voting_started
+          value = 0
+        }
+        set_variable = {
+          which = voting_timer
+          value = 365
+        }
+        set_variable = {
+          which = vote_for_count
+          value = 0
+        }
+        set_variable = {
+          which = vote_against_count
+          value = 0
+        }
+        every_country = { # Determine Reform Votes
+          limit = { is_part_of_hre = yes }
+          if = {
+            limit = { NOT = { ai = yes } }
+            if = {
+              limit = {
+                check_variable = {
+                  which = vote_for
+                  value = 1
+                }
+              }
+              AZI = {
+                change_variable = {
+                  which = vote_for_count
+                  value = 1
+                }
+              }
+            }
+            else = {
+              AZI = {
+                change_variable = {
+                  which = vote_against_count
+                  value = 1
+                }
+              }
+            }
+          }
+          else_if = { # Xudan will always vote yes
+            limit = {
+              tag = event_target:xudan
+            }
+            set_variable = {
+              which = vote_for
+              value = 1
+            }
+            AZI = {
+              change_variable = {
+                which = vote_for_count
+                value = 1
+              }
+            }
+          }
+          else_if = {
+            limit = {
+              has_opinion = {
+                who = event_target:xudan
+                value = 50
+              }
+            }
+            set_variable = {
+              which = vote_for
+              value = 1
+            }
+            AZI = {
+              change_variable = {
+                which = vote_for_count
+                value = 1
+              }
+            }
+          }
+          else = {
+            set_variable = {
+              which = vote_for
+              value = 0
+            }
+            AZI = {
+              change_variable = {
+                which = vote_against_count
+                value = 1
+              }
+            }
+          }
+        }
+        # Determine if Reform passed or failed
+        set_next_reform = yes
+      }
+    }
+  }
+
+  option = {
+    name = "tir_amma_narsa.14.a"
+  }
+}
+
+# Get Elector Votes
+country_event = {
+  id = tir_amma_narsa.15
+  title = tir_amma_narsa.15.t
+  desc = tir_amma_narsa.15.d
+  picture = POPE_PREACHING_eventPicture
+
+  is_triggered_only = yes
+  hidden = yes
+
+  trigger = {
+    tag = event_target:xudan
+  }
+
+  immediate = {
+    event_target:azadi_elector_1 = {
+      get_points = { NATION = A99 ELECTOR = event_target:azadi_elector_1 ELECTOR_VOTE = elector1_points }
+      get_points = { NATION = A81 ELECTOR = event_target:azadi_elector_1 ELECTOR_VOTE = elector1_points }
+      get_points = { NATION = B04 ELECTOR = event_target:azadi_elector_1 ELECTOR_VOTE = elector1_points }
+      get_points = { NATION = A79 ELECTOR = event_target:azadi_elector_1 ELECTOR_VOTE = elector1_points }
+      get_points = { NATION = A80 ELECTOR = event_target:azadi_elector_1 ELECTOR_VOTE = elector1_points }
+      get_points = { NATION = B01 ELECTOR = event_target:azadi_elector_1 ELECTOR_VOTE = elector1_points }
+      get_points = { NATION = B02 ELECTOR = event_target:azadi_elector_1 ELECTOR_VOTE = elector1_points }
+      get_points = { NATION = B03 ELECTOR = event_target:azadi_elector_1 ELECTOR_VOTE = elector1_points }
+      get_points = { NATION = A78 ELECTOR = event_target:azadi_elector_1 ELECTOR_VOTE = elector1_points }
+      get_points = { NATION = A77 ELECTOR = event_target:azadi_elector_1 ELECTOR_VOTE = elector1_points }
+      get_points = { NATION = B05 ELECTOR = event_target:azadi_elector_1 ELECTOR_VOTE = elector1_points }
+      get_points = { NATION = B06 ELECTOR = event_target:azadi_elector_1 ELECTOR_VOTE = elector1_points }
+      get_points = { NATION = A76 ELECTOR = event_target:azadi_elector_1 ELECTOR_VOTE = elector1_points }
+      get_points = { NATION = B07 ELECTOR = event_target:azadi_elector_1 ELECTOR_VOTE = elector1_points }
+      get_points = { NATION = A75 ELECTOR = event_target:azadi_elector_1 ELECTOR_VOTE = elector1_points }
+      get_most_points = { ELECTOR_VOTE = elector1_points ELECTOR = event_target:azadi_elector_1 TARGET = first_elector_vote }
+    }
+    event_target:azadi_elector_2 = {
+      get_points = { NATION = A99 ELECTOR = event_target:azadi_elector_2 ELECTOR_VOTE = elector2_points }
+      get_points = { NATION = A81 ELECTOR = event_target:azadi_elector_2 ELECTOR_VOTE = elector2_points }
+      get_points = { NATION = B04 ELECTOR = event_target:azadi_elector_2 ELECTOR_VOTE = elector2_points }
+      get_points = { NATION = A79 ELECTOR = event_target:azadi_elector_2 ELECTOR_VOTE = elector2_points }
+      get_points = { NATION = A80 ELECTOR = event_target:azadi_elector_2 ELECTOR_VOTE = elector2_points }
+      get_points = { NATION = B01 ELECTOR = event_target:azadi_elector_2 ELECTOR_VOTE = elector2_points }
+      get_points = { NATION = B02 ELECTOR = event_target:azadi_elector_2 ELECTOR_VOTE = elector2_points }
+      get_points = { NATION = B03 ELECTOR = event_target:azadi_elector_2 ELECTOR_VOTE = elector2_points }
+      get_points = { NATION = A78 ELECTOR = event_target:azadi_elector_2 ELECTOR_VOTE = elector2_points }
+      get_points = { NATION = A77 ELECTOR = event_target:azadi_elector_2 ELECTOR_VOTE = elector2_points }
+      get_points = { NATION = B05 ELECTOR = event_target:azadi_elector_2 ELECTOR_VOTE = elector2_points }
+      get_points = { NATION = B06 ELECTOR = event_target:azadi_elector_2 ELECTOR_VOTE = elector2_points }
+      get_points = { NATION = A76 ELECTOR = event_target:azadi_elector_2 ELECTOR_VOTE = elector2_points }
+      get_points = { NATION = B07 ELECTOR = event_target:azadi_elector_2 ELECTOR_VOTE = elector2_points }
+      get_points = { NATION = A75 ELECTOR = event_target:azadi_elector_2 ELECTOR_VOTE = elector2_points }
+      get_most_points = { ELECTOR_VOTE = elector2_points ELECTOR = event_target:azadi_elector_2 TARGET = second_elector_vote }
+    }
+    event_target:azadi_elector_3 = {
+      get_points = { NATION = A99 ELECTOR = event_target:azadi_elector_3 ELECTOR_VOTE = elector3_points }
+      get_points = { NATION = A81 ELECTOR = event_target:azadi_elector_3 ELECTOR_VOTE = elector3_points }
+      get_points = { NATION = B04 ELECTOR = event_target:azadi_elector_3 ELECTOR_VOTE = elector3_points }
+      get_points = { NATION = A79 ELECTOR = event_target:azadi_elector_3 ELECTOR_VOTE = elector3_points }
+      get_points = { NATION = A80 ELECTOR = event_target:azadi_elector_3 ELECTOR_VOTE = elector3_points }
+      get_points = { NATION = B01 ELECTOR = event_target:azadi_elector_3 ELECTOR_VOTE = elector3_points }
+      get_points = { NATION = B02 ELECTOR = event_target:azadi_elector_3 ELECTOR_VOTE = elector3_points }
+      get_points = { NATION = B03 ELECTOR = event_target:azadi_elector_3 ELECTOR_VOTE = elector3_points }
+      get_points = { NATION = A78 ELECTOR = event_target:azadi_elector_3 ELECTOR_VOTE = elector3_points }
+      get_points = { NATION = A77 ELECTOR = event_target:azadi_elector_3 ELECTOR_VOTE = elector3_points }
+      get_points = { NATION = B05 ELECTOR = event_target:azadi_elector_3 ELECTOR_VOTE = elector3_points }
+      get_points = { NATION = B06 ELECTOR = event_target:azadi_elector_3 ELECTOR_VOTE = elector3_points }
+      get_points = { NATION = A76 ELECTOR = event_target:azadi_elector_3 ELECTOR_VOTE = elector3_points }
+      get_points = { NATION = B07 ELECTOR = event_target:azadi_elector_3 ELECTOR_VOTE = elector3_points }
+      get_points = { NATION = A75 ELECTOR = event_target:azadi_elector_3 ELECTOR_VOTE = elector3_points }
+      get_most_points = { ELECTOR_VOTE = elector3_points ELECTOR = event_target:azadi_elector_3 TARGET = third_elector_vote }
+    }
+    event_target:azadi_elector_4 = {
+      get_points = { NATION = A99 ELECTOR = event_target:azadi_elector_4 ELECTOR_VOTE = elector4_points }
+      get_points = { NATION = A81 ELECTOR = event_target:azadi_elector_4 ELECTOR_VOTE = elector4_points }
+      get_points = { NATION = B04 ELECTOR = event_target:azadi_elector_4 ELECTOR_VOTE = elector4_points }
+      get_points = { NATION = A79 ELECTOR = event_target:azadi_elector_4 ELECTOR_VOTE = elector4_points }
+      get_points = { NATION = A80 ELECTOR = event_target:azadi_elector_4 ELECTOR_VOTE = elector4_points }
+      get_points = { NATION = B01 ELECTOR = event_target:azadi_elector_4 ELECTOR_VOTE = elector4_points }
+      get_points = { NATION = B02 ELECTOR = event_target:azadi_elector_4 ELECTOR_VOTE = elector4_points }
+      get_points = { NATION = B03 ELECTOR = event_target:azadi_elector_4 ELECTOR_VOTE = elector4_points }
+      get_points = { NATION = A78 ELECTOR = event_target:azadi_elector_4 ELECTOR_VOTE = elector4_points }
+      get_points = { NATION = A77 ELECTOR = event_target:azadi_elector_4 ELECTOR_VOTE = elector4_points }
+      get_points = { NATION = B05 ELECTOR = event_target:azadi_elector_4 ELECTOR_VOTE = elector4_points }
+      get_points = { NATION = B06 ELECTOR = event_target:azadi_elector_4 ELECTOR_VOTE = elector4_points }
+      get_points = { NATION = A76 ELECTOR = event_target:azadi_elector_4 ELECTOR_VOTE = elector4_points }
+      get_points = { NATION = B07 ELECTOR = event_target:azadi_elector_4 ELECTOR_VOTE = elector4_points }
+      get_points = { NATION = A75 ELECTOR = event_target:azadi_elector_4 ELECTOR_VOTE = elector4_points }
+      get_most_points = { ELECTOR_VOTE = elector4_points ELECTOR = event_target:azadi_elector_4 TARGET = fourth_elector_vote }
+    }
+    # If Electors don't exists, Undo all above
+    if = {
+      limit = {
+        event_target:azadi_elector_1 = {
+          tag = AZI
+        }
+      }
+      event_target:azadi_elector_1 = {
+        set_variable = {
+          which = most_points
+          value = -200
+        }
+      }
+      AZI = {
+        save_global_event_target_as = first_elector_vote
+      }
+    }
+    if = {
+      limit = {
+        event_target:azadi_elector_2 = {
+          tag = AZI
+        }
+      }
+      event_target:azadi_elector_2 = {
+        set_variable = {
+          which = most_points
+          value = -200
+        }
+      }
+      AZI = {
+        save_global_event_target_as = second_elector_vote
+      }
+    }
+    if = {
+      limit = {
+        event_target:azadi_elector_3 = {
+          tag = AZI
+        }
+      }
+      event_target:azadi_elector_3 = {
+        set_variable = {
+          which = most_points
+          value = -200
+        }
+      }
+      AZI = {
+        save_global_event_target_as = third_elector_vote
+      }
+    }
+    if = {
+      limit = {
+        event_target:azadi_elector_4 = {
+          tag = AZI
+        }
+      }
+      event_target:azadi_elector_4 = {
+        set_variable = {
+          which = most_points
+          value = -200
+        }
+      }
+      AZI = {
+        save_global_event_target_as = fourth_elector_vote
+      }
+    }
+    get_xudan_vote = yes
+    country_event = { id = tir_amma_narsa.7 }
+  }
+
+  option = {
+    name = "tir_amma_narsa.15.a"
+  }
+}
+
+# Reduce Reform Timer
+country_event = {
+  id = tir_amma_narsa.16
+  title = tir_amma_narsa.16.t
+  desc = tir_amma_narsa.16.d
+  picture = POPE_PREACHING_eventPicture
+
+  is_triggered_only = yes
+  hidden = yes
+
+  trigger = {
+    tag = event_target:xudan
+  }
+
+  option = {
+    name = "tir_amma_narsa.16.a"
+    AZI = {
+      subtract_variable = {
+        which = azadi_timer
+        value = 15
+      }
+    }
+  }
+}
+
+# Add Influence
+country_event = {
+  id = tir_amma_narsa.17
+  title = tir_amma_narsa.17.t
+  desc = tir_amma_narsa.17.d
+  picture = POPE_PREACHING_eventPicture
+
+  is_triggered_only = yes
+  hidden = yes
+
+  trigger = {
+    tag = event_target:xudan
+  }
+
+  option = {
+    name = "tir_amma_narsa.17.a"
+    AZI = {
+      change_variable = {
+        which = azadi_power
+        value = 15
+      }
+    }
+  }
+}
+
+# Reduce Xudan Election Timer
+country_event = {
+  id = tir_amma_narsa.18
+  title = tir_amma_narsa.18.t
+  desc = tir_amma_narsa.18.d
+  picture = POPE_PREACHING_eventPicture
+
+  is_triggered_only = yes
+  hidden = yes
+
+  trigger = {
+    tag = event_target:xudan
+  }
+
+  option = {
+    name = "tir_amma_narsa.18.a"
+    AZI = {
+      subtract_variable = {
+        which = xudan_timer
+        value = 10
+      }
+    }
+  }
+}

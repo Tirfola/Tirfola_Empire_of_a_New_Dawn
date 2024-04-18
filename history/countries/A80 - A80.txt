@@ -1,6 +1,9 @@
 government = monarchy
 add_government_reform = feudalism_reform
 technology_group = golekian
-primary_culture = prussian
-religion = pentethikan
-capital = 1
+religion = konchi
+capital = 588
+government_rank = 1
+elector = yes
+
+primary_culture = eksotas

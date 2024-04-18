@@ -119,7 +119,7 @@ soroka = {
 	dynasty_names = {
 		"von Klinckow" "von Puttkamer" "von Barnekow" "von Strantz" "Gryf" "Wizlawid"
 		"von Krassow" "von der Lancken" "von Schlieffen" "von Schwerin"
-		"von Schöning" "von Suhm" "von Maltzahn" "von Below" "von Blixen" "von Borcke"
+		"von Schoning" "von Suhm" "von Maltzahn" "von Below" "von Blixen" "von Borcke"
 		"von Buggenhagen" "von Manteuffel" "von Corswant" "von Stralenheim" "von Dewitz" "von Preen" "von Podewils"
 		"von Flemming" "von Platen" "von Neuenkirchen" "von Gottberg" "von Hackewitz" "von Hennigs" "Trampe" "von Hertzberg" "von Heyden" "von Kameke" "von Kleist" "Natzmer"
 		"von Zepelin" "von Gostowski" "von Wakenitz"
@@ -317,39 +317,39 @@ batenn = {
 	}
 
 	male_names = {
-		Christian Christoph Oskar Adolf August Göran Sigismund Alfred Axel Edvard Gottfrid
+		Christian Christoph Oskar Adolf August Goran Sigismund Alfred Axel Edvard Gottfrid
 		Jakob Ludvig Mikael Olof Patrik Rangvald Rettil Sigvard Simon Sture Svante
 		Tomas Ulrik
 		Albrikt Albert Alf Algot Anders Arne Arnfast Astrad
-		Bengt Benedict Bertil Birger Björn Bo Borkvard Brage Bror
+		Bengt Benedict Bertil Birger Bjorn Bo Borkvard Brage Bror
 		Dag Dan Dyre Egil Einar Erik Eskild Faste Fredrik Frederick Filip
 		Folke Georg Greger Gregory Gunnar Gustav Halsten Hans Harald Harold
-		Helge Henrik Hjalmar Holmger Håkan Inge Ingemar Ingvar
+		Helge Henrik Hjalmar Holmger Hakan Inge Ingemar Ingvar
 		Edward Johan John Karl Klas Knut Lars Magnus
 		Markus Marcus
 		Mats Matthew Nils Nicholas Niklas Odd Olaf Peter Ragnar Rolf
-		Ragnvald Sörkver Sigurd Starkad Sten Styrbjörn Sune Sven
-		Sverker Sölve Thomas Tjudmund Toke Torbjörn Tord Torbrand Torkel Torolf
-		Thorolf Torsten Toste Totil Tyke Ulf Valdemar Åke Östen
+		Ragnvald Sorkver Sigurd Starkad Sten Styrbjorn Sune Sven
+		Sverker Solve Thomas Tjudmund Toke Torbjorn Tord Torbrand Torkel Torolf
+		Thorolf Torsten Toste Totil Tyke Ulf Valdemar ake osten
 	}
 	female_names = {
 		Christina Ulrika Eleonora Hedwig
 		Anna Asta Astrid Beata Birgitta Brigid Bothild Cecilia Elin
 		Elisabet Gunhild Helena Holmfrid Iliana Inga
 		Ingeborg Ingegerd Ingfrid Ingrid Karin Katarina Kristina Linda
-		Margareta Märta Martha Ragnhild Sara Sarah Sigrid Sofia
-		Sophia Thordis Ulvhilde Åsa
+		Margareta Marta Martha Ragnhild Sara Sarah Sigrid Sofia
+		Sophia Thordis Ulvhilde asa
 	}
 	dynasty_names = {
 		"Bonde" "Vasa" "Tre Rosor" "Oxenstierna" "Sparre" "Sture" "Tott" "Trolle" "Bielke" "Brahe"
 		"Horn" "Ribbing" "Skytte" "Banér" "Fleming" "Gyllenstierna" "de la Gardie" "Leijonhufvud"
-		"Natt och Dag" "Grip" "Stenbock" "Bure" "Drake" "Hand" "Burensköld"
-		"Böllja" "Cruus" "Geete" "Grubbenhielm" "Soop" "Ekeblad" "Svinhufvud"
-		"Hård" "Forstena" "Kurck" "Eka" "Hjort" "Jägerhorn" "Lilliehöök"
+		"Natt och Dag" "Grip" "Stenbock" "Bure" "Drake" "Hand" "Burenskold"
+		"Bollja" "Cruus" "Geete" "Grubbenhielm" "Soop" "Ekeblad" "Svinhufvud"
+		"Hard" "Forstena" "Kurck" "Eka" "Hjort" "Jagerhorn" "Lilliehook"
 		"Porse" "Palme" Gumsehuvud
-		"Bååt" "Ulv" "Sjöblad" "Läma" "Posse" "Rosenstråle" "Thott" "Bagge"
-		"Bese" "Gädda" "Hatt" "Marsvin" "Oxhufvud" "Stake" "Tre Rutor" "Hästesko"
-		"Ulfsax" "Tre Sjöblad" "Bratt" "Munk" "Eketrä" "Gera"
+		"Baat" "Ulv" "Sjoblad" "Lama" "Posse" "Rosenstrale" "Thott" "Bagge"
+		"Bese" "Gadda" "Hatt" "Marsvin" "Oxhufvud" "Stake" "Tre Rutor" "Hastesko"
+		"Ulfsax" "Tre Sjoblad" "Bratt" "Munk" "Eketra" "Gera"
 		"Gylta" "Lillie" "Puke" "Slatte"  "Stiernkors" "Fincke" "Dufva" "Cronstedt"
 	}
 }
@@ -526,11 +526,11 @@ apolt = {
 		Ugandi Gediminai Radziwill Gostautas Astikas Kesgaila Chodkiewicz Olshanski Chartoryski
 		Giedraiciai Pac Plater Tyzenhaus Sapieha Ostrogski Oginski
 		# CKII
-		"von Finckenstein" "Wilks" "Klakis" "Luks" "Kuilis" "Kalabijjan" "von Preussen" "von Königsberg"
+		"von Finckenstein" "Wilks" "Klakis" "Luks" "Kuilis" "Kalabijjan" "von Preussen" "von Konigsberg"
 		"Jankowskie" "von Danzig" "von Seidlitz" "von Marienburg" "Konopacki"
 		"von Memel" "von Kurs" "von Rohrbach" "Penikis" "Tontegode" "Vidins" "Draguns" "Sirkants"
 		# Ugric Baltic
-		"Karasi" "Ingrija" "Saaremaa" "Revala" "Virumaa" "Läänemaa" "Vaiga" "Ingeri" "Ingeri" "Livo" "Harjumaa" "Virumaa"
+		"Karasi" "Ingrija" "Saaremaa" "Revala" "Virumaa" "Laanemaa" "Vaiga" "Ingeri" "Ingeri" "Livo" "Harjumaa" "Virumaa"
 		"Ridala" "Saaremaa" "Vaiga" "Turaida"
 	}
 }
@@ -863,5 +863,97 @@ keros = {
 		Kekela Ketevan Catherine Lamara Lamzira Lela Mariami Mariam Mathiko Mthvarisa Mzekhar Natia
 		Nino Rusudan Sanatha Shorena Shukhia Suliko
 		Tamari Tamar Taplo Tinatini Tsiala Vardo
+	}
+}
+
+yexali = {
+	graphical_culture = westerngfx
+
+	eksotas = {
+		primary = A80
+	}
+
+	markistas = {
+		primary = A79
+	}
+
+	sohitas = {
+		primary = A81
+	}
+
+	gartas = {
+		primary = A76
+	}
+
+	male_names = {
+		Abagha Achigh Aguchu Ajai Ajinai Akhutai Alagh Alchi Alchidai Altan Ambaghai Arkhai Arasen
+		Babur Badai Bagaridai Bala Barghujin Bartan Batu Bedugun Begter Belgutei Belgunutei Bilge Berke
+		Bodonchar Bogen Bogorchu Bolkhadar Borjigidai Boroghul Bughu Bugidai Bugunutei Bujeg Bukha
+		Bulughan Buri Burkhan Burundai Chagatai Chaghagan Chanai Chigu Chidukhul Chilagun Chiledu
+		Chormakhan Chulgetei Dagun Daritai Dayir Dodai Duua Eljigedei Ghazan Ghunan Guchu Gughlug Guyug
+		Harghasun Horkhudagh Hulegu Husun Inalchi Inancha Iturgen Jajiradai Jamugha Jebe Jochi
+		Jurchedei Khabichi Khachi Khachigun Khadagh Khagatai Khaidu Khal Khorchi Khorilartai Khubilai
+		Khudu Khutula Khuyildar Kogsegu Kokochu Megetu Megujin Menggei Mongke Morokha Munglig Nakhu
+		Narin Nayaga Nogai Odchigin Ogodei Okhotur Oljaitu Oronartai Shiraghul Shirgugetu Subetei
+		Suyiketu Taghai Tamachi Targhutai Temuge Temujin Temur Todogen Toghoril Toghtoga Tokhtamis
+		Tolui Torolchi Tumen Uighurtai Ukhuna Usun Yedi Yegu Yeke Yesugei Yesunge Yokhunan Kadan Godan
+		# PECHENEG
+		Belgil Aba Baitzas Balgor Batan Batas Bator Bayea Biekili Bizel Boru Bula Giazis Ildey Ipa Ipaos
+		Kabuksin Karaca Kaydum Kegen Konel
+		Korkutan Kortan Kostas Kourkoutai Kuerai Kugel Kure Sol Suru Tatus Teber Temir Tyrach Yavdi Yazi
+		# CUMAN / KARLUK / KIRGHIZ
+		Bilbu Aepak Asalup Asep Atrak Bunek Bachman Begluk Blush Bonyak Bore Eldeayuk Etrek Girgen Gzi
+		Itlar Ituk Kanaek Kobyak Kopti Kotyan Koza Kozel Kubasar Kuntuvdi Kutan Pulad Saru Sevena Sirean
+		Sokal Sotan Sugr Tortogul Togli Tolun Tugor Uzluk Uzur
+		# AVAR
+		Almish Alp Alzek Anzi Apskhih Araslan Arslan Asparukh Bagha Baghatur Balambar Balambar Barjik
+		Bars Barsbek Bashtwa Bastu Bataul Batbayan Batoya Batulia Bayan Belkermak Bezmer Bihor Boyan Bugha
+		Bughra Bulan Bulger Bulean Busir Buzan Buzer Belgiai Buri
+		Chepa Chinialush Dengizikh Dizeng Dometa Dristar Drong Dukum Elemag Ellak Ernakh Eskhakh Goleda
+		Gostun Guar Hudbad Iani Ilik Iltaber Irnek Isbul Islivan Isperikh Ispor Itakh Kamaj Kano Karadakh
+		Karan Karaton Kardam Kayghalagh Kharaton Khatir Khinialon
+		Khudbard Khuterkin Kibar Kisa Kordil Kormesiy Kormisosh Kotrag Krovat Krum Kuber Kubrat Kundai
+		Kundaeiq Kurt Kutrigur Kelae Labertam Magotin Malamir Mugel Manor Manis Munamaret Odolgan Okhsi
+		Okhsun Okors Omurtag Onegavon Organ Organa Ornag
+		Oshi Ostro Pagan Pakhtiyar Bakhtiar Papauyz Paval Praksa Rassate Rugila Sabin Samsam Sandil
+		Sandilkh Sarkhan Sartea Savin Sevar Shilki Simsam Sondoke Tabghae Tarasiy Taridin Tarkhan Tarmar
+		Tatra Telec Telerig Tervel Timar Timur Timirei Timerpalat
+		Tingiz Tiradin Toghan Toghrol Toghrul Tokhtaman Toktu Tsog Tsul Tuk Tuzniq Tobor Teber Tehtaman
+		Umor Uturgur Vakrim Venda Vetam Vinekh Yabghu Yani Yavantey Yenaepi Yerneslu Yeatirek Yilig
+		Zabergan Zenti Tat Tat'n Borpan Atemis
+	}
+	female_names = {
+		Al-Alta Alan Altani Borte Botokhui Bulughan Chabi Chagur Chakha Checheyigen Chotan Doregene
+		Doquz Ebegei Gurbesu Hogelun Holuikhan Ibakha Khadagan Khogaghchin Khojin Khorijin Khugurchin
+		Khulan Mandukhai Mongoljin Nomolun Oghul Orbei Sokhatai Sorkhaghatani Tekine Temulun Toregene
+		Yesugun Yesui Hoelun
+		# PECHENEG
+		Bitek Bilen Biltanesi Uzgul Uzlem Akgul Asli Ayasun Ayten Bozoin Dilek Esin Guluiuek Gulay
+		Gunduz Gundes Gunes Ilkay Ipek Ipekel Irge Karacik Mala Mutlu Peksen Samur Sarica Sati Sevilay
+		Sevindik Sibel Sirin Sirma Songul Tekae Tura Umay Usunbike Yasar Yeldem Yildiz
+		# CUMAN
+		Biuek Tilen Uiltanesi Uzgul Uzlem Akgul Asli Ayasun Ayten Bozoin Dilek Esin Gulaikek Gulay Gunduz
+		Gundes Gunes Ilkay Ipek Ipekel Irge Karacik Mala Mutlu Peksen Samur Sarica Sati Sevilay Sevindik
+		Sibel Sirin Sirma Songul Tekie Tura Umay Usunbike Yasar Yeldem Yildiz
+		# KHAZAR / BOLGHAR
+		Bizok Bizek Beaeppi Beaki Beatilet Bilen Biltanesi Uzgul Uzlem Akgul Asli Ayasun Ayten Bozpin Dilek
+		Esin Gulbieak Gulbizek Gulay Gunduz Gundes Gunes Ikalay Ilkay Ipek Ipekel Irge
+		Karacik Katyarikka Kalnissa Kalyamal Khatun Larkka Lyukha Mala Maturkka Mutlu Nava Parsbit Patiyer
+		Paykalti Peksen Puyantay Samur Sarantay Sari Sarica Sarikel
+		Sati Savaeka Savkalti Savtilek Savilay Sevilay Savintik Sevindik Shurkka Sibel Sirin Sirma Songul
+		Tihtani Tekve Tura Umay Usunbike Yasar Yeldem Yildiz Yartilek
+		# AVAR
+		Akgul Asli Ayasun Ayten Bozoin Dilek Esin Gulay Guluiuuk GulBivek Gundes Gunduz Gunes Ikalay Ilkay
+		Ipek Ipekel Irge Karacik Khatun Katyarikka Kalnissa Kalyamal Lyukha Larkka Mala Maturkka Mutlu Nava
+		Parsbit Patiyer Paykalti Peksen Puyantay Samur Sarantay Sarica Sarikel Sari Sati Savabka Savilay
+		Sevilay Savintik Sevindik Savkulti Savtilek Shurkka Sibel Sirin Sirma Songul Tekve Tura Tehtani
+		Umay Usunbike Yartilek Yasar Yeldem Yildiz Bepeppi Bebki Beptilet Bilen Biltanesi Bivek Bikek Uzgul
+		Uzlem
+	}
+	dynasty_names = {
+		"Chagatay" "Ediguid" "Giray" "Borjigin" "Shaybanid" "Janid" "Mangit"
+		Kirghiz
+		# CKII - KHANTY
+		"Sibirid" "Narima" "Mansi" "Khantys"
 	}
 }

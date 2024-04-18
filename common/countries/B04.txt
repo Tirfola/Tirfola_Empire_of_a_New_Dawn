@@ -1,0 +1,125 @@
+# Litan
+graphical_culture = westerngfx
+color = { 35 218 172 }
+revolutionary_colors = { 16 13 16 }
+historical_score = 25
+preferred_religion = konchi
+historical_idea_groups = {
+	aristocracy_ideas
+	trade_ideas
+	defensive_ideas
+	offensive_ideas
+	economic_ideas
+	diplomatic_ideas
+	innovativeness_ideas
+	maritime_ideas
+}
+historical_units = {
+	golekian_1_levyman
+	golekian_1_spear_cavalry
+	golekian_5_infantry
+	golekian_6_chariot_cavalry
+	7_militarized_mages
+	golekian_9_spear_wall
+	golekian_10_reformed_spear_cavalry
+	10_flamers
+	golekian_12_lightsplitters
+	13_fire_breathers
+	golekian_14_fire_flingers
+	golekian_15_shielded_lightsplitters
+	18_spell_slingers
+	golekian_18_lightning_riders
+	golekian_19_armored_frostwielders
+	20_mindbenders
+	22_psychic_screamers
+	golekian_23_silvercoated_frostwielders
+	25_abyss_conjurers
+	golekian_26_frostguard
+	golekian_28_blitztamers
+	29_void_eaters
+	golekian_30_ice_sentinels
+}
+monarch_names = {
+	"Abdul-Aziz #0" = 20
+	"Abdul-Karim #0" = 20
+	"Abdul-Mumin #0" = 20
+	"Abdul-Rahim #0" = 20
+	"Abdulla #0" = 20
+	"Abu Said #0" = 20
+	"Abu'l-Feiz #0" = 20
+	"Abu'l-Ghazi #0" = 20
+	"Abu'l-Khayr #0" = 20
+	"Abu'l-Mansur #0" = 20
+	"Agatay #0" = 20
+	"Alim #0" = 20
+	"Anusha #0" = 20
+	"Arab Muhammad #0" = 20
+	"Avanesh #0" = 20
+	"Bahadur #0" = 20
+	"Bakht #0" = 20
+	"Baqi Muhammad #0" = 20
+	"Budjuga #0" = 20
+	"Bureke #0" = 20
+	"Daniyal #0" = 20
+	"Djuchi #0" = 20
+	"Dost #0" = 20
+	"Habash #0" = 20
+	"Hadji #0" = 20
+	"Hadji Muhammad #0" = 20
+	"Hassan Quli #0" = 20
+	"Haydar #0" = 20
+	"Imam Quli #0" = 20
+	"Ilbars #0" = 20
+	"Irdana #0" = 20
+	"Isfandiyar #0" = 20
+	"Isim #0" = 20
+	"Iskandar #0" = 20
+	"Janibek #0" = 20
+	"Kal #0" = 20
+	"Khudayar #0" = 20
+	"Khudaydad #0" = 20
+	"Kochkunju #0" = 20
+	"Muhammad #0" = 20
+	"Muhammad Amin #0" = 20
+	"Muhammad Hakim #0" = 20
+	"Muhammad Rahim #0" = 20
+	"Nadir Muhammad #0" = 20
+	"Narbuta #0" = 20
+	"Navruz Ahmad #0" = 20
+	"Niyaz #0" = 20
+	"Pir Muhammad #0" = 20
+	"Sanjar #0" = 20
+	"Sevinch #0" = 20
+	"Shadi #0" = 20
+	"Shahmurad #0" = 20
+	"Shahrukh #0" = 20
+	"Shaykh Haidar #0" = 20
+	"Subhan Quli #0" = 20
+	"Sufyan #0" = 20
+	"Suleyman #0" = 20
+	"Tahir #0" = 20
+	"Timur #0" = 20
+	"Ubaydulla #0" = 20
+	"Umar #0" = 20
+	"Vali #0" = 20
+	"Vali Muhammad #0" = 20
+	"Yadgar #0" = 20
+
+	"Hooda #0" = -1
+	"Malaika #0" = -1
+	"Munira #0" = -1
+	"Rabiya #0" = -1
+	"Rafiqa #0" = -1
+}
+
+leader_names = {
+	"Mongke Nasan" "Bora Chinua" "Shria Gal" "Boke Arslan" "Suren Unegen"
+	"Arigh Gan" "Qara Temur" "Bayan Checheg" "Yeke Burilgi"
+	"Chagan Erdene" "Altan Vachir" "Mongke Enq" "Mongke Bayar"
+}
+
+ship_names = {
+	Amudarja Syrdarja Karakul Karsi Guzar
+	Gulistan Cimkent Jangijul Chudzand Kerki
+	Gizduvan Chiva Bajsun Mukry
+}

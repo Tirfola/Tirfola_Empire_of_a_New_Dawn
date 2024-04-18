@@ -1,0 +1,73 @@
+spriteTypes = {
+  spriteType = {
+    name = "GFX_faction_amma_narsa_background"
+    texturefile = "gfx//interface//event_interfaces//amma_narsa_background.dds"
+  }
+
+  spriteType = {
+    name = "GFX_faction_xudan_background"
+    texturefile = "gfx//interface//event_interfaces//azadi_count_name.dds"
+  }
+
+  spriteType = {
+    name = "GFX_azadi_reform_background"
+    texturefile = "gfx//interface//event_interfaces//azadi_reform_background.dds"
+  }
+
+  spriteType = {
+    name = "GFX_purple_banner"
+    texturefile = "gfx//interface//event_interfaces//purple_banner.dds"
+  }
+
+  spriteType = {
+    name = "GFX_azadi_reduce_timer"
+    texturefile = "gfx//interface//event_interfaces//lower_timer_button.dds"
+  }
+
+  spriteType = {
+    name = "GFX_xudan_diplomacy_button"
+    texturefile = "gfx//interface//event_interfaces//xudan_diplomacy_ledger_button.dds"
+    noOfFrames = 2
+  }
+
+  spriteType = {
+    name = "GFX_xudan_grant_electorate_button"
+    texturefile = "gfx//interface//event_interfaces//azadi_grant_electorate_button.dds"
+  }
+
+  spriteType = {
+    name = "GFX_xudan_grant_citadel_button"
+    texturefile = "gfx//interface//event_interfaces//azadi_grant_citadel_status_button.dds"
+  }
+
+  spriteType = {
+    name = "GFX_no_vote_button"
+    texturefile = "gfx//interface//event_interfaces//azadi_nay_button.dds"
+  }
+
+  spriteType = {
+    name = "GFX_yes_vote_button"
+    texturefile = "gfx//interface//event_interfaces//azadi_yay_button.dds"
+  }
+
+  spriteType = {
+    name = "GFX_azadi_select_vote"
+    texturefile = "gfx//interface//event_interfaces//azadi_elector_vote.dds"
+  }
+
+  spriteType = {
+    name = "GFX_xudan_diplomacy_background"
+    texturefile = "gfx//interface//event_interfaces//xudan_diplomacy_background.dds"
+  }
+
+  spriteType = {
+    name = "GFX_azadi_side_background"
+    texturefile = "gfx//interface//event_interfaces//azadi_side_background.dds"
+  }
+
+  spriteType = {
+    name = "GFX_empty"
+    texturefile = "gfx//interface//event_interfaces//empty.dds"
+    transparencecheck = yes
+  }
+}
